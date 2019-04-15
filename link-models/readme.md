@@ -20,4 +20,4 @@ The noise temperature calculators for the spacecraft and ground station receiver
 - General: [Friis formula](https://en.wikipedia.org/wiki/Friis_formulas_for_noise)
 - SME: A modified formula used for systems with an antenna as the source.  [Wertz, J., Everett, D., Puschell, J. (2011). Space Mission Engineering: The New SMAD (pp. 477). Hawthorne, CA: Microcosm Press.](http://www.sme-smad.com/)
 - King: Jan King's formula based on SME. Excludes the effective temperature of the feed and passives prior to the first LNA.
-- Subtotal: The Friis formula subtotal section used in the link model spreadsheets. Excludes the source (antenna) and passives prior to the first LNA.
+- Subtotal: The Friis formula subtotal section used in the link model spreadsheets; Receivers tab, T<sub>2ndStage</sub> cell. Excludes the source (antenna) and passives prior to the first LNA.
