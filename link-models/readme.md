@@ -9,10 +9,12 @@ The source of these spreadsheets are from Jan King and are located at the [AMSAT
    ___AMSAT-IARU_Link_Model_PDX_CS0_v1_secondary.xlsx___
 
 Notes:
-- The 'Transmitters' and 'Receivers' sheets have been customized.
+- The 'Transmitters' and 'Receivers' sheets have been customized
   - Block diagrams reflect correct design
   - System noise temperature is more precise
-- The 'System Performance Summary' sheet has broken references for transmitters and receivers details, but the link budget reference is accurate.  Use the 'Transmitters', 'Receivers', 'Uplink Budget', and 'Downlink Budget' sheets for details.
+- The 'System Performance Summary' sheet has been customized
+  - Power levels in dBm
+  - More link losses details
 
 ### Friis formula calculators
 ___Friis_noise_temp_calculators.xlsx___
