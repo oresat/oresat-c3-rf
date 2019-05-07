@@ -1,4 +1,4 @@
-### Link budget models for the C3 communications channels
+## Link budget models for the C3 communications channels
 
 The source of these spreadsheets are from Jan King and are located at the [AMSAT-UK IARU website](http://www.amsatuk.me.uk/iaru/spreadsheet.htm)
 
@@ -16,7 +16,7 @@ Notes:
   - Power levels in dBm
   - More link losses details
 
-### Friis formula calculators
+## Friis formula calculators
 ___Friis_noise_temp_calculators.xlsx___
 
 The noise temperature calculators for the spacecraft and ground station receivers based on Friis formula.  The link model spreadsheets include Friis formula for use with an antenna as the source.  The calculator spreadsheet includes the following tabs for comparison.
