@@ -2,11 +2,14 @@
 
 The source of these spreadsheets are from Jan King and are located at the [AMSAT-UK IARU website](http://www.amsatuk.me.uk/iaru/spreadsheet.htm)
 
-- The primary uplink (L band) and downlink (UHF) link model:
-   ___AMSAT-IARU_Link_Model_PDX_CS0_v1_primary.xlsx___
+- The primary engineering uplink (L band - 1265 MHz GMSK) and engineering downlink (UHF - 436.5 MHz GMSK) link model:
+  ___AMSAT-IARU_Link_Model_PDX_CS0_v1_engineering_primary.xlsx___
 
-- The secondary uplink (UHF) link model:
-   ___AMSAT-IARU_Link_Model_PDX_CS0_v1_secondary.xlsx___
+- The secondary engineering uplink (UHF - 436.5 MHz GMSK) link model:
+  ___AMSAT-IARU_Link_Model_PDX_CS0_v1_engineering_secondary.xlsx___
+
+- The public downlink (UHF - 436.5 MHz G3RUH) link model:
+  ___AMSAT-IARU_Link_Model_PDX_CS0_v1_public.xlsx (work-in-progress)___
 
 Notes:
 - The 'Transmitters' and 'Receivers' sheets have been customized
