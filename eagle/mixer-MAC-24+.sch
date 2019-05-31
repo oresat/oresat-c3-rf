@@ -5117,6 +5117,8 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <part name="R1" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="0"/>
 <part name="R2" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="0"/>
 <part name="R3" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="0"/>
+<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5192,6 +5194,12 @@ Susumu PAT1220
 <attribute name="NAME" x="140.97" y="123.4186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="140.97" y="118.618" size="1.778" layer="96"/>
 </instance>
+<instance part="GND3" gate="1" x="78.74" y="124.46" smashed="yes">
+<attribute name="VALUE" x="76.2" y="121.92" size="1.778" layer="96"/>
+</instance>
+<instance part="GND4" gate="1" x="78.74" y="96.52" smashed="yes">
+<attribute name="VALUE" x="76.2" y="93.98" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5220,6 +5228,16 @@ Susumu PAT1220
 <segment>
 <pinref part="AT3" gate="G$1" pin="GND"/>
 <pinref part="GND2" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND4" gate="1" pin="GND"/>
+<pinref part="X2" gate="G1" pin="2"/>
+<wire x1="78.74" y1="99.06" x2="78.74" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND3" gate="1" pin="GND"/>
+<pinref part="X1" gate="G1" pin="2"/>
+<wire x1="78.74" y1="127" x2="78.74" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
