@@ -9524,7 +9524,7 @@ LED</description>
 <part name="R5" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="47k"/>
 <part name="R6" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="47k"/>
 <part name="C7" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="22n"/>
-<part name="R2" library="oresat-rcl" deviceset="R-US_" device="0805-B-NOSILK" value="0"/>
+<part name="R2" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="0"/>
 <part name="L4" library="oresat-rcl" deviceset="L-US" device="0402-B-NOSILK" value="47n"/>
 <part name="C8" library="oresat-rcl" deviceset="C-EU" device="0402-B-NOSILK" value="560p"/>
 <part name="C9" library="oresat-rcl" deviceset="C-EU" device="0402-B-NOSILK" value="560p"/>
@@ -9551,7 +9551,7 @@ LED</description>
 <part name="C12" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="NP"/>
 <part name="C11" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="NP"/>
 <part name="GND111" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R1" library="oresat-rcl" deviceset="R-US_" device="0805-B-NOSILK" value="0"/>
+<part name="R1" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="0"/>
 <part name="+3V5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
@@ -9584,7 +9584,7 @@ LED</description>
 <part name="L1" library="oresat-rcl" deviceset="L-US" device="0402-C-NOSILK" value="1.8n"/>
 <part name="L2" library="oresat-rcl" deviceset="L-US" device="0402-C-NOSILK" value="18/2.7n"/>
 <part name="L3" library="oresat-rcl" deviceset="L-US" device="0402-B-NOSILK" value="2n"/>
-<part name="R13" library="oresat-rcl" deviceset="R-US_" device="0805-B-NOSILK" value="0"/>
+<part name="R13" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="0"/>
 </parts>
 <sheets>
 <sheet>
