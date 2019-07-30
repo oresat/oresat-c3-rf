@@ -9499,7 +9499,7 @@ LED</description>
 <clearance class="1" value="0.762"/>
 </class>
 <class number="2" name="RF2" width="0" drill="0">
-<clearance class="2" value="0.1778"/>
+<clearance class="2" value="0.2032"/>
 </class>
 </classes>
 <parts>
@@ -9822,8 +9822,8 @@ Fixed</text>
 <attribute name="NAME" x="36.6014" y="35.56" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="36.322" y="40.64" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND10" gate="1" x="43.18" y="31.75" smashed="yes">
-<attribute name="VALUE" x="40.64" y="29.21" size="1.778" layer="96"/>
+<instance part="GND10" gate="1" x="38.1" y="30.48" smashed="yes">
+<attribute name="VALUE" x="35.56" y="27.94" size="1.778" layer="96"/>
 </instance>
 <instance part="GND11" gate="1" x="91.44" y="166.37" smashed="yes">
 <attribute name="VALUE" x="88.9" y="163.83" size="1.778" layer="96"/>
@@ -10001,11 +10001,11 @@ Fixed</text>
 <segment>
 <pinref part="R8" gate="R" pin="1"/>
 <pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="38.1" y1="34.29" x2="43.18" y2="34.29" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="34.29" x2="38.1" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="C16" gate="CE" pin="2"/>
-<wire x1="43.18" y1="34.29" x2="43.18" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="33.02" x2="43.18" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="33.02" x2="43.18" y2="36.83" width="0.1524" layer="91"/>
-<junction x="43.18" y="34.29"/>
+<junction x="38.1" y="33.02"/>
 </segment>
 <segment>
 <pinref part="GND11" gate="1" pin="GND"/>
@@ -10396,6 +10396,24 @@ Fixed</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,144.78,63.5,U2,GNDR,GND,,,"/>
+<approved hash="104,1,144.78,129.54,U2,VDDR,N$15,,,"/>
+<approved hash="104,1,149.86,129.54,U2,VDDI,N$93,,,"/>
+<approved hash="104,1,149.86,63.5,U2,GNDI,GND,,,"/>
+<approved hash="104,1,154.94,63.5,U2,GNDD,GND,,,"/>
+<approved hash="104,1,154.94,129.54,U2,VDDD,+3V3,,,"/>
+<approved hash="104,1,53.34,53.34,X1,VDD,N$10,,,"/>
+<approved hash="104,1,78.74,185.42,U1,VIN,+BAT,,,"/>
+<approved hash="104,1,104.14,185.42,U1,VOUT,+3V3,,,"/>
+<approved hash="113,1,139.596,107.846,FRAME2,,,,,"/>
+<approved hash="113,1,77.2329,106.484,JP5,,,,,"/>
+<approved hash="113,1,161.527,182.684,JP1,,,,,"/>
+<approved hash="113,1,199.627,73.4644,JP3,,,,,"/>
+<approved hash="113,1,59.4529,131.884,JP2,,,,,"/>
+<approved hash="113,1,23.8929,42.9844,JP4,,,,,"/>
+<approved hash="113,1,49.2014,182.684,JP6,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
