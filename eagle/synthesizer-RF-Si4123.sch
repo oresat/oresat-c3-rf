@@ -9531,7 +9531,7 @@ LED</description>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R9" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="0"/>
 <part name="R10" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="0"/>
-<part name="C10" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="22n"/>
+<part name="C10" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="1u"/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="X1" library="X-ECS-TXO-TCXO" deviceset="ECS-TXO-3225" device=""/>
 <part name="R3" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="47k"/>
@@ -9564,7 +9564,7 @@ LED</description>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP6" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="C13" library="oresat-rcl" deviceset="C-EU" device="0805-B-NOSILK" value="4.7u"/>
+<part name="C13" library="oresat-rcl" deviceset="C-EU" device="0805-B-NOSILK" value="10u"/>
 <part name="C14" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="1u"/>
 <part name="GND87" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND90" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
