@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -85,6 +85,20 @@
 <hole x="4" y="2" drill="3.175"/>
 <hole x="43" y="2" drill="3.175"/>
 <hole x="43" y="33" drill="3.175"/>
+<text x="19" y="25.5" size="1.778" layer="51">J1</text>
+<text x="19.5" y="2.5" size="1.778" layer="51">J2</text>
+<text x="6" y="6" size="0.254" layer="51">SYS CLK</text>
+<text x="6" y="8.5" size="0.254" layer="51">SEI</text>
+<text x="6" y="11" size="0.254" layer="51">CLK</text>
+<text x="5.969" y="16.129" size="0.254" layer="51">MOSI</text>
+<text x="6" y="13.5" size="0.254" layer="51">MISO</text>
+<text x="6" y="18.5" size="0.254" layer="51">IRQ</text>
+<text x="6" y="26" size="0.254" layer="51">VDD</text>
+<text x="6" y="28.5" size="0.254" layer="51">VDD</text>
+<text x="18.5" y="8.5" size="0.4064" layer="51">*</text>
+<text x="31.5" y="27" size="0.4064" layer="51">*</text>
+<text x="11" y="32.5" size="0.6096" layer="51">AX5043 Dev Board Breakout
+OreSat 2019/08/07</text>
 </plain>
 <libraries>
 <library name="2x8x1.27">
@@ -314,6 +328,9 @@ design rules under a new name.</description>
 <param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
 <param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -414,9 +431,16 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="J1" library="2x8x1.27" package="2X8X1.27" value="2X8X1.27" x="25" y="29.5" locked="yes" rot="R180"/>
-<element name="J2" library="2x8x1.27" package="2X8X1.27" value="2X8X1.27" x="25" y="6.5" locked="yes"/>
-<element name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X10" package3d_urn="urn:adsk.eagle:package:22406/2" value="" x="3.92" y="17.6" locked="yes" rot="R270"/>
+<element name="J1" library="2x8x1.27" package="2X8X1.27" value="2X8X1.27" x="25" y="29.5" locked="yes" smashed="yes" rot="R180">
+<attribute name="NAME" x="18.65" y="29.5" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
+</element>
+<element name="J2" library="2x8x1.27" package="2X8X1.27" value="2X8X1.27" x="25" y="6.5" locked="yes" smashed="yes">
+<attribute name="NAME" x="31.35" y="6.5" size="0.635" layer="25" font="vector" ratio="20"/>
+</element>
+<element name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X10" package3d_urn="urn:adsk.eagle:package:22406/2" value="" x="3.92" y="17.6" locked="yes" smashed="yes" rot="R270">
+<attribute name="NAME" x="5.7488" y="30.3762" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="0.745" y="30.3" size="1.27" layer="27" rot="R270"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -448,6 +472,63 @@ design rules under a new name.</description>
 <vertex x="45" y="0"/>
 <vertex x="45" y="36"/>
 </polygon>
+<polygon width="0.1524" layer="1">
+<vertex x="0" y="36"/>
+<vertex x="0" y="0"/>
+<vertex x="45" y="0"/>
+<vertex x="45" y="36"/>
+</polygon>
+<via x="23.5" y="26.5" extent="1-16" drill="0.35"/>
+<via x="26.5" y="26.5" extent="1-16" drill="0.35"/>
+<via x="7" y="34.5" extent="1-16" drill="0.35"/>
+<via x="9.5" y="34.5" extent="1-16" drill="0.35"/>
+<via x="12" y="34.5" extent="1-16" drill="0.35"/>
+<via x="14.5" y="34.5" extent="1-16" drill="0.35"/>
+<via x="17" y="34.5" extent="1-16" drill="0.35"/>
+<via x="19.5" y="34.5" extent="1-16" drill="0.35"/>
+<via x="22" y="34.5" extent="1-16" drill="0.35"/>
+<via x="24.5" y="34.5" extent="1-16" drill="0.35"/>
+<via x="27" y="34.5" extent="1-16" drill="0.35"/>
+<via x="29.5" y="34.5" extent="1-16" drill="0.35"/>
+<via x="32" y="34.5" extent="1-16" drill="0.35"/>
+<via x="34.5" y="34.5" extent="1-16" drill="0.35"/>
+<via x="37" y="34.5" extent="1-16" drill="0.35"/>
+<via x="39.5" y="34.5" extent="1-16" drill="0.35"/>
+<via x="43" y="29.5" extent="1-16" drill="0.35"/>
+<via x="43" y="27" extent="1-16" drill="0.35"/>
+<via x="43" y="24.5" extent="1-16" drill="0.35"/>
+<via x="43" y="22" extent="1-16" drill="0.35"/>
+<via x="43" y="19.5" extent="1-16" drill="0.35"/>
+<via x="43" y="17" extent="1-16" drill="0.35"/>
+<via x="43" y="14.5" extent="1-16" drill="0.35"/>
+<via x="43" y="12" extent="1-16" drill="0.35"/>
+<via x="43" y="9.5" extent="1-16" drill="0.35"/>
+<via x="43" y="7" extent="1-16" drill="0.35"/>
+<via x="39.5" y="2" extent="1-16" drill="0.35"/>
+<via x="37" y="2" extent="1-16" drill="0.35"/>
+<via x="34.5" y="2" extent="1-16" drill="0.35"/>
+<via x="32" y="2" extent="1-16" drill="0.35"/>
+<via x="29.5" y="2" extent="1-16" drill="0.35"/>
+<via x="27" y="2" extent="1-16" drill="0.35"/>
+<via x="24.5" y="2" extent="1-16" drill="0.35"/>
+<via x="22" y="2" extent="1-16" drill="0.35"/>
+<via x="19.5" y="2" extent="1-16" drill="0.35"/>
+<via x="17" y="2" extent="1-16" drill="0.35"/>
+<via x="14.5" y="2" extent="1-16" drill="0.35"/>
+<via x="12" y="2" extent="1-16" drill="0.35"/>
+<via x="9.5" y="2" extent="1-16" drill="0.35"/>
+<via x="7" y="2" extent="1-16" drill="0.35"/>
+<via x="1.5" y="4.5" extent="1-16" drill="0.35"/>
+<via x="1.5" y="7" extent="1-16" drill="0.35"/>
+<via x="1.5" y="9.5" extent="1-16" drill="0.35"/>
+<via x="1.5" y="12" extent="1-16" drill="0.35"/>
+<via x="1.5" y="14.5" extent="1-16" drill="0.35"/>
+<via x="1.5" y="17" extent="1-16" drill="0.35"/>
+<via x="1.5" y="19.5" extent="1-16" drill="0.35"/>
+<via x="1.5" y="22" extent="1-16" drill="0.35"/>
+<via x="1.5" y="24.5" extent="1-16" drill="0.35"/>
+<via x="1.5" y="27" extent="1-16" drill="0.35"/>
+<via x="1.5" y="29.5" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="VDD">
 <contactref element="J1" pad="3"/>
@@ -460,11 +541,9 @@ design rules under a new name.</description>
 <wire x1="22" y1="25" x2="27" y2="25" width="1" layer="16"/>
 <wire x1="3.95" y1="29" x2="3.92" y2="29.03" width="1" layer="16"/>
 <wire x1="3.92" y1="29.03" x2="3.92" y2="26.49" width="1" layer="16"/>
-<wire x1="3.92" y1="26.49" x2="12.5" y2="26.49" width="1" layer="16"/>
-<wire x1="12.5" y1="26.49" x2="14.51" y2="26.49" width="1" layer="16"/>
+<wire x1="3.92" y1="26.49" x2="16.01" y2="26.49" width="1" layer="16"/>
 <wire x1="21.825" y1="28.865" x2="21.825" y2="25.175" width="1" layer="16"/>
 <wire x1="21.825" y1="25.175" x2="22" y2="25" width="1" layer="16"/>
-<wire x1="14.51" y1="26.49" x2="16.01" y2="26.49" width="1" layer="16"/>
 <wire x1="16.01" y1="26.49" x2="17.5" y2="25" width="1" layer="16"/>
 </signal>
 <signal name="SYSCLK">
@@ -519,9 +598,20 @@ design rules under a new name.</description>
 <wire x1="23.13" y1="18.87" x2="28" y2="14" width="0.4" layer="16"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 </board>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
