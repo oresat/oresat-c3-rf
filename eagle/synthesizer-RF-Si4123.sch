@@ -9579,7 +9579,7 @@ LED</description>
 <attribute name="PROD_ID" value=""/>
 </part>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
-<part name="R12" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="3.3k"/>
+<part name="R12" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="2.7k"/>
 <part name="C16" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="NP"/>
 <part name="L1" library="oresat-rcl" deviceset="L-US" device="0402-C-NOSILK" value="1.8n"/>
 <part name="L2" library="oresat-rcl" deviceset="L-US" device="0402-C-NOSILK" value="18/2.7n"/>
