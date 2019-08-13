@@ -362,78 +362,6 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="U-Qorvo-TQP3M9036-LNA">
-<packages>
-<package name="DFN8-2X2-WITH-PAD">
-<smd name="1" x="-0.75" y="-0.785" dx="0.3" dy="0.67" layer="1" cream="no"/>
-<smd name="PAD" x="0" y="0" dx="1.6" dy="0.7" layer="1" cream="no"/>
-<smd name="2" x="-0.25" y="-0.785" dx="0.3" dy="0.67" layer="1" cream="no"/>
-<smd name="3" x="0.25" y="-0.785" dx="0.3" dy="0.67" layer="1" cream="no"/>
-<smd name="4" x="0.75" y="-0.785" dx="0.3" dy="0.67" layer="1" cream="no"/>
-<smd name="5" x="0.75" y="0.785" dx="0.3" dy="0.67" layer="1" rot="R180" cream="no"/>
-<smd name="6" x="0.25" y="0.785" dx="0.3" dy="0.67" layer="1" rot="R180" cream="no"/>
-<smd name="7" x="-0.25" y="0.785" dx="0.3" dy="0.67" layer="1" rot="R180" cream="no"/>
-<smd name="8" x="-0.75" y="0.785" dx="0.3" dy="0.67" layer="1" rot="R180" cream="no"/>
-<wire x1="-1" y1="1" x2="1" y2="1" width="0.127" layer="51"/>
-<wire x1="1" y1="1" x2="1" y2="-1" width="0.127" layer="51"/>
-<wire x1="1" y1="-1" x2="-1" y2="-1" width="0.127" layer="51"/>
-<wire x1="-1" y1="-1" x2="-1" y2="1" width="0.127" layer="51"/>
-<wire x1="-1" y1="1" x2="-1" y2="0.5" width="0.127" layer="21"/>
-<wire x1="1" y1="1" x2="1" y2="0.5" width="0.127" layer="21"/>
-<wire x1="1" y1="-0.5" x2="1" y2="-1" width="0.127" layer="21"/>
-<wire x1="-1" y1="-0.5" x2="-1" y2="-1" width="0.127" layer="21"/>
-<circle x="-1.4" y="-1" radius="0.2" width="0.127" layer="21"/>
-<rectangle x1="-0.7" y1="-0.3" x2="-0.1" y2="0.25" layer="31"/>
-<rectangle x1="0.1" y1="-0.3" x2="0.7" y2="0.25" layer="31"/>
-<rectangle x1="-0.85" y1="0.55" x2="-0.65" y2="1.05" layer="31"/>
-<rectangle x1="-0.35" y1="0.55" x2="-0.15" y2="1.05" layer="31"/>
-<rectangle x1="0.15" y1="0.55" x2="0.35" y2="1.05" layer="31"/>
-<rectangle x1="0.65" y1="0.55" x2="0.85" y2="1.05" layer="31"/>
-<rectangle x1="0.65" y1="-1.05" x2="0.85" y2="-0.55" layer="31"/>
-<rectangle x1="0.15" y1="-1.05" x2="0.35" y2="-0.55" layer="31"/>
-<rectangle x1="-0.35" y1="-1.05" x2="-0.15" y2="-0.55" layer="31"/>
-<rectangle x1="-0.85" y1="-1.05" x2="-0.65" y2="-0.55" layer="31"/>
-<text x="0.2" y="-2" size="0.6096" layer="25" font="vector" ratio="15">&gt;NAME</text>
-</package>
-</packages>
-<symbols>
-<symbol name="TQP3M9036">
-<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<pin name="IN" x="-12.7" y="2.54" length="short" direction="in"/>
-<pin name="OUT" x="12.7" y="2.54" length="short" direction="out" rot="R180"/>
-<pin name="SHTDN" x="-12.7" y="-2.54" length="short" direction="in"/>
-<pin name="GND" x="5.08" y="-10.16" length="short" direction="pwr" rot="R90"/>
-<text x="10.16" y="-10.16" size="1.778" layer="95">&gt;NAME</text>
-<text x="10.16" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="TQP3M9036" prefix="U">
-<description>&lt;b&gt;Ultra Low Noise, High Linearity LNA&lt;/b&gt;&lt;br&gt;
-0.1 - 2.0 GHz Operational Bandwidth&lt;p&gt;
-Source: &lt;a href="https://www.qorvo.com/products/p/TQP3M9036"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="TQP3M9036" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DFN8-2X2-WITH-PAD">
-<connects>
-<connect gate="G$1" pin="GND" pad="PAD"/>
-<connect gate="G$1" pin="IN" pad="2"/>
-<connect gate="G$1" pin="OUT" pad="7"/>
-<connect gate="G$1" pin="SHTDN" pad="6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="oresat-rcl">
 <description>&lt;b&gt;Resistors, Capacitors, Inductors&lt;/b&gt;&lt;p&gt;
 Small local modifications, added multi-size packages R1206-0402, etc. For when you really don't know ;)&lt;br&gt;
@@ -8986,6 +8914,85 @@ Source: &lt;a href="https://belfuse.com/resources/productinformations/cinchconne
 </deviceset>
 </devicesets>
 </library>
+<library name="U-Qorvo-TQP3M903x-LNA">
+<packages>
+<package name="DFN8-2X2-WITH-PAD">
+<smd name="1" x="-0.75" y="-0.885" dx="0.3" dy="0.67" layer="1" cream="no"/>
+<smd name="PAD" x="0" y="0" dx="1.6" dy="0.7" layer="1" cream="no"/>
+<smd name="2" x="-0.25" y="-0.885" dx="0.3" dy="0.67" layer="1" cream="no"/>
+<smd name="3" x="0.25" y="-0.885" dx="0.3" dy="0.67" layer="1" cream="no"/>
+<smd name="4" x="0.75" y="-0.885" dx="0.3" dy="0.67" layer="1" cream="no"/>
+<smd name="5" x="0.75" y="0.885" dx="0.3" dy="0.67" layer="1" rot="R180" cream="no"/>
+<smd name="6" x="0.25" y="0.885" dx="0.3" dy="0.67" layer="1" rot="R180" cream="no"/>
+<smd name="7" x="-0.25" y="0.885" dx="0.3" dy="0.67" layer="1" rot="R180" cream="no"/>
+<smd name="8" x="-0.75" y="0.885" dx="0.3" dy="0.67" layer="1" rot="R180" cream="no"/>
+<wire x1="-1" y1="1" x2="1" y2="1" width="0.127" layer="51"/>
+<wire x1="1" y1="1" x2="1" y2="-1" width="0.127" layer="51"/>
+<wire x1="1" y1="-1" x2="-1" y2="-1" width="0.127" layer="51"/>
+<wire x1="-1" y1="-1" x2="-1" y2="1" width="0.127" layer="51"/>
+<wire x1="-1" y1="1" x2="-1" y2="0.5" width="0.127" layer="21"/>
+<wire x1="1" y1="1" x2="1" y2="0.5" width="0.127" layer="21"/>
+<wire x1="1" y1="-0.5" x2="1" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.5" x2="-1" y2="-1" width="0.127" layer="21"/>
+<circle x="-1.4" y="-1" radius="0.2" width="0.127" layer="21"/>
+<rectangle x1="-0.7" y1="-0.28" x2="-0.1" y2="0.27" layer="31"/>
+<rectangle x1="0.1" y1="-0.28" x2="0.7" y2="0.27" layer="31"/>
+<rectangle x1="-0.85" y1="0.63" x2="-0.65" y2="1.13" layer="31"/>
+<rectangle x1="-0.35" y1="0.63" x2="-0.15" y2="1.13" layer="31"/>
+<rectangle x1="0.15" y1="0.63" x2="0.35" y2="1.13" layer="31"/>
+<rectangle x1="0.65" y1="0.63" x2="0.85" y2="1.13" layer="31"/>
+<rectangle x1="0.65" y1="-1.13" x2="0.85" y2="-0.63" layer="31"/>
+<rectangle x1="0.15" y1="-1.13" x2="0.35" y2="-0.63" layer="31"/>
+<rectangle x1="-0.35" y1="-1.13" x2="-0.15" y2="-0.63" layer="31"/>
+<rectangle x1="-0.85" y1="-1.13" x2="-0.65" y2="-0.63" layer="31"/>
+<text x="0.2" y="-2" size="0.6096" layer="25" font="vector" ratio="15">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="TQP3M903X">
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="IN" x="-12.7" y="2.54" length="short" direction="in"/>
+<pin name="OUT" x="12.7" y="2.54" length="short" direction="out" rot="R180"/>
+<pin name="SHTDN" x="-12.7" y="-2.54" length="short" direction="in"/>
+<pin name="GND" x="5.08" y="-10.16" length="short" direction="pwr" rot="R90"/>
+<text x="10.16" y="-10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="10.16" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TQP3M903X" prefix="U">
+<description>&lt;b&gt;Ultra Low Noise, High Linearity LNAs&lt;/b&gt;&lt;p&gt;
+
+TQP3M9035:  0.05 - 6.0 GHz Operational Bandwidth&lt;br&gt;
+Source: &lt;a href="https://www.qorvo.com/products/p/TQP3M9035"&gt;Datasheet&lt;/a&gt;&lt;p&gt;
+
+TQP3M9036:  0.1 - 2.0 GHz Operational Bandwidth&lt;br&gt;
+Source: &lt;a href="https://www.qorvo.com/products/p/TQP3M9036"&gt;Datasheet&lt;/a&gt;&lt;p&gt;
+
+TQP3M9037:  0.7 - 6.0 GHz Operational Bandwidth&lt;br&gt;
+Source: &lt;a href="https://www.qorvo.com/products/p/TQP3M9037"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TQP3M903X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DFN8-2X2-WITH-PAD">
+<connects>
+<connect gate="G$1" pin="GND" pad="PAD"/>
+<connect gate="G$1" pin="IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="7"/>
+<connect gate="G$1" pin="SHTDN" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8994,16 +9001,22 @@ Source: &lt;a href="https://belfuse.com/resources/productinformations/cinchconne
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="RF1" width="0" drill="0">
+<clearance class="1" value="0.5"/>
+</class>
+<class number="2" name="RF2" width="0" drill="0">
+<clearance class="2" value="0.8"/>
+</class>
 </classes>
 <parts>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
-<part name="U1" library="U-Qorvo-TQP3M9036-LNA" deviceset="TQP3M9036" device=""/>
+<part name="U1" library="U-Qorvo-TQP3M903x-LNA" deviceset="TQP3M903X" device=""/>
 <part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C1" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="100p"/>
 <part name="GND27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C6" library="oresat-rcl" deviceset="C-EU" device="0402-B-NOSILK" value="?"/>
-<part name="C5" library="oresat-rcl" deviceset="C-EU" device="0402-B-NOSILK" value="?"/>
+<part name="C6" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="?"/>
+<part name="C5" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="?"/>
 <part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND81" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -9023,22 +9036,23 @@ Source: &lt;a href="https://belfuse.com/resources/productinformations/cinchconne
 <part name="R1" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="2.7k"/>
 <part name="J1" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device=""/>
 <part name="J2" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device=""/>
-<part name="R3" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="NP"/>
-<part name="R4" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="NP"/>
+<part name="R3" library="oresat-rcl" deviceset="R-US_" device="0402-C-NOSILK" value="NP"/>
+<part name="R4" library="oresat-rcl" deviceset="R-US_" device="0402-C-NOSILK" value="NP"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R5" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="33k"/>
 <part name="R6" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="10k"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="L2" library="oresat-rcl" deviceset="L-US" device="0402-B-NOSILK" value="?"/>
+<part name="L2" library="oresat-rcl" deviceset="L-US" device="0402-C-NOSILK" value="?"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="L1" library="oresat-rcl" deviceset="L-US" device="0603-B-NOSILK" value="?"/>
+<part name="L1" library="oresat-rcl" deviceset="L-US" device="0603-C-NOSILK" value="?"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="176.53" y="26.67" size="5.08" layer="94">LNA: Qorvo TQP3M9036/7</text>
+<text x="176.53" y="26.67" size="5.08" layer="94">LNA: Qorvo TQP3M9035/6/7</text>
 <text x="265.43" y="6.35" size="3.81" layer="94">1</text>
-<text x="162.56" y="86.36" size="1.778" layer="97">LC input/output network requires tuning</text>
+<text x="162.56" y="86.36" size="1.778" layer="97">- LC input/output networks require tuning
+- R3 and R4, optional input biasing</text>
 <text x="170.18" y="134.62" size="1.778" layer="97">Bias Resistor NOT Required</text>
 <text x="163.83" y="68.58" size="1.778" layer="97">UHF / L band / S band</text>
 <text x="95.25" y="74.93" size="1.778" layer="97">Shutdown (High)
@@ -9241,7 +9255,7 @@ External</text>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="N$28" class="0">
+<net name="N$28" class="1">
 <segment>
 <pinref part="U1" gate="G$1" pin="OUT"/>
 <wire x1="162.56" y1="104.14" x2="167.64" y2="104.14" width="0.1524" layer="91"/>
@@ -9252,7 +9266,7 @@ External</text>
 <pinref part="L1" gate="L" pin="2"/>
 </segment>
 </net>
-<net name="N$32" class="0">
+<net name="N$32" class="1">
 <segment>
 <pinref part="C5" gate="CE" pin="2"/>
 <pinref part="U1" gate="G$1" pin="IN"/>
@@ -9265,7 +9279,7 @@ External</text>
 <wire x1="127" y1="101.6" x2="127" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$34" class="0">
+<net name="N$34" class="2">
 <segment>
 <wire x1="182.88" y1="104.14" x2="187.96" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="C6" gate="CE" pin="2"/>
@@ -9273,7 +9287,7 @@ External</text>
 <pinref part="J2" gate="G$1" pin="RF"/>
 </segment>
 </net>
-<net name="N$39" class="0">
+<net name="N$39" class="2">
 <segment>
 <wire x1="93.98" y1="104.14" x2="88.9" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="104.14" x2="106.68" y2="104.14" width="0.1524" layer="91"/>
