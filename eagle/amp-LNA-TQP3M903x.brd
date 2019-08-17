@@ -3,7 +3,7 @@
 <eagle version="9.2.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
@@ -184,9 +184,21 @@
 <text x="5.9" y="4.4" size="1" layer="21" font="vector" ratio="15">SHTDN</text>
 <text x="19" y="6.8" size="1.2" layer="22" font="vector" ratio="20" rot="MR0">LNA TQP3M903X
 PSAS / OreSat
-2019-08-13  v1.0
-V.M.  KJ7AOG</text>
+2019-08-16  v1.0
+E.M.  KJ7AOG</text>
 <text x="16" y="1.2" size="1" layer="21" font="vector" ratio="15">PWR</text>
+<polygon width="0.3" layer="30">
+<vertex x="0" y="10.8"/>
+<vertex x="2.8" y="10.8"/>
+<vertex x="2.8" y="9.2"/>
+<vertex x="0" y="9.2"/>
+</polygon>
+<polygon width="0.3" layer="30">
+<vertex x="25" y="9.2"/>
+<vertex x="22.2" y="9.2"/>
+<vertex x="22.2" y="10.8"/>
+<vertex x="25" y="10.8"/>
+</polygon>
 </plain>
 <libraries>
 <library name="oresat-rcl">
