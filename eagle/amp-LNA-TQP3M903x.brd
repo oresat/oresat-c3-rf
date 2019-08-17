@@ -3,7 +3,7 @@
 <eagle version="9.2.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
@@ -1809,7 +1809,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="POPULARITY" value="98" x="24.51" y="-29.25" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="5.46" y="-0.675" size="1.27" layer="27"/>
 </element>
-<element name="L1" library="oresat-rcl" package=".0603-C-NOSILK" value="4.3n" x="15.2" y="10.7" smashed="yes" rot="R270">
+<element name="L1" library="oresat-rcl" package=".0603-C-NOSILK" value="note" x="15.2" y="10.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="15" y="7.5" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="15.2" y="10.7" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
 </element>
@@ -1832,11 +1832,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="U1" library="U-Qorvo-TQP3M903x-LNA" package="DFN8-2X2-WITH-PAD" value="TQP3M903X" x="12.8" y="9.75" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.2" y="7.15" size="0.8" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="C5" library="oresat-rcl" package=".0402-C-NOSILK" value="2.4p" x="8.7" y="10" smashed="yes">
+<element name="C5" library="oresat-rcl" package=".0402-C-NOSILK" value="note" x="8.7" y="10" smashed="yes">
 <attribute name="NAME" x="8.4" y="11.55" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="8.7" y="10" size="0.2" layer="33" ratio="15" align="center"/>
 </element>
-<element name="L2" library="oresat-rcl" package=".0402-C-NOSILK" value="2.7n" x="7.55" y="9.55" smashed="yes" rot="R270">
+<element name="L2" library="oresat-rcl" package=".0402-C-NOSILK" value="note" x="7.55" y="9.55" smashed="yes" rot="R270">
 <attribute name="NAME" x="7.15" y="7.8" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="7.55" y="9.55" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
 </element>
