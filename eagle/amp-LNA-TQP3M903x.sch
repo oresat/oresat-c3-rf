@@ -9005,7 +9005,7 @@ Source: &lt;a href="https://www.qorvo.com/products/p/TQP3M9037"&gt;Datasheet&lt;
 <clearance class="1" value="0.5"/>
 </class>
 <class number="2" name="RF2" width="0" drill="0">
-<clearance class="2" value="0.4"/>
+<clearance class="2" value="0.8"/>
 </class>
 </classes>
 <parts>
@@ -9016,7 +9016,6 @@ Source: &lt;a href="https://www.qorvo.com/products/p/TQP3M9037"&gt;Datasheet&lt;
 <part name="GND27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C6" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="100p"/>
-<part name="C5" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="100p"/>
 <part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND81" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -9040,7 +9039,7 @@ Source: &lt;a href="https://www.qorvo.com/products/p/TQP3M9037"&gt;Datasheet&lt;
 <part name="R5" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="10k"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="L1" library="oresat-rcl" deviceset="L-US" device="0603-C-NOSILK" value="4.3n"/>
-<part name="C7" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="2.4p"/>
+<part name="C5" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="2.4p"/>
 <part name="L2" library="oresat-rcl" deviceset="L-US" device="0402-C-NOSILK" value="2.7n"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
@@ -9056,7 +9055,8 @@ L2 = 2.7n
 C7 = 2.4p
 
 Notes:
-C7 @ 12 deg distance</text>
+C5 @ 12 deg distance
+Tuned for 3.3V</text>
 <text x="95.25" y="74.93" size="1.778" layer="97">Shutdown (High)
 Enable (Low - Default)</text>
 <text x="175.26" y="158.75" size="1.778" layer="97">3.3/5.0V
@@ -9068,14 +9068,14 @@ L2 = ?
 C7 = ?
 
 Notes:
-C7 @ ? deg distance</text>
+C5 @ ? deg distance</text>
 <text x="241.3" y="81.28" size="1.778" layer="97" rot="MR180">UHF - 436.5MHz:
 L1 = ?
 L2 = ?
 C7 = ?
 
 Notes:
-C7 @ ? deg distance</text>
+C5 @ ? deg distance</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -9104,10 +9104,6 @@ C7 @ ? deg distance</text>
 <instance part="C6" gate="CE" x="182.88" y="104.14" smashed="yes" rot="MR270">
 <attribute name="NAME" x="182.499" y="102.616" size="1.778" layer="95" rot="MR270"/>
 <attribute name="VALUE" x="187.579" y="102.616" size="1.778" layer="96" rot="MR270"/>
-</instance>
-<instance part="C5" gate="CE" x="101.6" y="104.14" smashed="yes" rot="R90">
-<attribute name="NAME" x="101.219" y="105.664" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="106.299" y="105.664" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND29" gate="1" x="201.93" y="96.52" smashed="yes">
 <attribute name="VALUE" x="199.39" y="93.98" size="1.778" layer="96"/>
@@ -9185,7 +9181,7 @@ C7 @ ? deg distance</text>
 <attribute name="NAME" x="163.83" y="116.84" size="1.778" layer="95"/>
 <attribute name="VALUE" x="168.91" y="116.84" size="1.778" layer="96"/>
 </instance>
-<instance part="C7" gate="CE" x="121.92" y="104.14" smashed="yes" rot="MR270">
+<instance part="C5" gate="CE" x="121.92" y="104.14" smashed="yes" rot="MR270">
 <attribute name="NAME" x="121.539" y="102.616" size="1.778" layer="95" rot="MR270"/>
 <attribute name="VALUE" x="126.619" y="102.616" size="1.778" layer="96" rot="MR270"/>
 </instance>
@@ -9272,7 +9268,7 @@ C7 @ ? deg distance</text>
 <pinref part="L1" gate="L" pin="2"/>
 </segment>
 </net>
-<net name="RF_OUT" class="1">
+<net name="RF_OUT" class="2">
 <segment>
 <wire x1="199.39" y1="104.14" x2="204.47" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="C6" gate="CE" pin="2"/>
@@ -9348,32 +9344,30 @@ C7 @ ? deg distance</text>
 </net>
 <net name="N$4" class="1">
 <segment>
-<pinref part="C7" gate="CE" pin="2"/>
+<pinref part="C5" gate="CE" pin="2"/>
 <pinref part="U1" gate="G$1" pin="IN"/>
 <wire x1="127" y1="104.14" x2="137.16" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="1">
-<segment>
-<pinref part="C7" gate="CE" pin="1"/>
-<pinref part="C5" gate="CE" pin="2"/>
-<wire x1="119.38" y1="104.14" x2="114.3" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="L2" gate="L" pin="1"/>
-<wire x1="114.3" y1="104.14" x2="106.68" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="100.33" x2="114.3" y2="104.14" width="0.1524" layer="91"/>
-<junction x="114.3" y="104.14"/>
-</segment>
-</net>
-<net name="N$6" class="1">
+<net name="RF_IN" class="2">
 <segment>
 <pinref part="C5" gate="CE" pin="1"/>
+<wire x1="119.38" y1="104.14" x2="114.3" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="L2" gate="L" pin="1"/>
+<wire x1="114.3" y1="100.33" x2="114.3" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="RF"/>
-<wire x1="99.06" y1="104.14" x2="91.44" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="104.14" x2="114.3" y2="104.14" width="0.1524" layer="91"/>
+<junction x="114.3" y="104.14"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,139.596,107.846,FRAME2,,,,,"/>
+<approved hash="113,1,100.093,68.3539,JP2,,,,,"/>
+<approved hash="113,1,179.307,152.174,JP1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

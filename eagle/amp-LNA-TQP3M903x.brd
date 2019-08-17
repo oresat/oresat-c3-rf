@@ -3,7 +3,7 @@
 <eagle version="9.2.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
@@ -178,8 +178,8 @@
 <vertex x="25" y="11.1"/>
 <vertex x="25" y="8.9"/>
 </polygon>
-<text x="10.5" y="0.4" size="1.2" layer="21" font="vector" ratio="15">+</text>
-<text x="10.5" y="18.7" size="1.2" layer="21" font="vector" ratio="15">+</text>
+<text x="10.2" y="0.4" size="1.2" layer="21" font="vector" ratio="15">+</text>
+<text x="10.2" y="18.7" size="1.2" layer="21" font="vector" ratio="15">+</text>
 <text x="6.6" y="14.6" size="1" layer="21" font="vector" ratio="15">3.3V</text>
 <text x="5.9" y="4.4" size="1" layer="21" font="vector" ratio="15">SHTDN</text>
 <text x="19" y="6.8" size="1.2" layer="22" font="vector" ratio="20" rot="MR0">LNA TQP3M903X
@@ -1573,7 +1573,7 @@ LED - BLUE</description>
 <clearance class="1" value="0.5"/>
 </class>
 <class number="2" name="RF2" width="0" drill="0">
-<clearance class="2" value="0.4"/>
+<clearance class="2" value="0.8"/>
 </class>
 </classes>
 <designrules name="oshpark-4layer-tented">
@@ -1773,13 +1773,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="11.2" y="13.3" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="13.5" y="12.6" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="C5" library="oresat-rcl" package=".0402-C-NOSILK" value="100p" x="5" y="10" smashed="yes">
-<attribute name="NAME" x="4.5" y="11.55" size="0.8" layer="25" font="vector" ratio="15"/>
-<attribute name="NAME" x="5" y="10" size="0.2" layer="33" ratio="15" align="center"/>
-</element>
-<element name="C6" library="oresat-rcl" package=".0402-C-NOSILK" value="100p" x="20" y="10" smashed="yes">
-<attribute name="NAME" x="19.5" y="11.55" size="0.8" layer="25" font="vector" ratio="15"/>
-<attribute name="NAME" x="20" y="10" size="0.2" layer="33" ratio="15" align="center"/>
+<element name="C6" library="oresat-rcl" package=".0402-C-NOSILK" value="100p" x="18" y="10" smashed="yes">
+<attribute name="NAME" x="17.5" y="11.55" size="0.8" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="18" y="10" size="0.2" layer="33" ratio="15" align="center"/>
 </element>
 <element name="D1" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" package="LED-0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="GREEN" x="17.3" y="3" smashed="yes">
 <attribute name="NAME" x="18.1" y="3.735" size="0.8" layer="25" font="vector" ratio="20" align="bottom-center"/>
@@ -1824,7 +1820,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="U1" library="U-Qorvo-TQP3M903x-LNA" package="DFN8-2X2-WITH-PAD" value="TQP3M903X" x="12.8" y="9.75" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.2" y="7.15" size="0.8" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="C7" library="oresat-rcl" package=".0402-C-NOSILK" value="2.4p" x="8.7" y="10" smashed="yes">
+<element name="C5" library="oresat-rcl" package=".0402-C-NOSILK" value="2.4p" x="8.7" y="10" smashed="yes">
 <attribute name="NAME" x="8.4" y="11.55" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="8.7" y="10" size="0.2" layer="33" ratio="15" align="center"/>
 </element>
@@ -1952,7 +1948,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="1" y="8.5" extent="1-16" drill="0.254"/>
 <via x="3" y="8.6" extent="1-16" drill="0.254"/>
 <via x="5" y="8.6" extent="1-16" drill="0.254"/>
-<via x="6.7" y="8.6" extent="1-16" drill="0.254"/>
+<via x="7" y="8.6" extent="1-16" drill="0.254"/>
 <via x="9" y="8.6" extent="1-16" drill="0.254"/>
 <via x="11" y="8.6" extent="1-16" drill="0.254"/>
 <via x="1" y="11.5" extent="1-16" drill="0.254"/>
@@ -1983,7 +1979,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="17" y="1" extent="1-16" drill="0.254"/>
 <via x="15" y="1" extent="1-16" drill="0.254"/>
 <via x="13" y="1" extent="1-16" drill="0.254"/>
-<via x="11" y="1" extent="1-16" drill="0.254"/>
+<via x="11.2" y="1" extent="1-16" drill="0.254"/>
 <via x="1" y="18" extent="1-16" drill="0.254"/>
 <via x="2" y="19" extent="1-16" drill="0.254"/>
 <via x="4" y="19" extent="1-16" drill="0.254"/>
@@ -1995,7 +1991,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="17" y="19" extent="1-16" drill="0.254"/>
 <via x="15" y="19" extent="1-16" drill="0.254"/>
 <via x="13" y="19" extent="1-16" drill="0.254"/>
-<via x="11" y="19" extent="1-16" drill="0.254"/>
+<via x="11.2" y="19" extent="1-16" drill="0.254"/>
 <via x="11.1" y="6" extent="1-16" drill="0.5"/>
 <via x="19.4" y="3" extent="1-16" drill="0.5"/>
 <contactref element="L2" pad="2"/>
@@ -2005,19 +2001,21 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="8.3" y="8.4"/>
 <vertex x="6.9" y="8.4"/>
 </polygon>
+<via x="7.6" y="8.6" extent="1-16" drill="0.254"/>
+<wire x1="7.6" y1="8.6" x2="7.55" y2="9.1" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$28" class="1">
 <contactref element="U1" pad="7"/>
 <contactref element="C6" pad="1"/>
 <contactref element="L1" pad="2"/>
-<wire x1="19.55" y1="10" x2="15.2" y2="10" width="0.37" layer="1"/>
+<wire x1="17.55" y1="10" x2="15.2" y2="10" width="0.37" layer="1"/>
 <wire x1="15.2" y1="10" x2="14.2" y2="10" width="0.37" layer="1"/>
 <wire x1="14.2" y1="10" x2="13.685" y2="10" width="0.3" layer="1"/>
 </signal>
-<signal name="RF_OUT" class="1">
+<signal name="RF_OUT" class="2">
 <contactref element="C6" pad="2"/>
 <contactref element="J2" pad="RF1"/>
-<wire x1="20.45" y1="10" x2="23.854" y2="10" width="0.37" layer="1"/>
+<wire x1="18.45" y1="10" x2="23.854" y2="10" width="0.37" layer="1"/>
 <polygon width="0.2" layer="1">
 <vertex x="23.2" y="10.2"/>
 <vertex x="23.1" y="10.2"/>
@@ -2034,6 +2032,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="1.9" y="9.8"/>
 <vertex x="1.7" y="9.8"/>
 </polygon>
+<contactref element="C5" pad="1"/>
+<contactref element="L2" pad="1"/>
+<contactref element="J1" pad="RF1"/>
+<wire x1="8.25" y1="10" x2="7.55" y2="10" width="0.37" layer="1"/>
+<wire x1="7.55" y1="10" x2="1.146" y2="10" width="0.37" layer="1"/>
 </signal>
 <signal name="N$47">
 <contactref element="C1" pad="1"/>
@@ -2095,22 +2098,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="10.4" y1="2.5" x2="12.2" y2="4.3" width="0.4" layer="1"/>
 </signal>
 <signal name="N$4" class="1">
-<contactref element="C7" pad="2"/>
+<contactref element="C5" pad="2"/>
 <contactref element="U1" pad="2"/>
 <wire x1="11.4" y1="10" x2="9.15" y2="10" width="0.37" layer="1"/>
 <wire x1="11.915" y1="10" x2="11.4" y2="10" width="0.3" layer="1"/>
-</signal>
-<signal name="N$5" class="1">
-<contactref element="C7" pad="1"/>
-<contactref element="C5" pad="2"/>
-<contactref element="L2" pad="1"/>
-<wire x1="8.25" y1="10" x2="5.45" y2="10" width="0.37" layer="1"/>
-<wire x1="8.25" y1="10" x2="7.55" y2="10" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$6" class="1">
-<contactref element="C5" pad="1"/>
-<contactref element="J1" pad="RF1"/>
-<wire x1="4.55" y1="10" x2="1.146" y2="10" width="0.37" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
@@ -2120,6 +2111,111 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="5,1,212758c4175dc00c"/>
+<approved hash="5,1,20b59e7de931f94d"/>
+<approved hash="5,1,518f6edbe21f8f5f"/>
+<approved hash="5,1,ed30d562c904385c"/>
+<approved hash="5,1,11e4926546d99c99"/>
+<approved hash="5,1,fa9fb06a4722aa38"/>
+<approved hash="5,1,19b65e23f98c83a9"/>
+<approved hash="5,1,a08dac14769cb65f"/>
+<approved hash="5,1,ac7ea75eb05011a0"/>
+<approved hash="5,1,4ea4462852f4f0a8"/>
+<approved hash="5,1,61937ea2c4cf5f8b"/>
+<approved hash="5,1,ab8f830bad729477"/>
+<approved hash="5,1,fe45987d7c290411"/>
+<approved hash="5,1,79801fa6e58c9daa"/>
+<approved hash="5,1,3f4f00de25559290"/>
+<approved hash="5,1,28c6e48505024bc6"/>
+<approved hash="5,1,7e447ec4c7ff430a"/>
+<approved hash="5,1,99103ef2e8d9a52d"/>
+<approved hash="5,1,53bc534591f01572"/>
+<approved hash="5,1,7977cc5097ff3756"/>
+<approved hash="5,1,884504a715cc0601"/>
+<approved hash="5,1,4c6b532392c009f3"/>
+<approved hash="5,1,5c351e0248f63b91"/>
+<approved hash="5,1,5478d4258638e87c"/>
+<approved hash="5,1,b1b5005ad0d21605"/>
+<approved hash="5,1,cae1c5d218a79513"/>
+<approved hash="5,1,d9f344632132ae3c"/>
+<approved hash="5,1,b71dc987951bd645"/>
+<approved hash="5,1,452edc66a27a4cde"/>
+<approved hash="5,1,98121d7f5584c038"/>
+<approved hash="5,1,5ede1aadfb1adf2a"/>
+<approved hash="5,1,e2e402d6570f1688"/>
+<approved hash="5,1,eaa20499006a7406"/>
+<approved hash="5,1,ff053f379869b87c"/>
+<approved hash="5,1,16ae04e6ab192306"/>
+<approved hash="5,1,95bd89179f1219ef"/>
+<approved hash="5,1,e47924381e663e00"/>
+<approved hash="5,1,3e0967878bf918e3"/>
+<approved hash="5,1,ec0e6793dddeb5e4"/>
+<approved hash="5,1,06f5220a4d3207ce"/>
+<approved hash="5,1,2a0235e184ad78e9"/>
+<approved hash="5,1,d5b3cd66f66374e1"/>
+<approved hash="5,1,6ada8fd3de731f82"/>
+<approved hash="20,1,39c7b2ce3caeb1ad"/>
+<approved hash="20,1,a193d4865d722261"/>
+<approved hash="20,1,39c7b2ce3caeb1ad"/>
+<approved hash="20,1,a193d4865d722261"/>
+<approved hash="7,39,2d2f215ba15bad2f"/>
+<approved hash="7,39,7f4a6bc6ebc6ff4a"/>
+<approved hash="19,1,44eb265fdb2f2066"/>
+<approved hash="19,1,b7d2437605334269"/>
+<approved hash="19,1,763b31cbbc64346e"/>
+<approved hash="19,1,7bd7897d48391f6c"/>
+<approved hash="19,1,abd507668324c06f"/>
+<approved hash="19,1,3e3ce9dd7e731a6e"/>
+<approved hash="19,1,683f19d79b7f736a"/>
+<approved hash="19,1,94e996443232ff65"/>
+<approved hash="19,1,88eee254a4257d63"/>
+<approved hash="19,1,6a094275bb7036f3"/>
+<approved hash="19,1,3c0ab27f6c7c51f7"/>
+<approved hash="19,1,740d6a69be6b4ff7"/>
+<approved hash="19,1,7c091210b41a49f3"/>
+<approved hash="19,1,b4ef26250a524760"/>
+<approved hash="19,1,84e8f63fb34c6867"/>
+<approved hash="19,1,98e592353c4b8569"/>
+<approved hash="19,1,2a08a21463114ef3"/>
+<approved hash="19,1,a40d3a0d660d27f7"/>
+<approved hash="19,1,a7d903178d5dba63"/>
+<approved hash="19,1,a63b61af74026c6e"/>
+<approved hash="19,1,283ef9b6731e0b6a"/>
+<approved hash="19,1,7e3f49b2b615326a"/>
+<approved hash="19,1,bbd4591d105a576d"/>
+<approved hash="19,1,8bd38707ab44786a"/>
+<approved hash="19,1,93ef6cd53e18c1d8"/>
+<approved hash="19,1,39c639f031f831ce"/>
+<approved hash="19,1,1c26e5328bff7211"/>
+<approved hash="19,16,bbd4591d105a576d"/>
+<approved hash="19,16,8bd38707ab44786a"/>
+<approved hash="19,16,44eb265fdb2f2066"/>
+<approved hash="19,16,b7d2437605334269"/>
+<approved hash="19,16,763b31cbbc64346e"/>
+<approved hash="19,16,7bd7897d48391f6c"/>
+<approved hash="19,16,abd507668324c06f"/>
+<approved hash="19,16,3e3ce9dd7e731a6e"/>
+<approved hash="19,16,683f19d79b7f736a"/>
+<approved hash="19,16,94e996443232ff65"/>
+<approved hash="19,16,88eee254a4257d63"/>
+<approved hash="19,16,6a094275bb7036f3"/>
+<approved hash="19,16,3c0ab27f6c7c51f7"/>
+<approved hash="19,16,740d6a69be6b4ff7"/>
+<approved hash="19,16,7c091210b41a49f3"/>
+<approved hash="19,16,b4ef26250a524760"/>
+<approved hash="19,16,84e8f63fb34c6867"/>
+<approved hash="19,16,98e592353c4b8569"/>
+<approved hash="19,16,2a08a21463114ef3"/>
+<approved hash="19,16,a40d3a0d660d27f7"/>
+<approved hash="19,16,a7d903178d5dba63"/>
+<approved hash="19,16,a63b61af74026c6e"/>
+<approved hash="19,16,283ef9b6731e0b6a"/>
+<approved hash="19,16,7e3f49b2b615326a"/>
+<approved hash="23,1,ae0353e350fdad1d"/>
+<approved hash="21,19,3aef38ed3fed3def"/>
+<approved hash="5,1,e20b8e017077bc95"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
