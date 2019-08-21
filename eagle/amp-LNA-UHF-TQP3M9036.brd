@@ -1896,30 +1896,30 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="25" y="20"/>
 <vertex x="0" y="20"/>
 </polygon>
-<via x="1" y="7.1" extent="1-16" drill="0.6"/>
-<via x="2.5" y="7.1" extent="1-16" drill="0.6"/>
-<via x="4" y="7.1" extent="1-16" drill="0.6"/>
-<via x="1" y="5.8" extent="1-16" drill="0.6"/>
-<via x="2.5" y="5.8" extent="1-16" drill="0.6"/>
-<via x="4" y="5.8" extent="1-16" drill="0.6"/>
-<via x="1" y="12.9" extent="1-16" drill="0.6"/>
-<via x="2.5" y="12.9" extent="1-16" drill="0.6"/>
-<via x="4" y="12.9" extent="1-16" drill="0.6"/>
-<via x="1" y="14.2" extent="1-16" drill="0.6"/>
-<via x="2.5" y="14.2" extent="1-16" drill="0.6"/>
-<via x="4" y="14.2" extent="1-16" drill="0.6"/>
-<via x="24" y="14.2" extent="1-16" drill="0.6"/>
-<via x="22.5" y="14.2" extent="1-16" drill="0.6"/>
-<via x="21" y="14.2" extent="1-16" drill="0.6"/>
-<via x="21" y="12.9" extent="1-16" drill="0.6"/>
-<via x="22.5" y="12.9" extent="1-16" drill="0.6"/>
-<via x="24" y="12.9" extent="1-16" drill="0.6"/>
-<via x="24" y="5.8" extent="1-16" drill="0.6"/>
-<via x="22.5" y="5.8" extent="1-16" drill="0.6"/>
-<via x="21" y="5.8" extent="1-16" drill="0.6"/>
-<via x="21" y="7.1" extent="1-16" drill="0.6"/>
-<via x="22.5" y="7.1" extent="1-16" drill="0.6"/>
-<via x="24" y="7.1" extent="1-16" drill="0.6"/>
+<via x="1" y="7.1" extent="1-16" drill="0.5"/>
+<via x="2" y="7.1" extent="1-16" drill="0.5"/>
+<via x="4" y="7.1" extent="1-16" drill="0.5"/>
+<via x="1" y="5.8" extent="1-16" drill="0.5"/>
+<via x="2" y="5.8" extent="1-16" drill="0.5"/>
+<via x="4" y="5.8" extent="1-16" drill="0.5"/>
+<via x="1" y="12.9" extent="1-16" drill="0.5"/>
+<via x="2" y="12.9" extent="1-16" drill="0.5"/>
+<via x="4" y="12.9" extent="1-16" drill="0.5"/>
+<via x="1" y="14.2" extent="1-16" drill="0.5"/>
+<via x="2" y="14.2" extent="1-16" drill="0.5"/>
+<via x="4" y="14.2" extent="1-16" drill="0.5"/>
+<via x="24" y="14.2" extent="1-16" drill="0.5"/>
+<via x="23" y="14.2" extent="1-16" drill="0.5"/>
+<via x="21" y="14.2" extent="1-16" drill="0.5"/>
+<via x="21" y="12.9" extent="1-16" drill="0.5"/>
+<via x="23" y="12.9" extent="1-16" drill="0.5"/>
+<via x="24" y="12.9" extent="1-16" drill="0.5"/>
+<via x="24" y="5.8" extent="1-16" drill="0.5"/>
+<via x="23" y="5.8" extent="1-16" drill="0.5"/>
+<via x="21" y="5.8" extent="1-16" drill="0.5"/>
+<via x="21" y="7.1" extent="1-16" drill="0.5"/>
+<via x="23" y="7.1" extent="1-16" drill="0.5"/>
+<via x="24" y="7.1" extent="1-16" drill="0.5"/>
 <via x="3" y="8.6" extent="1-16" drill="0.254"/>
 <via x="5" y="8.6" extent="1-16" drill="0.254"/>
 <via x="7" y="8.6" extent="1-16" drill="0.254"/>
@@ -1976,6 +1976,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="C5" pad="2"/>
 <contactref element="C6" pad="2"/>
 <contactref element="L1" pad="2"/>
+<via x="3" y="12.9" extent="1-16" drill="0.5"/>
+<via x="3" y="14.2" extent="1-16" drill="0.5"/>
+<via x="3" y="5.8" extent="1-16" drill="0.5"/>
+<via x="3" y="7.1" extent="1-16" drill="0.5"/>
+<via x="22" y="7.1" extent="1-16" drill="0.5"/>
+<via x="22" y="5.8" extent="1-16" drill="0.5"/>
+<via x="22" y="12.9" extent="1-16" drill="0.5"/>
+<via x="22" y="14.2" extent="1-16" drill="0.5"/>
 </signal>
 <signal name="N$28" class="1">
 <contactref element="U1" pad="7"/>
