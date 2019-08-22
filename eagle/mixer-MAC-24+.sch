@@ -4645,9 +4645,9 @@ Source: &lt;a href="https://belfuse.com/resources/productinformations/cinchconne
 <part name="AT3" library="AT-Susumu-PAT-attenuator" deviceset="PAT1220" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="AT2" library="AT-Susumu-PAT-attenuator" deviceset="PAT1220" device=""/>
-<part name="R2" library="oresat-rcl" deviceset="R-US_" device="0402-C-NOSILK" value="0"/>
-<part name="R1" library="oresat-rcl" deviceset="R-US_" device="0402-C-NOSILK" value="0"/>
-<part name="R3" library="oresat-rcl" deviceset="R-US_" device="0402-C-NOSILK" value="0"/>
+<part name="Z2" library="oresat-rcl" deviceset="R-US_" device="0402-C-NOSILK" value="0"/>
+<part name="Z1" library="oresat-rcl" deviceset="R-US_" device="0402-C-NOSILK" value="0"/>
+<part name="Z3" library="oresat-rcl" deviceset="R-US_" device="0402-C-NOSILK" value="0"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J1" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device=""/>
@@ -4659,9 +4659,10 @@ Source: &lt;a href="https://belfuse.com/resources/productinformations/cinchconne
 <plain>
 <text x="176.53" y="26.67" size="5.08" layer="94">Mixer: MiniCirc.Mac-24+</text>
 <text x="265.43" y="6.35" size="3.81" layer="94">1</text>
-<text x="121.92" y="88.9" size="1.778" layer="97">- RF port may need match. VSWR at 3.5 @ 1265 MHz
+<text x="119.38" y="86.36" size="1.778" layer="97">- RF port may need match. VSWR at 3.5 @ 1265 MHz
 - LO port may need match. VSWR at 4.8 @ 808 MHz
-- IF port VSWR @ 1.5</text>
+- IF port VSWR @ 1.5
+- Allow for shunts around Z1-3</text>
 <text x="121.92" y="134.62" size="1.778" layer="97">Attenuators:
 Susumu PAT1220
 0805 - 100mW
@@ -4705,15 +4706,15 @@ Short w/ 0402</text>
 <attribute name="NAME" x="90.17" y="110.49" size="1.778" layer="95"/>
 <attribute name="VALUE" x="90.17" y="107.95" size="1.778" layer="96"/>
 </instance>
-<instance part="R2" gate="R" x="102.87" y="104.14" smashed="yes">
+<instance part="Z2" gate="R" x="102.87" y="104.14" smashed="yes">
 <attribute name="NAME" x="99.06" y="105.6386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="99.06" y="100.838" size="1.778" layer="96"/>
 </instance>
-<instance part="R1" gate="R" x="102.87" y="132.08" smashed="yes">
+<instance part="Z1" gate="R" x="102.87" y="132.08" smashed="yes">
 <attribute name="NAME" x="99.06" y="133.5786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="99.06" y="128.778" size="1.778" layer="96"/>
 </instance>
-<instance part="R3" gate="R" x="144.78" y="121.92" smashed="yes">
+<instance part="Z3" gate="R" x="144.78" y="121.92" smashed="yes">
 <attribute name="NAME" x="140.97" y="123.4186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="140.97" y="118.618" size="1.778" layer="96"/>
 </instance>
@@ -4794,8 +4795,9 @@ Short w/ 0402</text>
 <wire x1="111.76" y1="132.08" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="RF"/>
 <wire x1="111.76" y1="121.92" x2="114.3" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="R1" gate="R" pin="2"/>
-<wire x1="107.95" y1="132.08" x2="111.76" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="Z1" gate="R" pin="2"/>
+<wire x1="107.95" y1="132.08" x2="109.22" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="132.08" x2="111.76" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LO" class="1">
@@ -4810,7 +4812,7 @@ Short w/ 0402</text>
 <pinref part="U1" gate="G$1" pin="LO"/>
 <wire x1="111.76" y1="104.14" x2="111.76" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="111.76" x2="114.3" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="R2" gate="R" pin="2"/>
+<pinref part="Z2" gate="R" pin="2"/>
 <wire x1="111.76" y1="104.14" x2="109.22" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="104.14" x2="107.95" y2="104.14" width="0.1524" layer="91"/>
 </segment>
@@ -4818,27 +4820,27 @@ Short w/ 0402</text>
 <net name="N$7" class="1">
 <segment>
 <pinref part="AT2" gate="G$1" pin="2"/>
-<pinref part="R2" gate="R" pin="1"/>
+<pinref part="Z2" gate="R" pin="1"/>
 <wire x1="91.44" y1="104.14" x2="97.79" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="1">
 <segment>
 <pinref part="AT1" gate="G$1" pin="2"/>
-<pinref part="R1" gate="R" pin="1"/>
+<pinref part="Z1" gate="R" pin="1"/>
 <wire x1="91.44" y1="132.08" x2="97.79" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="1">
 <segment>
 <pinref part="U1" gate="G$1" pin="IF"/>
-<pinref part="R3" gate="R" pin="1"/>
+<pinref part="Z3" gate="R" pin="1"/>
 <wire x1="134.62" y1="121.92" x2="139.7" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="1">
 <segment>
-<pinref part="R3" gate="R" pin="2"/>
+<pinref part="Z3" gate="R" pin="2"/>
 <pinref part="AT3" gate="G$1" pin="1"/>
 <wire x1="149.86" y1="121.92" x2="153.67" y2="121.92" width="0.1524" layer="91"/>
 </segment>
@@ -4846,6 +4848,12 @@ Short w/ 0402</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,139.596,107.846,FRAME2,,,,,"/>
+<approved hash="113,1,87.63,131.836,AT1,,,,,"/>
+<approved hash="113,1,157.48,121.676,AT3,,,,,"/>
+<approved hash="113,1,87.63,103.896,AT2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
