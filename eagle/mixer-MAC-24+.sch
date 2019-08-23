@@ -4630,8 +4630,11 @@ Source: &lt;a href="https://belfuse.com/resources/productinformations/cinchconne
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="RF" width="0" drill="0">
-<clearance class="1" value="0.6"/>
+<class number="1" name="RF1" width="0" drill="0">
+<clearance class="1" value="0.5"/>
+</class>
+<class number="2" name="RF2" width="0" drill="0">
+<clearance class="2" value="0.8"/>
 </class>
 </classes>
 <parts>
@@ -4776,14 +4779,14 @@ Short w/ 0402</text>
 <pinref part="J1" gate="G$1" pin="GND"/>
 </segment>
 </net>
-<net name="IF" class="1">
+<net name="IF" class="2">
 <segment>
 <pinref part="AT3" gate="G$1" pin="2"/>
 <wire x1="161.29" y1="121.92" x2="168.91" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="RF"/>
 </segment>
 </net>
-<net name="RF" class="1">
+<net name="RF" class="2">
 <segment>
 <pinref part="AT1" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="132.08" x2="83.82" y2="132.08" width="0.1524" layer="91"/>
@@ -4800,7 +4803,7 @@ Short w/ 0402</text>
 <wire x1="109.22" y1="132.08" x2="111.76" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="LO" class="1">
+<net name="LO" class="2">
 <segment>
 <pinref part="AT2" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="104.14" x2="83.82" y2="104.14" width="0.1524" layer="91"/>
