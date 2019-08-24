@@ -1410,8 +1410,8 @@ LED - BLUE</description>
 <library name="J-Cinch-142-0701-851-SMA-end-launch">
 <packages>
 <package name="142-0701-851">
-<smd name="GND1" x="-4.2545" y="-2.566" dx="1.524" dy="4.37" layer="1" cream="no"/>
-<smd name="GND2" x="4.2545" y="-2.566" dx="1.524" dy="4.37" layer="1" cream="no"/>
+<smd name="GND1" x="-4.2545" y="-2.566" dx="1.8" dy="4.37" layer="1" cream="no"/>
+<smd name="GND2" x="4.2545" y="-2.566" dx="1.8" dy="4.37" layer="1" cream="no"/>
 <wire x1="-4.826" y1="1.651" x2="-2.54" y2="1.651" width="0.127" layer="51"/>
 <wire x1="-2.54" y1="1.651" x2="2.54" y2="1.651" width="0.127" layer="51"/>
 <wire x1="2.54" y1="1.651" x2="4.826" y2="1.651" width="0.127" layer="51"/>
@@ -1455,8 +1455,8 @@ LED - BLUE</description>
 <wire x1="-3.048" y1="7.62" x2="3.048" y2="8.128" width="0.127" layer="51"/>
 <wire x1="-3.048" y1="8.636" x2="2.54" y2="9.0932" width="0.127" layer="51"/>
 <smd name="RF1" x="0" y="-1.146" dx="0.6" dy="1.53" layer="1" cream="no"/>
-<smd name="GND3" x="-4.2545" y="-2.566" dx="1.524" dy="4.37" layer="16" cream="no"/>
-<smd name="GND4" x="4.2545" y="-2.566" dx="1.524" dy="4.37" layer="16" cream="no"/>
+<smd name="GND3" x="-4.2545" y="-2.566" dx="1.8" dy="4.37" layer="16" cream="no"/>
+<smd name="GND4" x="4.2545" y="-2.566" dx="1.8" dy="4.37" layer="16" cream="no"/>
 <wire x1="-2.1336" y1="0" x2="-2.032" y2="0.1016" width="0.127" layer="51"/>
 <wire x1="-2.032" y1="0.1016" x2="2.032" y2="0.1016" width="0.127" layer="51"/>
 <wire x1="2.032" y1="0.1016" x2="2.1336" y2="0" width="0.127" layer="51"/>
