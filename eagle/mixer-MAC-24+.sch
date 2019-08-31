@@ -4634,7 +4634,7 @@ Source: &lt;a href="https://belfuse.com/resources/productinformations/cinchconne
 <clearance class="1" value="0.5"/>
 </class>
 <class number="2" name="RF2" width="0" drill="0">
-<clearance class="2" value="0.8"/>
+<clearance class="2" value="0.7"/>
 </class>
 </classes>
 <parts>
