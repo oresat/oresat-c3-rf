@@ -7923,7 +7923,7 @@ chip</description>
 <sheets>
 <sheet>
 <plain>
-<text x="176.53" y="26.67" size="5.08" layer="94">Step Down: TI TPS6211x</text>
+<text x="176.53" y="26.67" size="5.08" layer="94">Step Down: TI TPS62111/2</text>
 <text x="265.43" y="6.35" size="3.81" layer="94">1</text>
 <text x="209.55" y="130.81" size="1.778" layer="97">Regulated
 Output</text>
@@ -7942,6 +7942,8 @@ Good</text>
 <text x="175.26" y="88.9" size="1.778" layer="97">LED Current designed for 0.5mA
 Current values assume 4.5V / 3.3V (Vin/out)</text>
 <text x="85.09" y="114.3" size="1.778" layer="97">VINA</text>
+<text x="111.76" y="132.08" size="1.778" layer="97">Configured for fixed 3.3/5.0V
+TPS62111/2</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>

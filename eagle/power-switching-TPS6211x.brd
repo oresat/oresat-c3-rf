@@ -3,7 +3,7 @@
 <eagle version="9.2.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
@@ -190,7 +190,7 @@
 <text x="6.1" y="9.1" size="1" layer="21" font="vector" ratio="15">VBAT</text>
 <text x="10.8" y="9.1" size="1" layer="21" font="vector" ratio="15">VOUT</text>
 <text x="1.3" y="12.3" size="0.8" layer="21" font="vector" ratio="15" rot="R90">SYNC</text>
-<text x="28.9" y="11.2" size="1.5" layer="22" font="vector" ratio="15" rot="MR0">Step-down TPS6211x
+<text x="28.9" y="11.2" size="1.5" layer="22" font="vector" ratio="15" rot="MR0">Step-down TPS62111/2
 PSAS / OreSat
 2019-09-07  v1.0
 E.M. - KJ7AOG</text>
