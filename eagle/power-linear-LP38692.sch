@@ -775,17 +775,23 @@
 <wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
 <text x="5.08" y="-7.62" size="1.778" layer="95">&gt;NAME</text>
 <text x="5.08" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="ADJ" x="12.7" y="-2.54" length="short" direction="in" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
 <deviceset name="LP38692" prefix="U">
-<description>1A LDO Linear Regulator</description>
+<description>&lt;b&gt;TI 1A LDO Regulators&lt;/b&gt;&lt;p&gt;
+LP38692 Fixed&lt;br&gt;
+Source: &lt;a href="http://www.ti.com/product/LP38692?qgpn=lp38692"&gt;Datasheet&lt;/a&gt;&lt;p&gt;
+LP38692 Adjustable&lt;br&gt;
+Source: &lt;a href="http://www.ti.com/product/LP38692-ADJ?qgpn=lp38692-adj"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="LP38692" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOT223-5">
 <connects>
+<connect gate="G$1" pin="ADJ" pad="2"/>
 <connect gate="G$1" pin="EN" pad="1"/>
 <connect gate="G$1" pin="GND" pad="5"/>
 <connect gate="G$1" pin="VIN" pad="4"/>
@@ -7789,7 +7795,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X6" device="" package3d_urn="urn:adsk.eagle:package:22474/2"/>
-<part name="C2" library="oresat-rcl" deviceset="C-EU" device="0805-B-NOSILK" value="22u"/>
+<part name="C2" library="oresat-rcl" deviceset="C-EU" device="1206-B" value="22u"/>
 <part name="C1" library="oresat-rcl" deviceset="C-EU" device="0805-B-NOSILK" value="10u"/>
 <part name="GND87" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND89" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -7800,8 +7806,6 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <attribute name="PROD_ID" value=""/>
 </part>
 <part name="GND80" library="supply1" deviceset="GND" device=""/>
-<part name="C3" library="oresat-rcl" deviceset="C-EU" device="0805-B-NOSILK" value="NP"/>
-<part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R2" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="2.7k"/>
 <part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -7813,11 +7817,14 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 </part>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="R1" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="5.6k"/>
+<part name="R5" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="NP"/>
+<part name="R6" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="NP"/>
+<part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="176.53" y="26.67" size="5.08" layer="94">Fixed LDO: TI LP38692</text>
+<text x="176.53" y="26.67" size="5.08" layer="94">Fixed/Adj LDO: TI LP38692</text>
 <text x="265.43" y="6.35" size="3.81" layer="94">1</text>
 <text x="50.8" y="130.81" size="1.778" layer="97">External
 Battery</text>
@@ -7848,16 +7855,16 @@ Current values assume 4.5V / 3.3V (Vin/out)</text>
 <attribute name="NAME" x="180.34" y="130.175" size="1.778" layer="95"/>
 <attribute name="VALUE" x="180.34" y="109.22" size="1.778" layer="96"/>
 </instance>
-<instance part="C2" gate="CE" x="142.24" y="121.92" smashed="yes">
-<attribute name="NAME" x="143.764" y="122.301" size="1.778" layer="95"/>
-<attribute name="VALUE" x="143.764" y="117.221" size="1.778" layer="96"/>
+<instance part="C2" gate="CE" x="152.4" y="121.92" smashed="yes">
+<attribute name="NAME" x="153.924" y="122.301" size="1.778" layer="95"/>
+<attribute name="VALUE" x="153.924" y="117.221" size="1.778" layer="96"/>
 </instance>
 <instance part="C1" gate="CE" x="99.06" y="121.92" smashed="yes">
 <attribute name="NAME" x="100.584" y="122.301" size="1.778" layer="95"/>
 <attribute name="VALUE" x="100.584" y="117.221" size="1.778" layer="96"/>
 </instance>
-<instance part="GND87" gate="1" x="142.24" y="114.3" smashed="yes">
-<attribute name="VALUE" x="139.7" y="111.76" size="1.778" layer="96"/>
+<instance part="GND87" gate="1" x="152.4" y="114.3" smashed="yes">
+<attribute name="VALUE" x="149.86" y="111.76" size="1.778" layer="96"/>
 </instance>
 <instance part="GND89" gate="1" x="191.77" y="106.68" smashed="yes">
 <attribute name="VALUE" x="189.23" y="104.14" size="1.778" layer="96"/>
@@ -7878,13 +7885,6 @@ Current values assume 4.5V / 3.3V (Vin/out)</text>
 </instance>
 <instance part="GND80" gate="1" x="167.64" y="99.06" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="170.18" y="96.52" size="1.778" layer="96" rot="MR0"/>
-</instance>
-<instance part="C3" gate="CE" x="152.4" y="121.92" smashed="yes">
-<attribute name="NAME" x="153.924" y="122.301" size="1.778" layer="95"/>
-<attribute name="VALUE" x="153.924" y="117.221" size="1.778" layer="96"/>
-</instance>
-<instance part="GND1" gate="1" x="152.4" y="114.3" smashed="yes">
-<attribute name="VALUE" x="149.86" y="111.76" size="1.778" layer="96"/>
 </instance>
 <instance part="R2" gate="R" x="167.64" y="119.38" smashed="yes" rot="R90">
 <attribute name="NAME" x="166.1414" y="115.57" size="1.778" layer="95" rot="R90"/>
@@ -7918,6 +7918,17 @@ Current values assume 4.5V / 3.3V (Vin/out)</text>
 <instance part="R1" gate="R" x="68.58" y="119.38" smashed="yes" rot="R90">
 <attribute name="NAME" x="67.0814" y="115.57" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="71.882" y="115.57" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R5" gate="R" x="142.24" y="119.38" smashed="yes" rot="R90">
+<attribute name="NAME" x="140.7414" y="115.57" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="145.542" y="115.57" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R6" gate="R" x="142.24" y="106.68" smashed="yes" rot="R90">
+<attribute name="NAME" x="140.7414" y="102.87" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="145.542" y="102.87" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND1" gate="1" x="142.24" y="99.06" smashed="yes">
+<attribute name="VALUE" x="139.7" y="96.52" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -7969,10 +7980,6 @@ Current values assume 4.5V / 3.3V (Vin/out)</text>
 <wire x1="167.64" y1="104.14" x2="167.64" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C3" gate="CE" pin="2"/>
-<pinref part="GND1" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="JP3" gate="A" pin="1"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="80.01" y1="93.98" x2="81.28" y2="93.98" width="0.1524" layer="91"/>
@@ -7987,6 +7994,10 @@ Current values assume 4.5V / 3.3V (Vin/out)</text>
 <pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="68.58" y1="104.14" x2="68.58" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R6" gate="R" pin="1"/>
+<pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$78" class="0">
@@ -8051,11 +8062,12 @@ Current values assume 4.5V / 3.3V (Vin/out)</text>
 <net name="+VOUT" class="0">
 <segment>
 <pinref part="C2" gate="CE" pin="1"/>
-<wire x1="142.24" y1="124.46" x2="142.24" y2="127" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="124.46" x2="152.4" y2="127" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="127" x2="142.24" y2="127" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="VOUT"/>
 <pinref part="JP2" gate="A" pin="1"/>
 <pinref part="JP2" gate="A" pin="3"/>
+<wire x1="142.24" y1="127" x2="152.4" y2="127" width="0.1524" layer="91"/>
 <wire x1="184.15" y1="127" x2="184.15" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="5"/>
 <wire x1="184.15" y1="124.46" x2="184.15" y2="121.92" width="0.1524" layer="91"/>
@@ -8069,17 +8081,29 @@ Current values assume 4.5V / 3.3V (Vin/out)</text>
 <pinref part="JP2" gate="A" pin="11"/>
 <wire x1="184.15" y1="116.84" x2="184.15" y2="114.3" width="0.1524" layer="91"/>
 <junction x="184.15" y="116.84"/>
-<wire x1="142.24" y1="127" x2="152.4" y2="127" width="0.1524" layer="91"/>
-<junction x="142.24" y="127"/>
+<junction x="152.4" y="127"/>
 <junction x="184.15" y="127"/>
 <wire x1="152.4" y1="127" x2="167.64" y2="127" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="127" x2="184.15" y2="127" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="124.46" x2="167.64" y2="127" width="0.1524" layer="91"/>
 <junction x="167.64" y="127"/>
 <pinref part="R2" gate="R" pin="2"/>
-<pinref part="C3" gate="CE" pin="1"/>
-<wire x1="152.4" y1="124.46" x2="152.4" y2="127" width="0.1524" layer="91"/>
-<junction x="152.4" y="127"/>
+<pinref part="R5" gate="R" pin="2"/>
+<wire x1="142.24" y1="124.46" x2="142.24" y2="127" width="0.1524" layer="91"/>
+<junction x="142.24" y="127"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="R5" gate="R" pin="1"/>
+<pinref part="R6" gate="R" pin="2"/>
+<wire x1="142.24" y1="114.3" x2="142.24" y2="113.03" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="ADJ"/>
+<wire x1="142.24" y1="113.03" x2="142.24" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="119.38" x2="137.16" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="119.38" x2="137.16" y2="113.03" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="113.03" x2="142.24" y2="113.03" width="0.1524" layer="91"/>
+<junction x="142.24" y="113.03"/>
 </segment>
 </net>
 </nets>
