@@ -7809,9 +7809,9 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <part name="R2" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="2.7k"/>
 <part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R4" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="NP"/>
+<part name="R4" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="NP"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="R3" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="NP"/>
+<part name="R3" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="NP"/>
 <part name="D1" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED-GREEN" device="0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="GREEN">
 <attribute name="PROD_ID" value=""/>
 </part>

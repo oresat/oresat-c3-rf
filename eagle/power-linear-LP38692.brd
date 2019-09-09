@@ -3,7 +3,7 @@
 <eagle version="9.2.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
@@ -29,7 +29,7 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -172,11 +172,11 @@
 <hole x="4" y="20" drill="3"/>
 <hole x="28" y="20" drill="3"/>
 <hole x="28" y="4" drill="3"/>
-<wire x1="7.5" y1="4" x2="24.5" y2="4" width="0.3" layer="21"/>
-<wire x1="24.5" y1="4" x2="24.5" y2="7.3" width="0.3" layer="21"/>
-<wire x1="24.5" y1="7.3" x2="7.5" y2="7.3" width="0.3" layer="21"/>
-<wire x1="7.5" y1="7.3" x2="7.5" y2="4" width="0.3" layer="21"/>
-<text x="7.6" y="7.6" size="1.2" layer="21" font="vector" ratio="15">+VOUT</text>
+<wire x1="7.7" y1="4" x2="24.2" y2="4" width="0.3" layer="21"/>
+<wire x1="24.2" y1="4" x2="24.2" y2="7" width="0.3" layer="21"/>
+<wire x1="24.2" y1="7" x2="7.7" y2="7" width="0.3" layer="21"/>
+<wire x1="7.7" y1="7" x2="7.7" y2="4" width="0.3" layer="21"/>
+<text x="7.4" y="7.3" size="1.4" layer="21" font="vector" ratio="15">+VOUT</text>
 <text x="18.7" y="18" size="1.2" layer="21" font="vector" ratio="15">VBAT</text>
 <text x="18.7" y="22.7" size="1.2" layer="21" font="vector" ratio="15">+</text>
 <text x="15.1" y="22.7" size="1.2" layer="21" font="vector" ratio="15">+</text>
@@ -185,11 +185,10 @@
 <text x="12.3" y="22.7" size="0.9" layer="21" font="vector" ratio="15">EN</text>
 <text x="9.9" y="22.7" size="1.2" layer="21" font="vector" ratio="15">-</text>
 <text x="21.4" y="22.7" size="1.2" layer="21" font="vector" ratio="15">-</text>
-<text x="22.5" y="12" size="1.2" layer="22" font="vector" ratio="15" rot="MR0">LDO Reg LP38692
+<text x="7.2" y="13.9" size="1.2" layer="22" font="vector" ratio="15" rot="SMR180">LDO Reg LP38692 fix/adj
 PSAS / OreSat
-2019-09-07  v1.0
+2019-09-08  v1.0
 E.M. - KJ7AOG</text>
-<circle x="4" y="4" radius="4" width="0.1524" layer="21"/>
 </plain>
 <libraries>
 <library name="oresat-rcl">
@@ -1825,12 +1824,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="25.1" y="9.9" size="0.8" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="25.9" y="10.2" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
 </element>
-<element name="R4" library="oresat-rcl" package=".0603-B-NOSILK" value="NP" x="11" y="18" smashed="yes" rot="R180">
-<attribute name="NAME" x="9.3" y="18.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="NAME" x="11" y="18" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
+<element name="R4" library="oresat-rcl" package=".0402-B-NOSILK" value="NP" x="11.3" y="18" smashed="yes" rot="R180">
+<attribute name="NAME" x="9.7" y="18.4" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="NAME" x="11.3" y="18" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="R3" library="oresat-rcl" package=".0603-B-NOSILK" value="NP" x="14" y="18" smashed="yes" rot="R180">
-<attribute name="NAME" x="15.7" y="17.6" size="0.8" layer="25" font="vector" ratio="15"/>
+<element name="R3" library="oresat-rcl" package=".0402-B-NOSILK" value="NP" x="14" y="18" smashed="yes" rot="R180">
+<attribute name="NAME" x="15.1" y="17.6" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="14" y="18" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="R1" library="oresat-rcl" package=".0603-B-NOSILK" value="5.6k" x="25.9" y="13.8" smashed="yes" rot="R90">
@@ -1953,6 +1952,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="22" y="14.8" extent="1-16" drill="0.5"/>
 <via x="24" y="16.8" extent="1-16" drill="0.5"/>
 <contactref element="R6" pad="1"/>
+<via x="10" y="18" extent="1-16" drill="0.35"/>
+<via x="13.8" y="8.4" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="N$78">
 <contactref element="D2" pad="A"/>
@@ -1970,8 +1971,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="13" y1="13.2" x2="15" y2="11.2" width="0.6" layer="1"/>
 <wire x1="15" y1="11.2" x2="15.025" y2="11.225" width="0.6" layer="1"/>
 <wire x1="15.025" y1="11.225" x2="16" y2="11.225" width="0.6" layer="1"/>
-<wire x1="11.8" y1="18" x2="13" y2="18" width="0.6" layer="1"/>
-<wire x1="13.2" y1="18" x2="13" y2="18" width="0.6" layer="1"/>
+<wire x1="13.5" y1="18" x2="13" y2="18" width="0.6" layer="1"/>
+<wire x1="11.8" y1="18" x2="13" y2="18" width="0.5" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="D1" pad="A"/>
@@ -1995,7 +1996,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="25.9" y1="14.6" x2="25.9" y2="16.7" width="0.6" layer="1"/>
 <wire x1="25.9" y1="16.7" x2="24.6" y2="18" width="0.6" layer="1"/>
 <wire x1="24.6" y1="18" x2="18" y2="18" width="0.6" layer="1"/>
-<wire x1="18" y1="18" x2="14.8" y2="18" width="0.6" layer="1"/>
+<wire x1="18" y1="18" x2="14.5" y2="18" width="0.6" layer="1"/>
 <wire x1="15.54" y1="21" x2="15.54" y2="19" width="1" layer="1"/>
 <wire x1="19.23" y1="19" x2="19.23" y2="21" width="1" layer="1"/>
 <wire x1="15.54" y1="19" x2="19.23" y2="19" width="1" layer="1"/>
@@ -2061,7 +2062,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
 <errors>
-<approved hash="23,1,62f68907844261a0"/>
+<approved hash="23,1,45adb55dba234ad3"/>
+<approved hash="23,1,085521b520850965"/>
+<approved hash="23,1,5e35f9d5f8e55f05"/>
 </errors>
 </board>
 </drawing>
