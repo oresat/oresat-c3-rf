@@ -15,7 +15,7 @@
 |  5.0V |    -   |    -   |  800mA |
 |  2.7V |  39mA  |  16mA  |  29mA  |
 |  1.8V |  1.5mA |  1.5mA |  1.5mA |
-| Power |  110mW |  46mW  |  4.1W  |
+| **Power** |  **110mW** |  **46mW**  |  **4.1W**  |
 
 #### Notes:
 - L band Rx excludes GPS receiver
