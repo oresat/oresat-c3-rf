@@ -18,4 +18,5 @@
 | Power |  110mW |  46mW  |  4.1W  |
 
 #### Notes:
+- L band Rx excludes GPS receiver
 - UHF Tx estimated for 2W output
