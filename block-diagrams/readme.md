@@ -10,7 +10,7 @@
 
 ## Power budget estimations
 
-|       | L-band | UHF-Rx | UHF-Tx |
+|       | L band | UHF Rx | UHF Tx |
 |:-----:|:------:|:------:|:------:|
 |  5.0V |    -   |    -   |  800mA |
 |  2.7V |  39mA  |  16mA  |  29mA  |
