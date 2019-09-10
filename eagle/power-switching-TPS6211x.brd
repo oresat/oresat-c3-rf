@@ -3,7 +3,7 @@
 <eagle version="9.2.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
@@ -1917,7 +1917,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="U1" library="U-TI-TPS6211x-SPS-buck" package="S-PVQFN-16" value="TPS6211X" x="16" y="15" smashed="yes" rot="R270">
 <attribute name="NAME" x="13.1" y="17.3" size="0.8" layer="25" font="vector" ratio="20"/>
 </element>
-<element name="R5" library="oresat-rcl" package=".0402-B-NOSILK" value="NP" x="17.8" y="10.8" smashed="yes">
+<element name="R5" library="oresat-rcl" package=".0402-B-NOSILK" value="0" x="17.8" y="10.8" smashed="yes">
 <attribute name="NAME" x="17.1" y="11.35" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="17.8" y="10.8" size="0.2" layer="33" ratio="15" align="center"/>
 </element>
