@@ -8,6 +8,8 @@ The source of these spreadsheets are from Jan King and are located at the [AMSAT
 
 - The public downlink (UHF - 436.5 MHz G3RUH FSK) link model:<br>___AMSAT-IARU_Link_Model_PDX_CS0_v1_public.xlsx___
 
+- The beacon downlink (UHF - 436.5 MHz C.W.) link model:<br>___AMSAT-IARU_Link_Model_PDX_CS0_v1_beacon.xlsx___
+
 Notes:
 - The 'Transmitters' and 'Receivers' sheets have been customized
   - Block diagrams reflect correct design
