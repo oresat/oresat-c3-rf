@@ -10,13 +10,14 @@
 
 ## Power budget estimations
 
-|       | L band | UHF Rx | UHF Tx |
-|:-----:|:------:|:------:|:------:|
-|  5.0V |    -   |    -   |  800mA |
-|  2.7V |  39mA  |  16mA  |  29mA  |
-|  1.8V |  1.5mA |  1.5mA |  1.5mA |
-| **Power** |  **110mW** |  **46mW**  |  **4.1W**  |
+|                        |       <br>L-band       |       <br>UHF Rx      |    UHF Tx<br>Beacon   |  UHF Tx<br>Telemetry  |
+|:----------------------:|:----------------------:|:---------------------:|:---------------------:|:---------------------:|
+|          5.0V          |            -           |           -           |         400mA         |         600mA         |
+|          2.7V          |          39mA          |          16mA         |          21mA         |          29mA         |
+|          1.8V          |          1.5mA         |         1.5mA         |         1.5mA         |         1.5mA         |
+| <strong>Power</strong> | <strong>110mW</strong> | <strong>46mW</strong> | <strong>2.1W</strong> | <strong>3.1W</strong> |
 
 #### Notes:
 - L band Rx excludes GPS receiver
-- UHF Tx estimated for 2W output
+- UHF Tx beacon estimated for 0.1W PA output
+- UHF Tx telemetry estimated for 1.0W PA output
