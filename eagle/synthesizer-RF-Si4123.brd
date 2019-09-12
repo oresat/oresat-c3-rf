@@ -2301,6 +2301,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <polygon width="0.3" layer="1">
 <vertex x="30" y="5.75"/>
 <vertex x="44" y="5.75"/>
+<vertex x="44" y="1"/>
 <vertex x="30" y="1"/>
 </polygon>
 <polygon width="0.3" layer="1" thermals="no">
@@ -3091,78 +3092,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="5,1,dc996503c4988d0d"/>
 <approved hash="5,1,c00e8a9a55ea031e"/>
 <approved hash="5,1,1da90056b362f186"/>
-<approved hash="19,1,e6bea9dea31b6c7f"/>
-<approved hash="19,1,1bcee7fe33b9ce89"/>
-<approved hash="19,1,14eef16b2436d81b"/>
-<approved hash="19,1,173fed13394ec2c6"/>
-<approved hash="19,1,18adfb9c2edbd4ea"/>
-<approved hash="19,1,0f0fedee3bcdc72c"/>
-<approved hash="19,1,f9560128e9653905"/>
-<approved hash="19,1,50afbbc08505ae63"/>
-<approved hash="19,1,1914fbf2a0115cf7"/>
-<approved hash="19,1,be984b549f6f6493"/>
-<approved hash="19,1,ac6655f682617e71"/>
-<approved hash="19,1,b26148799fe46470"/>
-<approved hash="19,1,b2bb574a82717180"/>
-<approved hash="19,1,b25457c1815c7d41"/>
-<approved hash="19,1,a8554a449cd36342"/>
-<approved hash="19,1,2e53e02d6c6e220c"/>
-<approved hash="19,1,1141e2c7c40e138e"/>
-<approved hash="19,1,c2440bc241050887"/>
-<approved hash="19,1,005a2dd35319be99"/>
-<approved hash="19,1,0528ef569317b978"/>
-<approved hash="19,1,a83c784d5000a86f"/>
-<approved hash="19,1,b339fd48b1097f64"/>
-<approved hash="19,1,bd7a5cec07bbfbad"/>
-<approved hash="19,1,e84dc23c7e729412"/>
-<approved hash="19,1,a37941631a3ee1ac"/>
-<approved hash="19,1,fdbb2cdb4a12bf74"/>
-<approved hash="19,1,0623e409bc944716"/>
-<approved hash="19,1,0ad2eee4b6634b55"/>
-<approved hash="19,1,3e8cc306a11b5d35"/>
-<approved hash="19,1,32c3c9f1abf651c4"/>
-<approved hash="19,1,2565df83bee04206"/>
-<approved hash="19,1,823b782919fee66c"/>
-<approved hash="19,1,983a65ac0471f86b"/>
-<approved hash="19,1,98d96527075cf492"/>
-<approved hash="19,1,afb8424e1ab5e143"/>
-<approved hash="19,16,f9560128e9653905"/>
-<approved hash="19,16,50afbbc08505ae63"/>
-<approved hash="19,16,1914fbf2a0115cf7"/>
-<approved hash="19,16,0623e409bc944716"/>
-<approved hash="19,16,0ad2eee4b6634b55"/>
-<approved hash="19,16,3e8cc306a11b5d35"/>
-<approved hash="19,16,32c3c9f1abf651c4"/>
-<approved hash="19,16,2565df83bee04206"/>
-<approved hash="19,16,2e53e02d6c6e220c"/>
-<approved hash="19,16,e84dc23c7e729412"/>
-<approved hash="19,16,fdbb2cdb4a12bf74"/>
-<approved hash="19,16,e6bea9dea31b6c7f"/>
-<approved hash="19,16,bd7a5cec07bbfbad"/>
-<approved hash="19,16,080cf2e825cbd92f"/>
-<approved hash="19,16,a37941631a3ee1ac"/>
-<approved hash="19,16,be984b549f6f6493"/>
-<approved hash="19,16,1bcee7fe33b9ce89"/>
-<approved hash="19,16,1141e2c7c40e138e"/>
-<approved hash="19,16,14eef16b2436d81b"/>
-<approved hash="19,16,173fed13394ec2c6"/>
-<approved hash="19,16,18adfb9c2edbd4ea"/>
-<approved hash="19,16,0f0fedee3bcdc72c"/>
-<approved hash="19,16,ac6655f682617e71"/>
-<approved hash="19,16,b26148799fe46470"/>
-<approved hash="19,16,b2bb574a82717180"/>
-<approved hash="19,16,b25457c1815c7d41"/>
-<approved hash="19,16,a8554a449cd36342"/>
-<approved hash="19,16,823b782919fee66c"/>
-<approved hash="19,16,983a65ac0471f86b"/>
-<approved hash="19,16,98d96527075cf492"/>
-<approved hash="19,16,afb8424e1ab5e143"/>
-<approved hash="19,16,c2440bc241050887"/>
-<approved hash="19,16,005a2dd35319be99"/>
-<approved hash="19,16,0528ef569317b978"/>
-<approved hash="19,16,a83c784d5000a86f"/>
-<approved hash="19,16,b339fd48b1097f64"/>
-<approved hash="19,1,080cf2e825cbd92f"/>
 </errors>
 </board>
 </drawing>
