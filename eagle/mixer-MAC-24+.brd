@@ -3,7 +3,7 @@
 <eagle version="9.2.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
@@ -173,8 +173,8 @@
 <text x="7.4" y="17.2" size="1.5" layer="21" font="vector" ratio="15">IF</text>
 <text x="5.4" y="3.8" size="1.5" layer="21" font="vector" ratio="15">RF</text>
 <text x="28.7" y="10.4" size="1.5" layer="21" font="vector" ratio="15" rot="R180">LO</text>
-<text x="18.4" y="22" size="1" layer="21" font="vector" ratio="15" align="top-left">RF Mixer MAC-24+
-2019-08-22  v1.0
+<text x="17.9" y="22.2" size="1.1" layer="21" font="vector" ratio="15" align="top-left">RF Mixer MAC-24+
+2019-09-11  v1.0
 PSAS / OreSat
 E.M.  KJ7AOG</text>
 <wire x1="0" y1="8" x2="3" y2="8" width="2" layer="30"/>
@@ -1915,7 +1915,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="11.7" y="22.1"/>
 <vertex x="11.7" y="22.4"/>
 </polygon>
-<wire x1="11.5" y1="22.854" x2="11.5" y2="18.75" width="0.37" layer="1"/>
+<wire x1="11.5" y1="22.854" x2="11.5" y2="18.75" width="0.39" layer="1"/>
 <polygon width="0.2" layer="1" thermals="no">
 <vertex x="11.25" y="18.9"/>
 <vertex x="11.25" y="19.15"/>
@@ -1934,7 +1934,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="1.9" y="7.8"/>
 <vertex x="1.6" y="7.8"/>
 </polygon>
-<wire x1="5.25" y1="8" x2="1.146" y2="8" width="0.37" layer="1"/>
+<wire x1="5.25" y1="8" x2="1.146" y2="8" width="0.39" layer="1"/>
 <polygon width="0.2" layer="1" thermals="no">
 <vertex x="5.2" y="8.25"/>
 <vertex x="4.85" y="8.25"/>
@@ -1946,7 +1946,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="N$4" class="1">
 <contactref element="U1" pad="5"/>
 <contactref element="Z1" pad="2"/>
-<wire x1="10.65" y1="8" x2="14.64" y2="8" width="0.37" layer="1"/>
+<wire x1="10.65" y1="8" x2="14.64" y2="8" width="0.39" layer="1"/>
 <wire x1="14.64" y1="8" x2="14.65" y2="8.01" width="0.37" layer="1"/>
 </signal>
 <signal name="LO" class="2">
@@ -1959,7 +1959,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="32.1" y="12.9"/>
 <vertex x="32.5" y="12.9"/>
 </polygon>
-<wire x1="28.75" y1="13.1" x2="32.854" y2="13.1" width="0.37" layer="1"/>
+<wire x1="28.75" y1="13.1" x2="32.854" y2="13.1" width="0.39" layer="1"/>
 <polygon width="0.2" layer="1" thermals="no">
 <vertex x="28.75" y="13.35"/>
 <vertex x="29.15" y="13.35"/>
@@ -1971,13 +1971,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="N$6" class="1">
 <contactref element="U1" pad="10"/>
 <contactref element="Z2" pad="2"/>
-<wire x1="19.35" y1="13.09" x2="23.34" y2="13.09" width="0.37" layer="1"/>
+<wire x1="19.35" y1="13.09" x2="23.34" y2="13.09" width="0.39" layer="1"/>
 <wire x1="23.34" y1="13.09" x2="23.35" y2="13.1" width="0.37" layer="1"/>
 </signal>
 <signal name="N$7" class="1">
 <contactref element="AT2" pad="2"/>
 <contactref element="Z2" pad="1"/>
-<wire x1="24.25" y1="13.1" x2="27.25" y2="13.1" width="0.37" layer="1"/>
+<wire x1="24.25" y1="13.1" x2="27.25" y2="13.1" width="0.39" layer="1"/>
 <polygon width="0.2" layer="1" thermals="no">
 <vertex x="27.15" y="13.35"/>
 <vertex x="26.85" y="13.35"/>
@@ -1989,7 +1989,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="N$8" class="1">
 <contactref element="AT1" pad="2"/>
 <contactref element="Z1" pad="1"/>
-<wire x1="6.75" y1="8" x2="9.615" y2="8" width="0.37" layer="1"/>
+<wire x1="6.75" y1="8" x2="9.615" y2="8" width="0.39" layer="1"/>
 <polygon width="0.2" layer="1" thermals="no">
 <vertex x="6.8" y="8.25"/>
 <vertex x="7.15" y="8.25"/>
@@ -2003,13 +2003,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="U1" pad="3"/>
 <contactref element="Z3" pad="1"/>
 <wire x1="11.5" y1="13.35" x2="11.5" y2="12.55" width="0.37" layer="1"/>
-<wire x1="11.5" y1="12.55" x2="13.5" y2="10.55" width="0.37" layer="1" curve="90"/>
+<wire x1="11.5" y1="12.55" x2="13.5" y2="10.55" width="0.39" layer="1" curve="90"/>
 <wire x1="13.5" y1="10.55" x2="14.65" y2="10.55" width="0.37" layer="1"/>
 </signal>
 <signal name="N$9" class="1">
 <contactref element="Z3" pad="2"/>
 <contactref element="AT3" pad="1"/>
-<wire x1="11.5" y1="17.25" x2="11.5" y2="14.385" width="0.37" layer="1"/>
+<wire x1="11.5" y1="17.25" x2="11.5" y2="14.385" width="0.39" layer="1"/>
 <polygon width="0.2" layer="1" thermals="no">
 <vertex x="11.25" y="17.1"/>
 <vertex x="11.25" y="16.85"/>
@@ -2077,9 +2077,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="19,16,fef3fe76284828cd"/>
 <approved hash="19,16,f383ce06183825bd"/>
 <approved hash="5,1,7366ec610b021be8"/>
-<approved hash="5,1,1f8c1df144034450"/>
 <approved hash="5,1,f6b8f48a4284449e"/>
-<approved hash="5,1,aa92dcb0deadaca7"/>
 <approved hash="5,1,61528e04e8e52a4f"/>
 <approved hash="5,1,f8ec74f4a3834790"/>
 <approved hash="5,1,914435069457dee7"/>
@@ -2087,7 +2085,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="5,1,92d0292b8b2cde25"/>
 <approved hash="5,1,6a7c04f6f8ab70e3"/>
 <approved hash="5,1,90299462f8e400b0"/>
-<approved hash="5,1,04a2828c809c02b2"/>
 <approved hash="19,1,f6a3f6262018209d"/>
 <approved hash="20,1,292e493d418d865d"/>
 <approved hash="20,1,25dbc7230184a6f8"/>
@@ -2119,11 +2116,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="5,1,3eccc3073f64bd53"/>
 <approved hash="5,1,e6c8833d955fdb57"/>
 <approved hash="5,1,2429aa8eefad3a93"/>
-<approved hash="5,1,7077a35d4366e645"/>
 <approved hash="5,1,9d18f6fe0ba0b1ba"/>
-<approved hash="5,1,c143d69dc658fcfe"/>
 <approved hash="5,1,42ae2fa1a7db5e6e"/>
-<approved hash="5,1,d34bd89bde40f4e0"/>
 <approved hash="5,16,bd0af93a7f2b44e7"/>
 <approved hash="5,16,650cbd02d51226e1"/>
 <approved hash="5,16,e53b5abbf29c66e1"/>
@@ -2162,6 +2156,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="20,1,555a6a7c33c32929"/>
 <approved hash="20,1,98b49ab0aa75d261"/>
 <approved hash="20,1,16d907008219675f"/>
+<approved hash="19,1,bef5be76084808cb"/>
+<approved hash="5,1,0f5842403e4e00d6"/>
+<approved hash="5,1,72800e6310a30ed8"/>
+<approved hash="5,1,e1180c40707be107"/>
+<approved hash="5,1,e549a7a5c6af2f9e"/>
+<approved hash="5,1,7d87eff879193d03"/>
+<approved hash="5,1,ec241374107d4621"/>
 </errors>
 </board>
 </drawing>
