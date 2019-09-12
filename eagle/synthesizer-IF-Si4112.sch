@@ -9284,6 +9284,9 @@ Source: &lt;a href="https://ecsxtal.com/store/pdf/ECS-TXO-3225.pdf"&gt;Datasheet
 <class number="2" name="RF2" width="0" drill="0">
 <clearance class="2" value="0.2032"/>
 </class>
+<class number="3" name="RF3" width="0" drill="0">
+<clearance class="3" value="0.3556"/>
+</class>
 </classes>
 <parts>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
@@ -9346,24 +9349,35 @@ Source: &lt;a href="https://ecsxtal.com/store/pdf/ECS-TXO-3225.pdf"&gt;Datasheet
 <part name="L2" library="oresat-rcl" deviceset="L-US" device="0402-B-NOSILK" value="18n"/>
 <part name="R9" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="0"/>
 <part name="U1" library="U-Silicon-Labs-Si4133-synthesizer" deviceset="SI4112" device=""/>
-<part name="R10" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="0"/>
+<part name="JP6" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="0"/>
 <part name="R11" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="NP"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="181.61" y="26.67" size="5.08" layer="94">RF Synthesizer</text>
-<text x="264.16" y="6.35" size="3.81" layer="94">1.1</text>
+<text x="176.53" y="26.67" size="5.08" layer="94">IF Synthesizer for L band LO</text>
+<text x="266.7" y="6.35" size="3.81" layer="94">1</text>
 <text x="121.92" y="95.25" size="1.778" layer="96" rot="R180">4.37n total
 1.12 mm</text>
 <text x="156.21" y="157.48" size="1.778" layer="97">Required if IF divide</text>
 <text x="223.52" y="104.14" size="1.778" layer="97">808 MHz out</text>
 <text x="71.12" y="24.13" size="1.778" layer="97" rot="R180">XIN external</text>
-<text x="157.48" y="186.69" size="1.778" layer="97">2.7-3.6V
-External</text>
+<text x="157.48" y="186.69" size="1.778" layer="97">2.7-3.6V External
+Except w/ on-board TCXO (3.3V req)</text>
 <text x="64.77" y="34.29" size="1.778" layer="97">16.000 MHz</text>
 <text x="101.6" y="48.26" size="1.778" layer="97">0402 Jumper
 Cap only required if not CMOS levels</text>
+<text x="58.42" y="135.89" size="1.778" layer="97">/PWDN
+High = Enabled (default)
+Low = Disabled</text>
+<text x="17.78" y="49.53" size="1.778" layer="97">TCXO VCTRL
++/- 5ppm min
+See datasheet</text>
+<text x="193.04" y="85.09" size="1.778" layer="97">AUX OUT
+Config for lock detect</text>
+<text x="189.23" y="55.88" size="1.778" layer="97">LED ON when:
+- PLL close to losing lock
+- PLL not locked</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -9458,9 +9472,9 @@ Cap only required if not CMOS levels</text>
 <attribute name="NAME" x="64.77" y="39.37" size="1.778" layer="95"/>
 <attribute name="VALUE" x="64.77" y="36.83" size="1.778" layer="96"/>
 </instance>
-<instance part="R3" gate="R" x="78.74" y="139.7" smashed="yes" rot="R90">
-<attribute name="NAME" x="77.2414" y="135.89" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="76.962" y="140.97" size="1.778" layer="96" rot="R90"/>
+<instance part="R3" gate="R" x="96.52" y="139.7" smashed="yes" rot="R90">
+<attribute name="NAME" x="95.0214" y="135.89" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="94.742" y="140.97" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND69" gate="1" x="170.18" y="137.16" smashed="yes">
 <attribute name="VALUE" x="167.64" y="134.62" size="1.778" layer="96"/>
@@ -9500,8 +9514,8 @@ Cap only required if not CMOS levels</text>
 <instance part="+3V5" gate="G$1" x="149.86" y="190.5" smashed="yes">
 <attribute name="VALUE" x="147.32" y="185.42" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V6" gate="G$1" x="78.74" y="148.59" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="81.28" y="143.51" size="1.778" layer="96" rot="MR90"/>
+<instance part="+3V6" gate="G$1" x="96.52" y="148.59" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="99.06" y="143.51" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="+3V7" gate="G$1" x="109.22" y="128.27" smashed="yes">
 <attribute name="VALUE" x="106.68" y="123.19" size="1.778" layer="96" rot="R90"/>
@@ -9569,7 +9583,7 @@ Cap only required if not CMOS levels</text>
 <attribute name="NAME" x="162.56" y="71.12" size="1.778" layer="95"/>
 <attribute name="VALUE" x="162.56" y="68.58" size="1.778" layer="96"/>
 </instance>
-<instance part="R10" gate="R" x="91.44" y="53.34" smashed="yes" rot="R180">
+<instance part="JP6" gate="R" x="91.44" y="53.34" smashed="yes" rot="R180">
 <attribute name="NAME" x="95.25" y="56.9214" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="90.17" y="51.562" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -9680,7 +9694,7 @@ Cap only required if not CMOS levels</text>
 <wire x1="213.36" y1="99.06" x2="213.36" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="/SEN" class="0">
 <segment>
 <pinref part="JP5" gate="A" pin="4"/>
 <wire x1="132.08" y1="109.22" x2="101.6" y2="109.22" width="0.1524" layer="91"/>
@@ -9691,7 +9705,7 @@ Cap only required if not CMOS levels</text>
 <pinref part="U1" gate="G$1" pin="/SEN"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="SCLK" class="0">
 <segment>
 <wire x1="132.08" y1="104.14" x2="109.22" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="104.14" x2="93.98" y2="104.14" width="0.1524" layer="91"/>
@@ -9704,7 +9718,7 @@ Cap only required if not CMOS levels</text>
 <pinref part="U1" gate="G$1" pin="SCLK"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="SDATA" class="0">
 <segment>
 <wire x1="132.08" y1="99.06" x2="116.84" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="99.06" x2="91.44" y2="99.06" width="0.1524" layer="91"/>
@@ -9717,16 +9731,16 @@ Cap only required if not CMOS levels</text>
 <pinref part="U1" gate="G$1" pin="SDATA"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="/PWDN" class="0">
 <segment>
 <wire x1="132.08" y1="116.84" x2="129.54" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="116.84" x2="129.54" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="G$1" pin="2"/>
-<wire x1="129.54" y1="132.08" x2="78.74" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="132.08" x2="96.52" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="R3" gate="R" pin="1"/>
-<wire x1="78.74" y1="132.08" x2="64.77" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="134.62" x2="78.74" y2="132.08" width="0.1524" layer="91"/>
-<junction x="78.74" y="132.08"/>
+<wire x1="96.52" y1="132.08" x2="64.77" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="134.62" x2="96.52" y2="132.08" width="0.1524" layer="91"/>
+<junction x="96.52" y="132.08"/>
 <pinref part="U1" gate="G$1" pin="/PWDN"/>
 </segment>
 </net>
@@ -9781,7 +9795,7 @@ Cap only required if not CMOS levels</text>
 <net name="+3V3" class="0">
 <segment>
 <pinref part="R3" gate="R" pin="2"/>
-<wire x1="78.74" y1="144.78" x2="78.74" y2="146.05" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="144.78" x2="96.52" y2="146.05" width="0.1524" layer="91"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
@@ -9827,7 +9841,7 @@ Cap only required if not CMOS levels</text>
 <wire x1="35.56" y1="76.2" x2="38.1" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$19" class="0">
+<net name="VCTRL" class="0">
 <segment>
 <pinref part="JP4" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="45.72" x2="43.18" y2="45.72" width="0.1524" layer="91"/>
@@ -9918,7 +9932,7 @@ Cap only required if not CMOS levels</text>
 <net name="XIN" class="2">
 <segment>
 <pinref part="R11" gate="R" pin="1"/>
-<pinref part="R10" gate="R" pin="1"/>
+<pinref part="JP6" gate="R" pin="1"/>
 <pinref part="U1" gate="G$1" pin="XIN"/>
 <wire x1="132.08" y1="78.74" x2="121.92" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="78.74" x2="121.92" y2="53.34" width="0.1524" layer="91"/>
@@ -9926,10 +9940,10 @@ Cap only required if not CMOS levels</text>
 <junction x="96.52" y="53.34"/>
 </segment>
 </net>
-<net name="N$9" class="1">
+<net name="N$9" class="3">
 <segment>
 <pinref part="X1" gate="G$1" pin="OUT"/>
-<pinref part="R10" gate="R" pin="2"/>
+<pinref part="JP6" gate="R" pin="2"/>
 <wire x1="76.2" y1="53.34" x2="86.36" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
