@@ -29,15 +29,15 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -185,10 +185,18 @@
 <text x="12.3" y="22.7" size="0.9" layer="21" font="vector" ratio="15">EN</text>
 <text x="9.9" y="22.7" size="1.2" layer="21" font="vector" ratio="15">-</text>
 <text x="21.4" y="22.7" size="1.2" layer="21" font="vector" ratio="15">-</text>
-<text x="7.2" y="13.9" size="1.2" layer="22" font="vector" ratio="15" rot="SMR180">LDO Reg LP38692 fix/adj
+<text x="6" y="14.2" size="1.2" layer="22" font="vector" ratio="15" rot="SMR180">LDO Reg LP38692 fix/adj
 PSAS / OreSat
-2019-09-08  v1.0
+2019-09-12  v1.0
 E.M. - KJ7AOG</text>
+<circle x="4" y="20" radius="2" width="3" layer="29"/>
+<circle x="4" y="4" radius="2" width="3" layer="29"/>
+<circle x="28" y="4" radius="2" width="3" layer="29"/>
+<circle x="28" y="20" radius="2" width="3" layer="29"/>
+<circle x="28" y="20" radius="2" width="3" layer="30"/>
+<circle x="28" y="4" radius="2" width="3" layer="30"/>
+<circle x="4" y="4" radius="2" width="3" layer="30"/>
+<circle x="4" y="20" radius="2" width="3" layer="30"/>
 </plain>
 <libraries>
 <library name="oresat-rcl">
@@ -1993,9 +2001,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="20" y="15.3"/>
 <vertex x="20" y="22.5"/>
 </polygon>
-<wire x1="25.9" y1="14.6" x2="25.9" y2="16.7" width="0.6" layer="1"/>
-<wire x1="25.9" y1="16.7" x2="24.6" y2="18" width="0.6" layer="1"/>
-<wire x1="24.6" y1="18" x2="18" y2="18" width="0.6" layer="1"/>
+<wire x1="25.9" y1="14.6" x2="25.9" y2="16.4" width="0.6" layer="1"/>
+<wire x1="25.9" y1="16.4" x2="24.3" y2="18" width="0.6" layer="1"/>
+<wire x1="24.3" y1="18" x2="18" y2="18" width="0.6" layer="1"/>
 <wire x1="18" y1="18" x2="14.5" y2="18" width="0.6" layer="1"/>
 <wire x1="15.54" y1="21" x2="15.54" y2="19" width="1" layer="1"/>
 <wire x1="19.23" y1="19" x2="19.23" y2="21" width="1" layer="1"/>
@@ -2029,9 +2037,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </polygon>
 <wire x1="16" y1="14.225" x2="20" y2="14.225" width="1" layer="1"/>
 <wire x1="20" y1="14.225" x2="20" y2="12.5" width="1" layer="1"/>
-<wire x1="25.9" y1="9.4" x2="25.9" y2="6.8" width="0.6" layer="1"/>
-<wire x1="25.9" y1="6.8" x2="24.4" y2="5.3" width="0.6" layer="1"/>
-<wire x1="24.4" y1="5.3" x2="22.38" y2="5.3" width="0.6" layer="1"/>
+<wire x1="25.9" y1="9.4" x2="25.9" y2="7.8" width="0.6" layer="1"/>
+<wire x1="25.9" y1="7.8" x2="23.4" y2="5.3" width="0.6" layer="1"/>
+<wire x1="23.4" y1="5.3" x2="22.38" y2="5.3" width="0.6" layer="1"/>
 <wire x1="22.38" y1="5.3" x2="22.35" y2="5.27" width="0.6" layer="1"/>
 <wire x1="9.65" y1="5.27" x2="12.19" y2="5.27" width="1" layer="1"/>
 <wire x1="12.19" y1="5.27" x2="14.73" y2="5.27" width="1" layer="1"/>
