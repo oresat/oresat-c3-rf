@@ -9817,6 +9817,8 @@ Diode with low voltage drop</description>
 <part name="D3" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" deviceset="DIODE-SCHOTTKY" device="-RB751S40" package3d_urn="urn:adsk.eagle:package:38442/1" value="120mA/40V/370mV"/>
 <part name="R3" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="47k"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
+<part name="C10" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="1u"/>
+<part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10087,6 +10089,13 @@ Config for lock detect</text>
 <instance part="GND16" gate="1" x="78.74" y="118.11" smashed="yes">
 <attribute name="VALUE" x="76.2" y="115.57" size="1.778" layer="96"/>
 </instance>
+<instance part="C10" gate="CE" x="139.7" y="179.07" smashed="yes" rot="MR0">
+<attribute name="NAME" x="138.176" y="179.451" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="138.176" y="174.371" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="GND17" gate="1" x="139.7" y="171.45" smashed="yes">
+<attribute name="VALUE" x="137.16" y="168.91" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10203,6 +10212,10 @@ Config for lock detect</text>
 <segment>
 <pinref part="R3" gate="R" pin="1"/>
 <pinref part="GND16" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND17" gate="1" pin="GND"/>
+<pinref part="C10" gate="CE" pin="2"/>
 </segment>
 </net>
 <net name="/SEN" class="0">
@@ -10326,6 +10339,9 @@ Config for lock detect</text>
 <pinref part="D3" gate="G$1" pin="C"/>
 <wire x1="154.94" y1="167.64" x2="170.18" y2="167.64" width="0.1524" layer="91"/>
 <junction x="154.94" y="167.64"/>
+<pinref part="C10" gate="CE" pin="1"/>
+<wire x1="139.7" y1="181.61" x2="139.7" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="182.88" x2="149.86" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
