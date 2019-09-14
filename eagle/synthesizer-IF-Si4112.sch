@@ -9833,7 +9833,7 @@ Except w/ on-board TCXO (3.3V req)</text>
 <text x="64.77" y="34.29" size="1.778" layer="97">16.000 MHz</text>
 <text x="101.6" y="48.26" size="1.778" layer="97">0402 Jumper
 Cap only required if not CMOS levels</text>
-<text x="34.29" y="175.26" size="1.778" layer="97">Shutdown (High - default)
+<text x="34.29" y="175.26" size="1.778" layer="97">Shutdown (High)
 Enable (Low)</text>
 <text x="17.78" y="49.53" size="1.778" layer="97">TCXO VCTRL
 +/- 5ppm min
