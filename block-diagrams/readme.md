@@ -10,14 +10,19 @@
 
 ## Power budget estimations
 
-|                        |       <br>L-band       |       <br>UHF Rx      |    UHF Tx<br>Beacon   |  UHF Tx<br>Telemetry  |
-|:----------------------:|:----------------------:|:---------------------:|:---------------------:|:---------------------:|
-|          5.0V          |            -           |           -           |         400mA         |         600mA         |
-|          2.7V          |          39mA          |          16mA         |          21mA         |          29mA         |
-|          1.8V          |          1.5mA         |         1.5mA         |         1.5mA         |         1.5mA         |
-| <strong>Power</strong> | <strong>110mW</strong> | <strong>46mW</strong> | <strong>2.1W</strong> | <strong>3.1W</strong> |
+Power budget for the C3 card radios. Includes front-end components and AX5043 IC transceiver.  See Excel spreadsheet for more details: ___power-budget-c3-rf.xlsx___
+
+### Summary:
+|                                   | <br><br>Power (mW) |  <br><br>Duty Cycle (%)  | Effective<br>Current (mA)<br>@ 7.2V | <br>Energy/period<br>(mWh) |
+|-----------------------------------|:------------------:|:------------------------:|:-----------------------------------:|:--------------------------:|
+| <strong>L band Rx</strong>        |         163        |            100           |                 22.6                |             244            |
+| <strong>UHF Rx</strong>           |         70         |            98            |                 9.6                 |             104            |
+| <strong>UHF Tx Beacon</strong>    |        1260        |             1            |                 1.7                 |             19             |
+| <strong>UHF Tx Telemetry</strong> |        2118        |             1            |                 2.9                 |             32             |
+|                                   |                    | <strong>TOTALS:</strong> |        <strong>36.9</strong>        |    <strong>399</strong>    |
 
 #### Notes:
 - L band Rx excludes GPS receiver
 - UHF Tx beacon estimated for 0.1W PA output
 - UHF Tx telemetry estimated for 1.0W PA output
+- Period = LEO Orbit ~ 90 min
