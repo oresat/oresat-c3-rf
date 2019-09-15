@@ -10,7 +10,7 @@
 
 ## Power budget estimations
 
-Power budget for the C3 card radios. Includes front-end components and AX5043 IC transceiver.  See Excel spreadsheet for more details: ___power-budget-c3-rf.xlsx___
+Power budget for the C3 card radios. Includes front-end components, AX5043 IC transceiver, and supply losses.  See Excel spreadsheet for more details: ___power-budget-c3-rf.xlsx___
 
 ### Summary:
 |                                   | <br><br>Power (mW) |  <br><br>Duty Cycle (%)  | Effective<br>Current (mA)<br>@ 7.2V | <br>Energy/period<br>(mWh) |
