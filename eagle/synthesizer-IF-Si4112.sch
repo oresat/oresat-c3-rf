@@ -9771,7 +9771,7 @@ Diode with low voltage drop</description>
 <part name="C6" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="1u"/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="X1" library="X-ECS-TXO-TCXO" deviceset="ECS-TXO-3225" device=""/>
-<part name="R11" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="NP"/>
+<part name="R11" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="47k"/>
 <part name="GND69" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C2" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="NP"/>
 <part name="C1" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="22n"/>
@@ -9825,7 +9825,7 @@ Diode with low voltage drop</description>
 <plain>
 <text x="176.53" y="26.67" size="5.08" layer="94">IF Synthesizer for L band LO</text>
 <text x="266.7" y="6.35" size="3.81" layer="94">1</text>
-<text x="121.92" y="95.25" size="1.778" layer="96" rot="R180">4.37n total
+<text x="123.19" y="95.25" size="1.778" layer="96" rot="R180">4.37n total
 1.12 mm</text>
 <text x="156.21" y="157.48" size="1.778" layer="97">Required if IF divide</text>
 <text x="223.52" y="104.14" size="1.778" layer="97">808 MHz out</text>
@@ -9836,7 +9836,7 @@ Except w/ on-board TCXO (3.3V req)</text>
 <text x="101.6" y="48.26" size="1.778" layer="97">0402 Jumper
 Cap only required if not CMOS levels</text>
 <text x="34.29" y="175.26" size="1.778" layer="97">Shutdown (High)
-Enable (Low)</text>
+Enable (Low, default)</text>
 <text x="17.78" y="49.53" size="1.778" layer="97">TCXO VCTRL
 +/- 5ppm min
 See datasheet</text>
@@ -9846,6 +9846,8 @@ Config for lock detect</text>
 - PLL close to losing lock
 - PLL not locked</text>
 <text x="187.96" y="171.45" size="1.778" layer="97">3V Button Cell</text>
+<text x="95.25" y="83.82" size="1.778" layer="97">See Si41xx AN31
+for inductor design</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -10029,9 +10031,9 @@ Config for lock detect</text>
 <attribute name="NAME" x="44.704" y="42.291" size="1.778" layer="95"/>
 <attribute name="VALUE" x="44.704" y="37.211" size="1.778" layer="96"/>
 </instance>
-<instance part="L1" gate="L" x="124.46" y="91.44" smashed="yes" rot="R90">
+<instance part="L1" gate="L" x="124.46" y="90.17" smashed="yes" rot="R90">
 <attribute name="NAME" x="121.92" y="86.36" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="129.54" y="88.9" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="129.54" y="90.17" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="L2" gate="L" x="182.88" y="104.14" smashed="yes">
 <attribute name="NAME" x="185.42" y="102.87" size="1.778" layer="95" rot="R180"/>
@@ -10394,8 +10396,8 @@ Config for lock detect</text>
 <net name="N$2" class="0">
 <segment>
 <pinref part="L1" gate="L" pin="2"/>
-<wire x1="124.46" y1="96.52" x2="129.54" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="96.52" x2="129.54" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="95.25" x2="129.54" y2="95.25" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="95.25" x2="129.54" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="91.44" x2="132.08" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="IFLA"/>
 </segment>
@@ -10403,8 +10405,8 @@ Config for lock detect</text>
 <net name="N$3" class="0">
 <segment>
 <pinref part="L1" gate="L" pin="1"/>
-<wire x1="124.46" y1="83.82" x2="129.54" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="83.82" x2="129.54" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="82.55" x2="129.54" y2="82.55" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="82.55" x2="129.54" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="86.36" x2="132.08" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="IFLB"/>
 </segment>

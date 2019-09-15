@@ -199,13 +199,13 @@
 <text x="1.3" y="24.7" size="1.2" layer="21" font="vector" ratio="15" rot="R90">+</text>
 <text x="1.3" y="27.4" size="1.2" layer="21" font="vector" ratio="15" rot="R90">-</text>
 <text x="1.3" y="11.8" size="1.2" layer="21" font="vector" ratio="15" rot="R90">-</text>
-<text x="0.4" y="20.7" size="1" layer="21" font="vector" ratio="15" rot="SR270">EN</text>
+<text x="0.4" y="21.4" size="1" layer="21" font="vector" ratio="15" rot="SR270">/EN</text>
 <text x="0.4" y="18.1" size="1" layer="21" font="vector" ratio="15" rot="SR270">CK</text>
 <text x="0.4" y="15.5" size="1" layer="21" font="vector" ratio="15" rot="SR270">DA</text>
-<text x="28.8" y="11.8" size="1.7" layer="22" font="vector" ratio="15" rot="MR0">IF Synthesizer Si4112
+<text x="28.8" y="11.4" size="1.7" layer="22" font="vector" ratio="15" rot="MR0">IF Synthesizer Si4112
 808 MHz L band LO
 PSAS / OreSat
-2019-09-13  v1.0
+2019-09-15  v1.0
 E.M. - KJ7AOG</text>
 <text x="4.1" y="21.2" size="0.8" layer="21" font="vector" ratio="15">D3</text>
 <text x="5.2" y="22.6" size="1" layer="21" font="vector" ratio="15">COIN</text>
@@ -2083,7 +2083,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="15.4" y="23.3" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="12.7" y="23.2" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="R11" library="oresat-rcl" package=".0402-B-NOSILK" value="NP" x="22" y="6" smashed="yes">
+<element name="R11" library="oresat-rcl" package=".0402-B-NOSILK" value="47k" x="22" y="6" smashed="yes">
 <attribute name="NAME" x="21.1" y="6.65" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="22" y="6" size="0.2" layer="33" ratio="15" align="center"/>
 </element>
