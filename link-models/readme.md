@@ -1,14 +1,14 @@
-## Link budget models for the C3 communications channels
+## Link Budget Models for the C3 Channels
 
-The source of these spreadsheets are from Jan King and are located at the [AMSAT-UK IARU website](http://www.amsatuk.me.uk/iaru/spreadsheet.htm)
+The source of these link model spreadsheets are from Jan King and are located at the [AMSAT-UK IARU website](http://www.amsatuk.me.uk/iaru/spreadsheet.htm).  The spreadsheets have been customized from revision 2.5.5 which are signified by a suffix letter.  In addition, for OreSat protocol information please visit our [GitHub protocol page](https://github.com/oresat/oresat-design/tree/gh-pages/protocol).  For OreSat's bulk-data mission uplink and downlink models using 802.11b please visit our [Github DxWiFi page](https://github.com/oresat/oresat-dxwifi-hardware).
 
-- The primary engineering uplink (L band - 1265 MHz GMSK) and engineering downlink (UHF - 436.5 MHz GMSK) link model:<br>___AMSAT-IARU_Link_Model_PDX_CS0_v1_engineering_primary.xlsx___
+- The primary engineering uplink (L band - 1265 MHz GMSK) and engineering downlink (UHF - 436.5 MHz GMSK) link model:<br>___OreSat1_link_model_v2.5.5a_eng_primary.xlsx___
 
-- The secondary engineering uplink (UHF - 436.5 MHz GMSK) link model:<br>___AMSAT-IARU_Link_Model_PDX_CS0_v1_engineering_secondary.xlsx___
+- The secondary engineering uplink (UHF - 436.5 MHz GMSK) link model:<br>___OreSat1_link_model_v2.5.5a_eng_secondary.xlsx___
 
-- The public downlink (UHF - 436.5 MHz G3RUH FSK) link model:<br>___AMSAT-IARU_Link_Model_PDX_CS0_v1_public.xlsx___
+- The public telemetry and APRS downlink using a handheld receiver (UHF - 436.5 MHz G3RUH FSK w/ AX.25) link model:<br>___OreSat1_link_model_v2.5.5a_public.xlsx___
 
-- The beacon downlink (UHF - 436.5 MHz C.W.) link model:<br>___AMSAT-IARU_Link_Model_PDX_CS0_v1_beacon.xlsx___
+- The C.W. beacon downlink using a handheld receiver (UHF - 436.5 MHz C.W. in 100Hz) link model:<br>___OreSat1_link_model_v2.5.5a_beacon.xlsx___
 
 Notes:
 - The 'Transmitters' and 'Receivers' sheets have been customized
