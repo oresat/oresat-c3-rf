@@ -3,7 +3,7 @@
 <eagle version="9.2.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
@@ -2083,7 +2083,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="15.4" y="23.3" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="12.7" y="23.2" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="R11" library="oresat-rcl" package=".0402-B-NOSILK" value="47k" x="22" y="6" smashed="yes">
+<element name="R11" library="oresat-rcl" package=".0402-B-NOSILK" value="NP" x="22" y="6" smashed="yes">
 <attribute name="NAME" x="21.1" y="6.65" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="22" y="6" size="0.2" layer="33" ratio="15" align="center"/>
 </element>
@@ -2121,7 +2121,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="31.295" y="24.805" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="POPULARITY" value="8" x="30.3" y="22.7" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R10" library="oresat-rcl" package=".0402-B-NOSILK" value="NP" x="25" y="6" smashed="yes">
+<element name="R10" library="oresat-rcl" package=".0402-B-NOSILK" value="47k" x="25" y="6" smashed="yes">
 <attribute name="NAME" x="24.1" y="6.65" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="25" y="6" size="0.2" layer="33" ratio="15" align="center"/>
 </element>

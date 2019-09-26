@@ -9771,7 +9771,7 @@ Diode with low voltage drop</description>
 <part name="C6" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="1u"/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="X1" library="X-ECS-TXO-TCXO" deviceset="ECS-TXO-3225" device=""/>
-<part name="R11" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="47k"/>
+<part name="R11" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="NP"/>
 <part name="GND69" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C2" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="NP"/>
 <part name="C1" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="22n"/>
@@ -9810,7 +9810,7 @@ Diode with low voltage drop</description>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="R10" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="NP"/>
+<part name="R10" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="47k"/>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="JP7" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -9835,8 +9835,8 @@ Except w/ on-board TCXO (3.3V req)</text>
 <text x="64.77" y="34.29" size="1.778" layer="97">16.000 MHz</text>
 <text x="101.6" y="48.26" size="1.778" layer="97">0402 Jumper
 Cap only required if not CMOS levels</text>
-<text x="34.29" y="175.26" size="1.778" layer="97">Shutdown (High)
-Enable (Low, default)</text>
+<text x="34.29" y="175.26" size="1.778" layer="97">Shutdown (High, default)
+Enable (Low)</text>
 <text x="17.78" y="49.53" size="1.778" layer="97">TCXO VCTRL
 +/- 5ppm min
 See datasheet</text>
