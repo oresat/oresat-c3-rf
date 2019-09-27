@@ -17,12 +17,12 @@ Power budget for the C3 card radios. Includes front-end components, AX5043 IC tr
 |-----------------------------------|:------------------:|:------------------------:|:-----------------------------------:|:--------------------------:|
 | <strong>L band Rx</strong>        |         163        |            100           |                 22.6                |             244            |
 | <strong>UHF Rx</strong>           |         70         |            98            |                 9.6                 |             104            |
-| <strong>UHF Tx Beacon</strong>    |        1260        |             1            |                 1.7                 |             19             |
-| <strong>UHF Tx Telemetry</strong> |        2118        |             1            |                 2.9                 |             32             |
+| <strong>UHF Tx C.W. Beacon</strong>    |        1260        |             1            |                 1.7                 |             19             |
+| <strong>UHF Tx AX.25 Beacon</strong> |        2118        |             1            |                 2.9                 |             32             |
 |                                   |                    | <strong>TOTALS:</strong> |        <strong>36.9</strong>        |    <strong>399</strong>    |
 
 #### Notes:
 - L band Rx excludes GPS receiver
-- UHF Tx beacon estimated for 0.1W PA output
-- UHF Tx telemetry estimated for 1.0W PA output
+- UHF Tx C.W. beacon estimated for 0.1W PA output
+- UHF Tx AX.25 beacon estimated for 1.0W PA output
 - Period = LEO Orbit ~ 90 min
