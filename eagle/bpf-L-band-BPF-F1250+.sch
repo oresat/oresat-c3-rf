@@ -455,7 +455,7 @@ Source: &lt;a href="https://www.minicircuits.com/pdfs/BPF-F1250+.pdf"&gt;Datashe
 <class number="0" name="default" width="0" drill="0">
 </class>
 <class number="1" name="RF" width="0" drill="0">
-<clearance class="1" value="0.8"/>
+<clearance class="1" value="0.31"/>
 </class>
 </classes>
 <parts>
