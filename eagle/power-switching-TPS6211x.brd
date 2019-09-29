@@ -3,7 +3,7 @@
 <eagle version="9.2.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
@@ -1859,7 +1859,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="oresat-rcl" package="1206-B" value="10u" x="17.8" y="18.9" smashed="yes">
+<element name="C1" library="oresat-rcl" package="1206-B" value="22u" x="17.8" y="18.9" smashed="yes">
 <attribute name="NAME" x="16.5" y="20.3" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="17.8" y="18.9" size="0.4" layer="33" ratio="15" align="center"/>
 </element>
@@ -1914,7 +1914,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="24.8" y="20.1" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="23.6" y="20.5" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="R7" library="oresat-rcl" package=".0402-B-NOSILK" value="100k" x="28" y="12" smashed="yes" rot="R270">
+<element name="R7" library="oresat-rcl" package=".0402-B-NOSILK" value="47k" x="28" y="12" smashed="yes" rot="R270">
 <attribute name="NAME" x="28.45" y="13.1" size="0.8" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="28" y="12" size="0.2" layer="33" ratio="15" rot="R270" align="center"/>
 </element>

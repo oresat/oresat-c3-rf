@@ -7993,7 +7993,7 @@ www.irf.com&lt;p&gt;
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="U1" library="U-TI-TPS6211x-SPS-buck" deviceset="TPS6211X" device="" value="TPS6211X"/>
 <part name="GND39" library="supply1" deviceset="GND" device=""/>
-<part name="C1" library="oresat-rcl" deviceset="C-EU" device="1206-B" value="10u"/>
+<part name="C1" library="oresat-rcl" deviceset="C-EU" device="1206-B" value="22u"/>
 <part name="C2" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="1u"/>
 <part name="GND40" library="supply1" deviceset="GND" device=""/>
 <part name="GND41" library="supply1" deviceset="GND" device=""/>
@@ -8011,7 +8011,7 @@ www.irf.com&lt;p&gt;
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="C3" library="oresat-rcl" deviceset="C-EU" device="1206-B" value="22u"/>
 <part name="R2" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="2.7k"/>
-<part name="R7" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="100k"/>
+<part name="R7" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="47k"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="D1" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED-GREEN" device="0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="GREEN">
 <attribute name="PROD_ID" value=""/>
