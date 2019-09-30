@@ -9141,7 +9141,7 @@ Source: &lt;a href="https://www.infineon.com/cms/en/product/rf-wireless-control/
 <attribute name="PROD_ID" value=""/>
 </part>
 <part name="GND80" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="2.2k"/>
+<part name="R1" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="1.5k"/>
 <part name="J1" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device=""/>
 <part name="J2" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device=""/>
 <part name="L2" library="oresat-rcl" deviceset="L-US" device="0603-C-NOSILK" value="56n"/>
@@ -9150,7 +9150,7 @@ Source: &lt;a href="https://www.infineon.com/cms/en/product/rf-wireless-control/
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C6" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="47b"/>
+<part name="C6" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="47n"/>
 <part name="Q1" library="transistor-small-signal" library_urn="urn:adsk.eagle:library:401" deviceset="BSS84" device="" package3d_urn="urn:adsk.eagle:package:28738/2" value="PMOS"/>
 <part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
