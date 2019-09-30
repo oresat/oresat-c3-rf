@@ -9103,7 +9103,7 @@ Source: &lt;a href="https://www.infineon.com/cms/en/product/rf-wireless-control/
 <attribute name="PROD_ID" value=""/>
 </part>
 <part name="GND80" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="2.2k"/>
+<part name="R1" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="1.5k"/>
 <part name="J1" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device=""/>
 <part name="J2" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device=""/>
 <part name="C1" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="22p"/>
