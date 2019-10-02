@@ -251,16 +251,16 @@
 <library name="U-MiniCirc-Mac-24+-mixer">
 <packages>
 <package name="MAC-24+">
-<smd name="1" x="-2.54" y="-2.35" dx="0.89" dy="2.16" layer="1"/>
-<smd name="2" x="-1.27" y="-2.35" dx="0.89" dy="2.16" layer="1"/>
-<smd name="3" x="0" y="-2.35" dx="0.89" dy="2.16" layer="1"/>
-<smd name="4" x="1.27" y="-2.35" dx="0.89" dy="2.16" layer="1"/>
-<smd name="5" x="2.54" y="-2.35" dx="0.89" dy="2.16" layer="1"/>
-<smd name="6" x="2.54" y="2.35" dx="0.89" dy="2.16" layer="1" rot="R180"/>
-<smd name="7" x="1.27" y="2.35" dx="0.89" dy="2.16" layer="1" rot="R180"/>
-<smd name="8" x="0" y="2.35" dx="0.89" dy="2.16" layer="1" rot="R180"/>
-<smd name="9" x="-1.27" y="2.35" dx="0.89" dy="2.16" layer="1" rot="R180"/>
-<smd name="10" x="-2.54" y="2.35" dx="0.89" dy="2.16" layer="1" rot="R180"/>
+<smd name="1" x="-2.54" y="-2.35" dx="0.89" dy="2.16" layer="1" cream="no"/>
+<smd name="2" x="-1.27" y="-2.35" dx="0.89" dy="2.16" layer="1" cream="no"/>
+<smd name="3" x="0" y="-2.35" dx="0.89" dy="2.16" layer="1" cream="no"/>
+<smd name="4" x="1.27" y="-2.35" dx="0.89" dy="2.16" layer="1" cream="no"/>
+<smd name="5" x="2.54" y="-2.35" dx="0.89" dy="2.16" layer="1" cream="no"/>
+<smd name="6" x="2.54" y="2.35" dx="0.89" dy="2.16" layer="1" rot="R180" cream="no"/>
+<smd name="7" x="1.27" y="2.35" dx="0.89" dy="2.16" layer="1" rot="R180" cream="no"/>
+<smd name="8" x="0" y="2.35" dx="0.89" dy="2.16" layer="1" rot="R180" cream="no"/>
+<smd name="9" x="-1.27" y="2.35" dx="0.89" dy="2.16" layer="1" rot="R180" cream="no"/>
+<smd name="10" x="-2.54" y="2.35" dx="0.89" dy="2.16" layer="1" rot="R180" cream="no"/>
 <wire x1="-3.81" y1="3.175" x2="3.81" y2="3.175" width="0.1524" layer="51"/>
 <wire x1="3.81" y1="3.175" x2="3.81" y2="-3.175" width="0.1524" layer="51"/>
 <wire x1="3.81" y1="-3.175" x2="-3.81" y2="-3.175" width="0.1524" layer="51"/>
@@ -273,6 +273,16 @@
 <wire x1="-3.8" y1="-3.2" x2="-3.3" y2="-3.2" width="0.1524" layer="21"/>
 <circle x="-4.5" y="-3.1" radius="0.4" width="0.1524" layer="21"/>
 <text x="4.9" y="-2.3" size="0.8128" layer="25" font="vector" ratio="15" rot="R90">&gt;NAME</text>
+<rectangle x1="-2.85" y1="1.4" x2="-2.2" y2="3.35" layer="31"/>
+<rectangle x1="-1.58" y1="1.4" x2="-0.93" y2="3.35" layer="31"/>
+<rectangle x1="-0.31" y1="1.4" x2="0.34" y2="3.35" layer="31"/>
+<rectangle x1="0.96" y1="1.4" x2="1.61" y2="3.35" layer="31"/>
+<rectangle x1="2.23" y1="1.4" x2="2.88" y2="3.35" layer="31"/>
+<rectangle x1="2.2" y1="-3.35" x2="2.85" y2="-1.4" layer="31" rot="R180"/>
+<rectangle x1="0.93" y1="-3.35" x2="1.58" y2="-1.4" layer="31" rot="R180"/>
+<rectangle x1="-0.34" y1="-3.35" x2="0.31" y2="-1.4" layer="31" rot="R180"/>
+<rectangle x1="-1.61" y1="-3.35" x2="-0.96" y2="-1.4" layer="31" rot="R180"/>
+<rectangle x1="-2.88" y1="-3.35" x2="-2.23" y2="-1.4" layer="31" rot="R180"/>
 </package>
 </packages>
 <symbols>
