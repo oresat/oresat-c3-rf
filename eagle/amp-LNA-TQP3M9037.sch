@@ -9028,7 +9028,7 @@ Source: &lt;a href="https://www.qorvo.com/products/p/TQP3M9037"&gt;Datasheet&lt;
 <attribute name="PROD_ID" value=""/>
 </part>
 <part name="GND80" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="6.2k"/>
+<part name="R1" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="5.6k"/>
 <part name="J1" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device=""/>
 <part name="J2" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device=""/>
 <part name="R3" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="NP"/>
