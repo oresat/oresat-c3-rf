@@ -9768,7 +9768,7 @@ Diode with low voltage drop</description>
 <part name="R2" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="0"/>
 <part name="C5" library="oresat-rcl" deviceset="C-EU" device="0402-B-NOSILK" value="560p"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C6" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="1u"/>
+<part name="C6" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="NP"/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="X1" library="X-ECS-TXO-TCXO" deviceset="ECS-TXO-3225" device=""/>
 <part name="R11" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="NP"/>
@@ -9779,8 +9779,8 @@ Diode with low voltage drop</description>
 <part name="C3" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="NP"/>
 <part name="GND105" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND110" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C8" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="NP"/>
-<part name="C7" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="NP"/>
+<part name="C8" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="1u"/>
+<part name="C7" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="22n"/>
 <part name="GND111" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>

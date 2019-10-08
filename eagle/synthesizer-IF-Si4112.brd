@@ -2001,15 +2001,15 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="18.1" y="22.45" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="16.7" y="21.9" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
-<element name="C6" library="oresat-rcl" package=".0603-B-NOSILK" value="1u" x="25.8" y="17.9" smashed="yes" rot="R270">
+<element name="C6" library="oresat-rcl" package=".0603-B-NOSILK" value="NP" x="25.8" y="17.9" smashed="yes" rot="R270">
 <attribute name="NAME" x="25.5" y="15.4" size="0.8" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="25.8" y="17.9" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
 </element>
-<element name="C7" library="oresat-rcl" package=".0603-B-NOSILK" value="NP" x="27.3" y="17.9" smashed="yes" rot="R270">
+<element name="C7" library="oresat-rcl" package=".0603-B-NOSILK" value="22n" x="27.3" y="17.9" smashed="yes" rot="R270">
 <attribute name="NAME" x="26.9" y="15.4" size="0.8" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="27.3" y="17.9" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
 </element>
-<element name="C8" library="oresat-rcl" package=".0603-B-NOSILK" value="NP" x="28.8" y="17.9" smashed="yes" rot="R270">
+<element name="C8" library="oresat-rcl" package=".0603-B-NOSILK" value="1u" x="28.8" y="17.9" smashed="yes" rot="R270">
 <attribute name="NAME" x="28.1" y="15.4" size="0.8" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="28.8" y="17.9" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
 </element>
