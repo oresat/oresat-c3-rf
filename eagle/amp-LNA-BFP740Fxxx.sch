@@ -9350,7 +9350,7 @@ R2 = 47k for 10mA Ic
 <pinref part="R6" gate="R" pin="1"/>
 </segment>
 </net>
-<net name="RF_OUT" class="0">
+<net name="RF_OUT" class="2">
 <segment>
 <wire x1="187.96" y1="104.14" x2="193.04" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="C2" gate="CE" pin="2"/>
@@ -9416,7 +9416,7 @@ R2 = 47k for 10mA Ic
 <wire x1="162.56" y1="176.53" x2="163.83" y2="176.53" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="C" class="0">
+<net name="C" class="2">
 <segment>
 <pinref part="C2" gate="CE" pin="1"/>
 <wire x1="162.56" y1="104.14" x2="154.94" y2="104.14" width="0.1524" layer="91"/>
@@ -9426,7 +9426,7 @@ R2 = 47k for 10mA Ic
 <junction x="154.94" y="104.14"/>
 </segment>
 </net>
-<net name="B" class="0">
+<net name="B" class="2">
 <segment>
 <pinref part="L1" gate="L" pin="1"/>
 <pinref part="Q2" gate="G$1" pin="B"/>
@@ -9449,7 +9449,7 @@ R2 = 47k for 10mA Ic
 <junction x="119.38" y="121.92"/>
 </segment>
 </net>
-<net name="RF_IN" class="0">
+<net name="RF_IN" class="2">
 <segment>
 <pinref part="J1" gate="G$1" pin="RF"/>
 <pinref part="C1" gate="CE" pin="1"/>
@@ -9470,7 +9470,7 @@ R2 = 47k for 10mA Ic
 <pinref part="L2" gate="L" pin="1"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="N$2" class="2">
 <segment>
 <pinref part="C1" gate="CE" pin="2"/>
 <pinref part="L3" gate="L" pin="1"/>
