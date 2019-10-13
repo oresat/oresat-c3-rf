@@ -9094,38 +9094,40 @@ Source: &lt;a href="https://www.infineon.com/cms/en/product/rf-wireless-control/
 <part name="C2" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="22p"/>
 <part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C5" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="1u"/>
-<part name="C4" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="NP"/>
-<part name="C3" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="47n"/>
+<part name="C5" library="oresat-rcl" deviceset="C-EU" device="0603-C-NOSILK" value="1u"/>
+<part name="C4" library="oresat-rcl" deviceset="C-EU" device="0603-C-NOSILK" value="47n"/>
+<part name="C3" library="oresat-rcl" deviceset="C-EU" device="0603-C-NOSILK" value="NP"/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="D1" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED-GREEN" device="0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="GREEN">
 <attribute name="PROD_ID" value=""/>
 </part>
 <part name="GND80" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="1.5k"/>
+<part name="R1" library="oresat-rcl" deviceset="R-US_" device="0603-C-NOSILK" value="1.5k"/>
 <part name="J1" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device=""/>
 <part name="J2" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device=""/>
 <part name="C1" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="22p"/>
-<part name="L1" library="oresat-rcl" deviceset="L-US" device="0603-C-NOSILK" value="100n"/>
+<part name="L1" library="oresat-rcl" deviceset="L-US" device="0603-C-NOSILK" value="47n"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C8" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="47n"/>
+<part name="C8" library="oresat-rcl" deviceset="C-EU" device="0603-C-NOSILK" value="47n"/>
 <part name="Q1" library="transistor-small-signal" library_urn="urn:adsk.eagle:library:401" deviceset="BSS84" device="" package3d_urn="urn:adsk.eagle:package:28738/2" value="PMOS"/>
 <part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R3" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="47k"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R5" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="30"/>
+<part name="R5" library="oresat-rcl" deviceset="R-US_" device="0603-C-NOSILK" value="33"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="Q2" library="Q-Infineon-BFPXXX-RF-BJT" deviceset="BFPXXXF" device="" value="BFP740F"/>
-<part name="C6" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="NP"/>
+<part name="C6" library="oresat-rcl" deviceset="C-EU" device="0402-B-NOSILK" value="NP"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R2" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="47k"/>
-<part name="L3" library="oresat-rcl" deviceset="L-US" device="0402-C-NOSILK" value="3.6n"/>
-<part name="R4" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="40"/>
-<part name="L2" library="oresat-rcl" deviceset="L-US" device="0402-C-NOSILK" value="10n"/>
+<part name="R2" library="oresat-rcl" deviceset="R-US_" device="0603-C-NOSILK" value="47k"/>
+<part name="L3" library="oresat-rcl" deviceset="L-US" device="0402-C-NOSILK" value="2.7n"/>
+<part name="R4" library="oresat-rcl" deviceset="R-US_" device="0603-C-NOSILK" value="33"/>
+<part name="L2" library="oresat-rcl" deviceset="L-US" device="0603-C-NOSILK" value="10n"/>
+<part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R6" library="oresat-rcl" deviceset="R-US_" device="0603-C-NOSILK" value="470"/>
 </parts>
 <sheets>
 <sheet>
@@ -9136,10 +9138,12 @@ Source: &lt;a href="https://www.infineon.com/cms/en/product/rf-wireless-control/
 External</text>
 <text x="111.76" y="190.5" size="1.778" layer="97">Shutdown (High)
 Enable (Low - Default)</text>
-<text x="148.59" y="167.64" size="1.778" layer="97">2V7 flood layer 3</text>
 <text x="144.018" y="169.672" size="1.778" layer="97" rot="R90">2V7 Net</text>
 <text x="160.02" y="83.82" size="1.778" layer="97" align="top-left">Quiescent Current Notes:
-R2 = 47k for 10mA Ic</text>
+R2 = 47k for 10mA Ic
+
+- Matching network values not final
+- Layout ideal for min NF or max G_T</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -9151,12 +9155,12 @@ R2 = 47k for 10mA Ic</text>
 <instance part="GND28" gate="1" x="139.7" y="80.01" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="142.24" y="77.47" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="C2" gate="CE" x="167.64" y="104.14" smashed="yes" rot="MR270">
-<attribute name="NAME" x="167.259" y="102.616" size="1.778" layer="95" rot="MR270"/>
-<attribute name="VALUE" x="172.339" y="102.616" size="1.778" layer="96" rot="MR270"/>
+<instance part="C2" gate="CE" x="165.1" y="104.14" smashed="yes" rot="MR270">
+<attribute name="NAME" x="164.719" y="102.616" size="1.778" layer="95" rot="MR270"/>
+<attribute name="VALUE" x="169.799" y="102.616" size="1.778" layer="96" rot="MR270"/>
 </instance>
-<instance part="GND29" gate="1" x="186.69" y="96.52" smashed="yes">
-<attribute name="VALUE" x="184.15" y="93.98" size="1.778" layer="96"/>
+<instance part="GND29" gate="1" x="190.5" y="96.52" smashed="yes">
+<attribute name="VALUE" x="187.96" y="93.98" size="1.778" layer="96"/>
 </instance>
 <instance part="GND30" gate="1" x="78.74" y="88.9" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="81.28" y="86.36" size="1.778" layer="96" rot="MR0"/>
@@ -9195,9 +9199,9 @@ R2 = 47k for 10mA Ic</text>
 <attribute name="NAME" x="71.12" y="91.44" size="1.778" layer="95"/>
 <attribute name="VALUE" x="64.77" y="99.06" size="1.778" layer="96"/>
 </instance>
-<instance part="J2" gate="G$1" x="191.77" y="104.14" smashed="yes" rot="MR0">
-<attribute name="NAME" x="194.31" y="99.06" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="200.66" y="106.68" size="1.778" layer="96" rot="MR0"/>
+<instance part="J2" gate="G$1" x="195.58" y="104.14" smashed="yes" rot="MR0">
+<attribute name="NAME" x="198.12" y="99.06" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="204.47" y="106.68" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="C1" gate="CE" x="88.9" y="96.52" smashed="yes" rot="MR270">
 <attribute name="NAME" x="88.519" y="94.996" size="1.778" layer="95" rot="MR270"/>
@@ -9272,15 +9276,22 @@ R2 = 47k for 10mA Ic</text>
 <attribute name="NAME" x="151.13" y="110.49" size="1.778" layer="95"/>
 <attribute name="VALUE" x="156.972" y="109.22" size="1.778" layer="96"/>
 </instance>
+<instance part="GND9" gate="1" x="177.8" y="90.17" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="180.34" y="87.63" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="R6" gate="R" x="177.8" y="97.79" smashed="yes" rot="R90">
+<attribute name="NAME" x="176.3014" y="93.98" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="181.102" y="93.98" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<wire x1="186.69" y1="101.6" x2="189.23" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="101.6" x2="193.04" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="GND29" gate="1" pin="GND"/>
-<wire x1="186.69" y1="99.06" x2="186.69" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="99.06" x2="190.5" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="GND"/>
 </segment>
 <segment>
@@ -9334,13 +9345,21 @@ R2 = 47k for 10mA Ic</text>
 <pinref part="C6" gate="CE" pin="2"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
-</net>
-<net name="RF_OUT" class="2">
 <segment>
-<wire x1="184.15" y1="104.14" x2="189.23" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<pinref part="R6" gate="R" pin="1"/>
+</segment>
+</net>
+<net name="RF_OUT" class="0">
+<segment>
+<wire x1="187.96" y1="104.14" x2="193.04" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="C2" gate="CE" pin="2"/>
-<wire x1="184.15" y1="104.14" x2="172.72" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="104.14" x2="177.8" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="RF"/>
+<wire x1="177.8" y1="104.14" x2="170.18" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="102.87" x2="177.8" y2="104.14" width="0.1524" layer="91"/>
+<junction x="177.8" y="104.14"/>
+<pinref part="R6" gate="R" pin="2"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -9354,7 +9373,7 @@ R2 = 47k for 10mA Ic</text>
 <junction x="134.62" y="186.69"/>
 </segment>
 </net>
-<net name="2V7" class="0">
+<net name="CAPS" class="0">
 <segment>
 <wire x1="144.78" y1="149.86" x2="154.94" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="R5" gate="R" pin="2"/>
@@ -9397,17 +9416,17 @@ R2 = 47k for 10mA Ic</text>
 <wire x1="162.56" y1="176.53" x2="163.83" y2="176.53" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="1">
+<net name="C" class="0">
 <segment>
 <pinref part="C2" gate="CE" pin="1"/>
-<wire x1="165.1" y1="104.14" x2="154.94" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="104.14" x2="154.94" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="C"/>
 <wire x1="139.7" y1="104.14" x2="154.94" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="L2" gate="L" pin="2"/>
 <junction x="154.94" y="104.14"/>
 </segment>
 </net>
-<net name="N$11" class="1">
+<net name="B" class="0">
 <segment>
 <pinref part="L1" gate="L" pin="1"/>
 <pinref part="Q2" gate="G$1" pin="B"/>
@@ -9430,7 +9449,7 @@ R2 = 47k for 10mA Ic</text>
 <junction x="119.38" y="121.92"/>
 </segment>
 </net>
-<net name="RF-IN" class="2">
+<net name="RF_IN" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="RF"/>
 <pinref part="C1" gate="CE" pin="1"/>
@@ -9458,7 +9477,7 @@ R2 = 47k for 10mA Ic</text>
 <wire x1="93.98" y1="96.52" x2="99.06" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="2V7" class="0">
 <segment>
 <pinref part="Q1" gate="G$1" pin="D"/>
 <wire x1="144.78" y1="179.07" x2="144.78" y2="176.53" width="0.1524" layer="91"/>
