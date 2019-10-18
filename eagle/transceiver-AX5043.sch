@@ -260,15 +260,6 @@
 <wire x1="-2.5" y1="2" x2="-2" y2="2.5" width="0.127" layer="21"/>
 <circle x="-3" y="2.25" radius="0.25" width="0.127" layer="21"/>
 <text x="2.25" y="-3.5" size="0.635" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<rectangle x1="-1.475" y1="0.625" x2="-0.725" y2="1.375" layer="31"/>
-<rectangle x1="-0.375" y1="0.625" x2="0.375" y2="1.375" layer="31"/>
-<rectangle x1="0.725" y1="0.625" x2="1.475" y2="1.375" layer="31"/>
-<rectangle x1="0.725" y1="-0.375" x2="1.475" y2="0.375" layer="31"/>
-<rectangle x1="-0.375" y1="-0.375" x2="0.375" y2="0.375" layer="31"/>
-<rectangle x1="-1.475" y1="-0.375" x2="-0.725" y2="0.375" layer="31"/>
-<rectangle x1="-1.475" y1="-1.375" x2="-0.725" y2="-0.625" layer="31"/>
-<rectangle x1="-0.375" y1="-1.375" x2="0.375" y2="-0.625" layer="31"/>
-<rectangle x1="0.725" y1="-1.375" x2="1.475" y2="-0.625" layer="31"/>
 <rectangle x1="-2.5" y1="1.35" x2="-2" y2="1.65" layer="31"/>
 <rectangle x1="-2.5" y1="0.85" x2="-2" y2="1.15" layer="31"/>
 <rectangle x1="-2.5" y1="0.35" x2="-2" y2="0.65" layer="31"/>
@@ -298,6 +289,15 @@
 <rectangle x1="0.25" y1="2.1" x2="0.75" y2="2.4" layer="31" rot="R90"/>
 <rectangle x1="0.75" y1="2.1" x2="1.25" y2="2.4" layer="31" rot="R90"/>
 <rectangle x1="1.25" y1="2.1" x2="1.75" y2="2.4" layer="31" rot="R90"/>
+<rectangle x1="-0.45" y1="-0.45" x2="0.45" y2="0.45" layer="31"/>
+<rectangle x1="-0.45" y1="0.6" x2="0.45" y2="1.5" layer="31"/>
+<rectangle x1="-0.45" y1="-1.5" x2="0.45" y2="-0.6" layer="31" rot="R180"/>
+<rectangle x1="0.6" y1="-0.45" x2="1.5" y2="0.45" layer="31" rot="R270"/>
+<rectangle x1="-1.5" y1="-0.45" x2="-0.6" y2="0.45" layer="31" rot="R90"/>
+<rectangle x1="0.6" y1="-1.5" x2="1.5" y2="-0.6" layer="31"/>
+<rectangle x1="0.6" y1="0.6" x2="1.5" y2="1.5" layer="31"/>
+<rectangle x1="-1.5" y1="0.6" x2="-0.6" y2="1.5" layer="31"/>
+<rectangle x1="-1.5" y1="-1.5" x2="-0.6" y2="-0.6" layer="31"/>
 </package>
 </packages>
 <symbols>
@@ -9657,6 +9657,12 @@ Source: &lt;a href="http://www.ti.com/product/LP2985LV-N?qgpn=lp2985lv-n"&gt;Dat
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="RF1" width="0" drill="0">
+<clearance class="1" value="0.8"/>
+</class>
+<class number="2" name="RF2" width="0" drill="0">
+<clearance class="2" value="0.4"/>
+</class>
 </classes>
 <parts>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
@@ -9724,7 +9730,7 @@ Source: &lt;a href="http://www.ti.com/product/LP2985LV-N?qgpn=lp2985lv-n"&gt;Dat
 </part>
 <part name="GND80" library="supply1" deviceset="GND" device=""/>
 <part name="R6" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="1.5k"/>
-<part name="R7" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="0"/>
+<part name="R7" library="oresat-rcl" deviceset="R-US_" device="0603-C-NOSILK" value="0"/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U2" library="U-TI-LP2985XX-N-linear-reg" deviceset="LP2985XX-N" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -9752,7 +9758,7 @@ Source: &lt;a href="http://www.ti.com/product/LP2985LV-N?qgpn=lp2985lv-n"&gt;Dat
 <text x="242.57" y="68.58" size="2.159" layer="97">TCXO ADJ</text>
 <text x="227.33" y="119.38" size="2.159" layer="97">1.8V LDO</text>
 <text x="193.04" y="118.11" size="2.159" layer="97">ADCs</text>
-<text x="124.46" y="50.8" size="2.54" layer="97">Deice Operating Range:
+<text x="121.92" y="45.72" size="2.54" layer="97">Device Operating Range:
 400 - 525 MHz
 800 - 1050 MHz</text>
 </plain>
@@ -10325,21 +10331,21 @@ Source: &lt;a href="http://www.ti.com/product/LP2985LV-N?qgpn=lp2985lv-n"&gt;Dat
 <junction x="104.14" y="101.6"/>
 </segment>
 </net>
-<net name="TX" class="0">
+<net name="TX" class="1">
 <segment>
 <pinref part="J2" gate="G$1" pin="RF"/>
 <pinref part="C8" gate="CE" pin="1"/>
 <wire x1="81.28" y1="101.6" x2="87.63" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="RX" class="0">
+<net name="RX" class="1">
 <segment>
 <pinref part="J1" gate="G$1" pin="RF"/>
 <pinref part="C7" gate="CE" pin="1"/>
 <wire x1="50.8" y1="130.81" x2="54.61" y2="130.81" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="REF-OUT" class="0">
+<net name="REF-OUT" class="1">
 <segment>
 <pinref part="J3" gate="G$1" pin="RF"/>
 <pinref part="R2" gate="R" pin="2"/>
@@ -10463,7 +10469,7 @@ Source: &lt;a href="http://www.ti.com/product/LP2985LV-N?qgpn=lp2985lv-n"&gt;Dat
 <wire x1="246.38" y1="107.95" x2="254" y2="107.95" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="N$20" class="2">
 <segment>
 <pinref part="C7" gate="CE" pin="2"/>
 <pinref part="L1" gate="L" pin="1"/>
@@ -10475,7 +10481,7 @@ Source: &lt;a href="http://www.ti.com/product/LP2985LV-N?qgpn=lp2985lv-n"&gt;Dat
 <junction x="67.31" y="130.81"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="N$6" class="2">
 <segment>
 <pinref part="C4" gate="CE" pin="2"/>
 <pinref part="X1" gate="G$1" pin="OUT"/>
@@ -10507,20 +10513,20 @@ Source: &lt;a href="http://www.ti.com/product/LP2985LV-N?qgpn=lp2985lv-n"&gt;Dat
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="JP3" gate="A" pin="1"/>
-<wire x1="201.93" y1="134.62" x2="185.42" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="134.62" x2="185.42" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="DATA"/>
 <wire x1="185.42" y1="121.92" x2="160.02" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="JP3" gate="A" pin="2"/>
+<wire x1="185.42" y1="121.92" x2="185.42" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="132.08" x2="201.93" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="DCLK"/>
 <wire x1="160.02" y1="119.38" x2="187.96" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="119.38" x2="187.96" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="A" pin="2"/>
-<wire x1="187.96" y1="132.08" x2="201.93" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="JP3" gate="A" pin="1"/>
+<wire x1="187.96" y1="119.38" x2="187.96" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="134.62" x2="201.93" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
