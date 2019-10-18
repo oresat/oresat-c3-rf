@@ -10226,7 +10226,7 @@ Source: &lt;a href="http://www.ti.com/product/LP2985LV-N?qgpn=lp2985lv-n"&gt;Dat
 <wire x1="114.3" y1="76.2" x2="110.49" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="IRQ" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="IRQ"/>
 <wire x1="160.02" y1="127" x2="180.34" y2="127" width="0.1524" layer="91"/>
@@ -10235,7 +10235,7 @@ Source: &lt;a href="http://www.ti.com/product/LP2985LV-N?qgpn=lp2985lv-n"&gt;Dat
 <wire x1="180.34" y1="149.86" x2="191.77" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="MOSI" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="MOSI"/>
 <wire x1="160.02" y1="132.08" x2="177.8" y2="132.08" width="0.1524" layer="91"/>
@@ -10244,7 +10244,7 @@ Source: &lt;a href="http://www.ti.com/product/LP2985LV-N?qgpn=lp2985lv-n"&gt;Dat
 <wire x1="177.8" y1="152.4" x2="191.77" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="MISO" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="MISO"/>
 <wire x1="160.02" y1="134.62" x2="175.26" y2="134.62" width="0.1524" layer="91"/>
@@ -10253,7 +10253,7 @@ Source: &lt;a href="http://www.ti.com/product/LP2985LV-N?qgpn=lp2985lv-n"&gt;Dat
 <wire x1="175.26" y1="154.94" x2="191.77" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="SCLK" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="SCLK"/>
 <wire x1="160.02" y1="137.16" x2="172.72" y2="137.16" width="0.1524" layer="91"/>
@@ -10262,7 +10262,7 @@ Source: &lt;a href="http://www.ti.com/product/LP2985LV-N?qgpn=lp2985lv-n"&gt;Dat
 <wire x1="172.72" y1="157.48" x2="191.77" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="CS" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="CS"/>
 <wire x1="160.02" y1="139.7" x2="170.18" y2="139.7" width="0.1524" layer="91"/>
@@ -10489,7 +10489,7 @@ Source: &lt;a href="http://www.ti.com/product/LP2985LV-N?qgpn=lp2985lv-n"&gt;Dat
 <wire x1="175.26" y1="72.39" x2="187.96" y2="72.39" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="ANTSEL" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="1"/>
 <wire x1="185.42" y1="93.98" x2="196.85" y2="93.98" width="0.1524" layer="91"/>
@@ -10500,7 +10500,7 @@ Source: &lt;a href="http://www.ti.com/product/LP2985LV-N?qgpn=lp2985lv-n"&gt;Dat
 <wire x1="185.42" y1="96.52" x2="185.42" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="PWRAMP" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="3"/>
 <wire x1="196.85" y1="88.9" x2="182.88" y2="88.9" width="0.1524" layer="91"/>
@@ -10511,7 +10511,7 @@ Source: &lt;a href="http://www.ti.com/product/LP2985LV-N?qgpn=lp2985lv-n"&gt;Dat
 <wire x1="182.88" y1="93.98" x2="182.88" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="DATA" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="DATA"/>
 <wire x1="185.42" y1="121.92" x2="160.02" y2="121.92" width="0.1524" layer="91"/>
@@ -10520,7 +10520,7 @@ Source: &lt;a href="http://www.ti.com/product/LP2985LV-N?qgpn=lp2985lv-n"&gt;Dat
 <wire x1="185.42" y1="132.08" x2="201.93" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="DCLK" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="DCLK"/>
 <wire x1="160.02" y1="119.38" x2="187.96" y2="119.38" width="0.1524" layer="91"/>
@@ -10529,7 +10529,7 @@ Source: &lt;a href="http://www.ti.com/product/LP2985LV-N?qgpn=lp2985lv-n"&gt;Dat
 <wire x1="187.96" y1="134.62" x2="201.93" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="ADC1" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPADC1"/>
 <wire x1="160.02" y1="114.3" x2="170.18" y2="114.3" width="0.1524" layer="91"/>
@@ -10541,7 +10541,7 @@ Source: &lt;a href="http://www.ti.com/product/LP2985LV-N?qgpn=lp2985lv-n"&gt;Dat
 <junction x="170.18" y="114.3"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="ADC2" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPADC2"/>
 <wire x1="160.02" y1="111.76" x2="175.26" y2="111.76" width="0.1524" layer="91"/>
