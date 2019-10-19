@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9695,8 +9695,8 @@ Source: &lt;a href="http://www.ti.com/product/LP2985LV-N?qgpn=lp2985lv-n"&gt;Dat
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="X1" library="X-Taitien-TY-TCXO" deviceset="TAITIEN-TY" device=""/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C5" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="100p"/>
-<part name="C6" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="100p"/>
+<part name="C5" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="82p"/>
+<part name="C6" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="82p"/>
 <part name="L3" library="oresat-rcl" deviceset="L-US" device="0603-C-NOSILK" value="220n"/>
 <part name="L4" library="oresat-rcl" deviceset="L-US" device="0603-C-NOSILK" value="220n"/>
 <part name="C7" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="22p"/>
@@ -9751,7 +9751,7 @@ Source: &lt;a href="http://www.ti.com/product/LP2985LV-N?qgpn=lp2985lv-n"&gt;Dat
 <text x="39.37" y="132.08" size="2.54" layer="97">Rx</text>
 <text x="71.12" y="102.87" size="2.54" layer="97">Tx</text>
 <text x="59.69" y="77.47" size="2.54" layer="97">Ref-Out</text>
-<text x="104.14" y="184.15" size="2.159" layer="97" rot="MR0">+2V7</text>
+<text x="104.14" y="184.15" size="2.54" layer="97" rot="MR0">PWR</text>
 <text x="186.69" y="163.83" size="2.159" layer="97">SPI / IRQ</text>
 <text x="196.85" y="138.43" size="2.159" layer="97">Wire-Mode</text>
 <text x="193.04" y="97.79" size="2.159" layer="97">Control</text>
@@ -9761,6 +9761,7 @@ Source: &lt;a href="http://www.ti.com/product/LP2985LV-N?qgpn=lp2985lv-n"&gt;Dat
 <text x="121.92" y="45.72" size="2.54" layer="97">Device Operating Range:
 400 - 525 MHz
 800 - 1050 MHz</text>
+<text x="93.98" y="187.96" size="2.032" layer="97">2.0V - 3.6V</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>

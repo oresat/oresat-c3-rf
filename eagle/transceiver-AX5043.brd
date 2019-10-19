@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
@@ -2078,11 +2078,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="16.74" y="17.62" size="0.6" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="18.75" y="18.1" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
-<element name="C5" library="oresat-rcl" package=".0402-C-NOSILK" value="100p" x="17.9" y="15.6" smashed="yes" rot="R270">
+<element name="C5" library="oresat-rcl" package=".0402-C-NOSILK" value="82p" x="17.9" y="15.6" smashed="yes" rot="R270">
 <attribute name="NAME" x="16.6" y="15.65" size="0.6" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="17.9" y="15.6" size="0.2" layer="33" ratio="15" rot="R270" align="center"/>
 </element>
-<element name="C6" library="oresat-rcl" package=".0402-C-NOSILK" value="100p" x="17.9" y="11.9" smashed="yes" rot="R270">
+<element name="C6" library="oresat-rcl" package=".0402-C-NOSILK" value="82p" x="17.9" y="11.9" smashed="yes" rot="R270">
 <attribute name="NAME" x="16.65" y="10.95" size="0.6" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="17.9" y="11.9" size="0.2" layer="33" ratio="15" rot="R270" align="center"/>
 </element>
@@ -2285,7 +2285,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="5" y="8"/>
 <vertex x="0" y="8"/>
 </polygon>
-<polygon width="0.3" layer="1" thermals="no">
+<polygon width="0.3" layer="1" thermals="no" rank="2">
 <vertex x="8" y="0"/>
 <vertex x="32" y="0"/>
 <vertex x="32" y="5"/>
@@ -2671,11 +2671,25 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="14.6818" y1="10.4318" x2="14.656496875" y2="10.406496875" width="0.39" layer="1"/>
 <wire x1="14.656496875" y1="10.406496875" x2="14" y2="8.821571875" width="0.39" layer="1" curve="45.00009"/>
 <wire x1="14" y1="8.821571875" x2="14" y2="1.146" width="0.39" layer="1"/>
+<polygon width="0.2" layer="1">
+<vertex x="13.8" y="1.7"/>
+<vertex x="13.8" y="1.9"/>
+<vertex x="14" y="2.1"/>
+<vertex x="14.2" y="1.9"/>
+<vertex x="14.2" y="1.7"/>
+</polygon>
 </signal>
 <signal name="RX" class="1">
 <contactref element="J1" pad="RF1"/>
 <contactref element="C7" pad="1"/>
 <wire x1="1.146" y1="14" x2="11.85" y2="14" width="0.39" layer="1"/>
+<polygon width="0.2" layer="1">
+<vertex x="1.7" y="14.2"/>
+<vertex x="1.9" y="14.2"/>
+<vertex x="2.1" y="14"/>
+<vertex x="1.9" y="13.8"/>
+<vertex x="1.7" y="13.8"/>
+</polygon>
 </signal>
 <signal name="REF-OUT" class="1">
 <contactref element="J3" pad="RF1"/>
@@ -2686,6 +2700,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="23.518196875" y1="8.4818" x2="25.4142125" y2="6.585784375" width="0.39" layer="1"/>
 <wire x1="25.4142125" y1="6.585784375" x2="26" y2="5.17156875" width="0.39" layer="1" curve="-45.00009"/>
 <wire x1="26" y1="5.17156875" x2="26" y2="1.146" width="0.39" layer="1"/>
+<polygon width="0.2" layer="1">
+<vertex x="25.8" y="1.7"/>
+<vertex x="25.8" y="1.9"/>
+<vertex x="26" y="2.1"/>
+<vertex x="26.2" y="1.9"/>
+<vertex x="26.2" y="1.7"/>
+</polygon>
 </signal>
 <signal name="N$23">
 <contactref element="X1" pad="1"/>
@@ -2733,7 +2754,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="JP1" pad="1"/>
 <contactref element="R6" pad="1"/>
 <contactref element="R7" pad="1"/>
-<wire x1="22.5" y1="17" x2="22.5" y2="17.1" width="0.35" layer="1"/>
 <via x="21.8" y="16.8" extent="1-16" drill="0.3"/>
 <via x="21.8" y="17.4" extent="1-16" drill="0.3"/>
 <via x="21.8" y="18" extent="1-16" drill="0.3"/>
@@ -2918,50 +2938,17 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="5,1,5483a4ed17801835"/>
 <approved hash="5,1,34bf224ada0736dd"/>
 <approved hash="5,1,377f3b10c3213095"/>
-<approved hash="5,1,f1e7321931452632"/>
 <approved hash="5,1,36a73c7ec44b32d5"/>
 <approved hash="5,1,34e734c4cd15301d"/>
-<approved hash="5,1,2493ac6b363b953a"/>
 <approved hash="5,1,9ad4c034c46c669f"/>
-<approved hash="5,1,6a5f42e0e9099ed3"/>
 <approved hash="5,1,6ef585f02dc850d4"/>
 <approved hash="5,1,92ace9807c5f78ba"/>
 <approved hash="5,1,92ace9807c5f78ba"/>
 <approved hash="5,1,6908b546a31eb0fa"/>
-<approved hash="5,1,6cce6c29a4b417da"/>
-<approved hash="5,1,4d8be6f2992cbd5c"/>
-<approved hash="5,1,4d8be6f2992cbd5c"/>
 <approved hash="5,1,8bb9772f9a310643"/>
-<approved hash="5,1,cebfb56224711977"/>
-<approved hash="5,1,c588ec8b0d970b25"/>
-<approved hash="5,1,29ffccd091107ee8"/>
 <approved hash="5,1,0cba6fc7fd153843"/>
-<approved hash="5,1,ad40103fc7c6829e"/>
-<approved hash="5,1,7ed8d67187a19680"/>
-<approved hash="5,1,7320999bd5c69445"/>
-<approved hash="5,1,852a090a1d970b9a"/>
-<approved hash="5,1,e0e341d23b167120"/>
-<approved hash="5,1,59a2bdffd5f69f80"/>
-<approved hash="5,1,b228afe00781d6e0"/>
-<approved hash="5,1,1b52bf3f586d9368"/>
-<approved hash="5,1,1b52bf3f4969dbb6"/>
-<approved hash="5,1,cd8b5db7c810f1b1"/>
-<approved hash="5,1,ad74a7c2f344441b"/>
-<approved hash="5,1,17e0dfa231e2f9cf"/>
-<approved hash="5,1,102d661376ed7c9c"/>
-<approved hash="5,1,3f62589b9ea2ecc8"/>
-<approved hash="5,1,2836f967189c8b00"/>
-<approved hash="5,1,1e88df5ae56017a1"/>
-<approved hash="5,1,3f6cc7516dcb91f4"/>
-<approved hash="5,1,4994e2544907c82a"/>
-<approved hash="5,1,da828df313359394"/>
-<approved hash="5,1,72fb1f2127cb05a8"/>
-<approved hash="5,1,92f870cc871ebbcc"/>
 <approved hash="5,1,5100790766d49ddf"/>
 <approved hash="5,1,aaa654c964f2adb6"/>
-<approved hash="5,1,8a6deb4406219d9c"/>
-<approved hash="5,1,62a4db8637e47ac3"/>
-<approved hash="5,1,9008f6e8b7069038"/>
 <approved hash="5,16,54f3ab391a5c18bd"/>
 <approved hash="5,16,76a77c245c11aad5"/>
 <approved hash="5,16,568f3358ebe57275"/>
@@ -3048,6 +3035,40 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="19,16,f296f4168a288ca8"/>
 <approved hash="19,16,f196ee1690288fa8"/>
 <approved hash="5,1,9a5b1a53d55b1eae"/>
+<approved hash="5,1,df6d94bf31d6f434"/>
+<approved hash="5,1,ad6cba8434f1ad29"/>
+<approved hash="5,1,4ac8cc922f52d7c5"/>
+<approved hash="5,1,1f72fb017649ee69"/>
+<approved hash="5,1,61c7db80601b6ab3"/>
+<approved hash="5,1,abf7360603c7aa50"/>
+<approved hash="5,1,8eb7933e323c93e5"/>
+<approved hash="5,1,ee9e4bfd6efafd31"/>
+<approved hash="5,1,b3a95f2eaa265d84"/>
+<approved hash="5,1,7ec39d9ad7af70ea"/>
+<approved hash="5,1,79dfabd299e462df"/>
+<approved hash="5,1,0f33e6b13cf2e797"/>
+<approved hash="5,1,96b9bc6957304cf1"/>
+<approved hash="5,1,e5f9a34ee375d29f"/>
+<approved hash="5,1,ca43bbbd80d3ddac"/>
+<approved hash="5,1,f409ad24069785d6"/>
+<approved hash="5,1,0c3f2ba1c02c64ae"/>
+<approved hash="5,1,5a4bf326d5b460e9"/>
+<approved hash="5,1,1b1fd8b2572f5abd"/>
+<approved hash="5,1,b53566612e4d8633"/>
+<approved hash="5,1,a296298b7c2aee3b"/>
+<approved hash="5,1,81e29d14c55c5930"/>
+<approved hash="5,1,697a1a33ad52f9b9"/>
+<approved hash="5,1,f1495dd03df73b79"/>
+<approved hash="5,1,e328bb9a0deb4984"/>
+<approved hash="5,1,75b238915263a191"/>
+<approved hash="5,1,f22a73ae0deab885"/>
+<approved hash="5,1,3f8f912a502e710d"/>
+<approved hash="5,1,b62c34a470438a6d"/>
+<approved hash="5,1,ee9e4bfd6efafd31"/>
+<approved hash="5,1,1bf1882a9fd81d56"/>
+<approved hash="5,1,646d85cf24d07a3e"/>
+<approved hash="5,1,30fc919ee923cd2b"/>
+<approved hash="20,1,4efadcf1096276c8"/>
 </errors>
 </board>
 </drawing>
