@@ -258,7 +258,7 @@
 <wire x1="2" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
 <wire x1="2.5" y1="2.5" x2="2.5" y2="2" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="2" x2="-2" y2="2.5" width="0.127" layer="21"/>
-<circle x="-3" y="2.25" radius="0.25" width="0.127" layer="21"/>
+<circle x="-3" y="3.01" radius="0.25" width="0.127" layer="21"/>
 <text x="2.25" y="-3.5" size="0.635" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <rectangle x1="-2.5" y1="1.35" x2="-2" y2="1.65" layer="31"/>
 <rectangle x1="-2.5" y1="0.85" x2="-2" y2="1.15" layer="31"/>

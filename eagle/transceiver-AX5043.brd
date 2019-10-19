@@ -1738,7 +1738,7 @@ LED - BLUE</description>
 <wire x1="2" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
 <wire x1="2.5" y1="2.5" x2="2.5" y2="2" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="2" x2="-2" y2="2.5" width="0.127" layer="21"/>
-<circle x="-3" y="2.25" radius="0.25" width="0.127" layer="21"/>
+<circle x="-3" y="3.01" radius="0.25" width="0.127" layer="21"/>
 <text x="2.25" y="-3.5" size="0.635" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <rectangle x1="-2.5" y1="1.35" x2="-2" y2="1.65" layer="31"/>
 <rectangle x1="-2.5" y1="0.85" x2="-2" y2="1.15" layer="31"/>
@@ -2075,7 +2075,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="19.65" y="18.1" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="C4" library="oresat-rcl" package=".0402-C-NOSILK" value="1n" x="18.75" y="18.1" smashed="yes" rot="R90">
-<attribute name="NAME" x="16.74" y="17.62" size="0.6" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="16.94" y="17.52" size="0.6" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="18.75" y="18.1" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="C5" library="oresat-rcl" package=".0402-C-NOSILK" value="82p" x="17.9" y="15.6" smashed="yes" rot="R270">
@@ -2532,10 +2532,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="19.65" y1="19.25" x2="19.6" y2="19.3" width="0.5" layer="1"/>
 <via x="15" y="19.5" extent="1-16" drill="0.3"/>
 <via x="14" y="19.6" extent="1-16" drill="0.3"/>
-<via x="16" y="19.2" extent="1-16" drill="0.3"/>
-<via x="17" y="18.5" extent="1-16" drill="0.3"/>
-<via x="17.9" y="17.7" extent="1-16" drill="0.3"/>
-<via x="17.9" y="16.8" extent="1-16" drill="0.3"/>
+<via x="16.2" y="19.1" extent="1-16" drill="0.3"/>
+<via x="17.2" y="18.4" extent="1-16" drill="0.3"/>
+<via x="18" y="17.4" extent="1-16" drill="0.3"/>
 <via x="17.9" y="20.4" extent="1-16" drill="0.3"/>
 <via x="18.8" y="19.8" extent="1-16" drill="0.3"/>
 <polygon width="0.2" layer="1" pour="cutout" thermals="no">
