@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
@@ -1719,7 +1719,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="5,1,66eff70da1031b1c"/>
 <approved hash="5,1,66afba91ec971b54"/>
 <approved hash="5,1,2ee9c71da315651b"/>
-<approved hash="5,1,4249b6ae2efe2294"/>
 <approved hash="5,1,e53b5abbf29c66e1"/>
 <approved hash="5,1,26adf298b29f2156"/>
 <approved hash="5,1,a53c86b2ac91c8e3"/>
@@ -1746,17 +1745,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="5,1,66af3329652f1b54"/>
 <approved hash="5,1,eeaf3b2741204f57"/>
 <approved hash="5,1,2ea9033967396553"/>
-<approved hash="5,1,c0563ccb6e6f9e1d"/>
-<approved hash="5,1,7042849593e113b0"/>
-<approved hash="5,1,27a331dfcee0f172"/>
-<approved hash="5,1,fcd9b29ad9fe612b"/>
-<approved hash="5,1,fcd9b29ad9fe612b"/>
-<approved hash="5,1,212e65ad42aedbac"/>
-<approved hash="5,1,4e0c707144c057f3"/>
-<approved hash="5,1,3a2991a74e43902b"/>
-<approved hash="5,1,df79ac17f9de62a7"/>
-<approved hash="5,1,2411dd1f43b161fe"/>
-<approved hash="5,1,2411dd1f43b161fe"/>
 <approved hash="5,16,26ad7b203b272156"/>
 <approved hash="5,16,66afba91ec971b54"/>
 <approved hash="5,16,26adf298b29f2156"/>
@@ -1816,7 +1804,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="19,1,86f386bdf883f8cd"/>
 <approved hash="19,1,f6f1f6b3888d88cf"/>
 <approved hash="19,1,96f296b4288a28cc"/>
-<approved hash="19,1,9d21610dbb7fbb86"/>
 <approved hash="19,1,21b223fe1dc01f8c"/>
 <approved hash="19,1,91b293f42dca2f8c"/>
 <approved hash="19,1,91b193ee2dd02f8f"/>
@@ -1860,6 +1847,20 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="19,16,26b226fe18c0188c"/>
 <approved hash="19,16,96b196ee28d0288f"/>
 <approved hash="19,16,027606f638c83c48"/>
+<approved hash="19,1,b9834e189fc29494"/>
+<approved hash="5,1,eeefff03850c4f1f"/>
+<approved hash="5,1,4248b6ae2efe3d94"/>
+<approved hash="5,1,df563ccb6e6f9e02"/>
+<approved hash="5,1,3a40b87e09292a32"/>
+<approved hash="5,1,7433361c4eacd11a"/>
+<approved hash="5,1,42ffea51d17e20fe"/>
+<approved hash="5,1,a13c5702ac59316a"/>
+<approved hash="5,1,a13c5702ac59316a"/>
+<approved hash="5,1,9a390c13f221c815"/>
+<approved hash="5,1,41fd6cd4bff39e98"/>
+<approved hash="5,1,c655cad02d1d6dab"/>
+<approved hash="5,1,0b8c254a2abf00e7"/>
+<approved hash="5,1,0b8c254a2abf00e7"/>
 </errors>
 </board>
 </drawing>
