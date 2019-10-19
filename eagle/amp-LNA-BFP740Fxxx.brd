@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
@@ -177,7 +177,7 @@
 <wire x1="26" y1="9.5" x2="23" y2="9.5" width="2" layer="30"/>
 <text x="20.7" y="5.6" size="1" layer="22" font="vector" ratio="15" rot="MR0">Transistor LNA BFP740F
 PSAS / OreSat
-2019-10-14  v1
+2019-10-18  v1
 E.M.  KJ7AOG</text>
 <text x="10.5" y="18.8" size="1" layer="21" font="vector" ratio="15">+</text>
 <text x="14.8" y="18.8" size="1" layer="21" font="vector" ratio="15">+</text>
@@ -2024,6 +2024,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="R6" pad="2"/>
 <wire x1="17.15" y1="9.5" x2="18.15" y2="9.5" width="0.39" layer="1"/>
 <wire x1="18.15" y1="9.5" x2="24.854" y2="9.5" width="0.39" layer="1"/>
+<polygon width="0.2" layer="1">
+<vertex x="24.3" y="9.7"/>
+<vertex x="24.1" y="9.7"/>
+<vertex x="23.9" y="9.5"/>
+<vertex x="24.1" y="9.3"/>
+<vertex x="24.3" y="9.3"/>
+</polygon>
 </signal>
 <signal name="N$1">
 <contactref element="R3" pad="2"/>
@@ -2050,14 +2057,17 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="14.1" y1="12.7" x2="15.25" y2="11.55" width="0.6" layer="15"/>
 <wire x1="15.25" y1="11.55" x2="15.25" y2="6.4" width="0.6" layer="15"/>
 <wire x1="15.25" y1="6.4" x2="14.35" y2="5.5" width="0.6" layer="15"/>
-<wire x1="14.7" y1="3.3" x2="15.3" y2="3.3" width="0.8" layer="1"/>
-<wire x1="15.3" y1="3.3" x2="15.9" y2="3.3" width="0.8" layer="1"/>
-<wire x1="14.7" y1="4.6" x2="15.9" y2="4.6" width="0.8" layer="1"/>
-<wire x1="15.3" y1="5.6" x2="15.3" y2="4.7" width="0.8" layer="1"/>
-<wire x1="15.3" y1="4.7" x2="15.3" y2="3.3" width="0.8" layer="1"/>
-<wire x1="14.35" y1="5.5" x2="15.15" y2="4.7" width="0.8" layer="1"/>
-<wire x1="15.15" y1="4.7" x2="15.3" y2="4.7" width="0.8" layer="1"/>
-<wire x1="15.15" y1="4.7" x2="14.7" y2="4.6" width="0" layer="19" extent="1-1"/>
+<polygon width="0.2" layer="1" thermals="no">
+<vertex x="15.3" y="5.8"/>
+<vertex x="15.4" y="5.8"/>
+<vertex x="16.1" y="5.1"/>
+<vertex x="16.1" y="3"/>
+<vertex x="14.5" y="3"/>
+<vertex x="14.5" y="5.1"/>
+<vertex x="15.2" y="5.8"/>
+</polygon>
+<wire x1="14.35" y1="5.5" x2="14.85" y2="5" width="0.6" layer="1"/>
+<wire x1="14.85" y1="5" x2="15.3" y2="5" width="0.6" layer="1"/>
 </signal>
 <signal name="VEXT">
 <contactref element="Q1" pad="2"/>
@@ -2112,6 +2122,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="J1" pad="RF1"/>
 <contactref element="C1" pad="1"/>
 <wire x1="7.15" y1="10.5" x2="1.146" y2="10.5" width="0.39" layer="1"/>
+<polygon width="0.2" layer="1">
+<vertex x="1.7" y="10.7"/>
+<vertex x="1.9" y="10.7"/>
+<vertex x="2.1" y="10.5"/>
+<vertex x="1.9" y="10.3"/>
+<vertex x="1.7" y="10.3"/>
+</polygon>
 </signal>
 <signal name="N$3">
 <contactref element="R5" pad="1"/>
@@ -2149,7 +2166,103 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </mfgpreviewcolors>
 <errors>
 <approved hash="21,19,72758e7470746d8a"/>
-<approved hash="21,19,c208c1f73ff6c3f6"/>
+<approved hash="5,1,ded0f24c5e6fed0f"/>
+<approved hash="5,1,c3afc7e439893f9a"/>
+<approved hash="5,1,6942fabd0fbfd442"/>
+<approved hash="5,1,c576de4f20503965"/>
+<approved hash="5,1,f18a653789d88986"/>
+<approved hash="5,1,047cbf8d2289917a"/>
+<approved hash="5,1,bd929332478302df"/>
+<approved hash="5,1,5ba7265a858dfc76"/>
+<approved hash="5,1,2ea9beb4daac654b"/>
+<approved hash="5,1,eeaf86aafcb54f4f"/>
+<approved hash="5,1,9bd4d9116326e4ad"/>
+<approved hash="5,1,66af8ea4d8ba1b4c"/>
+<approved hash="5,1,26adc6ad86b2214e"/>
+<approved hash="5,1,e58b2e7c8607660d"/>
+<approved hash="5,1,d7451e8960277470"/>
+<approved hash="5,1,a58cf275d80ac80f"/>
+<approved hash="5,1,7d8ebe72b20daa0e"/>
+<approved hash="5,1,bd8cfa6b9410fc0d"/>
+<approved hash="5,1,f58c4f311d8620c1"/>
+<approved hash="5,1,7d8cd72b619a54c1"/>
+<approved hash="5,1,858e93278b9536c3"/>
+<approved hash="5,1,66d57a521276890b"/>
+<approved hash="5,1,5eccba573874b713"/>
+<approved hash="5,1,e6d0b24274628b0f"/>
+<approved hash="5,1,2f57f61c2567d4d4"/>
+<approved hash="5,1,6ece6e09902492d3"/>
+<approved hash="5,1,3c16c3f9c3cc3fdf"/>
+<approved hash="5,1,1fb4346a2e14206c"/>
+<approved hash="5,1,5be7f2b4e1caaaa8"/>
+<approved hash="5,1,cd1ed1d0f3da41ec"/>
+<approved hash="5,1,473e36dc3577e6b9"/>
+<approved hash="5,1,89ee8924d176463c"/>
+<approved hash="5,1,d4bad4156b034654"/>
+<approved hash="5,1,d2121fcb22592511"/>
+<approved hash="5,1,041bb5a78865c3a8"/>
+<approved hash="5,1,18cf5efdb6f87399"/>
+<approved hash="5,1,171c0bd05dda03ee"/>
+<approved hash="5,1,6e1a63ae136fe4aa"/>
+<approved hash="5,1,6bdd55c1a828c8b9"/>
+<approved hash="5,1,2546edb8f240e2d0"/>
+<approved hash="5,1,ccbf01e175063916"/>
+<approved hash="5,1,7aa88c39009463f0"/>
+<approved hash="5,1,e4bcfc1163078652"/>
+<approved hash="5,1,e57064b21b606970"/>
+<approved hash="5,1,3ba84d68f6d31d16"/>
+<approved hash="5,1,41de4dca1b2151b9"/>
+<approved hash="5,1,4b4777b9684194d1"/>
+<approved hash="5,16,858e93278b9536c3"/>
+<approved hash="5,16,ded0f24c5e6fed0f"/>
+<approved hash="5,16,bd929332478302df"/>
+<approved hash="5,16,2ea9beb4daac654b"/>
+<approved hash="5,16,eeaf86aafcb54f4f"/>
+<approved hash="5,16,66af8ea4d8ba1b4c"/>
+<approved hash="5,16,26adc6ad86b2214e"/>
+<approved hash="5,16,e58b2e7c8607660d"/>
+<approved hash="5,16,a58cf275d80ac80f"/>
+<approved hash="5,16,7d8ebe72b20daa0e"/>
+<approved hash="5,16,bd8cfa6b9410fc0d"/>
+<approved hash="5,16,f58c4f311d8620c1"/>
+<approved hash="5,16,7d8cd72b619a54c1"/>
+<approved hash="5,16,66d57a521276890b"/>
+<approved hash="5,16,5eccba573874b713"/>
+<approved hash="5,16,e6d0b24274628b0f"/>
+<approved hash="19,1,727270068e388c4c"/>
+<approved hash="19,1,9212ae0c10322c2c"/>
+<approved hash="19,1,22121e0620381c2c"/>
+<approved hash="19,1,9211ae1610282c2f"/>
+<approved hash="19,1,02163e0e00303c28"/>
+<approved hash="19,1,92129e1c20222c2c"/>
+<approved hash="19,1,92119e0620382c2f"/>
+<approved hash="19,1,22122e1610281c2c"/>
+<approved hash="19,1,02160e1e30203c28"/>
+<approved hash="19,1,a276a01e1e201c48"/>
+<approved hash="19,1,827280187e267c4c"/>
+<approved hash="19,1,829284087a367cac"/>
+<approved hash="19,1,729274168a288cac"/>
+<approved hash="19,1,a296a40e1a301ca8"/>
+<approved hash="19,1,b29db403ca3dcca3"/>
+<approved hash="19,1,b27db013ce2dcc43"/>
+<approved hash="19,16,727270068e388c4c"/>
+<approved hash="19,16,b29db403ca3dcca3"/>
+<approved hash="19,16,b27db013ce2dcc43"/>
+<approved hash="19,16,9212ae0c10322c2c"/>
+<approved hash="19,16,22121e0620381c2c"/>
+<approved hash="19,16,9211ae1610282c2f"/>
+<approved hash="19,16,02163e0e00303c28"/>
+<approved hash="19,16,92129e1c20222c2c"/>
+<approved hash="19,16,92119e0620382c2f"/>
+<approved hash="19,16,22122e1610281c2c"/>
+<approved hash="19,16,02160e1e30203c28"/>
+<approved hash="19,16,a276a01e1e201c48"/>
+<approved hash="19,16,827280187e267c4c"/>
+<approved hash="19,16,829284087a367cac"/>
+<approved hash="19,16,729274168a288cac"/>
+<approved hash="19,16,a296a40e1a301ca8"/>
+<approved hash="20,1,a9eeed17ee07b7ec"/>
+<approved hash="20,1,bcc2d2a04546264a"/>
 </errors>
 </board>
 </drawing>
