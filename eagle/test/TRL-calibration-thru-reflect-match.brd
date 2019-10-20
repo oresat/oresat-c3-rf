@@ -1522,7 +1522,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="THRU" class="1">
 <contactref element="J1" pad="RF1"/>
 <contactref element="J2" pad="RF1"/>
-<wire x1="1.146" y1="8" x2="8.854" y2="8" width="0.39" layer="1"/>
+<wire x1="1.146" y1="8" x2="8.854" y2="8" width="0.38" layer="1"/>
 <polygon width="0.2" layer="1" thermals="no">
 <vertex x="1.8" y="8.2"/>
 <vertex x="1.8" y="7.8"/>
@@ -1666,7 +1666,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="5.2" y="22" extent="1-16" drill="0.3"/>
 <via x="5.2" y="22.6" extent="1-16" drill="0.3"/>
 <via x="5.2" y="21.4" extent="1-16" drill="0.3"/>
-<wire x1="1.146" y1="22" x2="5.2" y2="22" width="0.39" layer="1"/>
+<wire x1="1.146" y1="22" x2="5.2" y2="22" width="0.38" layer="1"/>
 <polygon width="0.2" layer="1" thermals="no">
 <vertex x="1.8" y="22.2"/>
 <vertex x="1.8" y="21.8"/>
@@ -1691,7 +1691,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="J4" pad="RF1"/>
 <contactref element="R1" pad="2"/>
 <contactref element="R2" pad="2"/>
-<wire x1="1.146" y1="36" x2="4.9818" y2="36" width="0.39" layer="1"/>
+<wire x1="1.146" y1="36" x2="4.9818" y2="36" width="0.38" layer="1"/>
 <wire x1="4.9818" y1="36" x2="4.9818" y2="36.2818" width="0.39" layer="1"/>
 <wire x1="4.9818" y1="36.2818" x2="4.9818" y2="35.718196875" width="0.39" layer="1"/>
 <polygon width="0.2" layer="1" thermals="no">
@@ -1858,9 +1858,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="5,1,a13c5702ac59316a"/>
 <approved hash="5,1,9a390c13f221c815"/>
 <approved hash="5,1,41fd6cd4bff39e98"/>
-<approved hash="5,1,c655cad02d1d6dab"/>
 <approved hash="5,1,0b8c254a2abf00e7"/>
 <approved hash="5,1,0b8c254a2abf00e7"/>
+<approved hash="5,1,f43d145614ab7535"/>
+<approved hash="5,1,1618aac98dfe6fdb"/>
 </errors>
 </board>
 </drawing>
