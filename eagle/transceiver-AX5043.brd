@@ -2668,8 +2668,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="J2" pad="RF1"/>
 <contactref element="C8" pad="1"/>
 <wire x1="14.6818" y1="10.4318" x2="14.656496875" y2="10.406496875" width="0.39" layer="1"/>
-<wire x1="14.656496875" y1="10.406496875" x2="14" y2="8.821571875" width="0.39" layer="1" curve="45.00009"/>
-<wire x1="14" y1="8.821571875" x2="14" y2="1.146" width="0.39" layer="1"/>
+<wire x1="14.656496875" y1="10.406496875" x2="14" y2="8.821571875" width="0.38" layer="1" curve="45.00009"/>
+<wire x1="14" y1="8.821571875" x2="14" y2="1.146" width="0.38" layer="1"/>
 <polygon width="0.2" layer="1">
 <vertex x="13.8" y="1.7"/>
 <vertex x="13.8" y="1.9"/>
@@ -2681,7 +2681,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="RX" class="1">
 <contactref element="J1" pad="RF1"/>
 <contactref element="C7" pad="1"/>
-<wire x1="1.146" y1="14" x2="11.85" y2="14" width="0.39" layer="1"/>
+<wire x1="1.146" y1="14" x2="11.85" y2="14" width="0.38" layer="1"/>
 <polygon width="0.2" layer="1">
 <vertex x="1.7" y="14.2"/>
 <vertex x="1.9" y="14.2"/>
@@ -2694,11 +2694,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="J3" pad="RF1"/>
 <contactref element="R2" pad="2"/>
 <contactref element="R3" pad="1"/>
-<wire x1="23.518196875" y1="8.4818" x2="24.108578125" y2="9.07218125" width="0.35" layer="1"/>
+<wire x1="23.518196875" y1="8.4818" x2="24.108578125" y2="9.07218125" width="0.38" layer="1"/>
 <wire x1="24.108578125" y1="9.07218125" x2="24.1318" y2="9.0818" width="0.35" layer="1" curve="-45"/>
-<wire x1="23.518196875" y1="8.4818" x2="25.4142125" y2="6.585784375" width="0.39" layer="1"/>
-<wire x1="25.4142125" y1="6.585784375" x2="26" y2="5.17156875" width="0.39" layer="1" curve="-45.00009"/>
-<wire x1="26" y1="5.17156875" x2="26" y2="1.146" width="0.39" layer="1"/>
+<wire x1="23.518196875" y1="8.4818" x2="25.4142125" y2="6.585784375" width="0.38" layer="1"/>
+<wire x1="25.4142125" y1="6.585784375" x2="26" y2="5.17156875" width="0.38" layer="1" curve="-45.00009"/>
+<wire x1="26" y1="5.17156875" x2="26" y2="1.146" width="0.38" layer="1"/>
 <polygon width="0.2" layer="1">
 <vertex x="25.8" y="1.7"/>
 <vertex x="25.8" y="1.9"/>
@@ -2943,11 +2943,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="5,1,6ef585f02dc850d4"/>
 <approved hash="5,1,92ace9807c5f78ba"/>
 <approved hash="5,1,92ace9807c5f78ba"/>
-<approved hash="5,1,6908b546a31eb0fa"/>
-<approved hash="5,1,8bb9772f9a310643"/>
-<approved hash="5,1,0cba6fc7fd153843"/>
-<approved hash="5,1,5100790766d49ddf"/>
-<approved hash="5,1,aaa654c964f2adb6"/>
 <approved hash="5,16,54f3ab391a5c18bd"/>
 <approved hash="5,16,76a77c245c11aad5"/>
 <approved hash="5,16,568f3358ebe57275"/>
@@ -3037,13 +3032,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="5,1,df6d94bf31d6f434"/>
 <approved hash="5,1,ad6cba8434f1ad29"/>
 <approved hash="5,1,4ac8cc922f52d7c5"/>
-<approved hash="5,1,1f72fb017649ee69"/>
 <approved hash="5,1,61c7db80601b6ab3"/>
 <approved hash="5,1,abf7360603c7aa50"/>
-<approved hash="5,1,8eb7933e323c93e5"/>
-<approved hash="5,1,ee9e4bfd6efafd31"/>
-<approved hash="5,1,b3a95f2eaa265d84"/>
-<approved hash="5,1,7ec39d9ad7af70ea"/>
 <approved hash="5,1,79dfabd299e462df"/>
 <approved hash="5,1,0f33e6b13cf2e797"/>
 <approved hash="5,1,96b9bc6957304cf1"/>
@@ -3051,23 +3041,33 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="5,1,ca43bbbd80d3ddac"/>
 <approved hash="5,1,f409ad24069785d6"/>
 <approved hash="5,1,0c3f2ba1c02c64ae"/>
-<approved hash="5,1,5a4bf326d5b460e9"/>
 <approved hash="5,1,1b1fd8b2572f5abd"/>
 <approved hash="5,1,b53566612e4d8633"/>
 <approved hash="5,1,a296298b7c2aee3b"/>
-<approved hash="5,1,81e29d14c55c5930"/>
 <approved hash="5,1,697a1a33ad52f9b9"/>
 <approved hash="5,1,f1495dd03df73b79"/>
 <approved hash="5,1,e328bb9a0deb4984"/>
 <approved hash="5,1,75b238915263a191"/>
 <approved hash="5,1,f22a73ae0deab885"/>
 <approved hash="5,1,3f8f912a502e710d"/>
-<approved hash="5,1,b62c34a470438a6d"/>
-<approved hash="5,1,ee9e4bfd6efafd31"/>
 <approved hash="5,1,1bf1882a9fd81d56"/>
 <approved hash="5,1,646d85cf24d07a3e"/>
 <approved hash="5,1,30fc919ee923cd2b"/>
 <approved hash="20,1,4efadcf1096276c8"/>
+<approved hash="5,1,cb626bfa133dfca4"/>
+<approved hash="5,1,f536efdb169898c1"/>
+<approved hash="5,1,a631f93cb074f97b"/>
+<approved hash="5,1,9b4a8931b1341a72"/>
+<approved hash="5,1,0e917fdb14bf1366"/>
+<approved hash="5,1,5f83153d4b1a6839"/>
+<approved hash="5,1,2e1045d9a2795ee6"/>
+<approved hash="5,1,2f795ba167ef0c74"/>
+<approved hash="5,1,5f83153d4b1a6839"/>
+<approved hash="5,1,bb88b9072cd758ad"/>
+<approved hash="5,1,1bcbfaf634deb4b5"/>
+<approved hash="5,1,9e0bed5ceb75fc91"/>
+<approved hash="5,1,5086511681d422dd"/>
+<approved hash="5,1,730ee76b7952176c"/>
 </errors>
 </board>
 </drawing>
