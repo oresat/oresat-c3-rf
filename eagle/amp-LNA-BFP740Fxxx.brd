@@ -2022,8 +2022,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="C2" pad="2"/>
 <contactref element="J2" pad="RF1"/>
 <contactref element="R6" pad="2"/>
-<wire x1="17.15" y1="9.5" x2="18.15" y2="9.5" width="0.39" layer="1"/>
-<wire x1="18.15" y1="9.5" x2="24.854" y2="9.5" width="0.39" layer="1"/>
+<wire x1="17.15" y1="9.5" x2="18.15" y2="9.5" width="0.38" layer="1"/>
+<wire x1="18.15" y1="9.5" x2="24.854" y2="9.5" width="0.38" layer="1"/>
 <polygon width="0.2" layer="1">
 <vertex x="24.3" y="9.7"/>
 <vertex x="24.1" y="9.7"/>
@@ -2101,15 +2101,15 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="C2" pad="1"/>
 <contactref element="Q2" pad="3"/>
 <contactref element="L2" pad="2"/>
-<wire x1="13.65" y1="9.5" x2="15.3" y2="9.5" width="0.39" layer="1"/>
-<wire x1="15.3" y1="9.5" x2="16.25" y2="9.5" width="0.39" layer="1"/>
+<wire x1="13.65" y1="9.5" x2="15.3" y2="9.5" width="0.38" layer="1"/>
+<wire x1="15.3" y1="9.5" x2="16.25" y2="9.5" width="0.38" layer="1"/>
 </signal>
 <signal name="B" class="2">
 <contactref element="L1" pad="1"/>
 <contactref element="Q2" pad="1"/>
 <contactref element="L3" pad="2"/>
-<wire x1="9.75" y1="10.5" x2="10.7" y2="10.5" width="0.39" layer="1"/>
-<wire x1="10.7" y1="10.5" x2="12.35" y2="10.5" width="0.39" layer="1"/>
+<wire x1="9.75" y1="10.5" x2="10.7" y2="10.5" width="0.38" layer="1"/>
+<wire x1="10.7" y1="10.5" x2="12.35" y2="10.5" width="0.38" layer="1"/>
 </signal>
 <signal name="N$7">
 <contactref element="C8" pad="1"/>
@@ -2121,7 +2121,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="RF_IN" class="2">
 <contactref element="J1" pad="RF1"/>
 <contactref element="C1" pad="1"/>
-<wire x1="7.15" y1="10.5" x2="1.146" y2="10.5" width="0.39" layer="1"/>
+<wire x1="7.15" y1="10.5" x2="1.146" y2="10.5" width="0.38" layer="1"/>
 <polygon width="0.2" layer="1">
 <vertex x="1.7" y="10.7"/>
 <vertex x="1.9" y="10.7"/>
@@ -2140,7 +2140,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="N$2" class="2">
 <contactref element="C1" pad="2"/>
 <contactref element="L3" pad="1"/>
-<wire x1="8.05" y1="10.5" x2="8.85" y2="10.5" width="0.39" layer="1"/>
+<wire x1="8.05" y1="10.5" x2="8.85" y2="10.5" width="0.38" layer="1"/>
 </signal>
 <signal name="2V7">
 <contactref element="Q1" pad="3"/>
@@ -2193,26 +2193,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="5,1,2f57f61c2567d4d4"/>
 <approved hash="5,1,6ece6e09902492d3"/>
 <approved hash="5,1,3c16c3f9c3cc3fdf"/>
-<approved hash="5,1,1fb4346a2e14206c"/>
-<approved hash="5,1,5be7f2b4e1caaaa8"/>
-<approved hash="5,1,cd1ed1d0f3da41ec"/>
 <approved hash="5,1,473e36dc3577e6b9"/>
-<approved hash="5,1,89ee8924d176463c"/>
 <approved hash="5,1,d4bad4156b034654"/>
-<approved hash="5,1,d2121fcb22592511"/>
-<approved hash="5,1,041bb5a78865c3a8"/>
 <approved hash="5,1,18cf5efdb6f87399"/>
-<approved hash="5,1,171c0bd05dda03ee"/>
-<approved hash="5,1,6e1a63ae136fe4aa"/>
 <approved hash="5,1,6bdd55c1a828c8b9"/>
-<approved hash="5,1,2546edb8f240e2d0"/>
 <approved hash="5,1,ccbf01e175063916"/>
-<approved hash="5,1,7aa88c39009463f0"/>
 <approved hash="5,1,e4bcfc1163078652"/>
-<approved hash="5,1,e57064b21b606970"/>
-<approved hash="5,1,3ba84d68f6d31d16"/>
 <approved hash="5,1,41de4dca1b2151b9"/>
-<approved hash="5,1,4b4777b9684194d1"/>
 <approved hash="5,16,858e93278b9536c3"/>
 <approved hash="5,16,ded0f24c5e6fed0f"/>
 <approved hash="5,16,bd929332478302df"/>
@@ -2263,6 +2250,19 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="19,16,a296a40e1a301ca8"/>
 <approved hash="20,1,a9eeed17ee07b7ec"/>
 <approved hash="20,1,bcc2d2a04546264a"/>
+<approved hash="5,1,4d18198b185c7f7c"/>
+<approved hash="5,1,8d308fd51c6d43a9"/>
+<approved hash="5,1,05a770847401d1d9"/>
+<approved hash="5,1,838c9d39e0c99ca5"/>
+<approved hash="5,1,2319a98aa85d0f7d"/>
+<approved hash="5,1,03008f1c2fd7410e"/>
+<approved hash="5,1,e1a7a9d40239ba3e"/>
+<approved hash="5,1,926e36b42a28c820"/>
+<approved hash="5,1,2d322fd6786ecdab"/>
+<approved hash="5,1,5d6f24f68c6320c5"/>
+<approved hash="5,1,162ed20115662b0c"/>
+<approved hash="5,1,b3ba7aa0de4b55a0"/>
+<approved hash="5,1,342cc20b726c7e0e"/>
 </errors>
 </board>
 </drawing>
