@@ -1,0 +1,37 @@
+## E5071C-ENA_2019-10-19
+Measurement of two 50 mm long microstrips and a very long microstrip from OreSat's backplane taken on an Agilent E5071C ENA.
+
+### Sweep Setup
+
+    Start: 200 MHz
+    Stop: 20 GHz
+    Points: 401
+
+### Calibration
+
+    Type: Full 2-port (open, short, load, thru)
+    Kit:
+
+### TDR Setup
+Simulated TDR based on the frequency domain transformation to time domain.  Time-domain reflectometry (TDR) uses input return loss scattering parameters (S11) in real format.
+
+    Type: Low-pass mode
+    Response: Step
+    Window: Normal
+
+### Phase Velocity Measurement
+The phase velocity of the microstrip can be calculated by using TDR to measure the time difference between two known discontinuties, and the physical difference distance.  From phase velocity the effective permittivity can be calculated.
+
+    v_p = Δl / Δt = c / sqrt(ε_eff)
+    ε_eff = ( Δt * c / Δl )^2
+
+The very long 0.38 mm wide microstrip on the backplane was used to measure the phase velocity.  Pieces of copper wire where placed over the microstrip to induce two known discontinuties.  While monitoring the TDR in real-time and pressing lightly on the copper pieces, markers were placed precisely on the induced discontinuties.
+
+    Δl = 145.15 mm (avg)
+    Δt = 795.5 ps
+
+    v_p = 182.5 m/s
+    ε_eff = 2.700
+
+### Reference
+- [Agilent E5071C Manual](http://ena.support.keysight.com/e5071c/manuals/webhelp/eng/index.htm)

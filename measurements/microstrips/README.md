@@ -12,7 +12,7 @@ Four varying widths on two physical boards.  Two variations on each board; top a
 Measurement of four 50 mm long varying microstrip widths taken on an Agilent E5071C ENA.
 
 ### [E5071C-ENA_2019-08-30](E5071C-ENA_2019-08-30)
-Measurement of two 50 mm long microstrips and a very long microstrip from OreSat's backplane.
+Measurement of two 50 mm long microstrips and a very long microstrip from OreSat's backplane taken on an Agilent E5071C ENA.
 
 ### References
 - [OSH Park 4-layer stackup](https://docs.oshpark.com/services/four-layer/)

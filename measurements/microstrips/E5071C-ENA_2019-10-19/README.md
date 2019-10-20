@@ -7,6 +7,11 @@ Measurements of four 50 mm long varying microstrip widths taken on an Agilent E5
     Stop: 20 GHz
     Points: 401
 
+### Calibration
+
+    Type: Full 2-port (open, short, load, thru)
+    Kit:
+
 ### TDR Setup
 Simulated TDR based on the frequency domain transformation to time domain.  Time-domain reflectometry (TDR) uses input return loss scattering parameters (S11) in real format.
 
