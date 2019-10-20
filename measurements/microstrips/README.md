@@ -9,7 +9,7 @@ Four varying widths on two physical boards.  Two variations on each board; top a
     microstrip-test-4-layer-sma-36-38
 
 ### [E5071C-ENA_2019-10-19](E5071C-ENA_2019-10-19)
-Measurements of all four variations taken on an Agilent E5071C ENA.
+Measurements of four 50 mm long varying microstrip widths taken on an Agilent E5071C ENA.
 
 ### References
 - [OSH Park 4-layer stackup](https://docs.oshpark.com/services/four-layer/)
