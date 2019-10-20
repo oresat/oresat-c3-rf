@@ -1,5 +1,5 @@
 ## E5071C-ENA_2019-10-19
-Measurement of two 50 mm long microstrips and a very long microstrip from OreSat's backplane taken on an Agilent E5071C ENA.
+Measurement of two 50 mm long microstrips and a very long microstrip from OreSat's backplane taken on an Agilent E5071C ENA.  Phase velocity and effective permittivity was calculated by inducing discontinuties across the very long microstrip.
 
 ### Sweep Setup
 
@@ -32,6 +32,11 @@ The very long 0.38 mm wide microstrip on the backplane was used to measure the p
 
     v_p = 182.5 m/s
     ε_eff = 2.700
+
+#### Backplane with discontinuties
+![Backplane with discontinuties](backplane_2-20_0.38_board_vp-test_resize.png)
+![TDR of backplane with discontinuties](backplane_2-20_0.38_TDR_STEP_vp-test.PNG)
+
 
 ### Reference
 - [Agilent E5071C Manual](http://ena.support.keysight.com/e5071c/manuals/webhelp/eng/index.htm)
