@@ -14,5 +14,11 @@ Simulated TDR based on the frequency domain transformation to time domain.  Time
     Response: Step
     Window: Normal
 
+### Results
+- [ADS schedmatic of imported S parameter data](microstrips_schematic.pdf)
+- [S11 and S21, 200 MHz to 20 GHz](microstrips_S11_S21_200M-20G.pdf)
+- [S11 and S21, 400 MHz to 4 GHz](microstrips_S11_S21_400M-4G.pdf)
+- [TDR screen shot comparison](microstrips_TDR_compare.pdf)
+
 ### Reference
 - [Agilent E5071C Manual](http://ena.support.keysight.com/e5071c/manuals/webhelp/eng/index.htm)
