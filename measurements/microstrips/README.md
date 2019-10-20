@@ -2,7 +2,7 @@
 
 Microstrip evaluation boards to determine the 50 ohm microstrip width using OSH Park's 4-layer stackup.  Four 50 mm long microstrip boards with end-launch SMA connectors were designed; 0.34, 0.36, 0.38, and 0.40 mm widths.  The calculated 50 ohm width should be around 0.34 mm, however, the measured 50 ohm width is around 0.38 mm.
 
-### [EAGLE CAD files](../../eagle/test/)
+### [EAGLE CAD Files](../../eagle/test/)
 Four varying widths on two physical boards.  Two variations on each board; top and bottom.  OSH Park always ships a minimum of 3 boards per design.
 
     microstrip-test-4-layer-sma-34-40
