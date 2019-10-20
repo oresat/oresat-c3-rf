@@ -16,5 +16,5 @@ Complete link models for command/engineering channels, telemetry/public channels
 ## [measurements](measurements)
 Evaluation board measurements using lab tools.
 
-## simulations
+## [simulations](simulations)
 Evaluation board simulations using ADS and/or HFSS.
