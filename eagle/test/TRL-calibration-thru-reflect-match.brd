@@ -3,7 +3,7 @@
 <eagle version="9.5.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
@@ -170,6 +170,9 @@
 <wire x1="8" y1="0" x2="10" y2="2" width="0" layer="20" curve="90"/>
 <text x="8.3" y="33.1" size="1.4" layer="21" font="vector" ratio="15" rot="R90">MATCH</text>
 <text x="7.2" y="18.2" size="1.4" layer="21" font="vector" ratio="15" rot="R90">REFLECT</text>
+<wire x1="0" y1="36" x2="5" y2="36" width="2.1" layer="29"/>
+<wire x1="0" y1="22" x2="4" y2="22" width="2.1" layer="29"/>
+<wire x1="0" y1="8" x2="10" y2="8" width="2.1" layer="29"/>
 </plain>
 <libraries>
 <library name="J-Cinch-142-0701-851-SMA-end-launch">
