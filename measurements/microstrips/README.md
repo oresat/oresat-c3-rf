@@ -5,8 +5,9 @@ Microstrip evaluation boards to determine the 50 ohm microstrip width using OSH 
 ### [EAGLE CAD Files](../../eagle/test/)
 Four varying widths on two physical boards.  Two variations on each board; top and bottom.  OSH Park always ships a minimum of 3 boards per design.
 
-    microstrip-test-4-layer-sma-34-40
-    microstrip-test-4-layer-sma-36-38
+    oresat-c3-rf/eagle/test/
+      microstrip-test-4-layer-sma-34-40
+      microstrip-test-4-layer-sma-36-38
 
 ### [E5071C-ENA_2019-10-19](E5071C-ENA_2019-10-19)
 Measurement of four 50 mm long varying microstrip widths taken on an Agilent E5071C ENA.
