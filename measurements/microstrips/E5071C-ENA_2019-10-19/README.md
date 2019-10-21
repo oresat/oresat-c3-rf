@@ -1,4 +1,4 @@
-## E5071C-ENA_2019-10-19
+## 2019-10-19 E5071C-ENA
 Measure and determine correct microstrip width for 50 ohm impedance on OSH Park's 4-layer stackup operating below 3 GHz.  Four 50 mm long microstrip test boards were measured; 0.34, 0.36, 0.38, and 0.40 mm.
 
 ---
@@ -10,7 +10,7 @@ Measure and determine correct microstrip width for 50 ohm impedance on OSH Park'
 
 #### Equipment
 
-    DUT: Microstrip test boards
+    DUTs: 50 mm long microstrip test boards; 0.34, 0.36, 0.38, and 0.40 mm widths
     VNA: Agilent E5071C ENA
 
 #### Sweep Setup
