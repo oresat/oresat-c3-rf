@@ -12,7 +12,7 @@ Four varying widths on two physical boards.  Two variations on each board; top a
 Measurement of four 50 mm long varying microstrip widths taken on an Agilent E5071C ENA.
 
 ### [E5071C-ENA_2019-08-30](E5071C-ENA_2019-08-30)
-Measurement of two 50 mm long microstrips and a very long microstrip from OreSat's backplane taken on an Agilent E5071C ENA.  Phase velocity and effective permittivity was calculated by inducing discontinuties across the very long microstrip.
+Measurement of two 50 mm long microstrips and a very long microstrip from [OreSat's backplane](https://github.com/oresat/oresat-backplane) taken on an Agilent E5071C ENA.  Phase velocity and effective permittivity was calculated by inducing discontinuties across the very long microstrip.
 
 ### References
 - [OSH Park 4-layer stackup](https://docs.oshpark.com/services/four-layer/)
