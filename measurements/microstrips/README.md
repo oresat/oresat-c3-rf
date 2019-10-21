@@ -9,10 +9,10 @@ Four varying widths on two physical boards.  Two variations on each board; top a
       microstrip-test-4-layer-sma-34-40
       microstrip-test-4-layer-sma-36-38
 
-### [2019-10-19 E5071C-ENA](2019-10-19-E5071C-ENA)
+### [2019-10-19 E5071C-ENA](2019-10-19_E5071C-ENA)
 Measure and determine correct microstrip width for 50 ohm impedance on OSH Park's 4-layer stackup operating below 3 GHz.  Four 50 mm long microstrip test boards were measured; 0.34, 0.36, 0.38, and 0.40 mm.
 
-### [2019-08-30 E5071C-ENA](2019-08-30-E5071C-ENA)
+### [2019-08-30 E5071C-ENA](2019-08-30_E5071C-ENA)
 Measure and determine correct microstrip width for 50 ohm impedance on OSH Park's 4-layer stackup operating below 3 GHz.  Two 50 mm long microstrip test boards were measured with 0.34, and 0.40 mm widths, and a 180 mm long 0.38 mm width.  Phase velocity was also measured and effective permittivity was calculated by inducing discontinuties across the 180 mm long microstrip.
 
 ### References
