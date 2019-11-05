@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2086,15 +2086,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="19,16,f6a3f6262018209d"/>
 <approved hash="19,16,fef3fe76284828cd"/>
 <approved hash="19,16,f383ce06183825bd"/>
-<approved hash="5,1,7366ec610b021be8"/>
 <approved hash="5,1,f6b8f48a4284449e"/>
-<approved hash="5,1,61528e04e8e52a4f"/>
 <approved hash="5,1,f8ec74f4a3834790"/>
-<approved hash="5,1,914435069457dee7"/>
-<approved hash="5,1,9152335c12b15e4d"/>
-<approved hash="5,1,92d0292b8b2cde25"/>
-<approved hash="5,1,6a7c04f6f8ab70e3"/>
-<approved hash="5,1,90299462f8e400b0"/>
 <approved hash="19,1,f6a3f6262018209d"/>
 <approved hash="20,1,292e493d418d865d"/>
 <approved hash="20,1,25dbc7230184a6f8"/>
@@ -2125,9 +2118,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="5,1,fd0c3d391927f2e1"/>
 <approved hash="5,1,3eccc3073f64bd53"/>
 <approved hash="5,1,e6c8833d955fdb57"/>
-<approved hash="5,1,2429aa8eefad3a93"/>
-<approved hash="5,1,9d18f6fe0ba0b1ba"/>
-<approved hash="5,1,42ae2fa1a7db5e6e"/>
 <approved hash="5,16,bd0af93a7f2b44e7"/>
 <approved hash="5,16,650cbd02d51226e1"/>
 <approved hash="5,16,e53b5abbf29c66e1"/>
@@ -2170,9 +2160,19 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="5,1,0f5842403e4e00d6"/>
 <approved hash="5,1,72800e6310a30ed8"/>
 <approved hash="5,1,e1180c40707be107"/>
-<approved hash="5,1,e549a7a5c6af2f9e"/>
-<approved hash="5,1,7d87eff879193d03"/>
-<approved hash="5,1,ec241374107d4621"/>
+<approved hash="5,1,8cd9bdbb0e2e36b2"/>
+<approved hash="5,1,7a55d76771660c52"/>
+<approved hash="5,1,0f674dcbfe42a6ec"/>
+<approved hash="5,1,e4f7feff918495b6"/>
+<approved hash="5,1,662cc8386e3d1071"/>
+<approved hash="5,1,e0eb4e84e89896f1"/>
+<approved hash="5,1,0e9f1b45777282a4"/>
+<approved hash="5,1,46bd854f6bcdece4"/>
+<approved hash="5,1,45278ccc69a7c88d"/>
+<approved hash="5,1,d790d0757e72dbfe"/>
+<approved hash="5,1,0a4d3ff4296e9d26"/>
+<approved hash="5,1,bbe6fab54f205437"/>
+<approved hash="5,1,506954f9851c226f"/>
 </errors>
 </board>
 </drawing>
