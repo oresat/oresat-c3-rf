@@ -4580,23 +4580,28 @@ Datasheet: &lt;a href="https://www.minicircuits.com/pdfs/QCN-19+.pdf"&gt;Datashe
 </classes>
 <parts>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
-<part name="J1" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device=""/>
-<part name="GND31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="J2" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device=""/>
 <part name="J3" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device=""/>
+<part name="J4" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device=""/>
+<part name="J1" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R1" library="oresat-rcl" deviceset="R-US_" device="0402-C-NOSILK" value="100"/>
 <part name="R2" library="oresat-rcl" deviceset="R-US_" device="0402-C-NOSILK" value="100"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U1" library="U-MiniCirc-QCN-XXX+-quad" deviceset="QCN-XXX+" device=""/>
+<part name="J2" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device=""/>
+<part name="R1" library="oresat-rcl" deviceset="R-US_" device="0402-C-NOSILK" value="100"/>
+<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="176.53" y="26.67" size="5.08" layer="94">Quad. Hybrid: QCN-19+</text>
 <text x="265.43" y="6.35" size="3.81" layer="94">1</text>
+<text x="78.74" y="81.28" size="1.778" layer="97">Notes:
+- Terminating 0402 resistors can handle a total of +21dBm.
+- To use TERM for isolating port or external terminator,
+   then short traces and don't place R1/2.</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -4605,44 +4610,48 @@ Datasheet: &lt;a href="https://www.minicircuits.com/pdfs/QCN-19+.pdf"&gt;Datashe
 <attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
 </instance>
-<instance part="J1" gate="G$1" x="99.06" y="119.38" smashed="yes">
+<instance part="J3" gate="G$1" x="99.06" y="119.38" smashed="yes">
 <attribute name="VALUE" x="95.25" y="120.65" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="96.52" y="122.682" size="1.778" layer="95"/>
 </instance>
-<instance part="GND31" gate="1" x="101.6" y="114.3" smashed="yes">
-<attribute name="VALUE" x="99.06" y="111.76" size="1.778" layer="96"/>
+<instance part="J4" gate="G$1" x="86.36" y="109.22" smashed="yes">
+<attribute name="VALUE" x="82.55" y="110.49" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="83.82" y="112.522" size="1.778" layer="95"/>
 </instance>
-<instance part="J2" gate="G$1" x="152.4" y="119.38" smashed="yes" rot="MR0">
+<instance part="J1" gate="G$1" x="152.4" y="119.38" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="156.21" y="120.65" size="1.778" layer="96" rot="MR180"/>
 <attribute name="NAME" x="154.94" y="122.682" size="1.778" layer="95" rot="MR0"/>
 </instance>
-<instance part="J3" gate="G$1" x="152.4" y="109.22" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="156.21" y="110.49" size="1.778" layer="96" rot="MR180"/>
-<attribute name="NAME" x="154.94" y="112.522" size="1.778" layer="95" rot="MR0"/>
-</instance>
-<instance part="GND2" gate="1" x="148.59" y="101.6" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="151.13" y="99.06" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND2" gate="1" x="149.86" y="104.14" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="152.4" y="101.6" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="GND1" gate="1" x="127" y="101.6" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="129.54" y="99.06" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="R1" gate="R" x="107.95" y="102.87" smashed="yes" rot="R90">
-<attribute name="NAME" x="106.4514" y="99.06" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="111.252" y="99.06" size="1.778" layer="96" rot="R90"/>
+<instance part="R2" gate="R" x="106.68" y="102.87" smashed="yes" rot="R90">
+<attribute name="NAME" x="110.2614" y="104.14" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="109.982" y="99.06" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R2" gate="R" x="100.33" y="102.87" smashed="yes" rot="R90">
-<attribute name="NAME" x="98.8314" y="99.06" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="103.632" y="99.06" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="GND3" gate="1" x="100.33" y="95.25" smashed="yes">
-<attribute name="VALUE" x="97.79" y="92.71" size="1.778" layer="96"/>
-</instance>
-<instance part="GND4" gate="1" x="107.95" y="95.25" smashed="yes">
-<attribute name="VALUE" x="105.41" y="92.71" size="1.778" layer="96"/>
+<instance part="GND3" gate="1" x="106.68" y="95.25" smashed="yes">
+<attribute name="VALUE" x="104.14" y="92.71" size="1.778" layer="96"/>
 </instance>
 <instance part="U1" gate="G$1" x="127" y="114.3" smashed="yes">
 <attribute name="NAME" x="127" y="125.73" size="1.778" layer="95"/>
 <attribute name="VALUE" x="127" y="123.19" size="1.778" layer="96"/>
+</instance>
+<instance part="J2" gate="G$1" x="152.4" y="109.22" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="156.21" y="110.49" size="1.778" layer="96" rot="MR180"/>
+<attribute name="NAME" x="154.94" y="112.522" size="1.778" layer="95" rot="MR0"/>
+</instance>
+<instance part="R1" gate="R" x="102.87" y="102.87" smashed="yes" rot="R90">
+<attribute name="NAME" x="101.3714" y="104.14" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="101.092" y="99.06" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND4" gate="1" x="101.6" y="114.3" smashed="yes">
+<attribute name="VALUE" x="99.06" y="111.76" size="1.778" layer="96"/>
+</instance>
+<instance part="GND5" gate="1" x="88.9" y="104.14" smashed="yes">
+<attribute name="VALUE" x="86.36" y="101.6" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -4650,63 +4659,69 @@ Datasheet: &lt;a href="https://www.minicircuits.com/pdfs/QCN-19+.pdf"&gt;Datashe
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="J3" gate="G$1" pin="GND"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="149.86" y1="106.68" x2="148.59" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="148.59" y1="106.68" x2="148.59" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="GND"/>
-<wire x1="149.86" y1="116.84" x2="148.59" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="148.59" y1="106.68" x2="148.59" y2="116.84" width="0.1524" layer="91"/>
-<junction x="148.59" y="106.68"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="GND"/>
-<pinref part="GND31" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="R2" gate="R" pin="1"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="R1" gate="R" pin="1"/>
-<pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="102.87" y1="97.79" x2="106.68" y2="97.79" width="0.1524" layer="91"/>
+<junction x="106.68" y="97.79"/>
 </segment>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="U1" gate="G$1" pin="GND"/>
 </segment>
-</net>
-<net name="PORT1" class="1">
 <segment>
-<pinref part="J2" gate="G$1" pin="RF"/>
-<wire x1="142.24" y1="119.38" x2="149.86" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="PORT1"/>
+<pinref part="J2" gate="G$1" pin="GND"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<pinref part="J1" gate="G$1" pin="GND"/>
+<wire x1="149.86" y1="106.68" x2="149.86" y2="116.84" width="0.1524" layer="91"/>
+<junction x="149.86" y="106.68"/>
 </segment>
-</net>
-<net name="PORT2" class="1">
 <segment>
-<pinref part="J3" gate="G$1" pin="RF"/>
-<wire x1="142.24" y1="109.22" x2="149.86" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="PORT2"/>
+<pinref part="J3" gate="G$1" pin="GND"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="GND"/>
+<pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="SUM" class="1">
 <segment>
-<pinref part="J1" gate="G$1" pin="RF"/>
-<wire x1="101.6" y1="119.38" x2="111.76" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="J3" gate="G$1" pin="RF"/>
 <pinref part="U1" gate="G$1" pin="SUM"/>
+<wire x1="101.6" y1="119.38" x2="111.76" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="P1" class="1">
+<segment>
+<pinref part="U1" gate="G$1" pin="PORT1"/>
+<pinref part="J1" gate="G$1" pin="RF"/>
+<wire x1="142.24" y1="119.38" x2="149.86" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="P2" class="1">
+<segment>
+<pinref part="U1" gate="G$1" pin="PORT2"/>
+<pinref part="J2" gate="G$1" pin="RF"/>
+<wire x1="142.24" y1="109.22" x2="149.86" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TERM" class="0">
 <segment>
-<pinref part="R2" gate="R" pin="2"/>
-<wire x1="111.76" y1="109.22" x2="107.95" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="107.95" y1="109.22" x2="100.33" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="100.33" y1="109.22" x2="100.33" y2="107.95" width="0.1524" layer="91"/>
 <pinref part="R1" gate="R" pin="2"/>
-<wire x1="107.95" y1="107.95" x2="107.95" y2="109.22" width="0.1524" layer="91"/>
-<junction x="107.95" y="109.22"/>
 <pinref part="U1" gate="G$1" pin="TERM"/>
+<wire x1="102.87" y1="107.95" x2="102.87" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="102.87" y1="109.22" x2="106.68" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="R2" gate="R" pin="2"/>
+<wire x1="106.68" y1="109.22" x2="111.76" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="107.95" x2="106.68" y2="109.22" width="0.1524" layer="91"/>
+<junction x="106.68" y="109.22"/>
+</segment>
+</net>
+<net name="ISO" class="1">
+<segment>
+<pinref part="J4" gate="G$1" pin="RF"/>
+<wire x1="88.9" y1="109.22" x2="100.33" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -4715,6 +4730,10 @@ Datasheet: &lt;a href="https://www.minicircuits.com/pdfs/QCN-19+.pdf"&gt;Datashe
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
