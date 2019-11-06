@@ -4495,9 +4495,9 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </deviceset>
 </devicesets>
 </library>
-<library name="U-MiniCirc-QCN-19+-quad">
+<library name="U-MiniCirc-QCN-XXX+-quad">
 <packages>
-<package name="QCN-19D+">
+<package name="QCN-XXX+">
 <wire x1="-1.6" y1="-0.8" x2="1.6" y2="-0.8" width="0.127" layer="51"/>
 <wire x1="1.6" y1="-0.8" x2="1.6" y2="0.8" width="0.127" layer="51"/>
 <wire x1="1.6" y1="0.8" x2="-1.6" y2="0.8" width="0.127" layer="51"/>
@@ -4526,7 +4526,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </package>
 </packages>
 <symbols>
-<symbol name="QCN-19D+">
+<symbol name="QCN-XXX+">
 <pin name="SUM" x="-15.24" y="5.08" length="short"/>
 <pin name="PORT2" x="15.24" y="-5.08" length="short" rot="R180"/>
 <pin name="PORT1" x="15.24" y="5.08" length="short" rot="R180"/>
@@ -4541,16 +4541,16 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="QCN-19D+" prefix="U">
+<deviceset name="QCN-XXX+" prefix="U">
 <description>&lt;b&gt;RF Power Splitter/Combiner, Quadrature Hybrid&lt;/b&gt;&lt;p&gt;
-&lt;b&gt;QCN-19D+&lt;/b&gt;&lt;br&gt;
+&lt;b&gt;QCN-19+&lt;/b&gt;&lt;br&gt;
 1100 - 1925 MHz&lt;br&gt;
-Datasheet: &lt;a href="https://www.minicircuits.com/pdfs/QCN-19D+.pdf"&gt;Datasheet&lt;/a&gt;</description>
+Datasheet: &lt;a href="https://www.minicircuits.com/pdfs/QCN-19+.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="QCN-19D+" x="0" y="0"/>
+<gate name="G$1" symbol="QCN-XXX+" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="QCN-19D+">
+<device name="" package="QCN-XXX+">
 <connects>
 <connect gate="G$1" pin="GND" pad="2 5"/>
 <connect gate="G$1" pin="PORT1" pad="4"/>
@@ -4590,12 +4590,12 @@ Datasheet: &lt;a href="https://www.minicircuits.com/pdfs/QCN-19D+.pdf"&gt;Datash
 <part name="R2" library="oresat-rcl" deviceset="R-US_" device="0402-C-NOSILK" value="100"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U1" library="U-MiniCirc-QCN-19+-quad" deviceset="QCN-19D+" device=""/>
+<part name="U1" library="U-MiniCirc-QCN-XXX+-quad" deviceset="QCN-XXX+" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="176.53" y="26.67" size="5.08" layer="94">Quad. Hybrid: QCN-19D+</text>
+<text x="176.53" y="26.67" size="5.08" layer="94">Quad. Hybrid: QCN-19+</text>
 <text x="265.43" y="6.35" size="3.81" layer="94">1</text>
 </plain>
 <instances>
