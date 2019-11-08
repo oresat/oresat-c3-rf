@@ -4596,7 +4596,7 @@ Datasheet: &lt;a href="https://www.minicircuits.com/pdfs/QCN-19+.pdf"&gt;Datashe
 <sheets>
 <sheet>
 <plain>
-<text x="176.53" y="26.67" size="5.08" layer="94">Quad. Hybrid: QCN-19+</text>
+<text x="176.53" y="26.67" size="5.08" layer="94">Quad. Hybrid: QCN-XXX+</text>
 <text x="265.43" y="6.35" size="3.81" layer="94">1</text>
 <text x="78.74" y="81.28" size="1.778" layer="97">Notes:
 - Terminating 0402 resistors can handle a total of +21dBm.

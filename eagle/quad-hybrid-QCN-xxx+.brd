@@ -171,8 +171,7 @@
 <text x="5" y="8.9" size="1.2" layer="21" font="vector" ratio="15" rot="SR270">SUM</text>
 <text x="8.6" y="15" size="1.2" layer="21" font="vector" ratio="15" rot="SR180">P2</text>
 <text x="15" y="11.5" size="1.2" layer="21" font="vector" ratio="15" rot="R90">P1</text>
-<text x="10" y="12.6" size="1" layer="22" font="vector" ratio="15" rot="MR0" align="top-center">Quad. Hybrid QCN-19+
-1100 - 1925 MHz
+<text x="10" y="12.4" size="1" layer="22" font="vector" ratio="15" rot="MR0" align="top-center">Quad. Hybrid QCN-XXX+
 PSAS / OreSat
 2019-11-06 v1
 E.M.  KJ7AOG</text>
