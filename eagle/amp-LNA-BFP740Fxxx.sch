@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9117,17 +9117,17 @@ Source: &lt;a href="https://www.infineon.com/cms/en/product/rf-wireless-control/
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R3" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="47k"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R5" library="oresat-rcl" deviceset="R-US_" device="0603-C-NOSILK" value="33"/>
+<part name="R5" library="oresat-rcl" deviceset="R-US_" device="0603-C-NOSILK" value="27"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="Q2" library="Q-Infineon-BFPXXX-RF-BJT" deviceset="BFPXXXF" device="" value="BFP740F"/>
 <part name="C6" library="oresat-rcl" deviceset="C-EU" device="0402-B-NOSILK" value="NP"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R2" library="oresat-rcl" deviceset="R-US_" device="0603-C-NOSILK" value="47k"/>
-<part name="L3" library="oresat-rcl" deviceset="L-US" device="0402-C-NOSILK" value="2.7n"/>
-<part name="R4" library="oresat-rcl" deviceset="R-US_" device="0603-C-NOSILK" value="33"/>
+<part name="R2" library="oresat-rcl" deviceset="R-US_" device="0603-C-NOSILK" value="45.3k"/>
+<part name="L3" library="oresat-rcl" deviceset="L-US" device="0402-C-NOSILK" value="1.8n"/>
+<part name="R4" library="oresat-rcl" deviceset="R-US_" device="0603-C-NOSILK" value="39"/>
 <part name="L2" library="oresat-rcl" deviceset="L-US" device="0603-C-NOSILK" value="10n"/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R6" library="oresat-rcl" deviceset="R-US_" device="0603-C-NOSILK" value="470"/>
+<part name="R6" library="oresat-rcl" deviceset="R-US_" device="0603-C-NOSILK" value="220"/>
 </parts>
 <sheets>
 <sheet>
@@ -9139,10 +9139,12 @@ External</text>
 <text x="111.76" y="190.5" size="1.778" layer="97">Shutdown (High)
 Enable (Low - Default)</text>
 <text x="144.018" y="169.672" size="1.778" layer="97" rot="R90">2V7 Net</text>
-<text x="160.02" y="83.82" size="1.778" layer="97" align="top-left">Quiescent Current Notes:
-R2 = 47k for 10mA Ic
+<text x="152.4" y="73.66" size="1.778" layer="97" align="top-left">Notes
+------------
+Vce=2.0V, Ic=10mA, for NFmin
+  R4 = 39
+  R2 = 45.3k
 
-- Matching network values not final
 - Layout ideal for min NF or max G_T</text>
 </plain>
 <instances>
