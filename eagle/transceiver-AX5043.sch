@@ -9697,8 +9697,8 @@ Source: &lt;a href="http://www.ti.com/product/LP2985LV-N?qgpn=lp2985lv-n"&gt;Dat
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C5" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="82p"/>
 <part name="C6" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="82p"/>
-<part name="L3" library="oresat-rcl" deviceset="L-US" device="0603-C-NOSILK" value="220n"/>
-<part name="L4" library="oresat-rcl" deviceset="L-US" device="0603-C-NOSILK" value="220n"/>
+<part name="L3" library="oresat-rcl" deviceset="L-US" device="0603-C-NOSILK" value="91n"/>
+<part name="L4" library="oresat-rcl" deviceset="L-US" device="0603-C-NOSILK" value="91n"/>
 <part name="C7" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="22p"/>
 <part name="C8" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="22p"/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>

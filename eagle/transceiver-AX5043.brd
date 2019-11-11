@@ -2144,11 +2144,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="11.6" y="15.65" size="0.6" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="15.5" y="13.2" size="0.3" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
-<element name="L3" library="oresat-rcl" package=".0603-C-NOSILK" value="220n" x="14.35" y="16" smashed="yes" rot="R90">
+<element name="L3" library="oresat-rcl" package=".0603-C-NOSILK" value="91n" x="14.35" y="16" smashed="yes" rot="R90">
 <attribute name="NAME" x="10.6" y="17.7" size="0.6" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="14.35" y="16" size="0.3" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
-<element name="L4" library="oresat-rcl" package=".0603-C-NOSILK" value="220n" x="16.4" y="10" smashed="yes" rot="R135">
+<element name="L4" library="oresat-rcl" package=".0603-C-NOSILK" value="91n" x="16.4" y="10" smashed="yes" rot="R135">
 <attribute name="NAME" x="16.513175" y="8.076775" size="0.6" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="16.4" y="10" size="0.2" layer="33" ratio="15" rot="R135" align="center"/>
 </element>
