@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1561,37 +1561,21 @@ www.irf.com&lt;p&gt;
 <wire x1="-0.65" y1="-1" x2="0.65" y2="-1" width="0.127" layer="51"/>
 <wire x1="0.65" y1="-1" x2="0.65" y2="1" width="0.127" layer="51"/>
 <wire x1="0.65" y1="1" x2="-0.65" y2="1" width="0.127" layer="51"/>
-<smd name="6" x="-0.5" y="0.85" dx="0.25" dy="0.25" layer="1" cream="no"/>
-<smd name="5" x="0" y="0.85" dx="0.25" dy="0.25" layer="1" cream="no"/>
-<smd name="4" x="0.5" y="0.85" dx="0.25" dy="0.25" layer="1" cream="no"/>
-<smd name="3" x="0.5" y="-0.85" dx="0.25" dy="0.25" layer="1" rot="R180" cream="no"/>
-<smd name="2" x="0" y="-0.85" dx="0.25" dy="0.25" layer="1" rot="R180" cream="no"/>
-<smd name="1" x="-0.5" y="-0.85" dx="0.25" dy="0.25" layer="1" rot="R180" cream="no"/>
-<smd name="11" x="0" y="0" dx="0.25" dy="0.25" layer="1" cream="no"/>
-<smd name="12" x="-0.48" y="0" dx="0.25" dy="0.25" layer="1" cream="no"/>
-<smd name="10" x="0.48" y="0" dx="0.25" dy="0.25" layer="1" rot="R180" cream="no"/>
-<smd name="14" x="0" y="0.4" dx="0.25" dy="0.25" layer="1" cream="no"/>
-<smd name="15" x="-0.48" y="0.4" dx="0.25" dy="0.25" layer="1" cream="no"/>
-<smd name="13" x="0.48" y="0.4" dx="0.25" dy="0.25" layer="1" rot="R180" cream="no"/>
-<smd name="9" x="-0.48" y="-0.4" dx="0.25" dy="0.25" layer="1" cream="no"/>
-<smd name="7" x="0.48" y="-0.4" dx="0.25" dy="0.25" layer="1" rot="R180" cream="no"/>
-<smd name="8" x="0" y="-0.4" dx="0.25" dy="0.25" layer="1" cream="no"/>
-<rectangle x1="-0.6" y1="0.75" x2="-0.4" y2="0.95" layer="31"/>
-<rectangle x1="-0.6" y1="0.75" x2="-0.4" y2="0.95" layer="31"/>
-<rectangle x1="-0.1" y1="0.75" x2="0.1" y2="0.95" layer="31"/>
-<rectangle x1="0.4" y1="0.75" x2="0.6" y2="0.95" layer="31"/>
-<rectangle x1="-0.1" y1="0.3" x2="0.1" y2="0.5" layer="31"/>
-<rectangle x1="-0.58" y1="0.3" x2="-0.38" y2="0.5" layer="31"/>
-<rectangle x1="0.38" y1="0.3" x2="0.58" y2="0.5" layer="31"/>
-<rectangle x1="-0.1" y1="-0.1" x2="0.1" y2="0.1" layer="31"/>
-<rectangle x1="-0.58" y1="-0.1" x2="-0.38" y2="0.1" layer="31"/>
-<rectangle x1="0.38" y1="-0.1" x2="0.58" y2="0.1" layer="31"/>
-<rectangle x1="-0.1" y1="-0.5" x2="0.1" y2="-0.3" layer="31"/>
-<rectangle x1="-0.1" y1="-0.95" x2="0.1" y2="-0.75" layer="31"/>
-<rectangle x1="0.4" y1="-0.95" x2="0.6" y2="-0.75" layer="31"/>
-<rectangle x1="-0.6" y1="-0.95" x2="-0.4" y2="-0.75" layer="31"/>
-<rectangle x1="0.38" y1="-0.5" x2="0.58" y2="-0.3" layer="31"/>
-<rectangle x1="-0.58" y1="-0.5" x2="-0.38" y2="-0.3" layer="31"/>
+<smd name="6" x="-0.5" y="0.85" dx="0.25" dy="0.25" layer="1"/>
+<smd name="5" x="0" y="0.85" dx="0.25" dy="0.25" layer="1"/>
+<smd name="4" x="0.5" y="0.85" dx="0.25" dy="0.25" layer="1"/>
+<smd name="3" x="0.5" y="-0.85" dx="0.25" dy="0.25" layer="1" rot="R180"/>
+<smd name="2" x="0" y="-0.85" dx="0.25" dy="0.25" layer="1" rot="R180"/>
+<smd name="1" x="-0.5" y="-0.85" dx="0.25" dy="0.25" layer="1" rot="R180"/>
+<smd name="11" x="0" y="0" dx="0.25" dy="0.25" layer="1"/>
+<smd name="12" x="-0.48" y="0" dx="0.25" dy="0.25" layer="1"/>
+<smd name="10" x="0.48" y="0" dx="0.25" dy="0.25" layer="1" rot="R180"/>
+<smd name="14" x="0" y="0.4" dx="0.25" dy="0.25" layer="1"/>
+<smd name="15" x="-0.48" y="0.4" dx="0.25" dy="0.25" layer="1"/>
+<smd name="13" x="0.48" y="0.4" dx="0.25" dy="0.25" layer="1" rot="R180"/>
+<smd name="9" x="-0.48" y="-0.4" dx="0.25" dy="0.25" layer="1"/>
+<smd name="7" x="0.48" y="-0.4" dx="0.25" dy="0.25" layer="1" rot="R180"/>
+<smd name="8" x="0" y="-0.4" dx="0.25" dy="0.25" layer="1"/>
 <text x="1.6" y="-1.5" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">&gt;NAME</text>
 <wire x1="-0.7" y1="0.8" x2="-0.7" y2="-0.8" width="0.127" layer="21"/>
 <wire x1="0.7" y1="0.8" x2="0.7" y2="-0.8" width="0.127" layer="21"/>
@@ -2259,6 +2243,65 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="23,1,e1c400341f00fef0"/>
 <approved hash="23,1,60cd74a5f340baa5"/>
 <approved hash="23,1,9276ec161df39e85"/>
+<approved hash="5,1,5acc711bf634748d"/>
+<approved hash="5,1,017875118bcc1d3e"/>
+<approved hash="5,1,90f9a9f1280fb197"/>
+<approved hash="5,1,6f0a45280d9e49fc"/>
+<approved hash="5,1,4bf30f316053b3af"/>
+<approved hash="5,1,e10e9fcc3d67aab6"/>
+<approved hash="5,1,ab7f963101c57e1f"/>
+<approved hash="5,1,96a587e28219754f"/>
+<approved hash="5,1,cd76f93d769a7db3"/>
+<approved hash="5,1,90e6b07557fcc724"/>
+<approved hash="5,1,edeebedd0c48a933"/>
+<approved hash="5,1,267e0cbeb6e15c2a"/>
+<approved hash="5,1,c18126912efe9c8a"/>
+<approved hash="5,1,5e6332ea250eb6ee"/>
+<approved hash="5,1,3820c0b5a51786cf"/>
+<approved hash="5,1,3a3f06aab02154d7"/>
+<approved hash="5,1,6c0f4aa48d71389a"/>
+<approved hash="5,1,87202820c3ca508c"/>
+<approved hash="5,1,ff04abc44fe83b2c"/>
+<approved hash="5,1,074614e5c53280e3"/>
+<approved hash="5,1,cc421026dda93035"/>
+<approved hash="5,1,77cc15371ae11e50"/>
+<approved hash="5,1,49c1f00a62dce751"/>
+<approved hash="5,1,3725003154a2b582"/>
+<approved hash="5,1,ac07e4d67a803ace"/>
+<approved hash="5,1,5c1071ae52068990"/>
+<approved hash="5,1,5b9c4903ca16c65c"/>
+<approved hash="5,1,e10e9fcc3d67aab6"/>
+<approved hash="5,1,2a7b93f117f24251"/>
+<approved hash="5,1,3d1a6e93cf9a10fe"/>
+<approved hash="5,1,9da4178b949c1146"/>
+<approved hash="5,1,a7bea9370a8c7d96"/>
+<approved hash="5,1,ac7e409f681e9f0e"/>
+<approved hash="5,1,5acc711bf634748d"/>
+<approved hash="5,1,d889d09e135423a8"/>
+<approved hash="5,1,26b558a811009bb2"/>
+<approved hash="5,1,9fcfd7c1e47305c1"/>
+<approved hash="5,1,f1aae71e9235e6f3"/>
+<approved hash="5,1,3fce2b30f3a4e52a"/>
+<approved hash="5,1,40c3672e18a666ab"/>
+<approved hash="5,1,42b0930375275d6e"/>
+<approved hash="5,1,57fa07d67a292f41"/>
+<approved hash="5,1,9995d5571bb39235"/>
+<approved hash="5,1,017875118bcc1d3e"/>
+<approved hash="5,1,ab7f963101c57e1f"/>
+<approved hash="5,1,cf2d84dac956463b"/>
+<approved hash="5,1,bc68040b914e5210"/>
+<approved hash="5,1,e6e2b364df331ddb"/>
+<approved hash="5,1,c538c22c36534e3f"/>
+<approved hash="5,1,69db895db581a983"/>
+<approved hash="5,1,addf155f9a42c76b"/>
+<approved hash="5,1,5819903288d6a2aa"/>
+<approved hash="5,1,187aa4d5b489feb9"/>
+<approved hash="5,1,6d7c0aa21430d25a"/>
+<approved hash="5,1,587a50bdf2e1ccb9"/>
+<approved hash="5,1,497c4aa254338a59"/>
+<approved hash="5,1,cb26cbf7134facf4"/>
+<approved hash="5,1,8b268bf4ab4c08f4"/>
+<approved hash="5,1,1819bc5906bd40aa"/>
 </errors>
 </board>
 </drawing>
