@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4524,8 +4524,10 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <sheets>
 <sheet>
 <plain>
-<text x="176.53" y="26.67" size="5.08" layer="94">TRL Calibration Kit</text>
+<text x="176.53" y="26.67" size="5.08" layer="94">TRM Calibration Kit</text>
 <text x="265.43" y="6.35" size="3.81" layer="94">1</text>
+<text x="81.28" y="58.42" size="1.778" layer="97">Note:  For TRL the microstrip-38 can be used for the LINE standard
+with line length of 40 mm and velocity factor of 0.61; delay of 219ps.</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -4631,6 +4633,10 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
