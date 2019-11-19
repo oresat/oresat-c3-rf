@@ -168,11 +168,12 @@
 <wire x1="0" y1="2" x2="2" y2="0" width="0" layer="20" curve="90"/>
 <wire x1="2" y1="0" x2="8" y2="0" width="0" layer="20"/>
 <wire x1="8" y1="0" x2="10" y2="2" width="0" layer="20" curve="90"/>
-<text x="8.3" y="33.1" size="1.4" layer="21" font="vector" ratio="15" rot="R90">MATCH</text>
+<text x="8.5" y="33.1" size="1.4" layer="21" font="vector" ratio="15" rot="R90">MATCH</text>
 <text x="7.2" y="18.2" size="1.4" layer="21" font="vector" ratio="15" rot="R90">REFLECT</text>
 <wire x1="0" y1="36" x2="5" y2="36" width="2.1" layer="29"/>
 <wire x1="0" y1="22" x2="4" y2="22" width="2.1" layer="29"/>
 <wire x1="0" y1="8" x2="10" y2="8" width="2.1" layer="29"/>
+<circle x="4.9" y="36" radius="1.5" width="1.2" layer="29"/>
 </plain>
 <libraries>
 <library name="J-Cinch-142-0701-851-SMA-end-launch">
@@ -1689,6 +1690,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="5" y="20"/>
 <vertex x="5" y="24"/>
 </polygon>
+<via x="4" y="20.6" extent="1-16" drill="0.3"/>
+<via x="4.6" y="20.7" extent="1-16" drill="0.3"/>
+<via x="4.6" y="23.3" extent="1-16" drill="0.3"/>
+<via x="4" y="23.4" extent="1-16" drill="0.3"/>
 </signal>
 <signal name="MATCH" class="1">
 <contactref element="J4" pad="RF1"/>
