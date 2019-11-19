@@ -9017,7 +9017,7 @@ www.irf.com&lt;p&gt;
 <library name="Q-Infineon-BFPXXX-RF-BJT">
 <packages>
 <package name="TSFP4">
-<smd name="3" x="0.5" y="0.65" dx="0.4" dy="0.4" layer="1" cream="no"/>
+<smd name="3" x="0.5" y="0.65" dx="0.4" dy="0.4" layer="1"/>
 <wire x1="-0.7" y1="0.4" x2="0.7" y2="0.4" width="0.127" layer="51"/>
 <wire x1="0.7" y1="0.4" x2="0.7" y2="-0.4" width="0.127" layer="51"/>
 <wire x1="0.7" y1="-0.4" x2="-0.7" y2="-0.4" width="0.127" layer="51"/>
@@ -9027,9 +9027,9 @@ www.irf.com&lt;p&gt;
 <text x="1.5" y="-1" size="0.8" layer="27" font="vector" ratio="15">&gt;VALUE</text>
 <wire x1="-0.8" y1="0.5" x2="-0.8" y2="-0.5" width="0.127" layer="21"/>
 <wire x1="0.8" y1="0.5" x2="0.8" y2="-0.5" width="0.127" layer="21"/>
-<smd name="1" x="-0.5" y="-0.65" dx="0.4" dy="0.4" layer="1" cream="no"/>
-<smd name="2" x="0.5" y="-0.65" dx="0.4" dy="0.4" layer="1" cream="no"/>
-<smd name="4" x="-0.5" y="0.65" dx="0.4" dy="0.4" layer="1" cream="no"/>
+<smd name="1" x="-0.5" y="-0.65" dx="0.4" dy="0.4" layer="1"/>
+<smd name="2" x="0.5" y="-0.65" dx="0.4" dy="0.4" layer="1"/>
+<smd name="4" x="-0.5" y="0.65" dx="0.4" dy="0.4" layer="1"/>
 </package>
 </packages>
 <symbols>
