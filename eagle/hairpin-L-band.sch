@@ -419,7 +419,7 @@ Source: &lt;a href="https://belfuse.com/resources/productinformations/cinchconne
 <class number="0" name="default" width="0" drill="0">
 </class>
 <class number="1" name="RF" width="0" drill="0">
-<clearance class="1" value="1"/>
+<clearance class="1" value="0.9"/>
 </class>
 </classes>
 <parts>
@@ -444,8 +444,16 @@ Source: &lt;a href="https://belfuse.com/resources/productinformations/cinchconne
 <sheets>
 <sheet>
 <plain>
-<text x="176.53" y="26.67" size="5.08" layer="94">5th Order Low-pass Filter</text>
+<text x="176.53" y="26.67" size="5.08" layer="94">L band Hairpin Filters</text>
 <text x="265.43" y="6.35" size="3.81" layer="94">1</text>
+<text x="149.86" y="139.7" size="1.778" layer="97">Top layer
+Center: 1265 MHz
+BW3dB:
+BW30dB:</text>
+<text x="149.86" y="83.82" size="1.778" layer="97">Bottom Layer
+Center: 1205 MHz
+BW3dB:
+BW30dB:</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -454,32 +462,32 @@ Source: &lt;a href="https://belfuse.com/resources/productinformations/cinchconne
 <attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
 </instance>
-<instance part="GND79" gate="1" x="114.3" y="106.68" smashed="yes">
-<attribute name="VALUE" x="111.76" y="104.14" size="1.778" layer="96"/>
+<instance part="GND79" gate="1" x="154.94" y="109.22" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="157.48" y="106.68" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="J1" gate="G$1" x="109.22" y="119.38" smashed="yes">
-<attribute name="NAME" x="105.41" y="124.46" size="1.778" layer="95"/>
-<attribute name="VALUE" x="95.25" y="121.92" size="1.778" layer="96"/>
+<instance part="J1" gate="G$1" x="160.02" y="121.92" smashed="yes" rot="MR0">
+<attribute name="NAME" x="163.83" y="127" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="173.99" y="124.46" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="GND1" gate="1" x="160.02" y="106.68" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="162.56" y="104.14" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND1" gate="1" x="109.22" y="109.22" smashed="yes">
+<attribute name="VALUE" x="106.68" y="106.68" size="1.778" layer="96"/>
 </instance>
-<instance part="J2" gate="G$1" x="165.1" y="119.38" smashed="yes" rot="MR0">
-<attribute name="NAME" x="170.18" y="124.46" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="177.8" y="121.92" size="1.778" layer="96" rot="MR0"/>
+<instance part="J2" gate="G$1" x="104.14" y="121.92" smashed="yes">
+<attribute name="NAME" x="99.06" y="127" size="1.778" layer="95"/>
+<attribute name="VALUE" x="91.44" y="124.46" size="1.778" layer="96"/>
 </instance>
-<instance part="U$1" gate="G$1" x="127" y="115.57" smashed="yes" rot="R270"/>
-<instance part="U$2" gate="G$1" x="132.08" y="115.57" smashed="yes" rot="R270"/>
-<instance part="U$3" gate="G$1" x="139.7" y="148.59" smashed="yes" rot="R90"/>
-<instance part="U$4" gate="G$1" x="134.62" y="148.59" smashed="yes" rot="R90"/>
-<instance part="U$5" gate="G$1" x="142.24" y="115.57" smashed="yes" rot="R270"/>
-<instance part="U$6" gate="G$1" x="147.32" y="115.57" smashed="yes" rot="R270"/>
-<instance part="U$7" gate="G$1" x="127" y="109.22" smashed="yes" rot="R90"/>
-<instance part="U$8" gate="G$1" x="132.08" y="109.22" smashed="yes" rot="R90"/>
-<instance part="U$11" gate="G$1" x="142.24" y="109.22" smashed="yes" rot="R90"/>
-<instance part="U$12" gate="G$1" x="147.32" y="109.22" smashed="yes" rot="R90"/>
-<instance part="U$9" gate="G$1" x="134.62" y="76.2" smashed="yes" rot="R270"/>
-<instance part="U$10" gate="G$1" x="139.7" y="76.2" smashed="yes" rot="R270"/>
+<instance part="U$1" gate="G$1" x="142.24" y="152.4" smashed="yes" rot="R90"/>
+<instance part="U$2" gate="G$1" x="137.16" y="152.4" smashed="yes" rot="R90"/>
+<instance part="U$3" gate="G$1" x="129.54" y="120.65" smashed="yes" rot="R270"/>
+<instance part="U$4" gate="G$1" x="134.62" y="120.65" smashed="yes" rot="R270"/>
+<instance part="U$5" gate="G$1" x="127" y="152.4" smashed="yes" rot="R90"/>
+<instance part="U$6" gate="G$1" x="121.92" y="152.4" smashed="yes" rot="R90"/>
+<instance part="U$7" gate="G$1" x="142.24" y="78.74" smashed="yes" rot="R270"/>
+<instance part="U$8" gate="G$1" x="137.16" y="78.74" smashed="yes" rot="R270"/>
+<instance part="U$11" gate="G$1" x="127" y="78.74" smashed="yes" rot="R270"/>
+<instance part="U$12" gate="G$1" x="121.92" y="78.74" smashed="yes" rot="R270"/>
+<instance part="U$9" gate="G$1" x="134.62" y="115.57" smashed="yes" rot="R90"/>
+<instance part="U$10" gate="G$1" x="129.54" y="115.57" smashed="yes" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -488,92 +496,96 @@ Source: &lt;a href="https://belfuse.com/resources/productinformations/cinchconne
 <segment>
 <pinref part="J1" gate="G$1" pin="GND"/>
 <pinref part="GND79" gate="1" pin="GND"/>
-<wire x1="111.76" y1="115.57" x2="114.3" y2="115.57" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="115.57" x2="114.3" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="118.11" x2="154.94" y2="118.11" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="118.11" x2="154.94" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="GND"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="162.56" y1="115.57" x2="160.02" y2="115.57" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="115.57" x2="160.02" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="118.11" x2="109.22" y2="118.11" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="118.11" x2="109.22" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="TLEFT" class="1">
+<net name="TRIGHT" class="1">
 <segment>
 <pinref part="U$1" gate="G$1" pin="END"/>
-<wire x1="127" y1="118.11" x2="127" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="127" y1="119.38" x2="127" y2="148.59" width="0.1524" layer="91"/>
-<wire x1="127" y1="148.59" x2="132.08" y2="148.59" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="149.86" x2="142.24" y2="148.59" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="148.59" x2="142.24" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="121.92" x2="142.24" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="119.38" x2="137.16" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="END"/>
-<wire x1="132.08" y1="148.59" x2="132.08" y2="118.11" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="119.38" x2="137.16" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="RF1"/>
-<wire x1="111.76" y1="119.38" x2="127" y2="119.38" width="0.1524" layer="91"/>
-<junction x="127" y="119.38"/>
+<wire x1="157.48" y1="121.92" x2="142.24" y2="121.92" width="0.1524" layer="91"/>
+<junction x="142.24" y="121.92"/>
 </segment>
 </net>
 <net name="TMID" class="1">
 <segment>
 <pinref part="U$3" gate="G$1" pin="END"/>
-<wire x1="139.7" y1="146.05" x2="139.7" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="144.78" x2="139.7" y2="115.57" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="115.57" x2="134.62" y2="115.57" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="123.19" x2="129.54" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="124.46" x2="129.54" y2="153.67" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="153.67" x2="134.62" y2="153.67" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="END"/>
-<wire x1="134.62" y1="115.57" x2="134.62" y2="146.05" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="153.67" x2="134.62" y2="123.19" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="TRIGHT" class="1">
+<net name="TLEFT" class="1">
 <segment>
 <pinref part="U$5" gate="G$1" pin="END"/>
-<wire x1="142.24" y1="118.11" x2="142.24" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="119.38" x2="142.24" y2="148.59" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="148.59" x2="147.32" y2="148.59" width="0.1524" layer="91"/>
+<wire x1="127" y1="149.86" x2="127" y2="148.59" width="0.1524" layer="91"/>
+<wire x1="127" y1="148.59" x2="127" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="127" y1="119.38" x2="121.92" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="U$6" gate="G$1" pin="END"/>
-<wire x1="147.32" y1="148.59" x2="147.32" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="119.38" x2="121.92" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="121.92" x2="121.92" y2="148.59" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="148.59" x2="121.92" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="RF1"/>
-<wire x1="147.32" y1="119.38" x2="147.32" y2="118.11" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="119.38" x2="147.32" y2="119.38" width="0.1524" layer="91"/>
-<junction x="147.32" y="119.38"/>
-</segment>
-</net>
-<net name="BRIGHT" class="1">
-<segment>
-<wire x1="147.32" y1="106.68" x2="147.32" y2="105.41" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="105.41" x2="147.32" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="76.2" x2="142.24" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="76.2" x2="142.24" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="RF2"/>
-<wire x1="162.56" y1="111.76" x2="152.4" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="111.76" x2="152.4" y2="105.41" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="105.41" x2="147.32" y2="105.41" width="0.1524" layer="91"/>
-<junction x="147.32" y="105.41"/>
-<pinref part="U$11" gate="G$1" pin="END"/>
-<pinref part="U$12" gate="G$1" pin="END"/>
-</segment>
-</net>
-<net name="BMID" class="1">
-<segment>
-<wire x1="134.62" y1="78.74" x2="134.62" y2="80.01" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="80.01" x2="134.62" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="109.22" x2="139.7" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="109.22" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="U$9" gate="G$1" pin="END"/>
-<pinref part="U$10" gate="G$1" pin="END"/>
+<wire x1="106.68" y1="121.92" x2="121.92" y2="121.92" width="0.1524" layer="91"/>
+<junction x="121.92" y="121.92"/>
 </segment>
 </net>
 <net name="BLEFT" class="1">
 <segment>
-<wire x1="132.08" y1="106.68" x2="132.08" y2="105.41" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="105.41" x2="132.08" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="76.2" x2="127" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="127" y1="76.2" x2="127" y2="105.41" width="0.1524" layer="91"/>
-<wire x1="127" y1="105.41" x2="127" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="RF2"/>
-<wire x1="111.76" y1="111.76" x2="121.92" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="111.76" x2="121.92" y2="105.41" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="105.41" x2="127" y2="105.41" width="0.1524" layer="91"/>
-<junction x="127" y="105.41"/>
+<wire x1="121.92" y1="81.28" x2="121.92" y2="85.09" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="85.09" x2="121.92" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="111.76" x2="121.92" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="114.3" x2="127" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="127" y1="114.3" x2="127" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="U$11" gate="G$1" pin="END"/>
+<pinref part="U$12" gate="G$1" pin="END"/>
+<pinref part="J2" gate="G$1" pin="RF2"/>
+<wire x1="106.68" y1="114.3" x2="116.84" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="114.3" x2="116.84" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="111.76" x2="121.92" y2="111.76" width="0.1524" layer="91"/>
+<junction x="121.92" y="111.76"/>
+</segment>
+</net>
+<net name="BMID" class="1">
+<segment>
+<wire x1="134.62" y1="113.03" x2="134.62" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="109.22" x2="134.62" y2="80.01" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="80.01" x2="129.54" y2="80.01" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="80.01" x2="129.54" y2="113.03" width="0.1524" layer="91"/>
+<pinref part="U$9" gate="G$1" pin="END"/>
+<pinref part="U$10" gate="G$1" pin="END"/>
+</segment>
+</net>
+<net name="BRIGHT" class="1">
+<segment>
+<wire x1="137.16" y1="81.28" x2="137.16" y2="85.09" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="85.09" x2="137.16" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="114.3" x2="142.24" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="114.3" x2="142.24" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="111.76" x2="142.24" y2="85.09" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="85.09" x2="142.24" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="U$7" gate="G$1" pin="END"/>
 <pinref part="U$8" gate="G$1" pin="END"/>
+<pinref part="J1" gate="G$1" pin="RF2"/>
+<wire x1="157.48" y1="114.3" x2="147.32" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="114.3" x2="147.32" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="111.76" x2="142.24" y2="111.76" width="0.1524" layer="91"/>
+<junction x="142.24" y="111.76"/>
 </segment>
 </net>
 </nets>
@@ -582,6 +594,10 @@ Source: &lt;a href="https://belfuse.com/resources/productinformations/cinchconne
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)

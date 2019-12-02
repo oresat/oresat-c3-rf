@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -36,8 +36,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -169,24 +169,24 @@
 <wire x1="25" y1="40" x2="2" y2="40" width="0" layer="20"/>
 <wire x1="2" y1="40" x2="0" y2="38" width="0" layer="20" curve="90"/>
 <polygon width="4" layer="29">
-<vertex x="7" y="4"/>
-<vertex x="20" y="4"/>
-<vertex x="20" y="36"/>
-<vertex x="7" y="36"/>
+<vertex x="7" y="3.5"/>
+<vertex x="20" y="3.5"/>
+<vertex x="20" y="36.5"/>
+<vertex x="7" y="36.5"/>
 </polygon>
 <wire x1="0" y1="9" x2="5" y2="9" width="2" layer="29"/>
 <wire x1="27" y1="9" x2="22" y2="9" width="2" layer="29"/>
 <polygon width="4" layer="30">
-<vertex x="7" y="4"/>
-<vertex x="20" y="4"/>
-<vertex x="20" y="36"/>
-<vertex x="7" y="36"/>
+<vertex x="7" y="3.5"/>
+<vertex x="20" y="3.5"/>
+<vertex x="20" y="36.5"/>
+<vertex x="7" y="36.5"/>
 </polygon>
 <wire x1="0" y1="9" x2="5" y2="9" width="2" layer="30"/>
 <wire x1="27" y1="9" x2="22" y2="9" width="2" layer="30"/>
 <text x="3" y="18" size="1.2" layer="21" font="vector" ratio="15" rot="R90">L band Hairpin Filter</text>
 <text x="24" y="18" size="1.2" layer="22" font="vector" ratio="15" rot="MR90">L band Hairpin Filter</text>
-<text x="25.5" y="18" size="0.8" layer="21" font="vector" ratio="15" rot="R90">PSAS / OreSa  / KJ7AOG E.M.
+<text x="25.5" y="18" size="0.8" layer="21" font="vector" ratio="15" rot="R90">PSAS / OreSat  / KJ7AOG E.M.
 2019-12-01 v1</text>
 <text x="1.5" y="18" size="0.8" layer="22" font="vector" ratio="15" rot="MR90">PSAS / OreSat / KJ7AOG E.M.
 2019-12-01 v1</text>
@@ -272,7 +272,7 @@
 <class number="0" name="default" width="0" drill="0">
 </class>
 <class number="1" name="RF" width="0" drill="0">
-<clearance class="1" value="1"/>
+<clearance class="1" value="0.9"/>
 </class>
 </classes>
 <designrules name="oshpark-4layer-tented">
@@ -456,20 +456,20 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </pass>
 </autorouter>
 <elements>
-<element name="J1" library="J-Cinch-142-0701-851-SMA-end-launch" package="142-0701-851_TEST" value="142-0701-851_TEST" x="0" y="9" smashed="yes" rot="R90"/>
-<element name="J2" library="J-Cinch-142-0701-851-SMA-end-launch" package="142-0701-851_TEST" value="142-0701-851_TEST" x="27" y="9" smashed="yes" rot="R270"/>
-<element name="U$1" library="hairpin-dummy-pad" package="0.6MM" value="PAD_0.6" x="7.2" y="4" smashed="yes"/>
-<element name="U$2" library="hairpin-dummy-pad" package="0.6MM" value="PAD_0.6" x="10.8" y="4" smashed="yes"/>
-<element name="U$3" library="hairpin-dummy-pad" package="0.6MM" value="PAD_0.6" x="11.7" y="36.2" smashed="yes"/>
-<element name="U$4" library="hairpin-dummy-pad" package="0.6MM" value="PAD_0.6" x="15.3" y="36.2" smashed="yes"/>
-<element name="U$5" library="hairpin-dummy-pad" package="0.6MM" value="PAD_0.6" x="19.8" y="4" smashed="yes"/>
-<element name="U$6" library="hairpin-dummy-pad" package="0.6MM" value="PAD_0.6" x="16.2" y="4" smashed="yes"/>
-<element name="U$7" library="hairpin-dummy-pad" package="0.6MM_B" value="PAD_0.6_B" x="7.2" y="3.5" smashed="yes"/>
-<element name="U$8" library="hairpin-dummy-pad" package="0.6MM_B" value="PAD_0.6_B" x="10.8" y="3.5" smashed="yes"/>
-<element name="U$11" library="hairpin-dummy-pad" package="0.6MM_B" value="PAD_0.6_B" x="19.8" y="3.5" smashed="yes"/>
-<element name="U$12" library="hairpin-dummy-pad" package="0.6MM_B" value="PAD_0.6_B" x="16.2" y="3.5" smashed="yes"/>
-<element name="U$9" library="hairpin-dummy-pad" package="0.6MM_B" value="PAD_0.6_B" x="11.7" y="36.5" smashed="yes"/>
-<element name="U$10" library="hairpin-dummy-pad" package="0.6MM_B" value="PAD_0.6_B" x="15.3" y="36.5" smashed="yes"/>
+<element name="J1" library="J-Cinch-142-0701-851-SMA-end-launch" package="142-0701-851_TEST" value="142-0701-851_TEST" x="27" y="9" smashed="yes" rot="R270"/>
+<element name="J2" library="J-Cinch-142-0701-851-SMA-end-launch" package="142-0701-851_TEST" value="142-0701-851_TEST" x="0" y="9" smashed="yes" rot="R90"/>
+<element name="U$1" library="hairpin-dummy-pad" package="0.6MM" value="PAD_0.6" x="19.8" y="36" smashed="yes" rot="R180"/>
+<element name="U$2" library="hairpin-dummy-pad" package="0.6MM" value="PAD_0.6" x="16.2" y="36" smashed="yes" rot="R180"/>
+<element name="U$3" library="hairpin-dummy-pad" package="0.6MM" value="PAD_0.6" x="15.3" y="3.8" smashed="yes" rot="R180"/>
+<element name="U$4" library="hairpin-dummy-pad" package="0.6MM" value="PAD_0.6" x="11.7" y="3.8" smashed="yes" rot="R180"/>
+<element name="U$5" library="hairpin-dummy-pad" package="0.6MM" value="PAD_0.6" x="7.2" y="36" smashed="yes" rot="R180"/>
+<element name="U$6" library="hairpin-dummy-pad" package="0.6MM" value="PAD_0.6" x="10.8" y="36" smashed="yes" rot="R180"/>
+<element name="U$7" library="hairpin-dummy-pad" package="0.6MM_B" value="PAD_0.6_B" x="19.8" y="37.2" smashed="yes" rot="R180"/>
+<element name="U$8" library="hairpin-dummy-pad" package="0.6MM_B" value="PAD_0.6_B" x="16.2" y="37.2" smashed="yes" rot="R180"/>
+<element name="U$11" library="hairpin-dummy-pad" package="0.6MM_B" value="PAD_0.6_B" x="7.2" y="37.2" smashed="yes" rot="R180"/>
+<element name="U$12" library="hairpin-dummy-pad" package="0.6MM_B" value="PAD_0.6_B" x="10.8" y="37.2" smashed="yes" rot="R180"/>
+<element name="U$9" library="hairpin-dummy-pad" package="0.6MM_B" value="PAD_0.6_B" x="15.3" y="2.6" smashed="yes" rot="R180"/>
+<element name="U$10" library="hairpin-dummy-pad" package="0.6MM_B" value="PAD_0.6_B" x="11.7" y="2.6" smashed="yes" rot="R180"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -568,10 +568,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="19" y="39" extent="1-16" drill="0.3"/>
 <via x="17" y="39" extent="1-16" drill="0.3"/>
 <polygon width="0.3" layer="1" pour="cutout" thermals="no">
-<vertex x="5" y="2"/>
-<vertex x="22" y="2"/>
-<vertex x="22" y="38"/>
-<vertex x="5" y="38"/>
+<vertex x="5" y="1.5"/>
+<vertex x="22" y="1.5"/>
+<vertex x="22" y="38.5"/>
+<vertex x="5" y="38.5"/>
 </polygon>
 <via x="1" y="36" extent="1-16" drill="0.3"/>
 <via x="1" y="34" extent="1-16" drill="0.3"/>
@@ -596,77 +596,81 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="26" y="18" extent="1-16" drill="0.3"/>
 <via x="26" y="16" extent="1-16" drill="0.3"/>
 <polygon width="0.3" layer="16" pour="cutout" thermals="no">
-<vertex x="5" y="2"/>
-<vertex x="22" y="2"/>
-<vertex x="22" y="38"/>
-<vertex x="5" y="38"/>
+<vertex x="5" y="1.5"/>
+<vertex x="22" y="1.5"/>
+<vertex x="22" y="38.5"/>
+<vertex x="5" y="38.5"/>
 </polygon>
 </signal>
-<signal name="TLEFT" class="1">
+<signal name="TRIGHT" class="1">
 <contactref element="U$1" pad="END"/>
 <contactref element="U$2" pad="END"/>
+<wire x1="19.8" y1="36" x2="19.8" y2="31" width="0.6" layer="1"/>
+<wire x1="19.8" y1="31" x2="19.8" y2="9" width="0.6" layer="1"/>
+<wire x1="19.8" y1="9" x2="19.8" y2="3.6" width="0.6" layer="1"/>
+<wire x1="19.8" y1="3.6" x2="19.4" y2="3.2" width="0.6" layer="1"/>
+<wire x1="19.4" y1="3.2" x2="16.6" y2="3.2" width="0.6" layer="1"/>
+<wire x1="16.6" y1="3.2" x2="16.2" y2="3.6" width="0.6" layer="1"/>
+<wire x1="16.2" y1="3.6" x2="16.2" y2="36" width="0.6" layer="1"/>
 <contactref element="J1" pad="RF1"/>
-<wire x1="7.2" y1="4" x2="7.2" y2="9" width="0.6" layer="1"/>
-<wire x1="7.2" y1="9" x2="7.2" y2="36.4" width="0.6" layer="1"/>
-<wire x1="7.2" y1="36.4" x2="7.6" y2="36.8" width="0.6" layer="1"/>
-<wire x1="7.6" y1="36.8" x2="10.4" y2="36.8" width="0.6" layer="1"/>
-<wire x1="10.4" y1="36.8" x2="10.8" y2="36.4" width="0.6" layer="1"/>
-<wire x1="10.8" y1="36.4" x2="10.8" y2="4" width="0.6" layer="1"/>
-<wire x1="1.146" y1="9" x2="7.2" y2="9" width="0.38" layer="1"/>
+<wire x1="25.854" y1="9" x2="19.8" y2="9" width="0.38" layer="1"/>
 </signal>
 <signal name="TMID" class="1">
 <contactref element="U$3" pad="END"/>
 <contactref element="U$4" pad="END"/>
-<wire x1="11.7" y1="36.2" x2="11.7" y2="3.8" width="0.6" layer="1"/>
-<wire x1="11.7" y1="3.8" x2="12.1" y2="3.4" width="0.6" layer="1"/>
-<wire x1="12.1" y1="3.4" x2="14.9" y2="3.4" width="0.6" layer="1"/>
-<wire x1="14.9" y1="3.4" x2="15.3" y2="3.8" width="0.6" layer="1"/>
 <wire x1="15.3" y1="3.8" x2="15.3" y2="36.2" width="0.6" layer="1"/>
+<wire x1="15.3" y1="36.2" x2="14.9" y2="36.6" width="0.6" layer="1"/>
+<wire x1="14.9" y1="36.6" x2="12.1" y2="36.6" width="0.6" layer="1"/>
+<wire x1="12.1" y1="36.6" x2="11.7" y2="36.2" width="0.6" layer="1"/>
+<wire x1="11.7" y1="36.2" x2="11.7" y2="3.8" width="0.6" layer="1"/>
 </signal>
-<signal name="TRIGHT" class="1">
+<signal name="TLEFT" class="1">
 <contactref element="U$5" pad="END"/>
 <contactref element="U$6" pad="END"/>
+<wire x1="10.8" y1="36" x2="10.8" y2="3.6" width="0.6" layer="1"/>
+<wire x1="10.8" y1="3.6" x2="10.4" y2="3.2" width="0.6" layer="1"/>
+<wire x1="10.4" y1="3.2" x2="7.6" y2="3.2" width="0.6" layer="1"/>
+<wire x1="7.6" y1="3.2" x2="7.2" y2="3.6" width="0.6" layer="1"/>
+<wire x1="7.2" y1="3.6" x2="7.2" y2="9" width="0.6" layer="1"/>
+<wire x1="7.2" y1="9" x2="7.2" y2="31" width="0.6" layer="1"/>
+<wire x1="7.2" y1="31" x2="7.2" y2="36" width="0.6" layer="1"/>
 <contactref element="J2" pad="RF1"/>
-<wire x1="16.2" y1="4" x2="16.2" y2="36.4" width="0.6" layer="1"/>
-<wire x1="16.2" y1="36.4" x2="16.6" y2="36.8" width="0.6" layer="1"/>
-<wire x1="16.6" y1="36.8" x2="19.4" y2="36.8" width="0.6" layer="1"/>
-<wire x1="19.4" y1="36.8" x2="19.8" y2="36.4" width="0.6" layer="1"/>
-<wire x1="19.8" y1="36.4" x2="19.8" y2="9" width="0.6" layer="1"/>
-<wire x1="19.8" y1="9" x2="19.8" y2="4" width="0.6" layer="1"/>
-<wire x1="25.854" y1="9" x2="19.8" y2="9" width="0.38" layer="1"/>
-</signal>
-<signal name="BRIGHT" class="1">
-<contactref element="J2" pad="RF2"/>
-<contactref element="U$11" pad="END"/>
-<contactref element="U$12" pad="END"/>
-<wire x1="16.2" y1="3.5" x2="16.2" y2="36.4" width="0.6" layer="16"/>
-<wire x1="16.2" y1="36.4" x2="16.6" y2="36.8" width="0.6" layer="16"/>
-<wire x1="16.6" y1="36.8" x2="19.4" y2="36.8" width="0.6" layer="16"/>
-<wire x1="19.4" y1="36.8" x2="19.8" y2="36.4" width="0.6" layer="16"/>
-<wire x1="19.8" y1="36.4" x2="19.8" y2="9" width="0.6" layer="16"/>
-<wire x1="19.8" y1="9" x2="19.8" y2="3.5" width="0.6" layer="16"/>
-<wire x1="25.854" y1="9" x2="19.8" y2="9" width="0.38" layer="16"/>
+<wire x1="1.146" y1="9" x2="7.2" y2="9" width="0.38" layer="1"/>
 </signal>
 <signal name="BLEFT" class="1">
-<contactref element="J1" pad="RF2"/>
+<contactref element="U$11" pad="END"/>
+<contactref element="U$12" pad="END"/>
+<wire x1="10.8" y1="37.2" x2="10.8" y2="3.6" width="0.6" layer="16"/>
+<wire x1="10.8" y1="3.6" x2="10.4" y2="3.2" width="0.6" layer="16"/>
+<wire x1="10.4" y1="3.2" x2="7.6" y2="3.2" width="0.6" layer="16"/>
+<wire x1="7.6" y1="3.2" x2="7.2" y2="3.6" width="0.6" layer="16"/>
+<wire x1="7.2" y1="3.6" x2="7.2" y2="9" width="0.6" layer="16"/>
+<wire x1="7.2" y1="9" x2="7.2" y2="31" width="0.6" layer="16"/>
+<wire x1="7.2" y1="31" x2="7.2" y2="37.2" width="0.6" layer="16"/>
+<contactref element="J2" pad="RF2"/>
+<wire x1="1.146" y1="9" x2="7.2" y2="9" width="0.38" layer="16"/>
+</signal>
+<signal name="BRIGHT" class="1">
 <contactref element="U$7" pad="END"/>
 <contactref element="U$8" pad="END"/>
-<wire x1="7.2" y1="3.5" x2="7.2" y2="9" width="0.6" layer="16"/>
-<wire x1="7.2" y1="9" x2="7.2" y2="36.4" width="0.6" layer="16"/>
-<wire x1="7.2" y1="36.4" x2="7.6" y2="36.8" width="0.6" layer="16"/>
-<wire x1="7.6" y1="36.8" x2="10.4" y2="36.8" width="0.6" layer="16"/>
-<wire x1="10.4" y1="36.8" x2="10.8" y2="36.4" width="0.6" layer="16"/>
-<wire x1="10.8" y1="36.4" x2="10.8" y2="3.5" width="0.6" layer="16"/>
-<wire x1="1.146" y1="9" x2="7.2" y2="9" width="0.38" layer="16"/>
+<wire x1="19.8" y1="37.2" x2="19.8" y2="31" width="0.6" layer="16"/>
+<wire x1="19.8" y1="31" x2="19.8" y2="9" width="0.6" layer="16"/>
+<wire x1="19.8" y1="9" x2="19.8" y2="3.6" width="0.6" layer="16"/>
+<wire x1="19.8" y1="3.6" x2="19.4" y2="3.2" width="0.6" layer="16"/>
+<wire x1="19.4" y1="3.2" x2="16.6" y2="3.2" width="0.6" layer="16"/>
+<wire x1="16.6" y1="3.2" x2="16.2" y2="3.6" width="0.6" layer="16"/>
+<wire x1="16.2" y1="3.6" x2="16.2" y2="37.2" width="0.6" layer="16"/>
+<contactref element="J1" pad="RF2"/>
+<wire x1="25.854" y1="9" x2="19.8" y2="9" width="0.38" layer="16"/>
 </signal>
 <signal name="BMID" class="1">
 <contactref element="U$9" pad="END"/>
 <contactref element="U$10" pad="END"/>
-<wire x1="11.7" y1="36.5" x2="11.7" y2="3.8" width="0.6" layer="16"/>
-<wire x1="11.7" y1="3.8" x2="12.1" y2="3.4" width="0.6" layer="16"/>
-<wire x1="12.1" y1="3.4" x2="14.9" y2="3.4" width="0.6" layer="16"/>
-<wire x1="14.9" y1="3.4" x2="15.3" y2="3.8" width="0.6" layer="16"/>
-<wire x1="15.3" y1="3.8" x2="15.3" y2="36.5" width="0.6" layer="16"/>
+<wire x1="15.3" y1="2.6" x2="15.3" y2="36.2" width="0.6" layer="16"/>
+<wire x1="15.3" y1="36.2" x2="14.9" y2="36.6" width="0.6" layer="16"/>
+<wire x1="14.9" y1="36.6" x2="12.1" y2="36.6" width="0.6" layer="16"/>
+<wire x1="12.1" y1="36.6" x2="11.7" y2="36.2" width="0.6" layer="16"/>
+<wire x1="11.7" y1="36.2" x2="11.7" y2="2.6" width="0.6" layer="16"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
@@ -693,28 +697,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="5,1,857cada7b7c098e5"/>
 <approved hash="5,1,26d37ff58fb4d16c"/>
 <approved hash="5,1,5eccbfe63da5b773"/>
-<approved hash="5,1,26f683bb327a5cf6"/>
-<approved hash="5,1,2e2b30c21eb24fbf"/>
-<approved hash="5,1,3bbd227c72b0bf53"/>
-<approved hash="5,1,7acc0df7bda2650e"/>
-<approved hash="5,1,be9d68f03d94092b"/>
-<approved hash="5,1,6effa1a0d1d24496"/>
-<approved hash="5,1,7ee15cf89eac1919"/>
-<approved hash="5,1,efa325cf49e1b006"/>
-<approved hash="5,1,8397fbca678f3409"/>
-<approved hash="5,1,d332eab9e40ca2ac"/>
-<approved hash="5,1,dc1cc2d9500d4339"/>
-<approved hash="5,1,8613758a7ace4b09"/>
-<approved hash="5,1,34c8de30cd815d24"/>
-<approved hash="5,1,9b8dbf8e2b0150c3"/>
-<approved hash="5,1,c2a38c6fae2b5e9a"/>
-<approved hash="5,1,7ae7f09d5a73c42b"/>
-<approved hash="5,1,f8cdb73c72c068c9"/>
-<approved hash="5,1,06470b046db7ee99"/>
-<approved hash="5,1,e33c05e5b4c4e078"/>
-<approved hash="5,1,dd8b1ac555d08280"/>
-<approved hash="5,1,0612d9372398c061"/>
-<approved hash="5,1,2b920098fdd34478"/>
 <approved hash="5,16,ded0f7fd5bbeed6f"/>
 <approved hash="5,16,66d3b78be1c91b6c"/>
 <approved hash="5,16,eed3bf85c5c64f6f"/>
@@ -763,28 +745,50 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="19,16,ceedce6bb055b0d3"/>
 <approved hash="19,16,9ee39e62205c20dd"/>
 <approved hash="19,16,ee83eec250fc50bd"/>
-<approved hash="5,16,5e84e18c86eed8fc"/>
-<approved hash="5,16,abefb6c02393c36b"/>
-<approved hash="5,16,0ace7cc206e55774"/>
-<approved hash="5,16,21a9f82b36fd1a2d"/>
-<approved hash="5,16,afc83671a0eee469"/>
-<approved hash="5,16,84e84ecd88d19abc"/>
-<approved hash="5,16,82f2c985f76a3574"/>
-<approved hash="5,16,acb9297ead29bd80"/>
-<approved hash="5,16,2789242db82b34e5"/>
-<approved hash="5,16,fd02c33a4154f488"/>
-<approved hash="5,16,474daf2edabe9ca0"/>
-<approved hash="5,16,2c85df290ad849cb"/>
-<approved hash="5,16,c6b6eb10c5bc7496"/>
-<approved hash="5,16,c38687e4e3e5471f"/>
-<approved hash="5,16,25b47aea621140bd"/>
-<approved hash="5,16,c9aee9d273f43cc1"/>
-<approved hash="5,16,be95f868966d6c87"/>
-<approved hash="5,16,9d2dc6bdaca7d005"/>
-<approved hash="5,16,4a7d9a304e906b76"/>
-<approved hash="5,16,61f96d535794acbc"/>
-<approved hash="5,16,63401cc07d5907f7"/>
-<approved hash="5,16,315255f55d701122"/>
+<approved hash="5,1,a1daa184ec9306db"/>
+<approved hash="5,1,e8e37d8f11972acc"/>
+<approved hash="5,1,f1da9c88bc88f5ee"/>
+<approved hash="5,1,ae6a7f277af3dded"/>
+<approved hash="5,1,768d11608c18dfa5"/>
+<approved hash="5,1,756bd240fa0fee3b"/>
+<approved hash="5,1,fce770cac7fd5722"/>
+<approved hash="5,1,ff12d636cf9060ed"/>
+<approved hash="5,1,8431903e2334d4e8"/>
+<approved hash="5,1,2646216b2e080ade"/>
+<approved hash="5,1,f82ab6b81f5211e8"/>
+<approved hash="5,1,5ac833be06034f68"/>
+<approved hash="5,1,1a5f373fc8bb954f"/>
+<approved hash="5,1,88025f05087acc62"/>
+<approved hash="5,1,260a427aa272e515"/>
+<approved hash="5,1,0dfaeae6d7637c8f"/>
+<approved hash="5,1,88b2870109ca8592"/>
+<approved hash="5,1,6aba93b58f8fdb7d"/>
+<approved hash="5,1,561d110018309003"/>
+<approved hash="5,1,0f54839944fe9f17"/>
+<approved hash="5,1,0f300935e383587b"/>
+<approved hash="5,1,feba538a83c2dd19"/>
+<approved hash="5,16,95ed3488c11f0ca1"/>
+<approved hash="5,16,7d22daf295d01ad7"/>
+<approved hash="5,16,39058f1ce8cda63f"/>
+<approved hash="5,16,a982a0b88c866c4b"/>
+<approved hash="5,16,06a097593581f9e3"/>
+<approved hash="5,16,c0f1752cfbd05f96"/>
+<approved hash="5,16,b2ed4b1ae2612a69"/>
+<approved hash="5,16,7e80a6599accbafe"/>
+<approved hash="5,16,49922bccb68a1628"/>
+<approved hash="5,16,684c01593e34ab9e"/>
+<approved hash="5,16,99baed870e0b488f"/>
+<approved hash="5,16,b83c63e6457c2cbf"/>
+<approved hash="5,16,cef3561c7dab834f"/>
+<approved hash="5,16,ff64d19e055c97b8"/>
+<approved hash="5,16,073974b6db582bc4"/>
+<approved hash="5,16,833b07feaede52a9"/>
+<approved hash="5,16,f3cae13c5c235873"/>
+<approved hash="5,16,3de90fbd8d76c5d5"/>
+<approved hash="5,16,89559a6c7c48f7ba"/>
+<approved hash="5,16,1366e15d154ff85f"/>
+<approved hash="5,16,d1719372c35e304a"/>
+<approved hash="5,16,e599ea1c2e69dd53"/>
 </errors>
 </board>
 </drawing>
