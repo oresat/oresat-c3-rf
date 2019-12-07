@@ -2152,7 +2152,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="16.513175" y="8.076775" size="0.6" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="16.4" y="10" size="0.2" layer="33" ratio="15" rot="R135" align="center"/>
 </element>
-<element name="R1" library="oresat-rcl" package=".0402-C-NOSILK" value="1k" x="19.2" y="16.9" smashed="yes" rot="R180">
+<element name="R1" library="oresat-rcl" package=".0402-C-NOSILK" value="150" x="19.2" y="16.9" smashed="yes" rot="R180">
 <attribute name="NAME" x="16.7" y="16.65" size="0.6" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="19.2" y="16.9" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
