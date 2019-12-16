@@ -10,13 +10,13 @@ The source of these link model spreadsheets are from Jan King and are located at
   - ___OreSat1_link_model_v2.5.5a_eng_secondary.xlsx  ([PDF summary](OreSat1_link_model_v2.5.5a_eng_secondary.pdf))___
   - UHF 436.5 MHz GMSK uplink
 
-- The public telemetry and APRS downlink using a handheld receiver
-  - ___OreSat1_link_model_v2.5.5a_public.xlsx  ([PDF summary](OreSat1_link_model_v2.5.5a_public.pdf))___
+- The amateur radio packet beacon, APRS downlink
+  - ___OreSat1_link_model_v2.5.5a_packet_beacon.xlsx  ([PDF summary](OreSat1_link_model_v2.5.5a_packet_beacon.pdf))___
   - UHF 436.5 MHz G3RUH FSK w/ AX.25
 
-- The C.W. beacon downlink using a handheld receiver
-  - ___OreSat1_link_model_v2.5.5a_beacon.xlsx  ([PDF summary](OreSat1_link_model_v2.5.5a_beacon.pdf))___
-  - UHF 436.5 MHz C.W. in 100Hz
+- The amateur radio CW beacon
+  - ___OreSat1_link_model_v2.5.5a_CW_beacon.xlsx  ([PDF summary](OreSat1_link_model_v2.5.5a_CW_beacon.pdf))___
+  - UHF 436.5 MHz 20 WPM CW in 100Hz bandwidth
 
 Notes:
 - The 'Transmitters' and 'Receivers' sheets have been customized
