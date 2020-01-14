@@ -1,10 +1,10 @@
 ## Block diagrams for the C3 communications channels
 
-- The primary L band receiver on the satellite.<br>___L-band-front-end-receiver-vX.X.pdf___
+- The primary L band receiver on the satellite.<br>___L-band-receiver-vX.X.pdf___
   - 1260 to 1270 MHz uplink engineering channel
   - 1575 MHz GPS receiver
 
-- The primary UHF transmitter and secondary receiver on the satellite.<br>___70cm-front-end-transceiver-vX.X.pdf___
+- The primary UHF transmitter and secondary receiver on the satellite.<br>___70cm-transceiver-vX.X.pdf___
   - 435 to 438 MHz downlink engineering and public channel
   - 435 to 438 MHz uplink engineering channel
 
