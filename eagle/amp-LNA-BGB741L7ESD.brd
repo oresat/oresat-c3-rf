@@ -1779,11 +1779,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="oresat-rcl" package=".0402-C-NOSILK" value="47p" x="7.9" y="10" smashed="yes">
+<element name="C1" library="oresat-rcl" package=".0402-C-NOSILK" value="22p" x="7.9" y="10" smashed="yes">
 <attribute name="NAME" x="7.5" y="7.85" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="7.9" y="10" size="0.2" layer="33" ratio="15" align="center"/>
 </element>
-<element name="C2" library="oresat-rcl" package=".0402-C-NOSILK" value="47p" x="16.1" y="10" smashed="yes">
+<element name="C2" library="oresat-rcl" package=".0402-C-NOSILK" value="22p" x="16.1" y="10" smashed="yes">
 <attribute name="NAME" x="16.4" y="7.85" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="16.1" y="10" size="0.2" layer="33" ratio="15" align="center"/>
 </element>
@@ -1823,11 +1823,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="POPULARITY" value="98" x="24.01" y="-28.95" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="4.96" y="-0.375" size="1.27" layer="27"/>
 </element>
-<element name="L1" library="oresat-rcl" package=".0603-C-NOSILK" value="56n" x="9.4" y="10.7" smashed="yes" rot="R90">
+<element name="L1" library="oresat-rcl" package=".0603-C-NOSILK" value="27n" x="9.4" y="10.7" smashed="yes" rot="R90">
 <attribute name="NAME" x="9.4" y="8.15" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="9.4" y="10.7" size="0.2" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
-<element name="L2" library="oresat-rcl" package=".0603-C-NOSILK" value="56n" x="14.6" y="10.7" smashed="yes" rot="R270">
+<element name="L2" library="oresat-rcl" package=".0603-C-NOSILK" value="27n" x="14.6" y="10.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.4" y="8.15" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="14.6" y="10.7" size="0.3" layer="33" ratio="15" rot="R270" align="center"/>
 </element>
@@ -1839,18 +1839,18 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="7.2" y="18.8" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="8.8" y="18.5" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="R2" library="oresat-rcl" package=".0603-B-NOSILK" value="27k / NP" x="13.5" y="16.5" smashed="yes" rot="R90">
+<element name="R3" library="oresat-rcl" package=".0603-B-NOSILK" value="27k / NP" x="13.5" y="16.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="11.6" y="16.1" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="13.5" y="16.5" size="0.3" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
-<element name="R3" library="oresat-rcl" package=".0402-B-NOSILK" value="47k" x="11.5" y="7" smashed="yes" rot="R180">
+<element name="R2" library="oresat-rcl" package=".0402-B-NOSILK" value="47k" x="11.5" y="7" smashed="yes" rot="R180">
 <attribute name="NAME" x="13.3" y="6.7" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="11.5" y="7" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="U1" library="U-Infineon-BGB7xxL7ESD-LNA" package="BGB7XXL7ESD" value="BGB7XXL7ESD" x="12" y="10.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="11.4" y="8.2" size="0.8" layer="21" font="vector" ratio="15"/>
 </element>
-<element name="R5" library="oresat-rcl" package=".0603-B-NOSILK" value="0" x="15.4" y="16.5" smashed="yes" rot="R90">
+<element name="R4" library="oresat-rcl" package=".0603-B-NOSILK" value="0" x="15.4" y="16.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="16.3" y="16" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="15.4" y="16.5" size="0.3" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
@@ -1870,7 +1870,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="C4" pad="2"/>
 <contactref element="C5" pad="2"/>
 <contactref element="JP2" pad="1"/>
-<contactref element="R3" pad="1"/>
+<contactref element="R2" pad="1"/>
 <contactref element="D1" pad="C"/>
 <polygon width="0.3" layer="1" rank="2">
 <vertex x="0" y="20"/>
@@ -2041,7 +2041,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="16.55" y1="10" x2="23.854" y2="10" width="0.39" layer="1"/>
 </signal>
 <signal name="N$1">
-<contactref element="R3" pad="2"/>
+<contactref element="R2" pad="2"/>
 <contactref element="JP2" pad="2"/>
 <contactref element="Q1" pad="1"/>
 <wire x1="8.77" y1="2.8" x2="9.47" y2="2.1" width="0.5" layer="1"/>
@@ -2082,8 +2082,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </polygon>
 <via x="14.7" y="18.5" extent="1-16" drill="0.5"/>
 <contactref element="U1" pad="5"/>
-<contactref element="R2" pad="2"/>
-<contactref element="R5" pad="2"/>
+<contactref element="R3" pad="2"/>
+<contactref element="R4" pad="2"/>
 <contactref element="U1" pad="1"/>
 <via x="15.7" y="18.5" extent="1-16" drill="0.5"/>
 <via x="13.7" y="18.5" extent="1-16" drill="0.5"/>
@@ -2122,7 +2122,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="14.6" y1="10" x2="15.65" y2="10" width="0.39" layer="1"/>
 </signal>
 <signal name="N$5">
-<contactref element="R2" pad="1"/>
+<contactref element="R3" pad="1"/>
 <contactref element="U1" pad="6"/>
 <wire x1="13.1" y1="11.65" x2="12.85" y2="11.4" width="0.25" layer="1"/>
 <wire x1="12.85" y1="11" x2="12.85" y2="11.4" width="0.25" layer="1"/>
@@ -2154,7 +2154,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </signal>
 <signal name="N$2">
 <contactref element="C3" pad="1"/>
-<contactref element="R5" pad="1"/>
+<contactref element="R4" pad="1"/>
 <contactref element="L2" pad="1"/>
 <contactref element="C5" pad="1"/>
 <contactref element="C4" pad="1"/>

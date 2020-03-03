@@ -9112,10 +9112,10 @@ Source: &lt;a href="https://www.infineon.com/cms/en/product/rf-wireless-control/
 <parts>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
 <part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C2" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="47p"/>
+<part name="C2" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="22p"/>
 <part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R2" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="27k / NP"/>
+<part name="R3" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="27k / NP"/>
 <part name="C5" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="1u"/>
 <part name="C4" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="NP"/>
 <part name="C3" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="47n"/>
@@ -9128,9 +9128,9 @@ Source: &lt;a href="https://www.infineon.com/cms/en/product/rf-wireless-control/
 <part name="R1" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="1.5k"/>
 <part name="J1" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device=""/>
 <part name="J2" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device=""/>
-<part name="L2" library="oresat-rcl" deviceset="L-US" device="0603-C-NOSILK" value="56n"/>
-<part name="C1" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="47p"/>
-<part name="L1" library="oresat-rcl" deviceset="L-US" device="0603-C-NOSILK" value="56n"/>
+<part name="L2" library="oresat-rcl" deviceset="L-US" device="0603-C-NOSILK" value="27n"/>
+<part name="C1" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="22p"/>
+<part name="L1" library="oresat-rcl" deviceset="L-US" device="0603-C-NOSILK" value="27n"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -9138,16 +9138,16 @@ Source: &lt;a href="https://www.infineon.com/cms/en/product/rf-wireless-control/
 <part name="Q1" library="transistor-small-signal" library_urn="urn:adsk.eagle:library:401" deviceset="BSS84" device="" package3d_urn="urn:adsk.eagle:package:28738/2" value="PMOS"/>
 <part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R3" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="47k"/>
+<part name="R2" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="47k"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U1" library="U-Infineon-BGB7xxL7ESD-LNA" deviceset="BGB7XXL7ESD" device=""/>
-<part name="R5" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="0"/>
+<part name="R4" library="oresat-rcl" deviceset="R-US_" device="0603-B-NOSILK" value="0"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="176.53" y="26.67" size="5.08" layer="94">LO Amp: BGB741L7ESD</text>
+<text x="176.53" y="26.67" size="5.08" layer="94">Infineon LNA BGB741L7ESD</text>
 <text x="265.43" y="6.35" size="3.81" layer="94">1</text>
 <text x="182.88" y="184.15" size="1.778" layer="97">2.7V
 External</text>
@@ -9155,22 +9155,32 @@ External</text>
 Enable (Low - Default)</text>
 <text x="148.59" y="157.48" size="1.778" layer="97">2V7 flood layer 3</text>
 <text x="144.018" y="159.512" size="1.778" layer="97" rot="R90">2V7 Net</text>
-<text x="127" y="76.2" size="1.778" layer="97" align="top-left">808 MHz Performance:
------------------------------
-Icq = 6mA
-NF = 1.1 dB
-G_T = 18.5 dB
-OP1dB = 13.5 dBm
-OIP3 = 21.5 dBm
------------------------------
-S11 = -17.9 dB
-S22 = -16.4 dB
-S21 = 18.5 dB
-S12 = -21.1 dB</text>
-<text x="162.56" y="76.2" size="1.778" layer="97" align="top-left">Quiescent Current Notes:
-R2 = 27k for 6mA
-R2 open for 5.2mA</text>
-<text x="63.5" y="142.24" size="3.556" layer="95">L Band LO Amp / Wide band LNA</text>
+<text x="69.85" y="74.93" size="1.778" layer="97" align="top-left">L band 2nd Stage / IF Stage
+--------------------------
+Vce = ~2.5V
+Ic = 6mA
+Gain = 18 dB
+NF = 1.2 dB
+Unconditionally Stable
+--------------------------
+U1 = BGB741L7ESD
+R3 = 22k
+R4 = 0
+L1 = 22n
+L2 = 22n</text>
+<text x="118.11" y="74.93" size="1.778" layer="97" align="top-left">UHF - L band LNA (used as preamp)
+--------------------------
+Vce = ~2.5V
+Ic = 8.0mA
+Gain = 18.4 dB @ 1265MHz
+NF = 1.2 dB
+Unconditionally Stable
+--------------------------
+U1 = BGB741L7ESD
+R3 = 10k
+R4 = 0
+L1 = 27n
+L2 = 27n</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -9192,9 +9202,8 @@ R2 open for 5.2mA</text>
 <instance part="GND30" gate="1" x="78.74" y="88.9" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="81.28" y="86.36" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="R2" gate="R" x="157.48" y="130.81" smashed="yes" rot="R90">
+<instance part="R3" gate="R" x="157.48" y="130.81" smashed="yes" rot="R90">
 <attribute name="NAME" x="155.9814" y="127" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="160.782" y="124.46" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C5" gate="CE" x="195.58" y="118.11" smashed="yes">
 <attribute name="NAME" x="197.104" y="118.491" size="1.778" layer="95"/>
@@ -9270,7 +9279,7 @@ R2 open for 5.2mA</text>
 <instance part="GND1" gate="1" x="116.84" y="166.37" smashed="yes">
 <attribute name="VALUE" x="114.3" y="163.83" size="1.778" layer="96"/>
 </instance>
-<instance part="R3" gate="R" x="134.62" y="168.91" smashed="yes" rot="R90">
+<instance part="R2" gate="R" x="134.62" y="168.91" smashed="yes" rot="R90">
 <attribute name="NAME" x="133.1214" y="165.1" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="137.922" y="165.1" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -9281,7 +9290,7 @@ R2 open for 5.2mA</text>
 <attribute name="NAME" x="147.32" y="88.9" size="1.778" layer="95"/>
 <attribute name="VALUE" x="147.32" y="86.36" size="1.778" layer="96"/>
 </instance>
-<instance part="R5" gate="R" x="167.64" y="130.81" smashed="yes" rot="R90">
+<instance part="R4" gate="R" x="167.64" y="130.81" smashed="yes" rot="R90">
 <attribute name="NAME" x="166.1414" y="127" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="170.942" y="127" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -9328,7 +9337,7 @@ R2 open for 5.2mA</text>
 <wire x1="116.84" y1="168.91" x2="116.84" y2="173.99" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R3" gate="R" pin="1"/>
+<pinref part="R2" gate="R" pin="1"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -9356,7 +9365,7 @@ R2 open for 5.2mA</text>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="R3" gate="R" pin="2"/>
+<pinref part="R2" gate="R" pin="2"/>
 <wire x1="134.62" y1="173.99" x2="134.62" y2="176.53" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="G$1" pin="2"/>
 <wire x1="116.84" y1="176.53" x2="134.62" y2="176.53" width="0.1524" layer="91"/>
@@ -9377,10 +9386,10 @@ R2 open for 5.2mA</text>
 <pinref part="U1" gate="G$1" pin="VCTRL"/>
 <wire x1="154.94" y1="101.6" x2="162.56" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="101.6" x2="162.56" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="R2" gate="R" pin="2"/>
+<pinref part="R3" gate="R" pin="2"/>
 <wire x1="162.56" y1="137.16" x2="157.48" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="137.16" x2="157.48" y2="135.89" width="0.1524" layer="91"/>
-<pinref part="R5" gate="R" pin="2"/>
+<pinref part="R4" gate="R" pin="2"/>
 <wire x1="167.64" y1="135.89" x2="167.64" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="137.16" x2="162.56" y2="137.16" width="0.1524" layer="91"/>
 <junction x="162.56" y="137.16"/>
@@ -9421,7 +9430,7 @@ R2 open for 5.2mA</text>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="R2" gate="R" pin="1"/>
+<pinref part="R3" gate="R" pin="1"/>
 <pinref part="U1" gate="G$1" pin="ADJ"/>
 <wire x1="157.48" y1="125.73" x2="157.48" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="106.68" x2="154.94" y2="106.68" width="0.1524" layer="91"/>
@@ -9463,7 +9472,7 @@ R2 open for 5.2mA</text>
 <segment>
 <pinref part="C3" gate="CE" pin="1"/>
 <wire x1="177.8" y1="120.65" x2="177.8" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="R5" gate="R" pin="1"/>
+<pinref part="R4" gate="R" pin="1"/>
 <pinref part="L2" gate="L" pin="1"/>
 <wire x1="167.64" y1="125.73" x2="167.64" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="121.92" x2="167.64" y2="109.22" width="0.1524" layer="91"/>
