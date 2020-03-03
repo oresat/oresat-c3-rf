@@ -3,7 +3,7 @@
 <eagle version="9.5.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
@@ -1753,7 +1753,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="7.8" y="8.65" size="0.6" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="8.3" y="10.5" size="0.2" layer="33" ratio="15" align="center"/>
 </element>
-<element name="Q1" library="Q-Infineon-BFPXXX-RF-BJT" package="TSFP4" value="BFP740F" x="12" y="10" smashed="yes" rot="R270">
+<element name="Q1" library="Q-Infineon-BFPXXX-RF-BJT" package="TSFP4" value="BFPXXXF" x="12" y="10" smashed="yes" rot="R270">
 <attribute name="NAME" x="11.1" y="7.5" size="0.6" layer="25" font="vector" ratio="15"/>
 </element>
 <element name="R5" library="oresat-rcl" package=".0603-C-NOSILK" value="1.5k" x="8.4" y="6" smashed="yes">

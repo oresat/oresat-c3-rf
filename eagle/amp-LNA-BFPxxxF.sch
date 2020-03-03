@@ -9014,7 +9014,7 @@ Source: &lt;a href="https://www.infineon.com/cms/en/product/rf-wireless-control/
 <part name="C6" library="oresat-rcl" deviceset="C-EU" device="0603-C-NOSILK" value="47n"/>
 <part name="R2" library="oresat-rcl" deviceset="R-US_" device="0603-C-NOSILK"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="Q1" library="Q-Infineon-BFPXXX-RF-BJT" deviceset="BFPXXXF" device="" value="BFP740F"/>
+<part name="Q1" library="Q-Infineon-BFPXXX-RF-BJT" deviceset="BFPXXXF" device="" value="BFPXXXF"/>
 <part name="C7" library="oresat-rcl" deviceset="C-EU" device="0402-B-NOSILK"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R3" library="oresat-rcl" deviceset="R-US_" device="0603-C-NOSILK"/>
@@ -9032,12 +9032,12 @@ Source: &lt;a href="https://www.infineon.com/cms/en/product/rf-wireless-control/
 <text x="265.43" y="6.35" size="3.81" layer="94">2</text>
 <text x="157.48" y="194.31" size="1.778" layer="97">2.7V
 External</text>
-<text x="85.09" y="72.39" size="1.778" layer="97" align="top-left">L band 740F Notes
+<text x="85.09" y="72.39" size="1.778" layer="97" align="top-left">L band 1st Stage - BFP740F
 --------------------------
 Vce = 2.0V
 Ic = 10mA
 Gain = 22 dB
-NF = 0.63 dB
+NF = 0.66 dB
 Conditionally Stable
 --------------------------
 Q1 = BFP740F
@@ -9048,12 +9048,32 @@ C1 = 22p
 C2 = 22p
 C7 = DNP
 L1 = 2.0n
-L2 &gt;= 47n
+L2 &gt;= 47n, &lt;= 100n
 L3 = 10n
 L4 = 0 ohm
 R4 = 220</text>
 <text x="140.97" y="82.55" size="1.778" layer="97">Emitter
 Degeneration</text>
+<text x="130.81" y="72.39" size="1.778" layer="97" align="top-left">VHF - S band LNA - BFP843F (used as preamp)
+--------------------------
+Vce = 1.5V
+Ic = 15mA
+Gain = 21.9 dB @ 1265MHz
+NF = 1.0 dB
+Unconditionally Stable
+--------------------------
+Q1 = BFP843F
+R1 = 39
+R2 = 39
+R3 = 22k
+C1 = 100p
+C2 = 100p
+C7 = 560p
+L1 = 0 ohm
+L2 = 91n
+L3 = 91n
+L4 = 0 ohm
+R4 = open</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>
