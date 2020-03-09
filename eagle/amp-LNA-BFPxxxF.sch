@@ -9032,7 +9032,7 @@ Source: &lt;a href="https://www.infineon.com/cms/en/product/rf-wireless-control/
 <text x="265.43" y="6.35" size="3.81" layer="94">2</text>
 <text x="157.48" y="194.31" size="1.778" layer="97">2.7V
 External</text>
-<text x="85.09" y="72.39" size="1.778" layer="97" align="top-left">L band 1st Stage - BFP740F
+<text x="67.31" y="72.39" size="1.778" layer="97" align="top-left">L band 1st Stage - BFP740F
 --------------------------
 Vce = 2.0V
 Ic = 10mA
@@ -9041,7 +9041,7 @@ NF = 0.66 dB
 Conditionally Stable
 --------------------------
 Q1 = BFP740F
-R1 = 39
+R1 = 39  -  15 if using 2.5V LDO
 R2 = 27
 R3 = 45.3k
 C1 = 22p
@@ -9054,7 +9054,8 @@ L4 = 0 ohm
 R4 = 220</text>
 <text x="140.97" y="82.55" size="1.778" layer="97">Emitter
 Degeneration</text>
-<text x="130.81" y="72.39" size="1.778" layer="97" align="top-left">VHF - S band LNA - BFP843F (used as preamp)
+<text x="130.81" y="72.39" size="1.778" layer="97" align="top-left">UHF LNA
+VHF - S band LNA - BFP843F (previously used as preamp)
 --------------------------
 Vce = 1.5V
 Ic = 15mA
@@ -9063,7 +9064,7 @@ NF = 1.0 dB
 Unconditionally Stable
 --------------------------
 Q1 = BFP843F
-R1 = 39
+R1 = 39  -  27 if using 2.5V LDO
 R2 = 39
 R3 = 22k
 C1 = 100p
