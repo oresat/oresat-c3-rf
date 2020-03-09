@@ -6502,12 +6502,12 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J1" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device=""/>
 <part name="J2" library="J-Cinch-142-0701-851-SMA-end-launch" deviceset="142-0701-851" device=""/>
-<part name="L1" library="oresat-rcl" deviceset="L-US" device="0402-C-NOSILK"/>
-<part name="L2" library="oresat-rcl" deviceset="L-US" device="0402-C-NOSILK"/>
-<part name="C1" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK"/>
-<part name="C2" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK"/>
-<part name="C3" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK"/>
-<part name="L3" library="oresat-rcl" deviceset="L-US" device="0402-C-NOSILK"/>
+<part name="L1" library="oresat-rcl" deviceset="L-US" device="0402-C-NOSILK" value="5.6n"/>
+<part name="L2" library="oresat-rcl" deviceset="L-US" device="0402-C-NOSILK" value="68n"/>
+<part name="C1" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="24p"/>
+<part name="C2" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="2.0p"/>
+<part name="C3" library="oresat-rcl" deviceset="C-EU" device="0402-C-NOSILK" value="24p"/>
+<part name="L3" library="oresat-rcl" deviceset="L-US" device="0402-C-NOSILK" value="5.6n"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -6516,7 +6516,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <sheets>
 <sheet>
 <plain>
-<text x="176.53" y="26.67" size="5.08" layer="94">3rd Order Band-pass Filter</text>
+<text x="176.53" y="26.67" size="5.08" layer="94">UHF 3rd Order Band-pass Filter</text>
 <text x="265.43" y="6.35" size="3.81" layer="94">1</text>
 </plain>
 <instances>
@@ -6542,19 +6542,19 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 </instance>
 <instance part="L1" gate="L" x="116.84" y="99.06" smashed="yes" rot="R90">
 <attribute name="NAME" x="114.3" y="93.98" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="118.11" y="93.98" size="1.778" layer="96" rot="R90" align="top-left"/>
+<attribute name="VALUE" x="113.03" y="99.06" size="1.778" layer="96" rot="R90" align="top-left"/>
 </instance>
 <instance part="L2" gate="L" x="142.24" y="106.68" smashed="yes">
 <attribute name="NAME" x="137.16" y="109.22" size="1.778" layer="95"/>
-<attribute name="VALUE" x="137.16" y="105.41" size="1.778" layer="96" align="top-left"/>
+<attribute name="VALUE" x="143.51" y="110.49" size="1.778" layer="96" align="top-left"/>
 </instance>
 <instance part="C1" gate="CE" x="121.92" y="101.6" smashed="yes">
 <attribute name="NAME" x="123.444" y="101.981" size="1.778" layer="95"/>
 <attribute name="VALUE" x="123.444" y="96.901" size="1.778" layer="96"/>
 </instance>
 <instance part="C2" gate="CE" x="129.54" y="106.68" smashed="yes" rot="R90">
-<attribute name="NAME" x="129.159" y="108.204" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="134.239" y="108.204" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="129.159" y="109.474" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="131.699" y="109.474" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C3" gate="CE" x="152.4" y="101.6" smashed="yes" rot="MR0">
 <attribute name="NAME" x="150.876" y="101.981" size="1.778" layer="95" rot="MR0"/>
@@ -6562,7 +6562,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 </instance>
 <instance part="L3" gate="L" x="157.48" y="99.06" smashed="yes" rot="MR90">
 <attribute name="NAME" x="160.02" y="93.98" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="156.21" y="93.98" size="1.778" layer="96" rot="MR90" align="top-left"/>
+<attribute name="VALUE" x="161.29" y="99.06" size="1.778" layer="96" rot="MR90" align="top-left"/>
 </instance>
 <instance part="GND2" gate="1" x="116.84" y="88.9" smashed="yes">
 <attribute name="VALUE" x="114.3" y="86.36" size="1.778" layer="96"/>
