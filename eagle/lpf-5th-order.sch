@@ -6516,6 +6516,19 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <plain>
 <text x="176.53" y="26.67" size="5.08" layer="94">5th Order Low-pass Filter</text>
 <text x="265.43" y="6.35" size="3.81" layer="94">1</text>
+<text x="154.94" y="88.9" size="1.778" layer="97" align="top-left">L band (transmitter only)
+------------------------------
+L1, L2 = 5.1n
+C1, C3 = 4.7p
+C2 = 6.8p
+</text>
+<text x="104.14" y="88.9" size="1.778" layer="97" align="top-left">UHF / IF (L band)
+------------------------------
+L1, L2 = 15.0n
+C1, C3 = 12.0p
+C2 = 18.0p
+</text>
+<text x="124.46" y="128.27" size="1.778" layer="97">Inductors: Coilcraft 0402HP</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -6638,6 +6651,10 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
