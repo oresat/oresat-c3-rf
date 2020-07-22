@@ -64,7 +64,7 @@ The very long 0.38 mm wide microstrip on the backplane was used to measure the p
 ---
 
 ### Conclusion
-The correct 50 ohm microstrip impedance may be 0.38 mm for below 3 GHz operation on OSH Park's 4-layer stackup.  The phase velocity of a 0.38 mm wide microstrip is 182.5 m/s, and the effective permittivity is 2.700.
+The correct 50 ohm microstrip impedance may be 0.38 mm for below 3 GHz operation on OSH Park's 4-layer stackup.  The phase velocity of a 0.38 mm wide microstrip is 182.5e6 m/s, and the effective permittivity is 2.700.
 
 ---
 
