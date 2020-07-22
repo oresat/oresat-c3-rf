@@ -55,7 +55,7 @@ The very long 0.38 mm wide microstrip on the backplane was used to measure the p
     Δl = 145.15 mm (avg)
     Δt = 795.5 ps
 
-    v_p = 182.5 m/s
+    v_p = 182.5e6 m/s
     ε_eff = 2.700
 
 ![Backplane with discontinuties](backplane_2-20_0.38_board_vp-test_resize.png)
