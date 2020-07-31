@@ -9907,7 +9907,7 @@ www.irf.com&lt;p&gt;
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="R8" library="oresat-rcl" deviceset="R-US_" device="0402-B-NOSILK" value="33k"/>
 <part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C3" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="DNP"/>
+<part name="C3" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="1u"/>
 <part name="C14" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="100n"/>
 <part name="C15" library="oresat-rcl" deviceset="C-EU" device="0603-B-NOSILK" value="1n"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -10534,7 +10534,7 @@ External</text>
 <junction x="157.48" y="115.57"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="FWD" class="0">
 <segment>
 <pinref part="JP3" gate="A" pin="1"/>
 <wire x1="237.49" y1="157.48" x2="220.98" y2="157.48" width="0.1524" layer="91"/>
@@ -10547,7 +10547,7 @@ External</text>
 <junction x="190.5" y="165.1"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="REV" class="0">
 <segment>
 <pinref part="JP3" gate="A" pin="3"/>
 <wire x1="237.49" y1="152.4" x2="220.98" y2="152.4" width="0.1524" layer="91"/>
