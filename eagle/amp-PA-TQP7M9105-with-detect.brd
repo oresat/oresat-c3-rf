@@ -3,7 +3,7 @@
 <eagle version="9.5.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.2" unitdist="mm" unit="mm" style="lines" multiple="5" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
@@ -2194,7 +2194,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="25.6" y="7.2" size="0.8" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="NAME" x="26.5" y="8" size="0.3" layer="33" ratio="15" rot="R90" align="center"/>
 </element>
-<element name="R7" library="oresat-rcl" package=".0402-B-NOSILK" value="33k" x="4.2" y="25.6" smashed="yes">
+<element name="R7" library="oresat-rcl" package=".0402-B-NOSILK" value="47k" x="4.2" y="25.6" smashed="yes">
 <attribute name="NAME" x="3.6" y="24.15" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="4.2" y="25.6" size="0.2" layer="33" ratio="15" align="center"/>
 </element>
@@ -2214,7 +2214,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="8.1838" y="9.0288" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="12.175" y="3.46" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R8" library="oresat-rcl" package=".0402-B-NOSILK" value="33k" x="16" y="26.4" smashed="yes" rot="R180">
+<element name="R8" library="oresat-rcl" package=".0402-B-NOSILK" value="47k" x="16" y="26.4" smashed="yes" rot="R180">
 <attribute name="NAME" x="19" y="26.65" size="0.8" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="NAME" x="16" y="26.4" size="0.2" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
@@ -2222,11 +2222,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="25" y="12.05" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="22.6" y="12.25" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="C14" library="oresat-rcl" package=".0603-B-NOSILK" value="100n" x="22.6" y="13.75" smashed="yes">
+<element name="C14" library="oresat-rcl" package=".0603-B-NOSILK" value="47n" x="22.6" y="13.75" smashed="yes">
 <attribute name="NAME" x="25" y="13.45" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="22.6" y="13.75" size="0.3" layer="33" ratio="15" align="center"/>
 </element>
-<element name="C15" library="oresat-rcl" package=".0603-B-NOSILK" value="1n" x="19.6" y="13.75" smashed="yes" rot="R180">
+<element name="C15" library="oresat-rcl" package=".0603-B-NOSILK" value="NP" x="19.6" y="13.75" smashed="yes" rot="R180">
 <attribute name="NAME" x="15.6" y="13.45" size="0.8" layer="25" font="vector" ratio="15"/>
 <attribute name="NAME" x="19.6" y="13.75" size="0.3" layer="33" ratio="15" rot="R180" align="center"/>
 </element>
