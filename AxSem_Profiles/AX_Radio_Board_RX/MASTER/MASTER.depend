@@ -1,0 +1,95 @@
+# depslib dependency file v1.0
+1618890634 source:c:\users\glennl\project_gnl_test_tx\common\display_com0.c
+	"display_com0.h"
+	<axm0.h>
+	<axm0f2.h>
+	<ax8052.h>
+	<libmf.h>
+	<libmfuart.h>
+	<libmfuart0.h>
+
+1618890634 c:\users\glennl\project_gnl_test_tx\common\display_com0.h
+	"../AX_Radio_Lab_output/configmaster.h"
+	"../AX_Radio_Lab_output/configslave.h"
+	"../AX_Radio_Lab_output/basictests.h"
+	<libmf.h>
+	"libmfuart0.h"
+	"libmfuart1.h"
+
+1618947348 c:\users\glennl\project_gnl_test_tx\ax_radio_lab_output\configmaster.h
+	"../COMMON/axradio.h"
+
+1618890634 c:\users\glennl\project_gnl_test_tx\common\axradio.h
+	<libmftypes.h>
+
+1618947348 c:\users\glennl\project_gnl_test_tx\ax_radio_lab_output\configslave.h
+	"../COMMON/axradio.h"
+
+1618946887 c:\users\glennl\project_gnl_test_tx\ax_radio_lab_output\basictests.h
+
+1618890634 source:c:\users\glennl\project_gnl_test_tx\common\easyax5043.c
+	"../AX_Radio_Lab_output/configslave.h"
+	"easyax5043.h"
+	"misc.h"
+	<libmfcrc.h>
+	<libmfradio.h>
+	<libmfwtimer.h>
+	<stdlib.h>
+	<string.h>
+	<axm0f143.h>
+	<axm0f243.h>
+	<axm0_config.h>
+	<libmfdbglink.h>
+	<libmfuart.h>
+	<libmfuart0.h>
+	<libmfuart1.h>
+	<string.h>
+
+1618890634 c:\users\glennl\project_gnl_test_tx\common\easyax5043.h
+	"axradio.h"
+	<stdbool.h>
+	<axm0f143.h>
+	<axm0f243.h>
+	<ax8052f143.h>
+	<libmftypes.h>
+
+1618890634 c:\users\glennl\project_gnl_test_tx\common\misc.h
+	"../COMMON/axradio.h"
+
+1618890634 source:c:\users\glennl\project_gnl_test_tx\common\misc.c
+	<libmfuart.h>
+	<axm0.h>
+	<axm0f2.h>
+	<ax8052.h>
+	<libmftypes.h>
+	<libmfwtimer.h>
+	<libaxlcd2.h>
+	"../AX_Radio_Lab_output/configmaster.h"
+	"../AX_Radio_Lab_output/configslave.h"
+	"../AX_Radio_Lab_output/basictests.h"
+	"misc.h"
+	"../COMMON/axradio.h"
+	"display_com0.h"
+
+1618890767 source:c:\users\glennl\project_gnl_test_tx\master\main.c
+	"../AX_Radio_Lab_output/configmaster.h"
+	<ax8052.h>
+	<libmftypes.h>
+	<libmfradio.h>
+	<libmfflash.h>
+	<libmfwtimer.h>
+	"libmfosc.h"
+	<libmfuart0.h>
+	<libaxlcd2.h>
+	<libmfdbglink.h>
+	<libmfuart.h>
+	<libmfuart0.h>
+	<libmfuart1.h>
+	"../COMMON/display_com0.h"
+	<libdvk2leds.h>
+	<string.h>
+	"../COMMON/misc.h"
+	"../COMMON/configcommon.h"
+
+1618890634 c:\users\glennl\project_gnl_test_tx\common\configcommon.h
+

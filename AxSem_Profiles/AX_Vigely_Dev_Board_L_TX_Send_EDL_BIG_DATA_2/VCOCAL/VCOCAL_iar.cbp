@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="VCOCAL_iar" />
+		<Option pch_mode="2" />
+		<Option compiler="iar8051" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/VCOCAL_iar.ubr" prefix_auto="1" extension_auto="0" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="iar8051" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="--debug" />
+				</Compiler>
+				<Linker>
+					<Add option='-l &quot;bin\Debug\VCOCAL_iar.map&quot;' />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/VCOCAL_iar.ubr" prefix_auto="1" extension_auto="0" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="iar8051" />
+				<Option use_console_runner="0" />
+				<Linker>
+					<Add option='-l &quot;bin\Release\VCOCAL_iar.map&quot;' />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="--dptr=xor" />
+			<Add option="--dptr=separate" />
+			<Add option="--dptr=1" />
+			<Add option="--dptr=16" />
+			<Add option="--core=plain" />
+			<Add option="--place_constants=code" />
+			<Add option="--data_model=small" />
+			<Add option="--code_model=near" />
+			<Add option="--clib" />
+			<Add option="-e" />
+			<Add option="--calling_convention=idata_reentrant" />
+			<Add option="-Om" />
+			<Add option="-D__DATA_MODEL__=1" />
+			<Add option="-D__CALLING_CONVENTION__=2" />
+		</Compiler>
+		<Linker>
+			<Add option="-Fubrof" />
+			<Add option="-D_PDATA_STACK_SIZE=0x80" />
+			<Add option="-D_XDATA_STACK_SIZE=0xFFF" />
+			<Add option="-D_IDATA_STACK_SIZE=0x80" />
+			<Add option="-D_EXTENDED_STACK_START=0x00" />
+			<Add option="-D_EXTENDED_STACK_END=0x00" />
+			<Add option="-D_EXTENDED_STACK_SIZE=0x00" />
+			<Add option="-D_NR_OF_VIRTUAL_REGISTERS=8" />
+			<Add option="-D_CODEBANK_START=0" />
+			<Add option="-D_CODEBANK_END=0" />
+			<Add option="-D_XDATA_HEAP_SIZE=0xff" />
+			<Add option="-D_FAR_HEAP_SIZE=0xfff" />
+			<Add option="-D_HUGE_HEAP_SIZE=0xfff" />
+			<Add option="-D_FAR22_HEAP_SIZE=0xfff" />
+			<Add option="-D?PBANK=0xD9" />
+			<Add option="-s __program_start" />
+			<Add option="-xe" />
+			<Add option="-xm" />
+			<Add option="-xs" />
+			<Add option="-xo" />
+			<Add option='-f &quot;$(TARGET_COMPILER_DIR)\config\devices\On Semiconductor\lnk51ew_AX8052F143.xcl&quot;' />
+			<Add library="cl-pli-nsic-1e16x01.r51" />
+			<Add library="libmf-pli-nsic-1e16x01.r51" />
+			<Add library="libaxdvk2-pli-nsic-1e16x01.r51" />
+		</Linker>
+		<Unit filename="../AX_Radio_Lab_output/config.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../AX_Radio_Lab_output/configslave.h" />
+		<Unit filename="../AX_Radio_Lab_output/configvcocal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../COMMON/axradio.h" />
+		<Unit filename="../COMMON/configcommon.h" />
+		<Unit filename="../COMMON/easyax5043.h" />
+		<Unit filename="../COMMON/libminidvkled.h" />
+		<Unit filename="../COMMON/misc.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<debuggeraxs>
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libmf\include" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libmf\source" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libmf\builtsource" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libmfcrypto\include" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libmfcrypto\source" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libaxdvk2\include" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libaxdvk2\source" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libaxdvk2\builtsource" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libax5031\include" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libax5031\source" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libax5042\include" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libax5042\source" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libax5043\include" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libax5043\source" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libax5051\include" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libax5051\source" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libaxdsp\include" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libaxdsp\source" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libaxdsp\builtsource" />
+			</debuggeraxs>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

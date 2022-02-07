@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="VCOCAL" />
+		<Option pch_mode="2" />
+		<Option compiler="sdcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/VCOCAL.omf" prefix_auto="1" extension_auto="0" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="sdcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="--debug" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/VCOCAL.omf" prefix_auto="1" extension_auto="0" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="sdcc" />
+				<Option use_console_runner="0" />
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="--verbose" />
+			<Add option="-mmcs51" />
+		</Compiler>
+		<Linker>
+			<Add option="--xram-size 1541" />
+			<Add option="--iram-size 256" />
+			<Add option="--code-size 64512" />
+			<Add library="libmf" />
+			<Add library="libaxdvk2" />
+		</Linker>
+		<Unit filename="../AX_Radio_Lab_output/config.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../AX_Radio_Lab_output/configslave.h" />
+		<Unit filename="../AX_Radio_Lab_output/configvcocal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../COMMON/axradio.h" />
+		<Unit filename="../COMMON/configcommon.h" />
+		<Unit filename="../COMMON/easyax5043.h" />
+		<Unit filename="../COMMON/libminidvkled.h" />
+		<Unit filename="../COMMON/misc.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<debuggeraxs>
+				<search_path add="C:\Program Files\SDCC\include" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libmf\include" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libmf\source" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libmf\builtsource" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libmfcrypto\include" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libmfcrypto\source" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libaxdvk2\include" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libaxdvk2\source" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libaxdvk2\builtsource" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libax5031\include" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libax5031\source" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libax5042\include" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libax5042\source" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libax5043\include" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libax5043\source" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libax5051\include" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libax5051\source" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libaxdsp\include" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libaxdsp\source" />
+				<search_path add="C:\Program Files (x86)\AXSEM\AXSDB\libaxdsp\builtsource" />
+			</debuggeraxs>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

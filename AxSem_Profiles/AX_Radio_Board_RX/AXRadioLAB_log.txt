@@ -1,0 +1,116 @@
+Project Reopened Successfully
+
+c:\Users\glennl\Project_GNL_Test_TX
+
+Status of build 0
+
+path C:\Program Files (x86)\ON Semiconductor\AxCodeBlocks\bin\axcodeblocks.exe --build "c:\Users\glennl\Project_GNL_Test_TX\TESTS\TESTS.cbp"
+
+Status of download test program 0
+
+Download Successful
+
+Status of build 0
+
+path C:\Program Files (x86)\ON Semiconductor\AxCodeBlocks\bin\axcodeblocks.exe --build "c:\Users\glennl\Project_GNL_Test_TX\TESTS\TESTS.cbp"
+
+Status of download test program 0
+
+Download Successful
+
+Status of build 0
+
+path C:\Program Files (x86)\ON Semiconductor\AxCodeBlocks\bin\axcodeblocks.exe --build "c:\Users\glennl\Project_GNL_Test_TX\TESTS\TESTS.cbp"
+
+Status of download test program 0
+
+Download Successful
+
+Status of build 0
+
+path C:\Program Files (x86)\ON Semiconductor\AxCodeBlocks\bin\axcodeblocks.exe --build "c:\Users\glennl\Project_GNL_Test_TX\TESTS\TESTS.cbp"
+
+Status of download test program 0
+
+Download Successful
+
+Status for SDCC build AX::CB: 0
+
+Built program path C:\Program Files (x86)\ON Semiconductor\AxCodeBlocks\bin\axcodeblocks.exe --build "c:\Users\glennl\Project_GNL_Test_TX\MASTER\MASTER.cbp"
+
+Status for SDCC download program: 0
+
+download program path C:\Program Files (x86)\ON Semiconductor\AXSDB\bin\axsdb.exe --flashprog="c:\Users\glennl\Project_GNL_Test_TX\MASTER\bin\Debug\MASTER.omf"
+
+Status of build 0
+
+path C:\Program Files (x86)\ON Semiconductor\AxCodeBlocks\bin\axcodeblocks.exe --build "c:\Users\glennl\Project_GNL_Test_TX\TESTS\TESTS.cbp"
+
+Status of download test program 0
+
+Download Successful
+
+Status of build 0
+
+path C:\Program Files (x86)\ON Semiconductor\AxCodeBlocks\bin\axcodeblocks.exe --build "c:\Users\glennl\Project_GNL_Test_TX\TESTS\TESTS.cbp"
+
+Status of download test program 0
+
+Download Successful
+
+Status of build 0
+
+path C:\Program Files (x86)\ON Semiconductor\AxCodeBlocks\bin\axcodeblocks.exe --build "c:\Users\glennl\Project_GNL_Test_TX\TESTS\TESTS.cbp"
+
+Status of download test program 0
+
+Download Successful
+
+SDCC is built
+
+Project built is C:\Program Files (x86)\ON Semiconductor\AxCodeBlocks\bin\axcodeblocks.exe "c:\Users\glennl\Project_GNL_Test_TX\TESTS\TESTS.cbp"
+
+Status for opening AX:CodeBlocks: SUCCESS 0
+
+Opened AX:CodeBlocks successfully
+
+Status of build 0
+
+path C:\Program Files (x86)\ON Semiconductor\AxCodeBlocks\bin\axcodeblocks.exe --build "c:\Users\glennl\Project_GNL_Test_TX\TESTS\TESTS.cbp"
+
+Status of download test program 0
+
+Download Successful
+
+Status for SDCC build AX::CB: 0
+
+Built program path C:\Program Files (x86)\ON Semiconductor\AxCodeBlocks\bin\axcodeblocks.exe --build "c:\Users\glennl\Project_GNL_Test_TX\MASTER\MASTER.cbp"
+
+Status for SDCC download program: 0
+
+download program path C:\Program Files (x86)\ON Semiconductor\AXSDB\bin\axsdb.exe --flashprog="c:\Users\glennl\Project_GNL_Test_TX\MASTER\bin\Debug\MASTER.omf"
+
+Status of build 0
+
+path C:\Program Files (x86)\ON Semiconductor\AxCodeBlocks\bin\axcodeblocks.exe --build "c:\Users\glennl\Project_GNL_Test_TX\TESTS\TESTS.cbp"
+
+Status of download test program 0
+
+Download Successful
+
+Status of build 0
+
+path C:\Program Files (x86)\ON Semiconductor\AxCodeBlocks\bin\axcodeblocks.exe --build "c:\Users\glennl\Project_GNL_Test_TX\TESTS\TESTS.cbp"
+
+Status of download test program 0
+
+Download Successful
+
+Status of build 0
+
+path C:\Program Files (x86)\ON Semiconductor\AxCodeBlocks\bin\axcodeblocks.exe --build "c:\Users\glennl\Project_GNL_Test_TX\TESTS\TESTS.cbp"
+
+Status of download test program 0
+
+Download Successful
+

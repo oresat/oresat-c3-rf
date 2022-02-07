@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="VCOCAL_AXM0f2-GNU" />
+		<Option pch_mode="2" />
+		<Option compiler="arm-elf-gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/VCOCAL_AXM0f2-GNU.elf" prefix_auto="1" extension_auto="0" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="arm-elf-gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-Os" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option='-Wl,-Map,&quot;bin\Debug\VCOCAL_AXM0f2-GNU.map&quot;' />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/VCOCAL_AXM0f2-GNU.elf" prefix_auto="1" extension_auto="0" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="arm-elf-gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-Os" />
+				</Compiler>
+				<Linker>
+					<Add option='-Wl,-Map,&quot;bin\Release\VCOCAL_AXM0f2-GNU.map&quot;' />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-mcpu=cortex-m0plus" />
+			<Add option="-mthumb" />
+			<Add option="-Os" />
+			<Add option="-Wall" />
+			<Add option="--verbose" />
+			<Add option="-fno-common" />
+			<Add option="-D__AXM0F2=1" />
+			<Add option="-D__STACK_SIZE=0x400" />
+		</Compiler>
+		<Linker>
+			<Add option="-mcpu=cortex-m0plus" />
+			<Add option="-mthumb" />
+			<Add option="-T axm0f2.ld" />
+			<Add option="-specs=nosys.specs" />
+			<Add library="libaxdvk2f2" />
+			<Add library="libmff2" />
+			<Add library="libnosys" />
+		</Linker>
+		<Unit filename="../AX_Radio_Lab_output/config.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../AX_Radio_Lab_output/configslave.h" />
+		<Unit filename="../AX_Radio_Lab_output/configvcocal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../COMMON/axradio.h" />
+		<Unit filename="../COMMON/configcommon.h" />
+		<Unit filename="../COMMON/easyax5043.h" />
+		<Unit filename="../COMMON/libminidvkled.h" />
+		<Unit filename="../COMMON/misc.h" />
+		<Unit filename="../COMMON/stackheap.S" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<debugger>
+				<search_path add="C:\Program Files (x86)\GNU Tools ARM Embedded\5.4 2016q3\arm-none-eabi\include" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libmf\include" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libmf\source" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libmf\builtsource" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libmf\include\CMSIS_5\CMSIS\Core\Include" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libmf\include\CMSIS_5\Device\ARM\ARMCM0plus\Include" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libmf\include\CMSIS_5\Device\ARM\ARMCM0plus\source" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libmfcrypto\include" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libmfcrypto\source" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libaxdvk2\include" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libaxdvk2\source" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libaxdvk2\builtsource" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libax5031\include" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libax5031\source" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libax5042\include" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libax5042\source" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libax5043\include" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libax5043\source" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libax5051\include" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libax5051\source" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libaxdsp\include" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libaxdsp\source" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libaxdsp\builtsource" />
+				<remote_debugging target="Release">
+					<options conn_type="3" serial_baud="115200" pipe_command="openocd -p -l openocd.log -f ./board/axm0f2_axdbg.cfg -d3" additional_cmds='monitor reset halt&#x0A;monitor flash erase_address 0x0 0x10000&#x0A;monitor flash write_image &quot;bin/Release/VCOCAL_AXM0f2-GNU.elf&quot;&#x0A;load &quot;bin/Release/VCOCAL_AXM0f2-GNU.elf&quot;&#x0A;file &quot;bin/Release/VCOCAL_AXM0f2-GNU.elf&quot;&#x0A;monitor reset halt&#x0A;' extended_remote="1" />
+				</remote_debugging>
+				<remote_debugging target="Debug">
+					<options conn_type="3" serial_baud="115200" pipe_command="openocd -p -l openocd.log -f ./board/axm0f2_axdbg.cfg -d3" additional_cmds='monitor reset halt&#x0A;monitor flash erase_address 0x0 0x10000&#x0A;monitor flash write_image &quot;bin/Debug/VCOCAL_AXM0f2-GNU.elf&quot;&#x0A;load &quot;bin/Debug/VCOCAL_AXM0f2-GNU.elf&quot;&#x0A;file &quot;bin/Debug/VCOCAL_AXM0f2-GNU.elf&quot;&#x0A;monitor reset halt&#x0A;' extended_remote="1" />
+				</remote_debugging>
+			</debugger>
+			<code_completion />
+			<envvars />
+			<debuggeraxs>
+				<search_path add="C:\Program Files (x86)\GNU Tools ARM Embedded\5.4 2016q3\arm-none-eabi\include" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libmf\include" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libmf\source" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libmf\builtsource" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libmf\include\CMSIS_5\CMSIS\Core\Include" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libmf\include\CMSIS_5\Device\ARM\ARMCM0plus\Include" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libmf\include\CMSIS_5\Device\ARM\ARMCM0plus\source" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libmfcrypto\include" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libmfcrypto\source" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libaxdvk2\include" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libaxdvk2\source" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libaxdvk2\builtsource" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libax5031\include" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libax5031\source" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libax5042\include" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libax5042\source" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libax5043\include" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libax5043\source" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libax5051\include" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libax5051\source" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libaxdsp\include" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libaxdsp\source" />
+				<search_path add="C:\Program Files (x86)\ON Semiconductor\AXSDB\libaxdsp\builtsource" />
+			</debuggeraxs>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

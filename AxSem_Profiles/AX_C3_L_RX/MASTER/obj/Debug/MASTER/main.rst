@@ -1,0 +1,2156 @@
+                                      1 ;--------------------------------------------------------
+                                      2 ; File Created by SDCC : free open source ANSI-C Compiler
+                                      3 ; Version 3.6.0 #9615 (MINGW64)
+                                      4 ;--------------------------------------------------------
+                                      5 	.module main
+                                      6 	.optsdcc -mmcs51 --model-small
+                                      7 	
+                                      8 ;--------------------------------------------------------
+                                      9 ; Public variables in this module
+                                     10 ;--------------------------------------------------------
+                                     11 	.globl _main
+                                     12 	.globl __sdcc_external_startup
+                                     13 	.globl _lcd2_display_radio_error
+                                     14 	.globl _delay_ms
+                                     15 	.globl _memcpy
+                                     16 	.globl _lcd2_writehex16
+                                     17 	.globl _lcd2_writenum16
+                                     18 	.globl _lcd2_writestr
+                                     19 	.globl _lcd2_clear
+                                     20 	.globl _lcd2_setpos
+                                     21 	.globl _lcd2_portinit
+                                     22 	.globl _lcd2_init
+                                     23 	.globl _lcd2_txidle
+                                     24 	.globl _wtimer0_correctinterval
+                                     25 	.globl _wtimer0_addrelative
+                                     26 	.globl _wtimer0_addabsolute
+                                     27 	.globl _wtimer_runcallbacks
+                                     28 	.globl _wtimer_idle
+                                     29 	.globl _wtimer_init
+                                     30 	.globl _wtimer1_setconfig
+                                     31 	.globl _wtimer0_setconfig
+                                     32 	.globl _flash_apply_calibration
+                                     33 	.globl _axradio_commsleepexit
+                                     34 	.globl _axradio_setup_pincfg2
+                                     35 	.globl _axradio_setup_pincfg1
+                                     36 	.globl _axradio_transmit
+                                     37 	.globl _axradio_set_default_remote_address
+                                     38 	.globl _axradio_set_local_address
+                                     39 	.globl _axradio_get_pllvcoi
+                                     40 	.globl _axradio_get_pllrange
+                                     41 	.globl _axradio_set_mode
+                                     42 	.globl _axradio_cansleep
+                                     43 	.globl _axradio_init
+                                     44 	.globl _PORTC_7
+                                     45 	.globl _PORTC_6
+                                     46 	.globl _PORTC_5
+                                     47 	.globl _PORTC_4
+                                     48 	.globl _PORTC_3
+                                     49 	.globl _PORTC_2
+                                     50 	.globl _PORTC_1
+                                     51 	.globl _PORTC_0
+                                     52 	.globl _PORTB_7
+                                     53 	.globl _PORTB_6
+                                     54 	.globl _PORTB_5
+                                     55 	.globl _PORTB_4
+                                     56 	.globl _PORTB_3
+                                     57 	.globl _PORTB_2
+                                     58 	.globl _PORTB_1
+                                     59 	.globl _PORTB_0
+                                     60 	.globl _PORTA_7
+                                     61 	.globl _PORTA_6
+                                     62 	.globl _PORTA_5
+                                     63 	.globl _PORTA_4
+                                     64 	.globl _PORTA_3
+                                     65 	.globl _PORTA_2
+                                     66 	.globl _PORTA_1
+                                     67 	.globl _PORTA_0
+                                     68 	.globl _PINC_7
+                                     69 	.globl _PINC_6
+                                     70 	.globl _PINC_5
+                                     71 	.globl _PINC_4
+                                     72 	.globl _PINC_3
+                                     73 	.globl _PINC_2
+                                     74 	.globl _PINC_1
+                                     75 	.globl _PINC_0
+                                     76 	.globl _PINB_7
+                                     77 	.globl _PINB_6
+                                     78 	.globl _PINB_5
+                                     79 	.globl _PINB_4
+                                     80 	.globl _PINB_3
+                                     81 	.globl _PINB_2
+                                     82 	.globl _PINB_1
+                                     83 	.globl _PINB_0
+                                     84 	.globl _PINA_7
+                                     85 	.globl _PINA_6
+                                     86 	.globl _PINA_5
+                                     87 	.globl _PINA_4
+                                     88 	.globl _PINA_3
+                                     89 	.globl _PINA_2
+                                     90 	.globl _PINA_1
+                                     91 	.globl _PINA_0
+                                     92 	.globl _CY
+                                     93 	.globl _AC
+                                     94 	.globl _F0
+                                     95 	.globl _RS1
+                                     96 	.globl _RS0
+                                     97 	.globl _OV
+                                     98 	.globl _F1
+                                     99 	.globl _P
+                                    100 	.globl _IP_7
+                                    101 	.globl _IP_6
+                                    102 	.globl _IP_5
+                                    103 	.globl _IP_4
+                                    104 	.globl _IP_3
+                                    105 	.globl _IP_2
+                                    106 	.globl _IP_1
+                                    107 	.globl _IP_0
+                                    108 	.globl _EA
+                                    109 	.globl _IE_7
+                                    110 	.globl _IE_6
+                                    111 	.globl _IE_5
+                                    112 	.globl _IE_4
+                                    113 	.globl _IE_3
+                                    114 	.globl _IE_2
+                                    115 	.globl _IE_1
+                                    116 	.globl _IE_0
+                                    117 	.globl _EIP_7
+                                    118 	.globl _EIP_6
+                                    119 	.globl _EIP_5
+                                    120 	.globl _EIP_4
+                                    121 	.globl _EIP_3
+                                    122 	.globl _EIP_2
+                                    123 	.globl _EIP_1
+                                    124 	.globl _EIP_0
+                                    125 	.globl _EIE_7
+                                    126 	.globl _EIE_6
+                                    127 	.globl _EIE_5
+                                    128 	.globl _EIE_4
+                                    129 	.globl _EIE_3
+                                    130 	.globl _EIE_2
+                                    131 	.globl _EIE_1
+                                    132 	.globl _EIE_0
+                                    133 	.globl _E2IP_7
+                                    134 	.globl _E2IP_6
+                                    135 	.globl _E2IP_5
+                                    136 	.globl _E2IP_4
+                                    137 	.globl _E2IP_3
+                                    138 	.globl _E2IP_2
+                                    139 	.globl _E2IP_1
+                                    140 	.globl _E2IP_0
+                                    141 	.globl _E2IE_7
+                                    142 	.globl _E2IE_6
+                                    143 	.globl _E2IE_5
+                                    144 	.globl _E2IE_4
+                                    145 	.globl _E2IE_3
+                                    146 	.globl _E2IE_2
+                                    147 	.globl _E2IE_1
+                                    148 	.globl _E2IE_0
+                                    149 	.globl _B_7
+                                    150 	.globl _B_6
+                                    151 	.globl _B_5
+                                    152 	.globl _B_4
+                                    153 	.globl _B_3
+                                    154 	.globl _B_2
+                                    155 	.globl _B_1
+                                    156 	.globl _B_0
+                                    157 	.globl _ACC_7
+                                    158 	.globl _ACC_6
+                                    159 	.globl _ACC_5
+                                    160 	.globl _ACC_4
+                                    161 	.globl _ACC_3
+                                    162 	.globl _ACC_2
+                                    163 	.globl _ACC_1
+                                    164 	.globl _ACC_0
+                                    165 	.globl _WTSTAT
+                                    166 	.globl _WTIRQEN
+                                    167 	.globl _WTEVTD
+                                    168 	.globl _WTEVTD1
+                                    169 	.globl _WTEVTD0
+                                    170 	.globl _WTEVTC
+                                    171 	.globl _WTEVTC1
+                                    172 	.globl _WTEVTC0
+                                    173 	.globl _WTEVTB
+                                    174 	.globl _WTEVTB1
+                                    175 	.globl _WTEVTB0
+                                    176 	.globl _WTEVTA
+                                    177 	.globl _WTEVTA1
+                                    178 	.globl _WTEVTA0
+                                    179 	.globl _WTCNTR1
+                                    180 	.globl _WTCNTB
+                                    181 	.globl _WTCNTB1
+                                    182 	.globl _WTCNTB0
+                                    183 	.globl _WTCNTA
+                                    184 	.globl _WTCNTA1
+                                    185 	.globl _WTCNTA0
+                                    186 	.globl _WTCFGB
+                                    187 	.globl _WTCFGA
+                                    188 	.globl _WDTRESET
+                                    189 	.globl _WDTCFG
+                                    190 	.globl _U1STATUS
+                                    191 	.globl _U1SHREG
+                                    192 	.globl _U1MODE
+                                    193 	.globl _U1CTRL
+                                    194 	.globl _U0STATUS
+                                    195 	.globl _U0SHREG
+                                    196 	.globl _U0MODE
+                                    197 	.globl _U0CTRL
+                                    198 	.globl _T2STATUS
+                                    199 	.globl _T2PERIOD
+                                    200 	.globl _T2PERIOD1
+                                    201 	.globl _T2PERIOD0
+                                    202 	.globl _T2MODE
+                                    203 	.globl _T2CNT
+                                    204 	.globl _T2CNT1
+                                    205 	.globl _T2CNT0
+                                    206 	.globl _T2CLKSRC
+                                    207 	.globl _T1STATUS
+                                    208 	.globl _T1PERIOD
+                                    209 	.globl _T1PERIOD1
+                                    210 	.globl _T1PERIOD0
+                                    211 	.globl _T1MODE
+                                    212 	.globl _T1CNT
+                                    213 	.globl _T1CNT1
+                                    214 	.globl _T1CNT0
+                                    215 	.globl _T1CLKSRC
+                                    216 	.globl _T0STATUS
+                                    217 	.globl _T0PERIOD
+                                    218 	.globl _T0PERIOD1
+                                    219 	.globl _T0PERIOD0
+                                    220 	.globl _T0MODE
+                                    221 	.globl _T0CNT
+                                    222 	.globl _T0CNT1
+                                    223 	.globl _T0CNT0
+                                    224 	.globl _T0CLKSRC
+                                    225 	.globl _SPSTATUS
+                                    226 	.globl _SPSHREG
+                                    227 	.globl _SPMODE
+                                    228 	.globl _SPCLKSRC
+                                    229 	.globl _RADIOSTAT
+                                    230 	.globl _RADIOSTAT1
+                                    231 	.globl _RADIOSTAT0
+                                    232 	.globl _RADIODATA
+                                    233 	.globl _RADIODATA3
+                                    234 	.globl _RADIODATA2
+                                    235 	.globl _RADIODATA1
+                                    236 	.globl _RADIODATA0
+                                    237 	.globl _RADIOADDR
+                                    238 	.globl _RADIOADDR1
+                                    239 	.globl _RADIOADDR0
+                                    240 	.globl _RADIOACC
+                                    241 	.globl _OC1STATUS
+                                    242 	.globl _OC1PIN
+                                    243 	.globl _OC1MODE
+                                    244 	.globl _OC1COMP
+                                    245 	.globl _OC1COMP1
+                                    246 	.globl _OC1COMP0
+                                    247 	.globl _OC0STATUS
+                                    248 	.globl _OC0PIN
+                                    249 	.globl _OC0MODE
+                                    250 	.globl _OC0COMP
+                                    251 	.globl _OC0COMP1
+                                    252 	.globl _OC0COMP0
+                                    253 	.globl _NVSTATUS
+                                    254 	.globl _NVKEY
+                                    255 	.globl _NVDATA
+                                    256 	.globl _NVDATA1
+                                    257 	.globl _NVDATA0
+                                    258 	.globl _NVADDR
+                                    259 	.globl _NVADDR1
+                                    260 	.globl _NVADDR0
+                                    261 	.globl _IC1STATUS
+                                    262 	.globl _IC1MODE
+                                    263 	.globl _IC1CAPT
+                                    264 	.globl _IC1CAPT1
+                                    265 	.globl _IC1CAPT0
+                                    266 	.globl _IC0STATUS
+                                    267 	.globl _IC0MODE
+                                    268 	.globl _IC0CAPT
+                                    269 	.globl _IC0CAPT1
+                                    270 	.globl _IC0CAPT0
+                                    271 	.globl _PORTR
+                                    272 	.globl _PORTC
+                                    273 	.globl _PORTB
+                                    274 	.globl _PORTA
+                                    275 	.globl _PINR
+                                    276 	.globl _PINC
+                                    277 	.globl _PINB
+                                    278 	.globl _PINA
+                                    279 	.globl _DIRR
+                                    280 	.globl _DIRC
+                                    281 	.globl _DIRB
+                                    282 	.globl _DIRA
+                                    283 	.globl _DBGLNKSTAT
+                                    284 	.globl _DBGLNKBUF
+                                    285 	.globl _CODECONFIG
+                                    286 	.globl _CLKSTAT
+                                    287 	.globl _CLKCON
+                                    288 	.globl _ANALOGCOMP
+                                    289 	.globl _ADCCONV
+                                    290 	.globl _ADCCLKSRC
+                                    291 	.globl _ADCCH3CONFIG
+                                    292 	.globl _ADCCH2CONFIG
+                                    293 	.globl _ADCCH1CONFIG
+                                    294 	.globl _ADCCH0CONFIG
+                                    295 	.globl __XPAGE
+                                    296 	.globl _XPAGE
+                                    297 	.globl _SP
+                                    298 	.globl _PSW
+                                    299 	.globl _PCON
+                                    300 	.globl _IP
+                                    301 	.globl _IE
+                                    302 	.globl _EIP
+                                    303 	.globl _EIE
+                                    304 	.globl _E2IP
+                                    305 	.globl _E2IE
+                                    306 	.globl _DPS
+                                    307 	.globl _DPTR1
+                                    308 	.globl _DPTR0
+                                    309 	.globl _DPL1
+                                    310 	.globl _DPL
+                                    311 	.globl _DPH1
+                                    312 	.globl _DPH
+                                    313 	.globl _B
+                                    314 	.globl _ACC
+                                    315 	.globl _wakeup_desc
+                                    316 	.globl _XTALREADY
+                                    317 	.globl _XTALOSC
+                                    318 	.globl _XTALAMPL
+                                    319 	.globl _SILICONREV
+                                    320 	.globl _SCRATCH3
+                                    321 	.globl _SCRATCH2
+                                    322 	.globl _SCRATCH1
+                                    323 	.globl _SCRATCH0
+                                    324 	.globl _RADIOMUX
+                                    325 	.globl _RADIOFSTATADDR
+                                    326 	.globl _RADIOFSTATADDR1
+                                    327 	.globl _RADIOFSTATADDR0
+                                    328 	.globl _RADIOFDATAADDR
+                                    329 	.globl _RADIOFDATAADDR1
+                                    330 	.globl _RADIOFDATAADDR0
+                                    331 	.globl _OSCRUN
+                                    332 	.globl _OSCREADY
+                                    333 	.globl _OSCFORCERUN
+                                    334 	.globl _OSCCALIB
+                                    335 	.globl _MISCCTRL
+                                    336 	.globl _LPXOSCGM
+                                    337 	.globl _LPOSCREF
+                                    338 	.globl _LPOSCREF1
+                                    339 	.globl _LPOSCREF0
+                                    340 	.globl _LPOSCPER
+                                    341 	.globl _LPOSCPER1
+                                    342 	.globl _LPOSCPER0
+                                    343 	.globl _LPOSCKFILT
+                                    344 	.globl _LPOSCKFILT1
+                                    345 	.globl _LPOSCKFILT0
+                                    346 	.globl _LPOSCFREQ
+                                    347 	.globl _LPOSCFREQ1
+                                    348 	.globl _LPOSCFREQ0
+                                    349 	.globl _LPOSCCONFIG
+                                    350 	.globl _PINSEL
+                                    351 	.globl _PINCHGC
+                                    352 	.globl _PINCHGB
+                                    353 	.globl _PINCHGA
+                                    354 	.globl _PALTRADIO
+                                    355 	.globl _PALTC
+                                    356 	.globl _PALTB
+                                    357 	.globl _PALTA
+                                    358 	.globl _INTCHGC
+                                    359 	.globl _INTCHGB
+                                    360 	.globl _INTCHGA
+                                    361 	.globl _EXTIRQ
+                                    362 	.globl _GPIOENABLE
+                                    363 	.globl _ANALOGA
+                                    364 	.globl _FRCOSCREF
+                                    365 	.globl _FRCOSCREF1
+                                    366 	.globl _FRCOSCREF0
+                                    367 	.globl _FRCOSCPER
+                                    368 	.globl _FRCOSCPER1
+                                    369 	.globl _FRCOSCPER0
+                                    370 	.globl _FRCOSCKFILT
+                                    371 	.globl _FRCOSCKFILT1
+                                    372 	.globl _FRCOSCKFILT0
+                                    373 	.globl _FRCOSCFREQ
+                                    374 	.globl _FRCOSCFREQ1
+                                    375 	.globl _FRCOSCFREQ0
+                                    376 	.globl _FRCOSCCTRL
+                                    377 	.globl _FRCOSCCONFIG
+                                    378 	.globl _DMA1CONFIG
+                                    379 	.globl _DMA1ADDR
+                                    380 	.globl _DMA1ADDR1
+                                    381 	.globl _DMA1ADDR0
+                                    382 	.globl _DMA0CONFIG
+                                    383 	.globl _DMA0ADDR
+                                    384 	.globl _DMA0ADDR1
+                                    385 	.globl _DMA0ADDR0
+                                    386 	.globl _ADCTUNE2
+                                    387 	.globl _ADCTUNE1
+                                    388 	.globl _ADCTUNE0
+                                    389 	.globl _ADCCH3VAL
+                                    390 	.globl _ADCCH3VAL1
+                                    391 	.globl _ADCCH3VAL0
+                                    392 	.globl _ADCCH2VAL
+                                    393 	.globl _ADCCH2VAL1
+                                    394 	.globl _ADCCH2VAL0
+                                    395 	.globl _ADCCH1VAL
+                                    396 	.globl _ADCCH1VAL1
+                                    397 	.globl _ADCCH1VAL0
+                                    398 	.globl _ADCCH0VAL
+                                    399 	.globl _ADCCH0VAL1
+                                    400 	.globl _ADCCH0VAL0
+                                    401 	.globl _coldstart
+                                    402 	.globl _pkt_counter
+                                    403 	.globl _axradio_statuschange
+                                    404 	.globl _enable_radio_interrupt_in_mcu_pin
+                                    405 	.globl _disable_radio_interrupt_in_mcu_pin
+                                    406 ;--------------------------------------------------------
+                                    407 ; special function registers
+                                    408 ;--------------------------------------------------------
+                                    409 	.area RSEG    (ABS,DATA)
+      000000                        410 	.org 0x0000
+                           0000E0   411 G$ACC$0$0 == 0x00e0
+                           0000E0   412 _ACC	=	0x00e0
+                           0000F0   413 G$B$0$0 == 0x00f0
+                           0000F0   414 _B	=	0x00f0
+                           000083   415 G$DPH$0$0 == 0x0083
+                           000083   416 _DPH	=	0x0083
+                           000085   417 G$DPH1$0$0 == 0x0085
+                           000085   418 _DPH1	=	0x0085
+                           000082   419 G$DPL$0$0 == 0x0082
+                           000082   420 _DPL	=	0x0082
+                           000084   421 G$DPL1$0$0 == 0x0084
+                           000084   422 _DPL1	=	0x0084
+                           008382   423 G$DPTR0$0$0 == 0x8382
+                           008382   424 _DPTR0	=	0x8382
+                           008584   425 G$DPTR1$0$0 == 0x8584
+                           008584   426 _DPTR1	=	0x8584
+                           000086   427 G$DPS$0$0 == 0x0086
+                           000086   428 _DPS	=	0x0086
+                           0000A0   429 G$E2IE$0$0 == 0x00a0
+                           0000A0   430 _E2IE	=	0x00a0
+                           0000C0   431 G$E2IP$0$0 == 0x00c0
+                           0000C0   432 _E2IP	=	0x00c0
+                           000098   433 G$EIE$0$0 == 0x0098
+                           000098   434 _EIE	=	0x0098
+                           0000B0   435 G$EIP$0$0 == 0x00b0
+                           0000B0   436 _EIP	=	0x00b0
+                           0000A8   437 G$IE$0$0 == 0x00a8
+                           0000A8   438 _IE	=	0x00a8
+                           0000B8   439 G$IP$0$0 == 0x00b8
+                           0000B8   440 _IP	=	0x00b8
+                           000087   441 G$PCON$0$0 == 0x0087
+                           000087   442 _PCON	=	0x0087
+                           0000D0   443 G$PSW$0$0 == 0x00d0
+                           0000D0   444 _PSW	=	0x00d0
+                           000081   445 G$SP$0$0 == 0x0081
+                           000081   446 _SP	=	0x0081
+                           0000D9   447 G$XPAGE$0$0 == 0x00d9
+                           0000D9   448 _XPAGE	=	0x00d9
+                           0000D9   449 G$_XPAGE$0$0 == 0x00d9
+                           0000D9   450 __XPAGE	=	0x00d9
+                           0000CA   451 G$ADCCH0CONFIG$0$0 == 0x00ca
+                           0000CA   452 _ADCCH0CONFIG	=	0x00ca
+                           0000CB   453 G$ADCCH1CONFIG$0$0 == 0x00cb
+                           0000CB   454 _ADCCH1CONFIG	=	0x00cb
+                           0000D2   455 G$ADCCH2CONFIG$0$0 == 0x00d2
+                           0000D2   456 _ADCCH2CONFIG	=	0x00d2
+                           0000D3   457 G$ADCCH3CONFIG$0$0 == 0x00d3
+                           0000D3   458 _ADCCH3CONFIG	=	0x00d3
+                           0000D1   459 G$ADCCLKSRC$0$0 == 0x00d1
+                           0000D1   460 _ADCCLKSRC	=	0x00d1
+                           0000C9   461 G$ADCCONV$0$0 == 0x00c9
+                           0000C9   462 _ADCCONV	=	0x00c9
+                           0000E1   463 G$ANALOGCOMP$0$0 == 0x00e1
+                           0000E1   464 _ANALOGCOMP	=	0x00e1
+                           0000C6   465 G$CLKCON$0$0 == 0x00c6
+                           0000C6   466 _CLKCON	=	0x00c6
+                           0000C7   467 G$CLKSTAT$0$0 == 0x00c7
+                           0000C7   468 _CLKSTAT	=	0x00c7
+                           000097   469 G$CODECONFIG$0$0 == 0x0097
+                           000097   470 _CODECONFIG	=	0x0097
+                           0000E3   471 G$DBGLNKBUF$0$0 == 0x00e3
+                           0000E3   472 _DBGLNKBUF	=	0x00e3
+                           0000E2   473 G$DBGLNKSTAT$0$0 == 0x00e2
+                           0000E2   474 _DBGLNKSTAT	=	0x00e2
+                           000089   475 G$DIRA$0$0 == 0x0089
+                           000089   476 _DIRA	=	0x0089
+                           00008A   477 G$DIRB$0$0 == 0x008a
+                           00008A   478 _DIRB	=	0x008a
+                           00008B   479 G$DIRC$0$0 == 0x008b
+                           00008B   480 _DIRC	=	0x008b
+                           00008E   481 G$DIRR$0$0 == 0x008e
+                           00008E   482 _DIRR	=	0x008e
+                           0000C8   483 G$PINA$0$0 == 0x00c8
+                           0000C8   484 _PINA	=	0x00c8
+                           0000E8   485 G$PINB$0$0 == 0x00e8
+                           0000E8   486 _PINB	=	0x00e8
+                           0000F8   487 G$PINC$0$0 == 0x00f8
+                           0000F8   488 _PINC	=	0x00f8
+                           00008D   489 G$PINR$0$0 == 0x008d
+                           00008D   490 _PINR	=	0x008d
+                           000080   491 G$PORTA$0$0 == 0x0080
+                           000080   492 _PORTA	=	0x0080
+                           000088   493 G$PORTB$0$0 == 0x0088
+                           000088   494 _PORTB	=	0x0088
+                           000090   495 G$PORTC$0$0 == 0x0090
+                           000090   496 _PORTC	=	0x0090
+                           00008C   497 G$PORTR$0$0 == 0x008c
+                           00008C   498 _PORTR	=	0x008c
+                           0000CE   499 G$IC0CAPT0$0$0 == 0x00ce
+                           0000CE   500 _IC0CAPT0	=	0x00ce
+                           0000CF   501 G$IC0CAPT1$0$0 == 0x00cf
+                           0000CF   502 _IC0CAPT1	=	0x00cf
+                           00CFCE   503 G$IC0CAPT$0$0 == 0xcfce
+                           00CFCE   504 _IC0CAPT	=	0xcfce
+                           0000CC   505 G$IC0MODE$0$0 == 0x00cc
+                           0000CC   506 _IC0MODE	=	0x00cc
+                           0000CD   507 G$IC0STATUS$0$0 == 0x00cd
+                           0000CD   508 _IC0STATUS	=	0x00cd
+                           0000D6   509 G$IC1CAPT0$0$0 == 0x00d6
+                           0000D6   510 _IC1CAPT0	=	0x00d6
+                           0000D7   511 G$IC1CAPT1$0$0 == 0x00d7
+                           0000D7   512 _IC1CAPT1	=	0x00d7
+                           00D7D6   513 G$IC1CAPT$0$0 == 0xd7d6
+                           00D7D6   514 _IC1CAPT	=	0xd7d6
+                           0000D4   515 G$IC1MODE$0$0 == 0x00d4
+                           0000D4   516 _IC1MODE	=	0x00d4
+                           0000D5   517 G$IC1STATUS$0$0 == 0x00d5
+                           0000D5   518 _IC1STATUS	=	0x00d5
+                           000092   519 G$NVADDR0$0$0 == 0x0092
+                           000092   520 _NVADDR0	=	0x0092
+                           000093   521 G$NVADDR1$0$0 == 0x0093
+                           000093   522 _NVADDR1	=	0x0093
+                           009392   523 G$NVADDR$0$0 == 0x9392
+                           009392   524 _NVADDR	=	0x9392
+                           000094   525 G$NVDATA0$0$0 == 0x0094
+                           000094   526 _NVDATA0	=	0x0094
+                           000095   527 G$NVDATA1$0$0 == 0x0095
+                           000095   528 _NVDATA1	=	0x0095
+                           009594   529 G$NVDATA$0$0 == 0x9594
+                           009594   530 _NVDATA	=	0x9594
+                           000096   531 G$NVKEY$0$0 == 0x0096
+                           000096   532 _NVKEY	=	0x0096
+                           000091   533 G$NVSTATUS$0$0 == 0x0091
+                           000091   534 _NVSTATUS	=	0x0091
+                           0000BC   535 G$OC0COMP0$0$0 == 0x00bc
+                           0000BC   536 _OC0COMP0	=	0x00bc
+                           0000BD   537 G$OC0COMP1$0$0 == 0x00bd
+                           0000BD   538 _OC0COMP1	=	0x00bd
+                           00BDBC   539 G$OC0COMP$0$0 == 0xbdbc
+                           00BDBC   540 _OC0COMP	=	0xbdbc
+                           0000B9   541 G$OC0MODE$0$0 == 0x00b9
+                           0000B9   542 _OC0MODE	=	0x00b9
+                           0000BA   543 G$OC0PIN$0$0 == 0x00ba
+                           0000BA   544 _OC0PIN	=	0x00ba
+                           0000BB   545 G$OC0STATUS$0$0 == 0x00bb
+                           0000BB   546 _OC0STATUS	=	0x00bb
+                           0000C4   547 G$OC1COMP0$0$0 == 0x00c4
+                           0000C4   548 _OC1COMP0	=	0x00c4
+                           0000C5   549 G$OC1COMP1$0$0 == 0x00c5
+                           0000C5   550 _OC1COMP1	=	0x00c5
+                           00C5C4   551 G$OC1COMP$0$0 == 0xc5c4
+                           00C5C4   552 _OC1COMP	=	0xc5c4
+                           0000C1   553 G$OC1MODE$0$0 == 0x00c1
+                           0000C1   554 _OC1MODE	=	0x00c1
+                           0000C2   555 G$OC1PIN$0$0 == 0x00c2
+                           0000C2   556 _OC1PIN	=	0x00c2
+                           0000C3   557 G$OC1STATUS$0$0 == 0x00c3
+                           0000C3   558 _OC1STATUS	=	0x00c3
+                           0000B1   559 G$RADIOACC$0$0 == 0x00b1
+                           0000B1   560 _RADIOACC	=	0x00b1
+                           0000B3   561 G$RADIOADDR0$0$0 == 0x00b3
+                           0000B3   562 _RADIOADDR0	=	0x00b3
+                           0000B2   563 G$RADIOADDR1$0$0 == 0x00b2
+                           0000B2   564 _RADIOADDR1	=	0x00b2
+                           00B2B3   565 G$RADIOADDR$0$0 == 0xb2b3
+                           00B2B3   566 _RADIOADDR	=	0xb2b3
+                           0000B7   567 G$RADIODATA0$0$0 == 0x00b7
+                           0000B7   568 _RADIODATA0	=	0x00b7
+                           0000B6   569 G$RADIODATA1$0$0 == 0x00b6
+                           0000B6   570 _RADIODATA1	=	0x00b6
+                           0000B5   571 G$RADIODATA2$0$0 == 0x00b5
+                           0000B5   572 _RADIODATA2	=	0x00b5
+                           0000B4   573 G$RADIODATA3$0$0 == 0x00b4
+                           0000B4   574 _RADIODATA3	=	0x00b4
+                           B4B5B6B7   575 G$RADIODATA$0$0 == 0xb4b5b6b7
+                           B4B5B6B7   576 _RADIODATA	=	0xb4b5b6b7
+                           0000BE   577 G$RADIOSTAT0$0$0 == 0x00be
+                           0000BE   578 _RADIOSTAT0	=	0x00be
+                           0000BF   579 G$RADIOSTAT1$0$0 == 0x00bf
+                           0000BF   580 _RADIOSTAT1	=	0x00bf
+                           00BFBE   581 G$RADIOSTAT$0$0 == 0xbfbe
+                           00BFBE   582 _RADIOSTAT	=	0xbfbe
+                           0000DF   583 G$SPCLKSRC$0$0 == 0x00df
+                           0000DF   584 _SPCLKSRC	=	0x00df
+                           0000DC   585 G$SPMODE$0$0 == 0x00dc
+                           0000DC   586 _SPMODE	=	0x00dc
+                           0000DE   587 G$SPSHREG$0$0 == 0x00de
+                           0000DE   588 _SPSHREG	=	0x00de
+                           0000DD   589 G$SPSTATUS$0$0 == 0x00dd
+                           0000DD   590 _SPSTATUS	=	0x00dd
+                           00009A   591 G$T0CLKSRC$0$0 == 0x009a
+                           00009A   592 _T0CLKSRC	=	0x009a
+                           00009C   593 G$T0CNT0$0$0 == 0x009c
+                           00009C   594 _T0CNT0	=	0x009c
+                           00009D   595 G$T0CNT1$0$0 == 0x009d
+                           00009D   596 _T0CNT1	=	0x009d
+                           009D9C   597 G$T0CNT$0$0 == 0x9d9c
+                           009D9C   598 _T0CNT	=	0x9d9c
+                           000099   599 G$T0MODE$0$0 == 0x0099
+                           000099   600 _T0MODE	=	0x0099
+                           00009E   601 G$T0PERIOD0$0$0 == 0x009e
+                           00009E   602 _T0PERIOD0	=	0x009e
+                           00009F   603 G$T0PERIOD1$0$0 == 0x009f
+                           00009F   604 _T0PERIOD1	=	0x009f
+                           009F9E   605 G$T0PERIOD$0$0 == 0x9f9e
+                           009F9E   606 _T0PERIOD	=	0x9f9e
+                           00009B   607 G$T0STATUS$0$0 == 0x009b
+                           00009B   608 _T0STATUS	=	0x009b
+                           0000A2   609 G$T1CLKSRC$0$0 == 0x00a2
+                           0000A2   610 _T1CLKSRC	=	0x00a2
+                           0000A4   611 G$T1CNT0$0$0 == 0x00a4
+                           0000A4   612 _T1CNT0	=	0x00a4
+                           0000A5   613 G$T1CNT1$0$0 == 0x00a5
+                           0000A5   614 _T1CNT1	=	0x00a5
+                           00A5A4   615 G$T1CNT$0$0 == 0xa5a4
+                           00A5A4   616 _T1CNT	=	0xa5a4
+                           0000A1   617 G$T1MODE$0$0 == 0x00a1
+                           0000A1   618 _T1MODE	=	0x00a1
+                           0000A6   619 G$T1PERIOD0$0$0 == 0x00a6
+                           0000A6   620 _T1PERIOD0	=	0x00a6
+                           0000A7   621 G$T1PERIOD1$0$0 == 0x00a7
+                           0000A7   622 _T1PERIOD1	=	0x00a7
+                           00A7A6   623 G$T1PERIOD$0$0 == 0xa7a6
+                           00A7A6   624 _T1PERIOD	=	0xa7a6
+                           0000A3   625 G$T1STATUS$0$0 == 0x00a3
+                           0000A3   626 _T1STATUS	=	0x00a3
+                           0000AA   627 G$T2CLKSRC$0$0 == 0x00aa
+                           0000AA   628 _T2CLKSRC	=	0x00aa
+                           0000AC   629 G$T2CNT0$0$0 == 0x00ac
+                           0000AC   630 _T2CNT0	=	0x00ac
+                           0000AD   631 G$T2CNT1$0$0 == 0x00ad
+                           0000AD   632 _T2CNT1	=	0x00ad
+                           00ADAC   633 G$T2CNT$0$0 == 0xadac
+                           00ADAC   634 _T2CNT	=	0xadac
+                           0000A9   635 G$T2MODE$0$0 == 0x00a9
+                           0000A9   636 _T2MODE	=	0x00a9
+                           0000AE   637 G$T2PERIOD0$0$0 == 0x00ae
+                           0000AE   638 _T2PERIOD0	=	0x00ae
+                           0000AF   639 G$T2PERIOD1$0$0 == 0x00af
+                           0000AF   640 _T2PERIOD1	=	0x00af
+                           00AFAE   641 G$T2PERIOD$0$0 == 0xafae
+                           00AFAE   642 _T2PERIOD	=	0xafae
+                           0000AB   643 G$T2STATUS$0$0 == 0x00ab
+                           0000AB   644 _T2STATUS	=	0x00ab
+                           0000E4   645 G$U0CTRL$0$0 == 0x00e4
+                           0000E4   646 _U0CTRL	=	0x00e4
+                           0000E7   647 G$U0MODE$0$0 == 0x00e7
+                           0000E7   648 _U0MODE	=	0x00e7
+                           0000E6   649 G$U0SHREG$0$0 == 0x00e6
+                           0000E6   650 _U0SHREG	=	0x00e6
+                           0000E5   651 G$U0STATUS$0$0 == 0x00e5
+                           0000E5   652 _U0STATUS	=	0x00e5
+                           0000EC   653 G$U1CTRL$0$0 == 0x00ec
+                           0000EC   654 _U1CTRL	=	0x00ec
+                           0000EF   655 G$U1MODE$0$0 == 0x00ef
+                           0000EF   656 _U1MODE	=	0x00ef
+                           0000EE   657 G$U1SHREG$0$0 == 0x00ee
+                           0000EE   658 _U1SHREG	=	0x00ee
+                           0000ED   659 G$U1STATUS$0$0 == 0x00ed
+                           0000ED   660 _U1STATUS	=	0x00ed
+                           0000DA   661 G$WDTCFG$0$0 == 0x00da
+                           0000DA   662 _WDTCFG	=	0x00da
+                           0000DB   663 G$WDTRESET$0$0 == 0x00db
+                           0000DB   664 _WDTRESET	=	0x00db
+                           0000F1   665 G$WTCFGA$0$0 == 0x00f1
+                           0000F1   666 _WTCFGA	=	0x00f1
+                           0000F9   667 G$WTCFGB$0$0 == 0x00f9
+                           0000F9   668 _WTCFGB	=	0x00f9
+                           0000F2   669 G$WTCNTA0$0$0 == 0x00f2
+                           0000F2   670 _WTCNTA0	=	0x00f2
+                           0000F3   671 G$WTCNTA1$0$0 == 0x00f3
+                           0000F3   672 _WTCNTA1	=	0x00f3
+                           00F3F2   673 G$WTCNTA$0$0 == 0xf3f2
+                           00F3F2   674 _WTCNTA	=	0xf3f2
+                           0000FA   675 G$WTCNTB0$0$0 == 0x00fa
+                           0000FA   676 _WTCNTB0	=	0x00fa
+                           0000FB   677 G$WTCNTB1$0$0 == 0x00fb
+                           0000FB   678 _WTCNTB1	=	0x00fb
+                           00FBFA   679 G$WTCNTB$0$0 == 0xfbfa
+                           00FBFA   680 _WTCNTB	=	0xfbfa
+                           0000EB   681 G$WTCNTR1$0$0 == 0x00eb
+                           0000EB   682 _WTCNTR1	=	0x00eb
+                           0000F4   683 G$WTEVTA0$0$0 == 0x00f4
+                           0000F4   684 _WTEVTA0	=	0x00f4
+                           0000F5   685 G$WTEVTA1$0$0 == 0x00f5
+                           0000F5   686 _WTEVTA1	=	0x00f5
+                           00F5F4   687 G$WTEVTA$0$0 == 0xf5f4
+                           00F5F4   688 _WTEVTA	=	0xf5f4
+                           0000F6   689 G$WTEVTB0$0$0 == 0x00f6
+                           0000F6   690 _WTEVTB0	=	0x00f6
+                           0000F7   691 G$WTEVTB1$0$0 == 0x00f7
+                           0000F7   692 _WTEVTB1	=	0x00f7
+                           00F7F6   693 G$WTEVTB$0$0 == 0xf7f6
+                           00F7F6   694 _WTEVTB	=	0xf7f6
+                           0000FC   695 G$WTEVTC0$0$0 == 0x00fc
+                           0000FC   696 _WTEVTC0	=	0x00fc
+                           0000FD   697 G$WTEVTC1$0$0 == 0x00fd
+                           0000FD   698 _WTEVTC1	=	0x00fd
+                           00FDFC   699 G$WTEVTC$0$0 == 0xfdfc
+                           00FDFC   700 _WTEVTC	=	0xfdfc
+                           0000FE   701 G$WTEVTD0$0$0 == 0x00fe
+                           0000FE   702 _WTEVTD0	=	0x00fe
+                           0000FF   703 G$WTEVTD1$0$0 == 0x00ff
+                           0000FF   704 _WTEVTD1	=	0x00ff
+                           00FFFE   705 G$WTEVTD$0$0 == 0xfffe
+                           00FFFE   706 _WTEVTD	=	0xfffe
+                           0000E9   707 G$WTIRQEN$0$0 == 0x00e9
+                           0000E9   708 _WTIRQEN	=	0x00e9
+                           0000EA   709 G$WTSTAT$0$0 == 0x00ea
+                           0000EA   710 _WTSTAT	=	0x00ea
+                                    711 ;--------------------------------------------------------
+                                    712 ; special function bits
+                                    713 ;--------------------------------------------------------
+                                    714 	.area RSEG    (ABS,DATA)
+      000000                        715 	.org 0x0000
+                           0000E0   716 G$ACC_0$0$0 == 0x00e0
+                           0000E0   717 _ACC_0	=	0x00e0
+                           0000E1   718 G$ACC_1$0$0 == 0x00e1
+                           0000E1   719 _ACC_1	=	0x00e1
+                           0000E2   720 G$ACC_2$0$0 == 0x00e2
+                           0000E2   721 _ACC_2	=	0x00e2
+                           0000E3   722 G$ACC_3$0$0 == 0x00e3
+                           0000E3   723 _ACC_3	=	0x00e3
+                           0000E4   724 G$ACC_4$0$0 == 0x00e4
+                           0000E4   725 _ACC_4	=	0x00e4
+                           0000E5   726 G$ACC_5$0$0 == 0x00e5
+                           0000E5   727 _ACC_5	=	0x00e5
+                           0000E6   728 G$ACC_6$0$0 == 0x00e6
+                           0000E6   729 _ACC_6	=	0x00e6
+                           0000E7   730 G$ACC_7$0$0 == 0x00e7
+                           0000E7   731 _ACC_7	=	0x00e7
+                           0000F0   732 G$B_0$0$0 == 0x00f0
+                           0000F0   733 _B_0	=	0x00f0
+                           0000F1   734 G$B_1$0$0 == 0x00f1
+                           0000F1   735 _B_1	=	0x00f1
+                           0000F2   736 G$B_2$0$0 == 0x00f2
+                           0000F2   737 _B_2	=	0x00f2
+                           0000F3   738 G$B_3$0$0 == 0x00f3
+                           0000F3   739 _B_3	=	0x00f3
+                           0000F4   740 G$B_4$0$0 == 0x00f4
+                           0000F4   741 _B_4	=	0x00f4
+                           0000F5   742 G$B_5$0$0 == 0x00f5
+                           0000F5   743 _B_5	=	0x00f5
+                           0000F6   744 G$B_6$0$0 == 0x00f6
+                           0000F6   745 _B_6	=	0x00f6
+                           0000F7   746 G$B_7$0$0 == 0x00f7
+                           0000F7   747 _B_7	=	0x00f7
+                           0000A0   748 G$E2IE_0$0$0 == 0x00a0
+                           0000A0   749 _E2IE_0	=	0x00a0
+                           0000A1   750 G$E2IE_1$0$0 == 0x00a1
+                           0000A1   751 _E2IE_1	=	0x00a1
+                           0000A2   752 G$E2IE_2$0$0 == 0x00a2
+                           0000A2   753 _E2IE_2	=	0x00a2
+                           0000A3   754 G$E2IE_3$0$0 == 0x00a3
+                           0000A3   755 _E2IE_3	=	0x00a3
+                           0000A4   756 G$E2IE_4$0$0 == 0x00a4
+                           0000A4   757 _E2IE_4	=	0x00a4
+                           0000A5   758 G$E2IE_5$0$0 == 0x00a5
+                           0000A5   759 _E2IE_5	=	0x00a5
+                           0000A6   760 G$E2IE_6$0$0 == 0x00a6
+                           0000A6   761 _E2IE_6	=	0x00a6
+                           0000A7   762 G$E2IE_7$0$0 == 0x00a7
+                           0000A7   763 _E2IE_7	=	0x00a7
+                           0000C0   764 G$E2IP_0$0$0 == 0x00c0
+                           0000C0   765 _E2IP_0	=	0x00c0
+                           0000C1   766 G$E2IP_1$0$0 == 0x00c1
+                           0000C1   767 _E2IP_1	=	0x00c1
+                           0000C2   768 G$E2IP_2$0$0 == 0x00c2
+                           0000C2   769 _E2IP_2	=	0x00c2
+                           0000C3   770 G$E2IP_3$0$0 == 0x00c3
+                           0000C3   771 _E2IP_3	=	0x00c3
+                           0000C4   772 G$E2IP_4$0$0 == 0x00c4
+                           0000C4   773 _E2IP_4	=	0x00c4
+                           0000C5   774 G$E2IP_5$0$0 == 0x00c5
+                           0000C5   775 _E2IP_5	=	0x00c5
+                           0000C6   776 G$E2IP_6$0$0 == 0x00c6
+                           0000C6   777 _E2IP_6	=	0x00c6
+                           0000C7   778 G$E2IP_7$0$0 == 0x00c7
+                           0000C7   779 _E2IP_7	=	0x00c7
+                           000098   780 G$EIE_0$0$0 == 0x0098
+                           000098   781 _EIE_0	=	0x0098
+                           000099   782 G$EIE_1$0$0 == 0x0099
+                           000099   783 _EIE_1	=	0x0099
+                           00009A   784 G$EIE_2$0$0 == 0x009a
+                           00009A   785 _EIE_2	=	0x009a
+                           00009B   786 G$EIE_3$0$0 == 0x009b
+                           00009B   787 _EIE_3	=	0x009b
+                           00009C   788 G$EIE_4$0$0 == 0x009c
+                           00009C   789 _EIE_4	=	0x009c
+                           00009D   790 G$EIE_5$0$0 == 0x009d
+                           00009D   791 _EIE_5	=	0x009d
+                           00009E   792 G$EIE_6$0$0 == 0x009e
+                           00009E   793 _EIE_6	=	0x009e
+                           00009F   794 G$EIE_7$0$0 == 0x009f
+                           00009F   795 _EIE_7	=	0x009f
+                           0000B0   796 G$EIP_0$0$0 == 0x00b0
+                           0000B0   797 _EIP_0	=	0x00b0
+                           0000B1   798 G$EIP_1$0$0 == 0x00b1
+                           0000B1   799 _EIP_1	=	0x00b1
+                           0000B2   800 G$EIP_2$0$0 == 0x00b2
+                           0000B2   801 _EIP_2	=	0x00b2
+                           0000B3   802 G$EIP_3$0$0 == 0x00b3
+                           0000B3   803 _EIP_3	=	0x00b3
+                           0000B4   804 G$EIP_4$0$0 == 0x00b4
+                           0000B4   805 _EIP_4	=	0x00b4
+                           0000B5   806 G$EIP_5$0$0 == 0x00b5
+                           0000B5   807 _EIP_5	=	0x00b5
+                           0000B6   808 G$EIP_6$0$0 == 0x00b6
+                           0000B6   809 _EIP_6	=	0x00b6
+                           0000B7   810 G$EIP_7$0$0 == 0x00b7
+                           0000B7   811 _EIP_7	=	0x00b7
+                           0000A8   812 G$IE_0$0$0 == 0x00a8
+                           0000A8   813 _IE_0	=	0x00a8
+                           0000A9   814 G$IE_1$0$0 == 0x00a9
+                           0000A9   815 _IE_1	=	0x00a9
+                           0000AA   816 G$IE_2$0$0 == 0x00aa
+                           0000AA   817 _IE_2	=	0x00aa
+                           0000AB   818 G$IE_3$0$0 == 0x00ab
+                           0000AB   819 _IE_3	=	0x00ab
+                           0000AC   820 G$IE_4$0$0 == 0x00ac
+                           0000AC   821 _IE_4	=	0x00ac
+                           0000AD   822 G$IE_5$0$0 == 0x00ad
+                           0000AD   823 _IE_5	=	0x00ad
+                           0000AE   824 G$IE_6$0$0 == 0x00ae
+                           0000AE   825 _IE_6	=	0x00ae
+                           0000AF   826 G$IE_7$0$0 == 0x00af
+                           0000AF   827 _IE_7	=	0x00af
+                           0000AF   828 G$EA$0$0 == 0x00af
+                           0000AF   829 _EA	=	0x00af
+                           0000B8   830 G$IP_0$0$0 == 0x00b8
+                           0000B8   831 _IP_0	=	0x00b8
+                           0000B9   832 G$IP_1$0$0 == 0x00b9
+                           0000B9   833 _IP_1	=	0x00b9
+                           0000BA   834 G$IP_2$0$0 == 0x00ba
+                           0000BA   835 _IP_2	=	0x00ba
+                           0000BB   836 G$IP_3$0$0 == 0x00bb
+                           0000BB   837 _IP_3	=	0x00bb
+                           0000BC   838 G$IP_4$0$0 == 0x00bc
+                           0000BC   839 _IP_4	=	0x00bc
+                           0000BD   840 G$IP_5$0$0 == 0x00bd
+                           0000BD   841 _IP_5	=	0x00bd
+                           0000BE   842 G$IP_6$0$0 == 0x00be
+                           0000BE   843 _IP_6	=	0x00be
+                           0000BF   844 G$IP_7$0$0 == 0x00bf
+                           0000BF   845 _IP_7	=	0x00bf
+                           0000D0   846 G$P$0$0 == 0x00d0
+                           0000D0   847 _P	=	0x00d0
+                           0000D1   848 G$F1$0$0 == 0x00d1
+                           0000D1   849 _F1	=	0x00d1
+                           0000D2   850 G$OV$0$0 == 0x00d2
+                           0000D2   851 _OV	=	0x00d2
+                           0000D3   852 G$RS0$0$0 == 0x00d3
+                           0000D3   853 _RS0	=	0x00d3
+                           0000D4   854 G$RS1$0$0 == 0x00d4
+                           0000D4   855 _RS1	=	0x00d4
+                           0000D5   856 G$F0$0$0 == 0x00d5
+                           0000D5   857 _F0	=	0x00d5
+                           0000D6   858 G$AC$0$0 == 0x00d6
+                           0000D6   859 _AC	=	0x00d6
+                           0000D7   860 G$CY$0$0 == 0x00d7
+                           0000D7   861 _CY	=	0x00d7
+                           0000C8   862 G$PINA_0$0$0 == 0x00c8
+                           0000C8   863 _PINA_0	=	0x00c8
+                           0000C9   864 G$PINA_1$0$0 == 0x00c9
+                           0000C9   865 _PINA_1	=	0x00c9
+                           0000CA   866 G$PINA_2$0$0 == 0x00ca
+                           0000CA   867 _PINA_2	=	0x00ca
+                           0000CB   868 G$PINA_3$0$0 == 0x00cb
+                           0000CB   869 _PINA_3	=	0x00cb
+                           0000CC   870 G$PINA_4$0$0 == 0x00cc
+                           0000CC   871 _PINA_4	=	0x00cc
+                           0000CD   872 G$PINA_5$0$0 == 0x00cd
+                           0000CD   873 _PINA_5	=	0x00cd
+                           0000CE   874 G$PINA_6$0$0 == 0x00ce
+                           0000CE   875 _PINA_6	=	0x00ce
+                           0000CF   876 G$PINA_7$0$0 == 0x00cf
+                           0000CF   877 _PINA_7	=	0x00cf
+                           0000E8   878 G$PINB_0$0$0 == 0x00e8
+                           0000E8   879 _PINB_0	=	0x00e8
+                           0000E9   880 G$PINB_1$0$0 == 0x00e9
+                           0000E9   881 _PINB_1	=	0x00e9
+                           0000EA   882 G$PINB_2$0$0 == 0x00ea
+                           0000EA   883 _PINB_2	=	0x00ea
+                           0000EB   884 G$PINB_3$0$0 == 0x00eb
+                           0000EB   885 _PINB_3	=	0x00eb
+                           0000EC   886 G$PINB_4$0$0 == 0x00ec
+                           0000EC   887 _PINB_4	=	0x00ec
+                           0000ED   888 G$PINB_5$0$0 == 0x00ed
+                           0000ED   889 _PINB_5	=	0x00ed
+                           0000EE   890 G$PINB_6$0$0 == 0x00ee
+                           0000EE   891 _PINB_6	=	0x00ee
+                           0000EF   892 G$PINB_7$0$0 == 0x00ef
+                           0000EF   893 _PINB_7	=	0x00ef
+                           0000F8   894 G$PINC_0$0$0 == 0x00f8
+                           0000F8   895 _PINC_0	=	0x00f8
+                           0000F9   896 G$PINC_1$0$0 == 0x00f9
+                           0000F9   897 _PINC_1	=	0x00f9
+                           0000FA   898 G$PINC_2$0$0 == 0x00fa
+                           0000FA   899 _PINC_2	=	0x00fa
+                           0000FB   900 G$PINC_3$0$0 == 0x00fb
+                           0000FB   901 _PINC_3	=	0x00fb
+                           0000FC   902 G$PINC_4$0$0 == 0x00fc
+                           0000FC   903 _PINC_4	=	0x00fc
+                           0000FD   904 G$PINC_5$0$0 == 0x00fd
+                           0000FD   905 _PINC_5	=	0x00fd
+                           0000FE   906 G$PINC_6$0$0 == 0x00fe
+                           0000FE   907 _PINC_6	=	0x00fe
+                           0000FF   908 G$PINC_7$0$0 == 0x00ff
+                           0000FF   909 _PINC_7	=	0x00ff
+                           000080   910 G$PORTA_0$0$0 == 0x0080
+                           000080   911 _PORTA_0	=	0x0080
+                           000081   912 G$PORTA_1$0$0 == 0x0081
+                           000081   913 _PORTA_1	=	0x0081
+                           000082   914 G$PORTA_2$0$0 == 0x0082
+                           000082   915 _PORTA_2	=	0x0082
+                           000083   916 G$PORTA_3$0$0 == 0x0083
+                           000083   917 _PORTA_3	=	0x0083
+                           000084   918 G$PORTA_4$0$0 == 0x0084
+                           000084   919 _PORTA_4	=	0x0084
+                           000085   920 G$PORTA_5$0$0 == 0x0085
+                           000085   921 _PORTA_5	=	0x0085
+                           000086   922 G$PORTA_6$0$0 == 0x0086
+                           000086   923 _PORTA_6	=	0x0086
+                           000087   924 G$PORTA_7$0$0 == 0x0087
+                           000087   925 _PORTA_7	=	0x0087
+                           000088   926 G$PORTB_0$0$0 == 0x0088
+                           000088   927 _PORTB_0	=	0x0088
+                           000089   928 G$PORTB_1$0$0 == 0x0089
+                           000089   929 _PORTB_1	=	0x0089
+                           00008A   930 G$PORTB_2$0$0 == 0x008a
+                           00008A   931 _PORTB_2	=	0x008a
+                           00008B   932 G$PORTB_3$0$0 == 0x008b
+                           00008B   933 _PORTB_3	=	0x008b
+                           00008C   934 G$PORTB_4$0$0 == 0x008c
+                           00008C   935 _PORTB_4	=	0x008c
+                           00008D   936 G$PORTB_5$0$0 == 0x008d
+                           00008D   937 _PORTB_5	=	0x008d
+                           00008E   938 G$PORTB_6$0$0 == 0x008e
+                           00008E   939 _PORTB_6	=	0x008e
+                           00008F   940 G$PORTB_7$0$0 == 0x008f
+                           00008F   941 _PORTB_7	=	0x008f
+                           000090   942 G$PORTC_0$0$0 == 0x0090
+                           000090   943 _PORTC_0	=	0x0090
+                           000091   944 G$PORTC_1$0$0 == 0x0091
+                           000091   945 _PORTC_1	=	0x0091
+                           000092   946 G$PORTC_2$0$0 == 0x0092
+                           000092   947 _PORTC_2	=	0x0092
+                           000093   948 G$PORTC_3$0$0 == 0x0093
+                           000093   949 _PORTC_3	=	0x0093
+                           000094   950 G$PORTC_4$0$0 == 0x0094
+                           000094   951 _PORTC_4	=	0x0094
+                           000095   952 G$PORTC_5$0$0 == 0x0095
+                           000095   953 _PORTC_5	=	0x0095
+                           000096   954 G$PORTC_6$0$0 == 0x0096
+                           000096   955 _PORTC_6	=	0x0096
+                           000097   956 G$PORTC_7$0$0 == 0x0097
+                           000097   957 _PORTC_7	=	0x0097
+                                    958 ;--------------------------------------------------------
+                                    959 ; overlayable register banks
+                                    960 ;--------------------------------------------------------
+                                    961 	.area REG_BANK_0	(REL,OVR,DATA)
+      000000                        962 	.ds 8
+                                    963 ;--------------------------------------------------------
+                                    964 ; internal ram data
+                                    965 ;--------------------------------------------------------
+                                    966 	.area DSEG    (DATA)
+                           000000   967 G$pkt_counter$0$0==.
+      00001A                        968 _pkt_counter::
+      00001A                        969 	.ds 2
+                           000002   970 G$coldstart$0$0==.
+      00001C                        971 _coldstart::
+      00001C                        972 	.ds 1
+                           000003   973 Lmain.main$saved_button_state$1$405==.
+      00001D                        974 _main_saved_button_state_1_405:
+      00001D                        975 	.ds 1
+                                    976 ;--------------------------------------------------------
+                                    977 ; overlayable items in internal ram 
+                                    978 ;--------------------------------------------------------
+                                    979 	.area	OSEG    (OVR,DATA)
+                                    980 ;--------------------------------------------------------
+                                    981 ; Stack segment in internal ram 
+                                    982 ;--------------------------------------------------------
+                                    983 	.area	SSEG
+      00003A                        984 __start__stack:
+      00003A                        985 	.ds	1
+                                    986 
+                                    987 ;--------------------------------------------------------
+                                    988 ; indirectly addressable internal ram data
+                                    989 ;--------------------------------------------------------
+                                    990 	.area ISEG    (DATA)
+                                    991 ;--------------------------------------------------------
+                                    992 ; absolute internal ram data
+                                    993 ;--------------------------------------------------------
+                                    994 	.area IABS    (ABS,DATA)
+                                    995 	.area IABS    (ABS,DATA)
+                                    996 ;--------------------------------------------------------
+                                    997 ; bit data
+                                    998 ;--------------------------------------------------------
+                                    999 	.area BSEG    (BIT)
+                           000000  1000 Lmain._sdcc_external_startup$sloc0$1$0==.
+      000001                       1001 __sdcc_external_startup_sloc0_1_0:
+      000001                       1002 	.ds 1
+                                   1003 ;--------------------------------------------------------
+                                   1004 ; paged external ram data
+                                   1005 ;--------------------------------------------------------
+                                   1006 	.area PSEG    (PAG,XDATA)
+                                   1007 ;--------------------------------------------------------
+                                   1008 ; external ram data
+                                   1009 ;--------------------------------------------------------
+                                   1010 	.area XSEG    (XDATA)
+                           007020  1011 G$ADCCH0VAL0$0$0 == 0x7020
+                           007020  1012 _ADCCH0VAL0	=	0x7020
+                           007021  1013 G$ADCCH0VAL1$0$0 == 0x7021
+                           007021  1014 _ADCCH0VAL1	=	0x7021
+                           007020  1015 G$ADCCH0VAL$0$0 == 0x7020
+                           007020  1016 _ADCCH0VAL	=	0x7020
+                           007022  1017 G$ADCCH1VAL0$0$0 == 0x7022
+                           007022  1018 _ADCCH1VAL0	=	0x7022
+                           007023  1019 G$ADCCH1VAL1$0$0 == 0x7023
+                           007023  1020 _ADCCH1VAL1	=	0x7023
+                           007022  1021 G$ADCCH1VAL$0$0 == 0x7022
+                           007022  1022 _ADCCH1VAL	=	0x7022
+                           007024  1023 G$ADCCH2VAL0$0$0 == 0x7024
+                           007024  1024 _ADCCH2VAL0	=	0x7024
+                           007025  1025 G$ADCCH2VAL1$0$0 == 0x7025
+                           007025  1026 _ADCCH2VAL1	=	0x7025
+                           007024  1027 G$ADCCH2VAL$0$0 == 0x7024
+                           007024  1028 _ADCCH2VAL	=	0x7024
+                           007026  1029 G$ADCCH3VAL0$0$0 == 0x7026
+                           007026  1030 _ADCCH3VAL0	=	0x7026
+                           007027  1031 G$ADCCH3VAL1$0$0 == 0x7027
+                           007027  1032 _ADCCH3VAL1	=	0x7027
+                           007026  1033 G$ADCCH3VAL$0$0 == 0x7026
+                           007026  1034 _ADCCH3VAL	=	0x7026
+                           007028  1035 G$ADCTUNE0$0$0 == 0x7028
+                           007028  1036 _ADCTUNE0	=	0x7028
+                           007029  1037 G$ADCTUNE1$0$0 == 0x7029
+                           007029  1038 _ADCTUNE1	=	0x7029
+                           00702A  1039 G$ADCTUNE2$0$0 == 0x702a
+                           00702A  1040 _ADCTUNE2	=	0x702a
+                           007010  1041 G$DMA0ADDR0$0$0 == 0x7010
+                           007010  1042 _DMA0ADDR0	=	0x7010
+                           007011  1043 G$DMA0ADDR1$0$0 == 0x7011
+                           007011  1044 _DMA0ADDR1	=	0x7011
+                           007010  1045 G$DMA0ADDR$0$0 == 0x7010
+                           007010  1046 _DMA0ADDR	=	0x7010
+                           007014  1047 G$DMA0CONFIG$0$0 == 0x7014
+                           007014  1048 _DMA0CONFIG	=	0x7014
+                           007012  1049 G$DMA1ADDR0$0$0 == 0x7012
+                           007012  1050 _DMA1ADDR0	=	0x7012
+                           007013  1051 G$DMA1ADDR1$0$0 == 0x7013
+                           007013  1052 _DMA1ADDR1	=	0x7013
+                           007012  1053 G$DMA1ADDR$0$0 == 0x7012
+                           007012  1054 _DMA1ADDR	=	0x7012
+                           007015  1055 G$DMA1CONFIG$0$0 == 0x7015
+                           007015  1056 _DMA1CONFIG	=	0x7015
+                           007070  1057 G$FRCOSCCONFIG$0$0 == 0x7070
+                           007070  1058 _FRCOSCCONFIG	=	0x7070
+                           007071  1059 G$FRCOSCCTRL$0$0 == 0x7071
+                           007071  1060 _FRCOSCCTRL	=	0x7071
+                           007076  1061 G$FRCOSCFREQ0$0$0 == 0x7076
+                           007076  1062 _FRCOSCFREQ0	=	0x7076
+                           007077  1063 G$FRCOSCFREQ1$0$0 == 0x7077
+                           007077  1064 _FRCOSCFREQ1	=	0x7077
+                           007076  1065 G$FRCOSCFREQ$0$0 == 0x7076
+                           007076  1066 _FRCOSCFREQ	=	0x7076
+                           007072  1067 G$FRCOSCKFILT0$0$0 == 0x7072
+                           007072  1068 _FRCOSCKFILT0	=	0x7072
+                           007073  1069 G$FRCOSCKFILT1$0$0 == 0x7073
+                           007073  1070 _FRCOSCKFILT1	=	0x7073
+                           007072  1071 G$FRCOSCKFILT$0$0 == 0x7072
+                           007072  1072 _FRCOSCKFILT	=	0x7072
+                           007078  1073 G$FRCOSCPER0$0$0 == 0x7078
+                           007078  1074 _FRCOSCPER0	=	0x7078
+                           007079  1075 G$FRCOSCPER1$0$0 == 0x7079
+                           007079  1076 _FRCOSCPER1	=	0x7079
+                           007078  1077 G$FRCOSCPER$0$0 == 0x7078
+                           007078  1078 _FRCOSCPER	=	0x7078
+                           007074  1079 G$FRCOSCREF0$0$0 == 0x7074
+                           007074  1080 _FRCOSCREF0	=	0x7074
+                           007075  1081 G$FRCOSCREF1$0$0 == 0x7075
+                           007075  1082 _FRCOSCREF1	=	0x7075
+                           007074  1083 G$FRCOSCREF$0$0 == 0x7074
+                           007074  1084 _FRCOSCREF	=	0x7074
+                           007007  1085 G$ANALOGA$0$0 == 0x7007
+                           007007  1086 _ANALOGA	=	0x7007
+                           00700C  1087 G$GPIOENABLE$0$0 == 0x700c
+                           00700C  1088 _GPIOENABLE	=	0x700c
+                           007003  1089 G$EXTIRQ$0$0 == 0x7003
+                           007003  1090 _EXTIRQ	=	0x7003
+                           007000  1091 G$INTCHGA$0$0 == 0x7000
+                           007000  1092 _INTCHGA	=	0x7000
+                           007001  1093 G$INTCHGB$0$0 == 0x7001
+                           007001  1094 _INTCHGB	=	0x7001
+                           007002  1095 G$INTCHGC$0$0 == 0x7002
+                           007002  1096 _INTCHGC	=	0x7002
+                           007008  1097 G$PALTA$0$0 == 0x7008
+                           007008  1098 _PALTA	=	0x7008
+                           007009  1099 G$PALTB$0$0 == 0x7009
+                           007009  1100 _PALTB	=	0x7009
+                           00700A  1101 G$PALTC$0$0 == 0x700a
+                           00700A  1102 _PALTC	=	0x700a
+                           007046  1103 G$PALTRADIO$0$0 == 0x7046
+                           007046  1104 _PALTRADIO	=	0x7046
+                           007004  1105 G$PINCHGA$0$0 == 0x7004
+                           007004  1106 _PINCHGA	=	0x7004
+                           007005  1107 G$PINCHGB$0$0 == 0x7005
+                           007005  1108 _PINCHGB	=	0x7005
+                           007006  1109 G$PINCHGC$0$0 == 0x7006
+                           007006  1110 _PINCHGC	=	0x7006
+                           00700B  1111 G$PINSEL$0$0 == 0x700b
+                           00700B  1112 _PINSEL	=	0x700b
+                           007060  1113 G$LPOSCCONFIG$0$0 == 0x7060
+                           007060  1114 _LPOSCCONFIG	=	0x7060
+                           007066  1115 G$LPOSCFREQ0$0$0 == 0x7066
+                           007066  1116 _LPOSCFREQ0	=	0x7066
+                           007067  1117 G$LPOSCFREQ1$0$0 == 0x7067
+                           007067  1118 _LPOSCFREQ1	=	0x7067
+                           007066  1119 G$LPOSCFREQ$0$0 == 0x7066
+                           007066  1120 _LPOSCFREQ	=	0x7066
+                           007062  1121 G$LPOSCKFILT0$0$0 == 0x7062
+                           007062  1122 _LPOSCKFILT0	=	0x7062
+                           007063  1123 G$LPOSCKFILT1$0$0 == 0x7063
+                           007063  1124 _LPOSCKFILT1	=	0x7063
+                           007062  1125 G$LPOSCKFILT$0$0 == 0x7062
+                           007062  1126 _LPOSCKFILT	=	0x7062
+                           007068  1127 G$LPOSCPER0$0$0 == 0x7068
+                           007068  1128 _LPOSCPER0	=	0x7068
+                           007069  1129 G$LPOSCPER1$0$0 == 0x7069
+                           007069  1130 _LPOSCPER1	=	0x7069
+                           007068  1131 G$LPOSCPER$0$0 == 0x7068
+                           007068  1132 _LPOSCPER	=	0x7068
+                           007064  1133 G$LPOSCREF0$0$0 == 0x7064
+                           007064  1134 _LPOSCREF0	=	0x7064
+                           007065  1135 G$LPOSCREF1$0$0 == 0x7065
+                           007065  1136 _LPOSCREF1	=	0x7065
+                           007064  1137 G$LPOSCREF$0$0 == 0x7064
+                           007064  1138 _LPOSCREF	=	0x7064
+                           007054  1139 G$LPXOSCGM$0$0 == 0x7054
+                           007054  1140 _LPXOSCGM	=	0x7054
+                           007F01  1141 G$MISCCTRL$0$0 == 0x7f01
+                           007F01  1142 _MISCCTRL	=	0x7f01
+                           007053  1143 G$OSCCALIB$0$0 == 0x7053
+                           007053  1144 _OSCCALIB	=	0x7053
+                           007050  1145 G$OSCFORCERUN$0$0 == 0x7050
+                           007050  1146 _OSCFORCERUN	=	0x7050
+                           007052  1147 G$OSCREADY$0$0 == 0x7052
+                           007052  1148 _OSCREADY	=	0x7052
+                           007051  1149 G$OSCRUN$0$0 == 0x7051
+                           007051  1150 _OSCRUN	=	0x7051
+                           007040  1151 G$RADIOFDATAADDR0$0$0 == 0x7040
+                           007040  1152 _RADIOFDATAADDR0	=	0x7040
+                           007041  1153 G$RADIOFDATAADDR1$0$0 == 0x7041
+                           007041  1154 _RADIOFDATAADDR1	=	0x7041
+                           007040  1155 G$RADIOFDATAADDR$0$0 == 0x7040
+                           007040  1156 _RADIOFDATAADDR	=	0x7040
+                           007042  1157 G$RADIOFSTATADDR0$0$0 == 0x7042
+                           007042  1158 _RADIOFSTATADDR0	=	0x7042
+                           007043  1159 G$RADIOFSTATADDR1$0$0 == 0x7043
+                           007043  1160 _RADIOFSTATADDR1	=	0x7043
+                           007042  1161 G$RADIOFSTATADDR$0$0 == 0x7042
+                           007042  1162 _RADIOFSTATADDR	=	0x7042
+                           007044  1163 G$RADIOMUX$0$0 == 0x7044
+                           007044  1164 _RADIOMUX	=	0x7044
+                           007084  1165 G$SCRATCH0$0$0 == 0x7084
+                           007084  1166 _SCRATCH0	=	0x7084
+                           007085  1167 G$SCRATCH1$0$0 == 0x7085
+                           007085  1168 _SCRATCH1	=	0x7085
+                           007086  1169 G$SCRATCH2$0$0 == 0x7086
+                           007086  1170 _SCRATCH2	=	0x7086
+                           007087  1171 G$SCRATCH3$0$0 == 0x7087
+                           007087  1172 _SCRATCH3	=	0x7087
+                           007F00  1173 G$SILICONREV$0$0 == 0x7f00
+                           007F00  1174 _SILICONREV	=	0x7f00
+                           007F19  1175 G$XTALAMPL$0$0 == 0x7f19
+                           007F19  1176 _XTALAMPL	=	0x7f19
+                           007F18  1177 G$XTALOSC$0$0 == 0x7f18
+                           007F18  1178 _XTALOSC	=	0x7f18
+                           007F1A  1179 G$XTALREADY$0$0 == 0x7f1a
+                           007F1A  1180 _XTALREADY	=	0x7f1a
+                           00FC06  1181 Fmain$flash_deviceid$0$0 == 0xfc06
+                           00FC06  1182 _flash_deviceid	=	0xfc06
+                           00FC00  1183 Fmain$flash_calsector$0$0 == 0xfc00
+                           00FC00  1184 _flash_calsector	=	0xfc00
+                           000000  1185 G$wakeup_desc$0$0==.
+      00029E                       1186 _wakeup_desc::
+      00029E                       1187 	.ds 8
+                           000008  1188 Lmain.transmit_packet$demo_packet_$1$366==.
+      0002A6                       1189 _transmit_packet_demo_packet__1_366:
+      0002A6                       1190 	.ds 6
+                                   1191 ;--------------------------------------------------------
+                                   1192 ; absolute external ram data
+                                   1193 ;--------------------------------------------------------
+                                   1194 	.area XABS    (ABS,XDATA)
+                                   1195 ;--------------------------------------------------------
+                                   1196 ; external initialized ram data
+                                   1197 ;--------------------------------------------------------
+                                   1198 	.area XISEG   (XDATA)
+                                   1199 	.area HOME    (CODE)
+                                   1200 	.area GSINIT0 (CODE)
+                                   1201 	.area GSINIT1 (CODE)
+                                   1202 	.area GSINIT2 (CODE)
+                                   1203 	.area GSINIT3 (CODE)
+                                   1204 	.area GSINIT4 (CODE)
+                                   1205 	.area GSINIT5 (CODE)
+                                   1206 	.area GSINIT  (CODE)
+                                   1207 	.area GSFINAL (CODE)
+                                   1208 	.area CSEG    (CODE)
+                                   1209 ;--------------------------------------------------------
+                                   1210 ; interrupt vector 
+                                   1211 ;--------------------------------------------------------
+                                   1212 	.area HOME    (CODE)
+      000000                       1213 __interrupt_vect:
+      000000 02 03 11         [24] 1214 	ljmp	__sdcc_gsinit_startup
+      000003 32               [24] 1215 	reti
+      000004                       1216 	.ds	7
+      00000B 02 00 B1         [24] 1217 	ljmp	_wtimer_irq
+      00000E                       1218 	.ds	5
+      000013 32               [24] 1219 	reti
+      000014                       1220 	.ds	7
+      00001B 32               [24] 1221 	reti
+      00001C                       1222 	.ds	7
+      000023 02 11 C7         [24] 1223 	ljmp	_axradio_isr
+      000026                       1224 	.ds	5
+      00002B 32               [24] 1225 	reti
+      00002C                       1226 	.ds	7
+      000033 02 3C 4E         [24] 1227 	ljmp	_pwrmgmt_irq
+      000036                       1228 	.ds	5
+      00003B 32               [24] 1229 	reti
+      00003C                       1230 	.ds	7
+      000043 32               [24] 1231 	reti
+      000044                       1232 	.ds	7
+      00004B 32               [24] 1233 	reti
+      00004C                       1234 	.ds	7
+      000053 02 49 4B         [24] 1235 	ljmp	_lcd2_irq
+      000056                       1236 	.ds	5
+      00005B 02 02 A3         [24] 1237 	ljmp	_uart0_irq
+      00005E                       1238 	.ds	5
+      000063 02 02 DA         [24] 1239 	ljmp	_uart1_irq
+      000066                       1240 	.ds	5
+      00006B 32               [24] 1241 	reti
+      00006C                       1242 	.ds	7
+      000073 32               [24] 1243 	reti
+      000074                       1244 	.ds	7
+      00007B 32               [24] 1245 	reti
+      00007C                       1246 	.ds	7
+      000083 32               [24] 1247 	reti
+      000084                       1248 	.ds	7
+      00008B 32               [24] 1249 	reti
+      00008C                       1250 	.ds	7
+      000093 32               [24] 1251 	reti
+      000094                       1252 	.ds	7
+      00009B 32               [24] 1253 	reti
+      00009C                       1254 	.ds	7
+      0000A3 32               [24] 1255 	reti
+      0000A4                       1256 	.ds	7
+      0000AB 02 02 6C         [24] 1257 	ljmp	_dbglink_irq
+                                   1258 ;--------------------------------------------------------
+                                   1259 ; global & static initialisations
+                                   1260 ;--------------------------------------------------------
+                                   1261 	.area HOME    (CODE)
+                                   1262 	.area GSINIT  (CODE)
+                                   1263 	.area GSFINAL (CODE)
+                                   1264 	.area GSINIT  (CODE)
+                                   1265 	.globl __sdcc_gsinit_startup
+                                   1266 	.globl __sdcc_program_startup
+                                   1267 	.globl __start__stack
+                                   1268 	.globl __mcs51_genXINIT
+                                   1269 	.globl __mcs51_genXRAMCLEAR
+                                   1270 	.globl __mcs51_genRAMCLEAR
+                                   1271 ;------------------------------------------------------------
+                                   1272 ;Allocation info for local variables in function 'main'
+                                   1273 ;------------------------------------------------------------
+                                   1274 ;saved_button_state        Allocated with name '_main_saved_button_state_1_405'
+                                   1275 ;i                         Allocated to registers r7 
+                                   1276 ;x                         Allocated to registers r6 
+                                   1277 ;flg                       Allocated to registers r6 
+                                   1278 ;flg                       Allocated to registers r7 
+                                   1279 ;------------------------------------------------------------
+                           000000  1280 	G$main$0$0 ==.
+                           000000  1281 	C$main.c$283$1$405 ==.
+                                   1282 ;	main.c:283: static uint8_t __data saved_button_state = 0xFF;
+      00038A 75 1D FF         [24] 1283 	mov	_main_saved_button_state_1_405,#0xff
+                           000003  1284 	C$main.c$66$1$405 ==.
+                                   1285 ;	main.c:66: uint16_t __data pkt_counter = 0;
+      00038D E4               [12] 1286 	clr	a
+      00038E F5 1A            [12] 1287 	mov	_pkt_counter,a
+      000390 F5 1B            [12] 1288 	mov	(_pkt_counter + 1),a
+                           000008  1289 	C$main.c$67$1$405 ==.
+                                   1290 ;	main.c:67: uint8_t __data coldstart = 1; /* caution: initialization with 1 is necessary! Variables are initialized upon _sdcc_external_startup returning 0 -> the coldstart value returned from _sdcc_external startup does not survive in the coldstart case */
+      000392 75 1C 01         [24] 1291 	mov	_coldstart,#0x01
+                                   1292 	.area GSFINAL (CODE)
+      000395 02 00 AE         [24] 1293 	ljmp	__sdcc_program_startup
+                                   1294 ;--------------------------------------------------------
+                                   1295 ; Home
+                                   1296 ;--------------------------------------------------------
+                                   1297 	.area HOME    (CODE)
+                                   1298 	.area HOME    (CODE)
+      0000AE                       1299 __sdcc_program_startup:
+      0000AE 02 3E 43         [24] 1300 	ljmp	_main
+                                   1301 ;	return from main will return to caller
+                                   1302 ;--------------------------------------------------------
+                                   1303 ; code
+                                   1304 ;--------------------------------------------------------
+                                   1305 	.area CSEG    (CODE)
+                                   1306 ;------------------------------------------------------------
+                                   1307 ;Allocation info for local variables in function 'pwrmgmt_irq'
+                                   1308 ;------------------------------------------------------------
+                                   1309 ;pc                        Allocated to registers r7 
+                                   1310 ;------------------------------------------------------------
+                           000000  1311 	Fmain$pwrmgmt_irq$0$0 ==.
+                           000000  1312 	C$main.c$74$0$0 ==.
+                                   1313 ;	main.c:74: static void pwrmgmt_irq(void) __interrupt(INT_POWERMGMT)
+                                   1314 ;	-----------------------------------------
+                                   1315 ;	 function pwrmgmt_irq
+                                   1316 ;	-----------------------------------------
+      003C4E                       1317 _pwrmgmt_irq:
+                           000007  1318 	ar7 = 0x07
+                           000006  1319 	ar6 = 0x06
+                           000005  1320 	ar5 = 0x05
+                           000004  1321 	ar4 = 0x04
+                           000003  1322 	ar3 = 0x03
+                           000002  1323 	ar2 = 0x02
+                           000001  1324 	ar1 = 0x01
+                           000000  1325 	ar0 = 0x00
+      003C4E C0 E0            [24] 1326 	push	acc
+      003C50 C0 82            [24] 1327 	push	dpl
+      003C52 C0 83            [24] 1328 	push	dph
+      003C54 C0 07            [24] 1329 	push	ar7
+      003C56 C0 D0            [24] 1330 	push	psw
+      003C58 75 D0 00         [24] 1331 	mov	psw,#0x00
+                           00000D  1332 	C$main.c$76$1$0 ==.
+                                   1333 ;	main.c:76: uint8_t pc = PCON;
+                           00000D  1334 	C$main.c$78$1$364 ==.
+                                   1335 ;	main.c:78: if (!(pc & 0x80))
+      003C5B E5 87            [12] 1336 	mov	a,_PCON
+      003C5D FF               [12] 1337 	mov	r7,a
+      003C5E 20 E7 02         [24] 1338 	jb	acc.7,00102$
+                           000013  1339 	C$main.c$79$1$364 ==.
+                                   1340 ;	main.c:79: return;
+      003C61 80 10            [24] 1341 	sjmp	00106$
+      003C63                       1342 00102$:
+                           000015  1343 	C$main.c$81$1$364 ==.
+                                   1344 ;	main.c:81: GPIOENABLE = 0;
+      003C63 90 70 0C         [24] 1345 	mov	dptr,#_GPIOENABLE
+      003C66 E4               [12] 1346 	clr	a
+      003C67 F0               [24] 1347 	movx	@dptr,a
+                           00001A  1348 	C$main.c$82$1$364 ==.
+                                   1349 ;	main.c:82: IE = EIE = E2IE = 0;
+                                   1350 ;	1-genFromRTrack replaced	mov	_E2IE,#0x00
+      003C68 F5 A0            [12] 1351 	mov	_E2IE,a
+                                   1352 ;	1-genFromRTrack replaced	mov	_EIE,#0x00
+      003C6A F5 98            [12] 1353 	mov	_EIE,a
+                                   1354 ;	1-genFromRTrack replaced	mov	_IE,#0x00
+      003C6C F5 A8            [12] 1355 	mov	_IE,a
+      003C6E                       1356 00104$:
+                           000020  1357 	C$main.c$85$1$364 ==.
+                                   1358 ;	main.c:85: PCON |= 0x01;
+      003C6E 43 87 01         [24] 1359 	orl	_PCON,#0x01
+      003C71 80 FB            [24] 1360 	sjmp	00104$
+      003C73                       1361 00106$:
+      003C73 D0 D0            [24] 1362 	pop	psw
+      003C75 D0 07            [24] 1363 	pop	ar7
+      003C77 D0 83            [24] 1364 	pop	dph
+      003C79 D0 82            [24] 1365 	pop	dpl
+      003C7B D0 E0            [24] 1366 	pop	acc
+                           00002F  1367 	C$main.c$86$1$364 ==.
+                           00002F  1368 	XFmain$pwrmgmt_irq$0$0 ==.
+      003C7D 32               [24] 1369 	reti
+                                   1370 ;	eliminated unneeded push/pop b
+                                   1371 ;------------------------------------------------------------
+                                   1372 ;Allocation info for local variables in function 'transmit_packet'
+                                   1373 ;------------------------------------------------------------
+                                   1374 ;demo_packet_              Allocated with name '_transmit_packet_demo_packet__1_366'
+                                   1375 ;------------------------------------------------------------
+                           000030  1376 	Fmain$transmit_packet$0$0 ==.
+                           000030  1377 	C$main.c$88$1$364 ==.
+                                   1378 ;	main.c:88: static void transmit_packet(void)
+                                   1379 ;	-----------------------------------------
+                                   1380 ;	 function transmit_packet
+                                   1381 ;	-----------------------------------------
+      003C7E                       1382 _transmit_packet:
+                           000030  1383 	C$main.c$92$1$366 ==.
+                                   1384 ;	main.c:92: ++pkt_counter;
+      003C7E 05 1A            [12] 1385 	inc	_pkt_counter
+      003C80 E4               [12] 1386 	clr	a
+      003C81 B5 1A 02         [24] 1387 	cjne	a,_pkt_counter,00108$
+      003C84 05 1B            [12] 1388 	inc	(_pkt_counter + 1)
+      003C86                       1389 00108$:
+                           000038  1390 	C$main.c$93$1$366 ==.
+                                   1391 ;	main.c:93: memcpy(demo_packet_, demo_packet, sizeof(demo_packet));
+      003C86 75 2F 4B         [24] 1392 	mov	_memcpy_PARM_2,#_demo_packet
+      003C89 75 30 56         [24] 1393 	mov	(_memcpy_PARM_2 + 1),#(_demo_packet >> 8)
+      003C8C 75 31 80         [24] 1394 	mov	(_memcpy_PARM_2 + 2),#0x80
+      003C8F 75 32 06         [24] 1395 	mov	_memcpy_PARM_3,#0x06
+      003C92 75 33 00         [24] 1396 	mov	(_memcpy_PARM_3 + 1),#0x00
+      003C95 90 02 A6         [24] 1397 	mov	dptr,#_transmit_packet_demo_packet__1_366
+      003C98 75 F0 00         [24] 1398 	mov	b,#0x00
+      003C9B 12 45 6A         [24] 1399 	lcall	_memcpy
+                           000050  1400 	C$main.c$95$1$366 ==.
+                                   1401 ;	main.c:95: if (framing_insert_counter)
+      003C9E 90 56 49         [24] 1402 	mov	dptr,#_framing_insert_counter
+      003CA1 E4               [12] 1403 	clr	a
+      003CA2 93               [24] 1404 	movc	a,@a+dptr
+      003CA3 60 24            [24] 1405 	jz	00102$
+                           000057  1406 	C$main.c$97$2$367 ==.
+                                   1407 ;	main.c:97: demo_packet_[framing_counter_pos] = pkt_counter & 0xFF ;
+      003CA5 90 56 4A         [24] 1408 	mov	dptr,#_framing_counter_pos
+      003CA8 E4               [12] 1409 	clr	a
+      003CA9 93               [24] 1410 	movc	a,@a+dptr
+      003CAA FF               [12] 1411 	mov	r7,a
+      003CAB 24 A6            [12] 1412 	add	a,#_transmit_packet_demo_packet__1_366
+      003CAD F5 82            [12] 1413 	mov	dpl,a
+      003CAF E4               [12] 1414 	clr	a
+      003CB0 34 02            [12] 1415 	addc	a,#(_transmit_packet_demo_packet__1_366 >> 8)
+      003CB2 F5 83            [12] 1416 	mov	dph,a
+      003CB4 AD 1A            [24] 1417 	mov	r5,_pkt_counter
+      003CB6 7E 00            [12] 1418 	mov	r6,#0x00
+      003CB8 ED               [12] 1419 	mov	a,r5
+      003CB9 F0               [24] 1420 	movx	@dptr,a
+                           00006C  1421 	C$main.c$98$2$367 ==.
+                                   1422 ;	main.c:98: demo_packet_[framing_counter_pos+1] = (pkt_counter>>8) & 0xFF;
+      003CBA EF               [12] 1423 	mov	a,r7
+      003CBB 04               [12] 1424 	inc	a
+      003CBC 24 A6            [12] 1425 	add	a,#_transmit_packet_demo_packet__1_366
+      003CBE F5 82            [12] 1426 	mov	dpl,a
+      003CC0 E4               [12] 1427 	clr	a
+      003CC1 34 02            [12] 1428 	addc	a,#(_transmit_packet_demo_packet__1_366 >> 8)
+      003CC3 F5 83            [12] 1429 	mov	dph,a
+      003CC5 E5 1B            [12] 1430 	mov	a,(_pkt_counter + 1)
+      003CC7 FF               [12] 1431 	mov	r7,a
+      003CC8 F0               [24] 1432 	movx	@dptr,a
+      003CC9                       1433 00102$:
+                           00007B  1434 	C$main.c$101$1$366 ==.
+                                   1435 ;	main.c:101: axradio_transmit(&remoteaddr, demo_packet_, sizeof(demo_packet));
+      003CC9 75 15 A6         [24] 1436 	mov	_axradio_transmit_PARM_2,#_transmit_packet_demo_packet__1_366
+      003CCC 75 16 02         [24] 1437 	mov	(_axradio_transmit_PARM_2 + 1),#(_transmit_packet_demo_packet__1_366 >> 8)
+      003CCF 75 17 00         [24] 1438 	mov	(_axradio_transmit_PARM_2 + 2),#0x00
+      003CD2 75 18 06         [24] 1439 	mov	_axradio_transmit_PARM_3,#0x06
+      003CD5 75 19 00         [24] 1440 	mov	(_axradio_transmit_PARM_3 + 1),#0x00
+      003CD8 90 56 3A         [24] 1441 	mov	dptr,#_remoteaddr
+      003CDB 75 F0 80         [24] 1442 	mov	b,#0x80
+      003CDE 12 35 CC         [24] 1443 	lcall	_axradio_transmit
+                           000093  1444 	C$main.c$102$1$366 ==.
+                           000093  1445 	XFmain$transmit_packet$0$0 ==.
+      003CE1 22               [24] 1446 	ret
+                                   1447 ;------------------------------------------------------------
+                                   1448 ;Allocation info for local variables in function 'display_transmit_packet'
+                                   1449 ;------------------------------------------------------------
+                           000094  1450 	Fmain$display_transmit_packet$0$0 ==.
+                           000094  1451 	C$main.c$104$1$366 ==.
+                                   1452 ;	main.c:104: static void display_transmit_packet(void)
+                                   1453 ;	-----------------------------------------
+                                   1454 ;	 function display_transmit_packet
+                                   1455 ;	-----------------------------------------
+      003CE2                       1456 _display_transmit_packet:
+                           000094  1457 	C$main.c$106$1$369 ==.
+                                   1458 ;	main.c:106: if (pkt_counter == 1)
+      003CE2 74 01            [12] 1459 	mov	a,#0x01
+      003CE4 B5 1A 06         [24] 1460 	cjne	a,_pkt_counter,00108$
+      003CE7 14               [12] 1461 	dec	a
+      003CE8 B5 1B 02         [24] 1462 	cjne	a,(_pkt_counter + 1),00108$
+      003CEB 80 02            [24] 1463 	sjmp	00109$
+      003CED                       1464 00108$:
+      003CED 80 0F            [24] 1465 	sjmp	00102$
+      003CEF                       1466 00109$:
+                           0000A1  1467 	C$main.c$108$2$370 ==.
+                                   1468 ;	main.c:108: display_setpos(0x40);
+      003CEF 75 82 40         [24] 1469 	mov	dpl,#0x40
+      003CF2 12 3F 9C         [24] 1470 	lcall	_lcd2_setpos
+                           0000A7  1471 	C$main.c$109$2$370 ==.
+                                   1472 ;	main.c:109: display_writestr("TX    ");
+      003CF5 90 56 C3         [24] 1473 	mov	dptr,#___str_0
+      003CF8 75 F0 80         [24] 1474 	mov	b,#0x80
+      003CFB 12 4F D7         [24] 1475 	lcall	_lcd2_writestr
+      003CFE                       1476 00102$:
+                           0000B0  1477 	C$main.c$118$1$369 ==.
+                                   1478 ;	main.c:118: display_setpos(0x4c);
+      003CFE 75 82 4C         [24] 1479 	mov	dpl,#0x4c
+      003D01 12 3F 9C         [24] 1480 	lcall	_lcd2_setpos
+                           0000B6  1481 	C$main.c$119$1$369 ==.
+                                   1482 ;	main.c:119: display_writehex16(pkt_counter, 4, WRNUM_PADZERO);
+      003D04 74 08            [12] 1483 	mov	a,#0x08
+      003D06 C0 E0            [24] 1484 	push	acc
+      003D08 03               [12] 1485 	rr	a
+      003D09 C0 E0            [24] 1486 	push	acc
+      003D0B 85 1A 82         [24] 1487 	mov	dpl,_pkt_counter
+      003D0E 85 1B 83         [24] 1488 	mov	dph,(_pkt_counter + 1)
+      003D11 12 53 D2         [24] 1489 	lcall	_lcd2_writehex16
+      003D14 15 81            [12] 1490 	dec	sp
+      003D16 15 81            [12] 1491 	dec	sp
+                           0000CA  1492 	C$main.c$129$1$369 ==.
+                           0000CA  1493 	XFmain$display_transmit_packet$0$0 ==.
+      003D18 22               [24] 1494 	ret
+                                   1495 ;------------------------------------------------------------
+                                   1496 ;Allocation info for local variables in function 'axradio_statuschange'
+                                   1497 ;------------------------------------------------------------
+                                   1498 ;st                        Allocated to registers r6 r7 
+                                   1499 ;------------------------------------------------------------
+                           0000CB  1500 	G$axradio_statuschange$0$0 ==.
+                           0000CB  1501 	C$main.c$131$1$369 ==.
+                                   1502 ;	main.c:131: void axradio_statuschange(struct axradio_status __xdata *st)
+                                   1503 ;	-----------------------------------------
+                                   1504 ;	 function axradio_statuschange
+                                   1505 ;	-----------------------------------------
+      003D19                       1506 _axradio_statuschange:
+                           0000CB  1507 	C$main.c$144$1$372 ==.
+                                   1508 ;	main.c:144: switch (st->status)
+      003D19 AE 82            [24] 1509 	mov	r6,dpl
+      003D1B AF 83            [24] 1510 	mov  r7,dph
+      003D1D E0               [24] 1511 	movx	a,@dptr
+      003D1E FD               [12] 1512 	mov	r5,a
+      003D1F BD 02 02         [24] 1513 	cjne	r5,#0x02,00199$
+      003D22 80 39            [24] 1514 	sjmp	00155$
+      003D24                       1515 00199$:
+      003D24 BD 03 02         [24] 1516 	cjne	r5,#0x03,00200$
+      003D27 80 05            [24] 1517 	sjmp	00105$
+      003D29                       1518 00200$:
+                           0000DB  1519 	C$main.c$147$2$373 ==.
+                                   1520 ;	main.c:147: led0_on();
+      003D29 BD 04 4C         [24] 1521 	cjne	r5,#0x04,00173$
+      003D2C 80 10            [24] 1522 	sjmp	00120$
+      003D2E                       1523 00105$:
+      003D2E D2 93            [12] 1524 	setb	_PORTC_3
+                           0000E2  1525 	C$main.c$149$2$373 ==.
+                                   1526 ;	main.c:149: if (st->error == AXRADIO_ERR_RETRANSMISSION)
+      003D30 8E 82            [24] 1527 	mov	dpl,r6
+      003D32 8F 83            [24] 1528 	mov	dph,r7
+      003D34 A3               [24] 1529 	inc	dptr
+      003D35 E0               [24] 1530 	movx	a,@dptr
+      003D36 FD               [12] 1531 	mov	r5,a
+      003D37 BD 08 3E         [24] 1532 	cjne	r5,#0x08,00173$
+                           0000EC  1533 	C$main.c$150$4$377 ==.
+                                   1534 ;	main.c:150: led2_on();
+      003D3A D2 82            [12] 1535 	setb	_PORTA_2
+                           0000EE  1536 	C$main.c$161$2$373 ==.
+                                   1537 ;	main.c:161: break;
+                           0000EE  1538 	C$main.c$164$2$373 ==.
+                                   1539 ;	main.c:164: led0_off();
+      003D3C 80 3A            [24] 1540 	sjmp	00173$
+      003D3E                       1541 00120$:
+      003D3E C2 93            [12] 1542 	clr	_PORTC_3
+                           0000F2  1543 	C$main.c$166$2$373 ==.
+                                   1544 ;	main.c:166: if (st->error == AXRADIO_ERR_NOERROR)
+      003D40 8E 82            [24] 1545 	mov	dpl,r6
+      003D42 8F 83            [24] 1546 	mov	dph,r7
+      003D44 A3               [24] 1547 	inc	dptr
+      003D45 E0               [24] 1548 	movx	a,@dptr
+      003D46 FD               [12] 1549 	mov	r5,a
+      003D47 70 04            [24] 1550 	jnz	00138$
+                           0000FB  1551 	C$main.c$168$5$382 ==.
+                                   1552 ;	main.c:168: led2_off();
+      003D49 C2 82            [12] 1553 	clr	_PORTA_2
+      003D4B 80 05            [24] 1554 	sjmp	00139$
+      003D4D                       1555 00138$:
+                           0000FF  1556 	C$main.c$183$2$373 ==.
+                                   1557 ;	main.c:183: else if (st->error == AXRADIO_ERR_TIMEOUT)
+      003D4D BD 03 02         [24] 1558 	cjne	r5,#0x03,00139$
+                           000102  1559 	C$main.c$185$5$385 ==.
+                                   1560 ;	main.c:185: led2_on();
+      003D50 D2 82            [12] 1561 	setb	_PORTA_2
+      003D52                       1562 00139$:
+                           000104  1563 	C$main.c$198$2$373 ==.
+                                   1564 ;	main.c:198: if (st->error == AXRADIO_ERR_BUSY)
+      003D52 BD 02 04         [24] 1565 	cjne	r5,#0x02,00149$
+                           000107  1566 	C$main.c$199$4$387 ==.
+                                   1567 ;	main.c:199: led3_on();
+      003D55 D2 85            [12] 1568 	setb	_PORTA_5
+                           000109  1569 	C$main.c$201$2$373 ==.
+                                   1570 ;	main.c:201: led3_off();
+      003D57 80 1F            [24] 1571 	sjmp	00173$
+      003D59                       1572 00149$:
+      003D59 C2 85            [12] 1573 	clr	_PORTA_5
+                           00010D  1574 	C$main.c$203$2$373 ==.
+                                   1575 ;	main.c:203: break;
+                           00010D  1576 	C$main.c$213$2$373 ==.
+                                   1577 ;	main.c:213: case AXRADIO_STAT_CHANNELSTATE:
+      003D5B 80 1B            [24] 1578 	sjmp	00173$
+      003D5D                       1579 00155$:
+                           00010F  1580 	C$main.c$214$2$373 ==.
+                                   1581 ;	main.c:214: if (st->u.cs.busy)
+      003D5D 74 06            [12] 1582 	mov	a,#0x06
+      003D5F 2E               [12] 1583 	add	a,r6
+      003D60 FE               [12] 1584 	mov	r6,a
+      003D61 E4               [12] 1585 	clr	a
+      003D62 3F               [12] 1586 	addc	a,r7
+      003D63 FF               [12] 1587 	mov	r7,a
+      003D64 74 02            [12] 1588 	mov	a,#0x02
+      003D66 2E               [12] 1589 	add	a,r6
+      003D67 FE               [12] 1590 	mov	r6,a
+      003D68 E4               [12] 1591 	clr	a
+      003D69 3F               [12] 1592 	addc	a,r7
+      003D6A FF               [12] 1593 	mov	r7,a
+      003D6B 8E 82            [24] 1594 	mov	dpl,r6
+      003D6D 8F 83            [24] 1595 	mov	dph,r7
+      003D6F E0               [24] 1596 	movx	a,@dptr
+      003D70 60 04            [24] 1597 	jz	00165$
+                           000124  1598 	C$main.c$215$4$391 ==.
+                                   1599 ;	main.c:215: led3_on();
+      003D72 D2 85            [12] 1600 	setb	_PORTA_5
+                           000126  1601 	C$main.c$217$2$373 ==.
+                                   1602 ;	main.c:217: led3_off();
+      003D74 80 02            [24] 1603 	sjmp	00173$
+      003D76                       1604 00165$:
+      003D76 C2 85            [12] 1605 	clr	_PORTA_5
+                           00012A  1606 	C$main.c$223$1$372 ==.
+                                   1607 ;	main.c:223: }
+      003D78                       1608 00173$:
+                           00012A  1609 	C$main.c$224$1$372 ==.
+                           00012A  1610 	XG$axradio_statuschange$0$0 ==.
+      003D78 22               [24] 1611 	ret
+                                   1612 ;------------------------------------------------------------
+                                   1613 ;Allocation info for local variables in function 'enable_radio_interrupt_in_mcu_pin'
+                                   1614 ;------------------------------------------------------------
+                           00012B  1615 	G$enable_radio_interrupt_in_mcu_pin$0$0 ==.
+                           00012B  1616 	C$main.c$226$1$372 ==.
+                                   1617 ;	main.c:226: void enable_radio_interrupt_in_mcu_pin(void)
+                                   1618 ;	-----------------------------------------
+                                   1619 ;	 function enable_radio_interrupt_in_mcu_pin
+                                   1620 ;	-----------------------------------------
+      003D79                       1621 _enable_radio_interrupt_in_mcu_pin:
+                           00012B  1622 	C$main.c$228$1$395 ==.
+                                   1623 ;	main.c:228: IE_4 = 1;
+      003D79 D2 AC            [12] 1624 	setb	_IE_4
+                           00012D  1625 	C$main.c$229$1$395 ==.
+                           00012D  1626 	XG$enable_radio_interrupt_in_mcu_pin$0$0 ==.
+      003D7B 22               [24] 1627 	ret
+                                   1628 ;------------------------------------------------------------
+                                   1629 ;Allocation info for local variables in function 'disable_radio_interrupt_in_mcu_pin'
+                                   1630 ;------------------------------------------------------------
+                           00012E  1631 	G$disable_radio_interrupt_in_mcu_pin$0$0 ==.
+                           00012E  1632 	C$main.c$231$1$395 ==.
+                                   1633 ;	main.c:231: void disable_radio_interrupt_in_mcu_pin(void)
+                                   1634 ;	-----------------------------------------
+                                   1635 ;	 function disable_radio_interrupt_in_mcu_pin
+                                   1636 ;	-----------------------------------------
+      003D7C                       1637 _disable_radio_interrupt_in_mcu_pin:
+                           00012E  1638 	C$main.c$233$1$397 ==.
+                                   1639 ;	main.c:233: IE_4 = 0;
+      003D7C C2 AC            [12] 1640 	clr	_IE_4
+                           000130  1641 	C$main.c$234$1$397 ==.
+                           000130  1642 	XG$disable_radio_interrupt_in_mcu_pin$0$0 ==.
+      003D7E 22               [24] 1643 	ret
+                                   1644 ;------------------------------------------------------------
+                                   1645 ;Allocation info for local variables in function 'wakeup_callback'
+                                   1646 ;------------------------------------------------------------
+                                   1647 ;desc                      Allocated to registers 
+                                   1648 ;------------------------------------------------------------
+                           000131  1649 	Fmain$wakeup_callback$0$0 ==.
+                           000131  1650 	C$main.c$236$1$397 ==.
+                                   1651 ;	main.c:236: static void wakeup_callback(struct wtimer_desc __xdata *desc)
+                                   1652 ;	-----------------------------------------
+                                   1653 ;	 function wakeup_callback
+                                   1654 ;	-----------------------------------------
+      003D7F                       1655 _wakeup_callback:
+                           000131  1656 	C$main.c$240$1$399 ==.
+                                   1657 ;	main.c:240: wakeup_desc.time += wtimer0_correctinterval(WTIMER0_PERIOD);
+      003D7F 90 02 A2         [24] 1658 	mov	dptr,#(_wakeup_desc + 0x0004)
+      003D82 E0               [24] 1659 	movx	a,@dptr
+      003D83 FC               [12] 1660 	mov	r4,a
+      003D84 A3               [24] 1661 	inc	dptr
+      003D85 E0               [24] 1662 	movx	a,@dptr
+      003D86 FD               [12] 1663 	mov	r5,a
+      003D87 A3               [24] 1664 	inc	dptr
+      003D88 E0               [24] 1665 	movx	a,@dptr
+      003D89 FE               [12] 1666 	mov	r6,a
+      003D8A A3               [24] 1667 	inc	dptr
+      003D8B E0               [24] 1668 	movx	a,@dptr
+      003D8C FF               [12] 1669 	mov	r7,a
+      003D8D 90 02 80         [24] 1670 	mov	dptr,#0x0280
+      003D90 E4               [12] 1671 	clr	a
+      003D91 F5 F0            [12] 1672 	mov	b,a
+      003D93 C0 07            [24] 1673 	push	ar7
+      003D95 C0 06            [24] 1674 	push	ar6
+      003D97 C0 05            [24] 1675 	push	ar5
+      003D99 C0 04            [24] 1676 	push	ar4
+      003D9B 12 4B EE         [24] 1677 	lcall	_wtimer0_correctinterval
+      003D9E A8 82            [24] 1678 	mov	r0,dpl
+      003DA0 A9 83            [24] 1679 	mov	r1,dph
+      003DA2 AA F0            [24] 1680 	mov	r2,b
+      003DA4 FB               [12] 1681 	mov	r3,a
+      003DA5 D0 04            [24] 1682 	pop	ar4
+      003DA7 D0 05            [24] 1683 	pop	ar5
+      003DA9 D0 06            [24] 1684 	pop	ar6
+      003DAB D0 07            [24] 1685 	pop	ar7
+      003DAD E8               [12] 1686 	mov	a,r0
+      003DAE 2C               [12] 1687 	add	a,r4
+      003DAF FC               [12] 1688 	mov	r4,a
+      003DB0 E9               [12] 1689 	mov	a,r1
+      003DB1 3D               [12] 1690 	addc	a,r5
+      003DB2 FD               [12] 1691 	mov	r5,a
+      003DB3 EA               [12] 1692 	mov	a,r2
+      003DB4 3E               [12] 1693 	addc	a,r6
+      003DB5 FE               [12] 1694 	mov	r6,a
+      003DB6 EB               [12] 1695 	mov	a,r3
+      003DB7 3F               [12] 1696 	addc	a,r7
+      003DB8 FF               [12] 1697 	mov	r7,a
+      003DB9 90 02 A2         [24] 1698 	mov	dptr,#(_wakeup_desc + 0x0004)
+      003DBC EC               [12] 1699 	mov	a,r4
+      003DBD F0               [24] 1700 	movx	@dptr,a
+      003DBE ED               [12] 1701 	mov	a,r5
+      003DBF A3               [24] 1702 	inc	dptr
+      003DC0 F0               [24] 1703 	movx	@dptr,a
+      003DC1 EE               [12] 1704 	mov	a,r6
+      003DC2 A3               [24] 1705 	inc	dptr
+      003DC3 F0               [24] 1706 	movx	@dptr,a
+      003DC4 EF               [12] 1707 	mov	a,r7
+      003DC5 A3               [24] 1708 	inc	dptr
+      003DC6 F0               [24] 1709 	movx	@dptr,a
+                           000179  1710 	C$main.c$241$1$399 ==.
+                                   1711 ;	main.c:241: wtimer0_addabsolute(&wakeup_desc);
+      003DC7 90 02 9E         [24] 1712 	mov	dptr,#_wakeup_desc
+      003DCA 12 47 1D         [24] 1713 	lcall	_wtimer0_addabsolute
+                           00017F  1714 	C$main.c$242$1$399 ==.
+                                   1715 ;	main.c:242: transmit_packet();
+      003DCD 12 3C 7E         [24] 1716 	lcall	_transmit_packet
+                           000182  1717 	C$main.c$243$1$399 ==.
+                                   1718 ;	main.c:243: display_transmit_packet();
+      003DD0 12 3C E2         [24] 1719 	lcall	_display_transmit_packet
+                           000185  1720 	C$main.c$245$1$399 ==.
+                           000185  1721 	XFmain$wakeup_callback$0$0 ==.
+      003DD3 22               [24] 1722 	ret
+                                   1723 ;------------------------------------------------------------
+                                   1724 ;Allocation info for local variables in function '_sdcc_external_startup'
+                                   1725 ;------------------------------------------------------------
+                                   1726 ;c                         Allocated to registers 
+                                   1727 ;p                         Allocated to registers 
+                                   1728 ;c                         Allocated to registers 
+                                   1729 ;p                         Allocated to registers 
+                                   1730 ;------------------------------------------------------------
+                           000186  1731 	G$_sdcc_external_startup$0$0 ==.
+                           000186  1732 	C$main.c$247$1$399 ==.
+                                   1733 ;	main.c:247: uint8_t _sdcc_external_startup(void)
+                                   1734 ;	-----------------------------------------
+                                   1735 ;	 function _sdcc_external_startup
+                                   1736 ;	-----------------------------------------
+      003DD4                       1737 __sdcc_external_startup:
+                           000186  1738 	C$main.c$249$1$401 ==.
+                                   1739 ;	main.c:249: LPXOSCGM = 0x8A;
+      003DD4 90 70 54         [24] 1740 	mov	dptr,#_LPXOSCGM
+      003DD7 74 8A            [12] 1741 	mov	a,#0x8a
+      003DD9 F0               [24] 1742 	movx	@dptr,a
+                           00018C  1743 	C$main.c$250$2$402 ==.
+                                   1744 ;	main.c:250: wtimer0_setclksrc(WTIMER0_CLKSRC, WTIMER0_PRESCALER);
+      003DDA 75 82 09         [24] 1745 	mov	dpl,#0x09
+      003DDD 12 42 49         [24] 1746 	lcall	_wtimer0_setconfig
+                           000192  1747 	C$main.c$251$2$403 ==.
+                                   1748 ;	main.c:251: wtimer1_setclksrc(CLKSRC_FRCOSC, 7);
+      003DE0 75 82 38         [24] 1749 	mov	dpl,#0x38
+      003DE3 12 42 63         [24] 1750 	lcall	_wtimer1_setconfig
+                           000198  1751 	C$main.c$253$1$401 ==.
+                                   1752 ;	main.c:253: LPOSCCONFIG = 0x09; /* Slow, PRESC /1, no cal. Does NOT enable LPOSC. LPOSC is enabled upon configuring WTCFGA (MODE_TX_PERIODIC and receive_ack() ) */
+      003DE6 90 70 60         [24] 1753 	mov	dptr,#_LPOSCCONFIG
+      003DE9 74 09            [12] 1754 	mov	a,#0x09
+      003DEB F0               [24] 1755 	movx	@dptr,a
+                           00019E  1756 	C$main.c$255$1$401 ==.
+                                   1757 ;	main.c:255: coldstart = !(PCON & 0x40);
+      003DEC E5 87            [12] 1758 	mov	a,_PCON
+      003DEE A2 E6            [12] 1759 	mov	c,acc[6]
+      003DF0 B3               [12] 1760 	cpl	c
+      003DF1 92 01            [24] 1761 	mov	__sdcc_external_startup_sloc0_1_0,c
+      003DF3 E4               [12] 1762 	clr	a
+      003DF4 33               [12] 1763 	rlc	a
+      003DF5 F5 1C            [12] 1764 	mov	_coldstart,a
+                           0001A9  1765 	C$main.c$257$1$401 ==.
+                                   1766 ;	main.c:257: ANALOGA = 0x18; /* PA[3,4] LPXOSC, other PA are used as digital pins */
+      003DF7 90 70 07         [24] 1767 	mov	dptr,#_ANALOGA
+      003DFA 74 18            [12] 1768 	mov	a,#0x18
+      003DFC F0               [24] 1769 	movx	@dptr,a
+                           0001AF  1770 	C$main.c$258$1$401 ==.
+                                   1771 ;	main.c:258: PORTA = 0xC0 | (PINA & 0x25); 	/* pull-up for PA[6,7] which are not bonded, no pull up for PA[3,4] (LPXOSC). Output 0 in PA[0,1,2,5] to prevent current consumption in all DIP switch states */
+      003DFD 74 25            [12] 1772 	mov	a,#0x25
+      003DFF 55 C8            [12] 1773 	anl	a,_PINA
+      003E01 44 C0            [12] 1774 	orl	a,#0xc0
+      003E03 F5 80            [12] 1775 	mov	_PORTA,a
+                           0001B7  1776 	C$main.c$260$1$401 ==.
+                                   1777 ;	main.c:260: PORTB = 0xFE; /*PB[0,1]  (LCD RS, LCD RST) are overwritten by lcd2_portinit(), enable pull-ups for PB[2..7]  (PB[2,3] for buttons, PB[4..7] unused) */
+      003E05 75 88 FE         [24] 1778 	mov	_PORTB,#0xfe
+                           0001BA  1779 	C$main.c$261$1$401 ==.
+                                   1780 ;	main.c:261: PORTC = 0xF3 | (PINC & 0x08); 	/* set PC0 = 1 (LCD SEL), PC1 = 1 (LCD SCK), PC2 = 0 (LCD MOSI), PC3 =0 (LED), enable pull-ups for PC[4..7] which are not bonded Mind: PORTC[0:1] is set to 0x3 by lcd2_portinit() */
+      003E08 74 08            [12] 1781 	mov	a,#0x08
+      003E0A 55 F8            [12] 1782 	anl	a,_PINC
+      003E0C 44 F3            [12] 1783 	orl	a,#0xf3
+      003E0E F5 90            [12] 1784 	mov	_PORTC,a
+                           0001C2  1785 	C$main.c$263$1$401 ==.
+                                   1786 ;	main.c:263: PORTR = 0xCB; /* overwritten by ax504x_reset, ax504x_comminit() */
+      003E10 75 8C CB         [24] 1787 	mov	_PORTR,#0xcb
+                           0001C5  1788 	C$main.c$265$1$401 ==.
+                                   1789 ;	main.c:265: DIRA = 0x27; /* output 0 on PA[0,1,2,5] to prevent current consumption in all DIP switch states. Other PA are inputs, PA[3,4] (LPXOSC) must have disabled digital output drivers */
+      003E13 75 89 27         [24] 1790 	mov	_DIRA,#0x27
+                           0001C8  1791 	C$main.c$266$1$401 ==.
+                                   1792 ;	main.c:266: DIRB = 0x03; /* PB[0,1] are outputs (LCD RS, LCD RST), PB[2..7] are inputs (PB[2,3] for buttons,  PB[4..7]  unused) */
+      003E16 75 8A 03         [24] 1793 	mov	_DIRB,#0x03
+                           0001CB  1794 	C$main.c$267$1$401 ==.
+                                   1795 ;	main.c:267: DIRC = 0x0F; /* PC[0..3] are outputs (LCD SEL, LCD,SCK, LCD MOSI, LED), PC[4..7] are inputs (not bonded). */
+      003E19 75 8B 0F         [24] 1796 	mov	_DIRC,#0x0f
+                           0001CE  1797 	C$main.c$268$1$401 ==.
+                                   1798 ;	main.c:268: DIRR = 0x15; /* overwritten by ax504x_reset, ax504x_comminit() */
+      003E1C 75 8E 15         [24] 1799 	mov	_DIRR,#0x15
+                           0001D1  1800 	C$main.c$269$1$401 ==.
+                                   1801 ;	main.c:269: axradio_setup_pincfg1();
+      003E1F 12 06 C4         [24] 1802 	lcall	_axradio_setup_pincfg1
+                           0001D4  1803 	C$main.c$270$1$401 ==.
+                                   1804 ;	main.c:270: DPS = 0;
+      003E22 75 86 00         [24] 1805 	mov	_DPS,#0x00
+                           0001D7  1806 	C$main.c$271$1$401 ==.
+                                   1807 ;	main.c:271: IE = 0x40;
+      003E25 75 A8 40         [24] 1808 	mov	_IE,#0x40
+                           0001DA  1809 	C$main.c$272$1$401 ==.
+                                   1810 ;	main.c:272: EIE = 0x00;
+      003E28 75 98 00         [24] 1811 	mov	_EIE,#0x00
+                           0001DD  1812 	C$main.c$273$1$401 ==.
+                                   1813 ;	main.c:273: E2IE = 0x00;
+      003E2B 75 A0 00         [24] 1814 	mov	_E2IE,#0x00
+                           0001E0  1815 	C$main.c$275$1$401 ==.
+                                   1816 ;	main.c:275: display_portinit();
+      003E2E 12 4A 33         [24] 1817 	lcall	_lcd2_portinit
+                           0001E3  1818 	C$main.c$276$1$401 ==.
+                                   1819 ;	main.c:276: GPIOENABLE = 1; /* unfreeze GPIO */
+      003E31 90 70 0C         [24] 1820 	mov	dptr,#_GPIOENABLE
+      003E34 74 01            [12] 1821 	mov	a,#0x01
+      003E36 F0               [24] 1822 	movx	@dptr,a
+                           0001E9  1823 	C$main.c$277$1$401 ==.
+                                   1824 ;	main.c:277: return !coldstart; /* coldstart -> return 0 -> var initialization; start from sleep -> return 1 -> no var initialization */
+      003E37 E5 1C            [12] 1825 	mov	a,_coldstart
+      003E39 B4 01 00         [24] 1826 	cjne	a,#0x01,00109$
+      003E3C                       1827 00109$:
+      003E3C 92 01            [24] 1828 	mov  __sdcc_external_startup_sloc0_1_0,c
+      003E3E E4               [12] 1829 	clr	a
+      003E3F 33               [12] 1830 	rlc	a
+      003E40 F5 82            [12] 1831 	mov	dpl,a
+                           0001F4  1832 	C$main.c$278$1$401 ==.
+                           0001F4  1833 	XG$_sdcc_external_startup$0$0 ==.
+      003E42 22               [24] 1834 	ret
+                                   1835 ;------------------------------------------------------------
+                                   1836 ;Allocation info for local variables in function 'main'
+                                   1837 ;------------------------------------------------------------
+                                   1838 ;saved_button_state        Allocated with name '_main_saved_button_state_1_405'
+                                   1839 ;i                         Allocated to registers r7 
+                                   1840 ;x                         Allocated to registers r6 
+                                   1841 ;flg                       Allocated to registers r6 
+                                   1842 ;flg                       Allocated to registers r7 
+                                   1843 ;------------------------------------------------------------
+                           0001F5  1844 	G$main$0$0 ==.
+                           0001F5  1845 	C$main.c$280$1$401 ==.
+                                   1846 ;	main.c:280: int main(void)
+                                   1847 ;	-----------------------------------------
+                                   1848 ;	 function main
+                                   1849 ;	-----------------------------------------
+      003E43                       1850 _main:
+                           0001F5  1851 	C$main.c$287$1$405 ==.
+                                   1852 ;	main.c:287: __endasm;
+                           000000  1853 	G$_start__stack$0$0	= __start__stack
+                                   1854 	.globl	G$_start__stack$0$0
+                           0001F5  1855 	C$libmftypes.h$368$4$426 ==.
+                                   1856 ;	C:/Program Files (x86)/ON Semiconductor/AXSDB/libmf/include/libmftypes.h:368: EA = 1;
+      003E43 D2 AF            [12] 1857 	setb	_EA
+                           0001F7  1858 	C$main.c$292$1$405 ==.
+                                   1859 ;	main.c:292: flash_apply_calibration();
+      003E45 12 4A 59         [24] 1860 	lcall	_flash_apply_calibration
+                           0001FA  1861 	C$main.c$293$1$405 ==.
+                                   1862 ;	main.c:293: CLKCON = 0x00;
+      003E48 75 C6 00         [24] 1863 	mov	_CLKCON,#0x00
+                           0001FD  1864 	C$main.c$294$1$405 ==.
+                                   1865 ;	main.c:294: wtimer_init();
+      003E4B 12 43 12         [24] 1866 	lcall	_wtimer_init
+                           000200  1867 	C$main.c$296$1$405 ==.
+                                   1868 ;	main.c:296: if (coldstart)
+      003E4E E5 1C            [12] 1869 	mov	a,_coldstart
+      003E50 70 03            [24] 1870 	jnz	00188$
+      003E52 02 3F 48         [24] 1871 	ljmp	00134$
+      003E55                       1872 00188$:
+                           000207  1873 	C$main.c$298$4$408 ==.
+                                   1874 ;	main.c:298: led0_off();
+      003E55 C2 93            [12] 1875 	clr	_PORTC_3
+                           000209  1876 	C$main.c$299$4$410 ==.
+                                   1877 ;	main.c:299: led1_off();
+      003E57 C2 80            [12] 1878 	clr	_PORTA_0
+                           00020B  1879 	C$main.c$300$4$412 ==.
+                                   1880 ;	main.c:300: led2_off();
+      003E59 C2 82            [12] 1881 	clr	_PORTA_2
+                           00020D  1882 	C$main.c$301$4$414 ==.
+                                   1883 ;	main.c:301: led3_off();
+      003E5B C2 85            [12] 1884 	clr	_PORTA_5
+                           00020F  1885 	C$main.c$303$2$406 ==.
+                                   1886 ;	main.c:303: wakeup_desc.handler = wakeup_callback;
+      003E5D 90 02 A0         [24] 1887 	mov	dptr,#(_wakeup_desc + 0x0002)
+      003E60 74 7F            [12] 1888 	mov	a,#_wakeup_callback
+      003E62 F0               [24] 1889 	movx	@dptr,a
+      003E63 74 3D            [12] 1890 	mov	a,#(_wakeup_callback >> 8)
+      003E65 A3               [24] 1891 	inc	dptr
+      003E66 F0               [24] 1892 	movx	@dptr,a
+                           000219  1893 	C$main.c$307$2$406 ==.
+                                   1894 ;	main.c:307: display_init();
+      003E67 12 49 CD         [24] 1895 	lcall	_lcd2_init
+                           00021C  1896 	C$main.c$308$2$406 ==.
+                                   1897 ;	main.c:308: display_setpos(0);
+      003E6A 75 82 00         [24] 1898 	mov	dpl,#0x00
+      003E6D 12 3F 9C         [24] 1899 	lcall	_lcd2_setpos
+                           000222  1900 	C$main.c$309$2$406 ==.
+                                   1901 ;	main.c:309: i = axradio_init();
+      003E70 12 2A 9D         [24] 1902 	lcall	_axradio_init
+                           000225  1903 	C$main.c$311$2$406 ==.
+                                   1904 ;	main.c:311: if (i != AXRADIO_ERR_NOERROR)
+      003E73 E5 82            [12] 1905 	mov	a,dpl
+      003E75 FF               [12] 1906 	mov	r7,a
+      003E76 60 14            [24] 1907 	jz	00128$
+                           00022A  1908 	C$main.c$313$3$415 ==.
+                                   1909 ;	main.c:313: if (i == AXRADIO_ERR_NOCHIP)
+      003E78 BF 05 02         [24] 1910 	cjne	r7,#0x05,00190$
+      003E7B 80 03            [24] 1911 	sjmp	00191$
+      003E7D                       1912 00190$:
+      003E7D 02 3F 76         [24] 1913 	ljmp	00140$
+      003E80                       1914 00191$:
+                           000232  1915 	C$main.c$315$4$416 ==.
+                                   1916 ;	main.c:315: display_writestr(radio_not_found_lcd_display);
+      003E80 90 04 D0         [24] 1917 	mov	dptr,#_radio_not_found_lcd_display
+      003E83 75 F0 00         [24] 1918 	mov	b,#0x00
+      003E86 12 4F D7         [24] 1919 	lcall	_lcd2_writestr
+                           00023B  1920 	C$main.c$322$4$416 ==.
+                                   1921 ;	main.c:322: goto terminate_error;
+      003E89 02 3F 7B         [24] 1922 	ljmp	00151$
+                           00023E  1923 	C$main.c$325$2$406 ==.
+                                   1924 ;	main.c:325: goto terminate_radio_error;
+      003E8C                       1925 00128$:
+                           00023E  1926 	C$main.c$328$2$406 ==.
+                                   1927 ;	main.c:328: display_writestr(radio_lcd_display);
+      003E8C 90 04 C2         [24] 1928 	mov	dptr,#_radio_lcd_display
+      003E8F 75 F0 00         [24] 1929 	mov	b,#0x00
+      003E92 12 4F D7         [24] 1930 	lcall	_lcd2_writestr
+                           000247  1931 	C$main.c$335$2$406 ==.
+                                   1932 ;	main.c:335: axradio_set_local_address(&localaddr);
+      003E95 90 56 3F         [24] 1933 	mov	dptr,#_localaddr
+      003E98 75 F0 80         [24] 1934 	mov	b,#0x80
+      003E9B 12 35 53         [24] 1935 	lcall	_axradio_set_local_address
+                           000250  1936 	C$main.c$336$2$406 ==.
+                                   1937 ;	main.c:336: axradio_set_default_remote_address(&remoteaddr);
+      003E9E 90 56 3A         [24] 1938 	mov	dptr,#_remoteaddr
+      003EA1 75 F0 80         [24] 1939 	mov	b,#0x80
+      003EA4 12 35 91         [24] 1940 	lcall	_axradio_set_default_remote_address
+                           000259  1941 	C$main.c$350$2$406 ==.
+                                   1942 ;	main.c:350: display_writestr("RNG=");
+      003EA7 90 56 CA         [24] 1943 	mov	dptr,#___str_1
+      003EAA 75 F0 80         [24] 1944 	mov	b,#0x80
+      003EAD 12 4F D7         [24] 1945 	lcall	_lcd2_writestr
+                           000262  1946 	C$main.c$351$2$406 ==.
+                                   1947 ;	main.c:351: display_writenum16(axradio_get_pllrange(), 2, 0);
+      003EB0 12 33 E5         [24] 1948 	lcall	_axradio_get_pllrange
+      003EB3 E4               [12] 1949 	clr	a
+      003EB4 C0 E0            [24] 1950 	push	acc
+      003EB6 74 02            [12] 1951 	mov	a,#0x02
+      003EB8 C0 E0            [24] 1952 	push	acc
+      003EBA 12 3F A7         [24] 1953 	lcall	_lcd2_writenum16
+      003EBD 15 81            [12] 1954 	dec	sp
+      003EBF 15 81            [12] 1955 	dec	sp
+                           000273  1956 	C$main.c$353$3$417 ==.
+                                   1957 ;	main.c:353: uint8_t x = axradio_get_pllvcoi();
+      003EC1 12 34 04         [24] 1958 	lcall	_axradio_get_pllvcoi
+                           000276  1959 	C$main.c$355$3$417 ==.
+                                   1960 ;	main.c:355: if (x & 0x80)
+      003EC4 E5 82            [12] 1961 	mov	a,dpl
+      003EC6 FE               [12] 1962 	mov	r6,a
+      003EC7 30 E7 20         [24] 1963 	jnb	acc.7,00130$
+                           00027C  1964 	C$main.c$357$4$418 ==.
+                                   1965 ;	main.c:357: display_writestr(" VCOI=");
+      003ECA 90 56 CF         [24] 1966 	mov	dptr,#___str_2
+      003ECD 75 F0 80         [24] 1967 	mov	b,#0x80
+      003ED0 C0 06            [24] 1968 	push	ar6
+      003ED2 12 4F D7         [24] 1969 	lcall	_lcd2_writestr
+      003ED5 D0 06            [24] 1970 	pop	ar6
+                           000289  1971 	C$main.c$358$4$418 ==.
+                                   1972 ;	main.c:358: display_writehex16(x, 2, 0);
+      003ED7 E4               [12] 1973 	clr	a
+      003ED8 FD               [12] 1974 	mov	r5,a
+      003ED9 C0 E0            [24] 1975 	push	acc
+      003EDB 74 02            [12] 1976 	mov	a,#0x02
+      003EDD C0 E0            [24] 1977 	push	acc
+      003EDF 8E 82            [24] 1978 	mov	dpl,r6
+      003EE1 8D 83            [24] 1979 	mov	dph,r5
+      003EE3 12 53 D2         [24] 1980 	lcall	_lcd2_writehex16
+      003EE6 15 81            [12] 1981 	dec	sp
+      003EE8 15 81            [12] 1982 	dec	sp
+      003EEA                       1983 00130$:
+                           00029C  1984 	C$main.c$361$2$406 ==.
+                                   1985 ;	main.c:361: delay_ms(1000); /* just to show PLL RNG */
+      003EEA 90 03 E8         [24] 1986 	mov	dptr,#0x03e8
+      003EED 12 3A E9         [24] 1987 	lcall	_delay_ms
+                           0002A2  1988 	C$main.c$362$2$406 ==.
+                                   1989 ;	main.c:362: display_clear(0, 16);
+      003EF0 74 10            [12] 1990 	mov	a,#0x10
+      003EF2 C0 E0            [24] 1991 	push	acc
+      003EF4 75 82 00         [24] 1992 	mov	dpl,#0x00
+      003EF7 12 50 5D         [24] 1993 	lcall	_lcd2_clear
+      003EFA 15 81            [12] 1994 	dec	sp
+                           0002AE  1995 	C$main.c$363$2$406 ==.
+                                   1996 ;	main.c:363: display_clear(0x40, 16);
+      003EFC 74 10            [12] 1997 	mov	a,#0x10
+      003EFE C0 E0            [24] 1998 	push	acc
+      003F00 75 82 40         [24] 1999 	mov	dpl,#0x40
+      003F03 12 50 5D         [24] 2000 	lcall	_lcd2_clear
+      003F06 15 81            [12] 2001 	dec	sp
+                           0002BA  2002 	C$main.c$364$2$406 ==.
+                                   2003 ;	main.c:364: display_setpos(0);
+      003F08 75 82 00         [24] 2004 	mov	dpl,#0x00
+      003F0B 12 3F 9C         [24] 2005 	lcall	_lcd2_setpos
+                           0002C0  2006 	C$main.c$365$2$406 ==.
+                                   2007 ;	main.c:365: display_writestr("MASTER");
+      003F0E 90 56 D6         [24] 2008 	mov	dptr,#___str_3
+      003F11 75 F0 80         [24] 2009 	mov	b,#0x80
+      003F14 12 4F D7         [24] 2010 	lcall	_lcd2_writestr
+                           0002C9  2011 	C$main.c$386$2$406 ==.
+                                   2012 ;	main.c:386: i = axradio_set_mode(RADIO_MODE);
+      003F17 75 82 10         [24] 2013 	mov	dpl,#0x10
+      003F1A 12 2E A1         [24] 2014 	lcall	_axradio_set_mode
+                           0002CF  2015 	C$main.c$388$2$406 ==.
+                                   2016 ;	main.c:388: if (i != AXRADIO_ERR_NOERROR)
+      003F1D E5 82            [12] 2017 	mov	a,dpl
+      003F1F FF               [12] 2018 	mov	r7,a
+      003F20 70 54            [24] 2019 	jnz	00140$
+                           0002D4  2020 	C$main.c$392$2$406 ==.
+                                   2021 ;	main.c:392: wakeup_desc.time = wtimer0_correctinterval(WTIMER0_PERIOD);
+      003F22 90 02 80         [24] 2022 	mov	dptr,#0x0280
+      003F25 E4               [12] 2023 	clr	a
+      003F26 F5 F0            [12] 2024 	mov	b,a
+      003F28 12 4B EE         [24] 2025 	lcall	_wtimer0_correctinterval
+      003F2B AB 82            [24] 2026 	mov	r3,dpl
+      003F2D AC 83            [24] 2027 	mov	r4,dph
+      003F2F AD F0            [24] 2028 	mov	r5,b
+      003F31 FE               [12] 2029 	mov	r6,a
+      003F32 90 02 A2         [24] 2030 	mov	dptr,#(_wakeup_desc + 0x0004)
+      003F35 EB               [12] 2031 	mov	a,r3
+      003F36 F0               [24] 2032 	movx	@dptr,a
+      003F37 EC               [12] 2033 	mov	a,r4
+      003F38 A3               [24] 2034 	inc	dptr
+      003F39 F0               [24] 2035 	movx	@dptr,a
+      003F3A ED               [12] 2036 	mov	a,r5
+      003F3B A3               [24] 2037 	inc	dptr
+      003F3C F0               [24] 2038 	movx	@dptr,a
+      003F3D EE               [12] 2039 	mov	a,r6
+      003F3E A3               [24] 2040 	inc	dptr
+      003F3F F0               [24] 2041 	movx	@dptr,a
+                           0002F2  2042 	C$main.c$393$2$406 ==.
+                                   2043 ;	main.c:393: wtimer0_addrelative(&wakeup_desc);
+      003F40 90 02 9E         [24] 2044 	mov	dptr,#_wakeup_desc
+      003F43 12 45 D9         [24] 2045 	lcall	_wtimer0_addrelative
+      003F46 80 05            [24] 2046 	sjmp	00135$
+      003F48                       2047 00134$:
+                           0002FA  2048 	C$main.c$399$2$419 ==.
+                                   2049 ;	main.c:399: axradio_commsleepexit();
+      003F48 12 3A 54         [24] 2050 	lcall	_axradio_commsleepexit
+                           0002FD  2051 	C$main.c$400$2$419 ==.
+                                   2052 ;	main.c:400: IE_4 = 1; /* enable radio interrupt */
+      003F4B D2 AC            [12] 2053 	setb	_IE_4
+      003F4D                       2054 00135$:
+                           0002FF  2055 	C$main.c$403$1$405 ==.
+                                   2056 ;	main.c:403: axradio_setup_pincfg2();
+      003F4D 12 06 CA         [24] 2057 	lcall	_axradio_setup_pincfg2
+      003F50                       2058 00149$:
+                           000302  2059 	C$main.c$410$2$420 ==.
+                                   2060 ;	main.c:410: wtimer_runcallbacks();
+      003F50 12 44 CA         [24] 2061 	lcall	_wtimer_runcallbacks
+                           000305  2062 	C$libmftypes.h$373$5$429 ==.
+                                   2063 ;	C:/Program Files (x86)/ON Semiconductor/AXSDB/libmf/include/libmftypes.h:373: EA = 0;
+      003F53 C2 AF            [12] 2064 	clr	_EA
+                           000307  2065 	C$main.c$439$3$420 ==.
+                                   2066 ;	main.c:439: uint8_t flg = WTFLAG_CANSTANDBY;
+      003F55 7E 02            [12] 2067 	mov	r6,#0x02
+                           000309  2068 	C$main.c$442$3$421 ==.
+                                   2069 ;	main.c:442: if (axradio_cansleep()
+      003F57 C0 06            [24] 2070 	push	ar6
+      003F59 12 2E 8F         [24] 2071 	lcall	_axradio_cansleep
+      003F5C E5 82            [12] 2072 	mov	a,dpl
+      003F5E D0 06            [24] 2073 	pop	ar6
+      003F60 60 09            [24] 2074 	jz	00137$
+                           000314  2075 	C$main.c$446$3$421 ==.
+                                   2076 ;	main.c:446: && display_txidle())
+      003F62 12 49 C3         [24] 2077 	lcall	_lcd2_txidle
+      003F65 E5 82            [12] 2078 	mov	a,dpl
+      003F67 60 02            [24] 2079 	jz	00137$
+                           00031B  2080 	C$main.c$447$3$421 ==.
+                                   2081 ;	main.c:447: flg |= WTFLAG_CANSLEEP;
+      003F69 7E 03            [12] 2082 	mov	r6,#0x03
+      003F6B                       2083 00137$:
+                           00031D  2084 	C$main.c$449$3$421 ==.
+                                   2085 ;	main.c:449: wtimer_idle(flg);
+      003F6B 8E 82            [24] 2086 	mov	dpl,r6
+      003F6D 12 44 46         [24] 2087 	lcall	_wtimer_idle
+                           000322  2088 	C$main.c$451$2$420 ==.
+                                   2089 ;	main.c:451: IE_3 = 0; /* no ISR! */
+      003F70 C2 AB            [12] 2090 	clr	_IE_3
+                           000324  2091 	C$libmftypes.h$368$5$432 ==.
+                                   2092 ;	C:/Program Files (x86)/ON Semiconductor/AXSDB/libmf/include/libmftypes.h:368: EA = 1;
+      003F72 D2 AF            [12] 2093 	setb	_EA
+                           000326  2094 	C$main.c$452$4$431 ==.
+                                   2095 ;	main.c:452: __enable_irq();
+                           000326  2096 	C$main.c$455$1$405 ==.
+                                   2097 ;	main.c:455: terminate_radio_error:
+      003F74 80 DA            [24] 2098 	sjmp	00149$
+      003F76                       2099 00140$:
+                           000328  2100 	C$main.c$456$1$405 ==.
+                                   2101 ;	main.c:456: display_radio_error(i);
+      003F76 8F 82            [24] 2102 	mov	dpl,r7
+      003F78 12 3A 77         [24] 2103 	lcall	_lcd2_display_radio_error
+                           00032D  2104 	C$main.c$460$1$405 ==.
+                                   2105 ;	main.c:460: terminate_error:
+      003F7B                       2106 00151$:
+                           00032D  2107 	C$main.c$464$2$422 ==.
+                                   2108 ;	main.c:464: wtimer_runcallbacks();
+      003F7B 12 44 CA         [24] 2109 	lcall	_wtimer_runcallbacks
+                           000330  2110 	C$main.c$466$3$422 ==.
+                                   2111 ;	main.c:466: uint8_t flg = WTFLAG_CANSTANDBY;
+      003F7E 7F 02            [12] 2112 	mov	r7,#0x02
+                           000332  2113 	C$main.c$469$3$423 ==.
+                                   2114 ;	main.c:469: if (axradio_cansleep()
+      003F80 C0 07            [24] 2115 	push	ar7
+      003F82 12 2E 8F         [24] 2116 	lcall	_axradio_cansleep
+      003F85 E5 82            [12] 2117 	mov	a,dpl
+      003F87 D0 07            [24] 2118 	pop	ar7
+      003F89 60 09            [24] 2119 	jz	00143$
+                           00033D  2120 	C$main.c$473$3$423 ==.
+                                   2121 ;	main.c:473: && display_txidle())
+      003F8B 12 49 C3         [24] 2122 	lcall	_lcd2_txidle
+      003F8E E5 82            [12] 2123 	mov	a,dpl
+      003F90 60 02            [24] 2124 	jz	00143$
+                           000344  2125 	C$main.c$474$3$423 ==.
+                                   2126 ;	main.c:474: flg |= WTFLAG_CANSLEEP;
+      003F92 7F 03            [12] 2127 	mov	r7,#0x03
+      003F94                       2128 00143$:
+                           000346  2129 	C$main.c$476$3$423 ==.
+                                   2130 ;	main.c:476: wtimer_idle(flg);
+      003F94 8F 82            [24] 2131 	mov	dpl,r7
+      003F96 12 44 46         [24] 2132 	lcall	_wtimer_idle
+      003F99 80 E0            [24] 2133 	sjmp	00151$
+                           00034D  2134 	C$main.c$479$1$405 ==.
+                           00034D  2135 	XG$main$0$0 ==.
+      003F9B 22               [24] 2136 	ret
+                                   2137 	.area CSEG    (CODE)
+                                   2138 	.area CONST   (CODE)
+                           000000  2139 Fmain$__str_0$0$0 == .
+      0056C3                       2140 ___str_0:
+      0056C3 54 58 20 20 20 20     2141 	.ascii "TX    "
+      0056C9 00                    2142 	.db 0x00
+                           000007  2143 Fmain$__str_1$0$0 == .
+      0056CA                       2144 ___str_1:
+      0056CA 52 4E 47 3D           2145 	.ascii "RNG="
+      0056CE 00                    2146 	.db 0x00
+                           00000C  2147 Fmain$__str_2$0$0 == .
+      0056CF                       2148 ___str_2:
+      0056CF 20 56 43 4F 49 3D     2149 	.ascii " VCOI="
+      0056D5 00                    2150 	.db 0x00
+                           000013  2151 Fmain$__str_3$0$0 == .
+      0056D6                       2152 ___str_3:
+      0056D6 4D 41 53 54 45 52     2153 	.ascii "MASTER"
+      0056DC 00                    2154 	.db 0x00
+                                   2155 	.area XINIT   (CODE)
+                                   2156 	.area CABS    (ABS,CODE)
