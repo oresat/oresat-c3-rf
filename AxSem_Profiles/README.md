@@ -41,8 +41,8 @@ These are a bunch of AxSem RadioLab profiles
 * Created, configuration confirmed, tested working
 
 ## [AX_Vigely_Dev_Board_L_RX](AX_Vigely_Dev_Board_L_RX)
-* Target: DVK-2 / Vigely's AX5043 dev board using L band downconverter
-* Traffic: **Rx** / L band receiver side of BER test; 120kbps MSK; _NB: This was also used with C3 board using pinheader_
+* Target: DVK-2 / Vigely's AX5043 dev board using L band downconverter; _NB: This was also used with C3 board using pinheader_
+* Traffic: **Rx** / L band receiver side of BER test; 120kbps MSK
 * Created, configuration confirmed, tested working
 
 ## [AX_Vigely_Dev_Board_L_TX](AX_Vigely_Dev_Board_L_TX)
