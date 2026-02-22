@@ -1,4 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "amp-PA-TQP7M9105-with-detect-eagle-import")(type "KiCad")(uri "${KIPRJMOD}/amp-PA-TQP7M9105-with-detect-eagle-import.kicad_sym")(options "")(descr ""))
-)
