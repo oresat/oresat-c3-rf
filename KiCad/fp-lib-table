@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "amp-PA-TQP7M9105-with-detect")(type "KiCad")(uri "$(KIPRJMOD)/amp-PA-TQP7M9105-with-detect.pretty")(options "")(descr ""))
+)
