@@ -54,46 +54,6 @@
 			)
 		)
 	)
-	(fp_line
-		(start -0.525 -0.275)
-		(end 0.525 -0.275)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.Mask")
-		(uuid "9244e895-1569-41fd-bfeb-f548adff9c82")
-	)
-	(fp_line
-		(start -0.525 0.275)
-		(end -0.525 -0.275)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.Mask")
-		(uuid "3213fa9f-1257-4e01-b320-5892a9daa19c")
-	)
-	(fp_line
-		(start 0.525 -0.275)
-		(end 0.525 0.275)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.Mask")
-		(uuid "1f38b38f-ff54-4103-8f6b-f6a33b00632b")
-	)
-	(fp_line
-		(start 0.525 0.275)
-		(end -0.525 0.275)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.Mask")
-		(uuid "73169eb2-91dd-4387-9f88-32e33711da60")
-	)
 	(fp_poly
 		(pts
 			(xy -0.76 0.36) (xy -0.14 0.36) (xy -0.14 -0.36) (xy -0.76 -0.36)
@@ -169,6 +129,16 @@
 		(uuid "676c2252-67f9-4213-b827-a5bc1856edc0")
 	)
 	(fp_line
+		(start -0.525 -0.275)
+		(end 0.525 -0.275)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9244e895-1569-41fd-bfeb-f548adff9c82")
+	)
+	(fp_line
 		(start -0.525 0.275)
 		(end -0.525 -0.275)
 		(stroke
@@ -179,6 +149,26 @@
 		(uuid "25817f53-a546-47ac-958f-4aedd69ad623")
 	)
 	(fp_line
+		(start -0.525 0.275)
+		(end -0.525 -0.275)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3213fa9f-1257-4e01-b320-5892a9daa19c")
+	)
+	(fp_line
+		(start 0.525 -0.275)
+		(end 0.525 0.275)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1f38b38f-ff54-4103-8f6b-f6a33b00632b")
+	)
+	(fp_line
 		(start 0.525 -0.275)
 		(end 0.525 0.275)
 		(stroke
@@ -187,6 +177,16 @@
 		)
 		(layer "F.Fab")
 		(uuid "913ea41f-2b3d-4c13-a043-823d5eec43b1")
+	)
+	(fp_line
+		(start 0.525 0.275)
+		(end -0.525 0.275)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "73169eb2-91dd-4387-9f88-32e33711da60")
 	)
 	(fp_line
 		(start 0.525 0.275)
@@ -225,7 +225,7 @@
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(unlocked yes)
-		(layer "F.Mask")
+		(layer "F.Fab")
 		(uuid "9d1b9c63-4b65-47d5-9e4a-60a2367ed477")
 		(effects
 			(font

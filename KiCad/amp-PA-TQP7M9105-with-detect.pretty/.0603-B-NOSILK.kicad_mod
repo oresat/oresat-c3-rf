@@ -5,7 +5,7 @@
 	(layer "F.Cu")
 	(descr "0603 (metric 1608) normal 'IPC-B' without silkscreen\nIn house package for nominal spacing based on IPC-7351B. This package is identical to 0603-B, but has its tPlace silkscreen layer removed.")
 	(property "Reference" "REF**"
-		(at -1.2 -0.8 0)
+		(at -1.2 -1 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "6eb7fba7-1ede-448b-8d14-f9fce6a73eef")
@@ -53,46 +53,6 @@
 				(thickness 0.15)
 			)
 		)
-	)
-	(fp_line
-		(start -0.8 0.41)
-		(end -0.8 -0.41)
-		(stroke
-			(width 0.08)
-			(type solid)
-		)
-		(layer "F.Mask")
-		(uuid "09293286-3d73-4fec-9985-1ae74c7dd7ee")
-	)
-	(fp_line
-		(start -0.79 -0.4)
-		(end 0.79 -0.4)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Mask")
-		(uuid "b34c3c11-a49a-4d2c-8ede-50c4e4f757d2")
-	)
-	(fp_line
-		(start 0.79 0.4)
-		(end -0.79 0.4)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Mask")
-		(uuid "ff125252-79f3-416c-96e8-46cd271353b0")
-	)
-	(fp_line
-		(start 0.8 -0.41)
-		(end 0.8 0.41)
-		(stroke
-			(width 0.08)
-			(type solid)
-		)
-		(layer "F.Mask")
-		(uuid "d38c51a7-99e9-478d-8039-2d9c3a56d68a")
 	)
 	(fp_poly
 		(pts
@@ -166,6 +126,16 @@
 			(type solid)
 		)
 		(layer "F.Fab")
+		(uuid "09293286-3d73-4fec-9985-1ae74c7dd7ee")
+	)
+	(fp_line
+		(start -0.8 0.41)
+		(end -0.8 -0.41)
+		(stroke
+			(width 0.08)
+			(type solid)
+		)
+		(layer "F.Fab")
 		(uuid "d90c86ed-4600-4ca4-8cfe-6e57f0142c52")
 	)
 	(fp_line
@@ -179,6 +149,16 @@
 		(uuid "adda95a1-9d7d-46a3-bc57-439288441d9a")
 	)
 	(fp_line
+		(start -0.79 -0.4)
+		(end 0.79 -0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b34c3c11-a49a-4d2c-8ede-50c4e4f757d2")
+	)
+	(fp_line
 		(start 0.79 0.4)
 		(end -0.79 0.4)
 		(stroke
@@ -189,6 +169,16 @@
 		(uuid "d5214b27-c995-4b58-b0da-9c79937c11dc")
 	)
 	(fp_line
+		(start 0.79 0.4)
+		(end -0.79 0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ff125252-79f3-416c-96e8-46cd271353b0")
+	)
+	(fp_line
 		(start 0.8 -0.41)
 		(end 0.8 0.41)
 		(stroke
@@ -197,6 +187,16 @@
 		)
 		(layer "F.Fab")
 		(uuid "6a2ca6e2-21e0-4580-8fea-082bcac05ce1")
+	)
+	(fp_line
+		(start 0.8 -0.41)
+		(end 0.8 0.41)
+		(stroke
+			(width 0.08)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d38c51a7-99e9-478d-8039-2d9c3a56d68a")
 	)
 	(fp_poly
 		(pts
@@ -225,7 +225,7 @@
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(unlocked yes)
-		(layer "F.Mask")
+		(layer "F.Fab")
 		(uuid "9b9ae01b-cdde-479e-a75f-16da90adf2c2")
 		(effects
 			(font
