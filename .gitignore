@@ -61,3 +61,4 @@ eagle/DESCRIPTION
 *.kicad_sch-bak
 *.kicad_prl
 *fp-info-cache
+*.lck
