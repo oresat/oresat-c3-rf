@@ -54,3 +54,8 @@ dkms.conf
 # Eagle
 *.*#*
 eagle/DESCRIPTION
+
+# Temporary Files
+*.bak
+*.kicad_pcb-bak
+*.kicad_sch-bak
