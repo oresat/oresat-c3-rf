@@ -5,6 +5,211 @@
 	(uuid "c1cfe8c7-02ce-4fd4-ae76-92fcfa383416")
 	(paper "User" 317.5 254.127)
 	(lib_symbols
+		(symbol "142-0701-851_1"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -2.54 -5.08 0)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" ""
+				(at -2.54 -7.62 0)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "amp-PA-TQP7M9105-with-detect:142-0701-851"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "SMA Jack\n50Ω - End Launch\n\nSource: https://belfuse.com/resources/productinformations/cinchconnectivitysolutions/johnson/pi-ccs-john-142-0701-851.pdf  Datasheet"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "142-0701-851_1_1_0"
+				(polyline
+					(pts
+						(xy -2.54 0.508) (xy -0.508 0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -0.7621)
+					(mid -0.9756 -2.0717)
+					(end -2.54 -2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.54 2.54)
+					(mid -0.9756 2.0717)
+					(end 0 0.7621)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 0.508) (xy 0 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 -0.508) (xy -2.54 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy -0.508 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy -0.762 -2.032)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin bidirectional line
+					(at 2.54 0 180)
+					(length 0)
+					(name "RF"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "RF1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -2.54 180)
+					(length 0)
+					(name "GND"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "GND4"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Adafruit eInk Breakout Friend-eagle-import:GND"
 			(power)
 			(exclude_from_sim no)
@@ -929,25 +1134,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 2.54 -2.54 180)
-					(length 0)
-					(name "GND"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "GND3"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
+				(pin power_in line
 					(at 2.54 -2.54 180)
 					(length 0)
 					(name "GND"
@@ -7741,9 +7928,6 @@
 				(hide yes)
 			)
 		)
-		(pin "GND3"
-			(uuid "bb58541c-0dad-4c78-9499-074051b96109")
-		)
 		(pin "GND4"
 			(uuid "df5dc915-7196-4aad-af0e-b4590b214d12")
 		)
@@ -11167,6 +11351,7 @@
 		)
 	)
 	(symbol
+		(lib_name "142-0701-851_1")
 		(lib_id "amp-PA-TQP7M9105-with-detect-eagle-import:142-0701-851")
 		(at 36.83 205.74 0)
 		(unit 1)
@@ -11222,9 +11407,6 @@
 		)
 		(pin "GND4"
 			(uuid "11dc9cf6-81eb-4a35-ab02-0e637d3b2f62")
-		)
-		(pin "GND3"
-			(uuid "0362abd4-a9c8-428c-9440-82b8a54776bf")
 		)
 		(pin "RF1"
 			(uuid "9dd818c3-d349-4f20-a23a-f567dd3e532e")
