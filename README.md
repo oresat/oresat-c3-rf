@@ -4,6 +4,9 @@ RF Sub systems for the C3 board.  This includes the transeiver ICs and all front
 ## [AxSem_Profiles](AxSem_Profiles)
 These are a bunch of profiles that initialize the AxSem RadioLab configuration program for testing and experiments.
 
+## [KiCad](KiCad)
+Evaluation board schematics and layouts in KiCad. Some of the older Eagle CAD boards are here converted to KiCAD.
+
 ## [block-diagrams](block-diagrams)
 Block diagrams of the L band receiver and UHF transceiver hardware.
 
