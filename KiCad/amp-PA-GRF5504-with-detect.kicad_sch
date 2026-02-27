@@ -5433,17 +5433,6 @@
 		)
 		(uuid "2e91414e-e2d4-4224-a8d5-e7323e9cb7f7")
 	)
-	(text "VEN1 = VEN2 = +3.3V\nVCC = +3.3V\nValues of R2 and R11 are chosen depending on VCC, VEN1, and VEN2.\nTheir values correspond to a VCC = VEN1 = VEN2 = 3.5V.\n\n\n"
-		(exclude_from_sim no)
-		(at -125.73 272.796 0)
-		(effects
-			(font
-				(size 1.778 1.5113)
-			)
-			(justify left bottom)
-		)
-		(uuid "31861ebe-e388-49a5-a8e6-75ad91cd0330")
-	)
 	(text "To M4\nDC Levels"
 		(exclude_from_sim no)
 		(at 250.19 72.39 0)
@@ -5510,7 +5499,7 @@
 		)
 		(uuid "9623220a-33f9-4cc1-b690-3eaada17df25")
 	)
-	(text "Thermal connection to ground\nplanes are required.  Dissipates\nup to 1W of heat."
+	(text "Thermal connection to ground\nplanes are required for \"optimal\nRF and thermal performance\" as suggested by\nthe data sheet\n"
 		(exclude_from_sim no)
 		(at 30.226 236.22 0)
 		(effects
