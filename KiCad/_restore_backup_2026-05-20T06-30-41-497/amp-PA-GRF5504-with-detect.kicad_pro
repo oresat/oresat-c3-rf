@@ -769,7 +769,7 @@
       {
         "filename": "amp-PA-GRF5504-with-detect.kicad_sch",
         "name": "amp-PA-GRF5504-with-detect",
-        "uuid": "c1cfe8c7-02ce-4fd4-ae76-92fcfa383416"
+        "uuid": "00000000-0000-0000-0000-000000000000"
       }
     ],
     "used_designators": "",
@@ -778,7 +778,7 @@
   "sheets": [
     [
       "c1cfe8c7-02ce-4fd4-ae76-92fcfa383416",
-      "amp-PA-GRF5504-with-detect"
+      "Root"
     ]
   ],
   "text_variables": {},
