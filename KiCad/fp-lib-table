@@ -9,5 +9,5 @@
 	(lib (name "oresat-pcbs") (type "KiCad") (uri "${ORESAT_LIBRARIES}/oresat-footprints/oresat-pcbs.pretty") (options "") (descr ""))
 	(lib (name "oresat-qrcodes") (type "KiCad") (uri "${ORESAT_LIBRARIES}/oresat-footprints/oresat-qrcodes.pretty") (options "") (descr ""))
 	(lib (name "oresat-transistors") (type "KiCad") (uri "${ORESAT_LIBRARIES}/oresat-footprints/oresat-transistors.pretty") (options "") (descr ""))
-	(lib (name "amp-PA-GRF5504-with-detect-backups") (type "KiCad") (uri "${KIPRJMOD}/amp-PA-GRF5504-with-detect-backups") (options "") (descr ""))
+	(lib (name "amp-PA-TQP7M9105-with-detect") (type "KiCad") (uri "${KIPRJMOD}/amp-PA-TQP7M9105-with-detect.pretty") (options "") (descr ""))
 )

@@ -8019,7 +8019,7 @@
 				)
 			)
 		)
-		(property "Footprint" "QFN-16_3MM_GRF"
+		(property "Footprint" "amp-PA-TQP7M9105-with-detect:QFN-16_3MM_GRF"
 			(at 78.486 191.516 0)
 			(hide yes)
 			(show_name no)
@@ -10505,7 +10505,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5a65f501-1d8a-490a-baae-e23ca5730305")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR031"
 			(at 205.74 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -10565,7 +10565,7 @@
 		(instances
 			(project "amp-PA-GRF5504-with-detect"
 				(path "/c1cfe8c7-02ce-4fd4-ae76-92fcfa383416"
-					(reference "#PWR?")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -11309,7 +11309,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "72e3cc8a-cb37-4ec0-9bb6-1f7601b3da42")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR028"
 			(at 177.8 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -11369,7 +11369,7 @@
 		(instances
 			(project "amp-PA-GRF5504-with-detect"
 				(path "/c1cfe8c7-02ce-4fd4-ae76-92fcfa383416"
-					(reference "#PWR?")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -12430,7 +12430,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9d20a24d-bca2-4437-b8f8-e6ae7b307436")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR027"
 			(at 142.24 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -12490,7 +12490,7 @@
 		(instances
 			(project "amp-PA-GRF5504-with-detect"
 				(path "/c1cfe8c7-02ce-4fd4-ae76-92fcfa383416"
-					(reference "#PWR?")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -13719,7 +13719,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bedc923d-01d7-41e4-99a5-9d768cc1effc")
-		(property "Reference" "J3"
+		(property "Reference" "JP3"
 			(at 39.37 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13739,7 +13739,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "amp-PA-TQP7M9105-with-detect:1X02_325"
 			(at 39.37 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -13781,7 +13781,7 @@
 		(instances
 			(project "amp-PA-GRF5504-with-detect"
 				(path "/c1cfe8c7-02ce-4fd4-ae76-92fcfa383416"
-					(reference "J3")
+					(reference "JP3")
 					(unit 1)
 				)
 			)
@@ -14194,7 +14194,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d8b750e7-a4ea-4cb4-9c2d-584eda932ae9")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR05"
 			(at 66.04 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -14254,7 +14254,7 @@
 		(instances
 			(project "amp-PA-GRF5504-with-detect"
 				(path "/c1cfe8c7-02ce-4fd4-ae76-92fcfa383416"
-					(reference "#PWR?")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -14685,7 +14685,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e2604262-59ba-4a7a-8a89-08b6406fae17")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR026"
 			(at 67.31 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -14745,7 +14745,7 @@
 		(instances
 			(project "amp-PA-GRF5504-with-detect"
 				(path "/c1cfe8c7-02ce-4fd4-ae76-92fcfa383416"
-					(reference "#PWR?")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -14762,7 +14762,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e847b903-d717-49a0-b127-d80ac495ef06")
-		(property "Reference" "J4"
+		(property "Reference" "JP4"
 			(at 62.23 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14782,7 +14782,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "amp-PA-TQP7M9105-with-detect:1X02_325"
 			(at 62.23 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -14824,7 +14824,7 @@
 		(instances
 			(project "amp-PA-GRF5504-with-detect"
 				(path "/c1cfe8c7-02ce-4fd4-ae76-92fcfa383416"
-					(reference "J4")
+					(reference "JP4")
 					(unit 1)
 				)
 			)
